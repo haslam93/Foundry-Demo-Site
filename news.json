@@ -1,0 +1,53 @@
+{
+  "last_updated": "2026-07-07",
+  "items": [
+    {
+      "date": "2026-07-02",
+      "title": "Claude models generally available in Microsoft Foundry",
+      "summary": "Anthropic's Claude Opus, Sonnet, and Haiku families are now GA in Foundry with Azure-hosted and Anthropic-hosted deployment options, Entra ID auth, Marketplace billing (CCUs), MACC eligibility, and zero-data-retention options for regulated workloads.",
+      "url": "https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/claude-models",
+      "source": "foundry",
+      "tags": ["Models", "GA"]
+    },
+    {
+      "date": "2026-04-15",
+      "title": "Microsoft Agent Framework 1.0 released",
+      "summary": "The open-source SDK unifying Semantic Kernel and AutoGen hits 1.0 for Python and .NET — agents, typed workflows, orchestration patterns (sequential, concurrent, handoff, magentic), MCP/A2A/OpenAPI interop, and OpenTelemetry built in.",
+      "url": "https://github.com/microsoft/agent-framework",
+      "source": "agent-framework",
+      "tags": ["SDK", "GA"]
+    },
+    {
+      "date": "2025-11-18",
+      "title": "Microsoft Foundry unveiled at Ignite 2025",
+      "summary": "Azure AI Foundry becomes Microsoft Foundry: a redesigned agent-first portal, hosted agents for any framework, Foundry IQ knowledge bases, the Foundry Control Plane for Day 2 operations, and Entra Agent ID for agent identity.",
+      "url": "https://devblogs.microsoft.com/foundry/",
+      "source": "foundry",
+      "tags": ["Platform", "Ignite"]
+    },
+    {
+      "date": "2025-11-18",
+      "title": "Hosted agents in Foundry Agent Service (public preview)",
+      "summary": "Bring code-first agents built with Microsoft Agent Framework, LangGraph, or CrewAI into Foundry as managed container-based agents — invoked via the Responses API with built-in scaling, identity, tracing, and governance.",
+      "url": "https://learn.microsoft.com/azure/ai-foundry/agents/concepts/hosted-agents",
+      "source": "foundry",
+      "tags": ["Agents", "Preview"]
+    },
+    {
+      "date": "2025-11-18",
+      "title": "Model Router reaches general availability",
+      "summary": "Foundry's Model Router automatically routes each request to the best-fit model for quality vs. cost across the catalog — swap or add underlying models without changing application code.",
+      "url": "https://learn.microsoft.com/azure/ai-foundry/openai/concepts/model-router",
+      "source": "foundry",
+      "tags": ["Models", "GA"]
+    },
+    {
+      "date": "2025-11-18",
+      "title": "AI Red Teaming Agent and continuous evaluations in the Control Plane",
+      "summary": "Automated adversarial testing built on PyRIT plus agentic evaluators (intent resolution, tool-call accuracy, task adherence) now run pre-deployment and continuously against live traffic from the Foundry Control Plane.",
+      "url": "https://learn.microsoft.com/azure/ai-foundry/concepts/ai-red-teaming-agent",
+      "source": "foundry",
+      "tags": ["Day 2 Ops"]
+    }
+  ]
+}

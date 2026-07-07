@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Microsoft Foundry — The Complete Platform Guide</title>
+<script>
+  (() => {
+    const param = new URLSearchParams(window.location.search).get("clawpilotTheme");
+    const theme =
+      param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+<style>
+:root {
+  color-scheme: light;
+  --cp-bg: #f7f4ef;
+  --cp-bg-elevated: #fcfbf8;
+  --cp-surface: #ffffff;
+  --cp-surface-soft: #f5f5f5;
+  --cp-border: #dedede;
+  --cp-border-strong: #919191;
+  --cp-text: #242424;
+  --cp-text-muted: #5c5c5c;
+  --cp-text-soft: #6f6f6f;
+  --cp-accent: #b11f4b;
+  --cp-accent-hover: #9a1a41;
+  --cp-accent-soft: rgba(177, 31, 75, 0.08);
+  --cp-accent-fg: #ffffff;
+  --cp-success: #16a34a;
+  --cp-danger: #dc2626;
+  --cp-warning: #f59e0b;
+  --cp-link: #0078d4;
+  --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.12);
+  --cp-overlay: rgba(255, 255, 255, 0.8);
+  --cp-panel: rgba(255, 255, 255, 0.86);
+  --cp-panel-strong: rgba(255, 255, 255, 0.96);
+  --cp-sheen: rgba(255, 255, 255, 0.55);
+  --cp-highlight: rgba(177, 31, 75, 0.12);
+}
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --cp-bg: #3d3b3a;
+  --cp-bg-elevated: #343231;
+  --cp-surface: #292929;
+  --cp-surface-soft: #2e2e2e;
+  --cp-border: #474747;
+  --cp-border-strong: #5f5f5f;
+  --cp-text: #dedede;
+  --cp-text-muted: #919191;
+  --cp-text-soft: #b0b0b0;
+  --cp-accent: #fd8ea1;
+  --cp-accent-hover: #fb7b91;
+  --cp-accent-soft: rgba(253, 142, 161, 0.14);
+  --cp-accent-fg: #1a1a1a;
+  --cp-success: #4ade80;
+  --cp-danger: #f87171;
+  --cp-warning: #fbbf24;
+  --cp-link: #4da6ff;
+  --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.32);
+  --cp-overlay: rgba(41, 41, 41, 0.88);
+  --cp-panel: rgba(41, 41, 41, 0.72);
+  --cp-panel-strong: rgba(41, 41, 41, 0.96);
+  --cp-sheen: rgba(255, 255, 255, 0.04);
+  --cp-highlight: rgba(253, 142, 161, 0.12);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+
+body {
+  background: var(--cp-bg);
+  color: var(--cp-text);
+  font-family: "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+code, pre { font-family: Consolas, "Courier New", Courier, monospace; }
+
+.container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+
+/* ---------- Nav ---------- */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--cp-panel-strong);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--cp-border);
+}
+.nav-inner {
+  max-width: 1160px; margin: 0 auto; padding: 10px 24px;
+  display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+}
+.nav-brand { display: flex; align-items: center; gap: 9px; font-weight: 700; font-size: 15px; white-space: nowrap; }
+.nav-brand img { width: 24px; height: 24px; }
+.nav-links { display: flex; gap: 2px; flex-wrap: wrap; margin-left: auto; }
+.nav-links a {
+  color: var(--cp-text-muted); text-decoration: none; font-size: 13px; font-weight: 600;
+  padding: 5px 10px; border-radius: 0.625rem; transition: all .15s;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--cp-accent); background: var(--cp-accent-soft); }
+
+/* ---------- Hero ---------- */
+.hero {
+  text-align: center; padding: 72px 24px 56px;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% -10%, var(--cp-highlight), transparent),
+    var(--cp-bg-elevated);
+  border-bottom: 1px solid var(--cp-border);
+}
+.hero-logo { width: 132px; height: 132px; margin: 0 auto 22px; display: block; filter: drop-shadow(0 8px 24px rgba(0,0,0,.14)); }
+.hero h1 { font-size: clamp(34px, 5.5vw, 56px); font-weight: 750; letter-spacing: -1.2px; line-height: 1.1; }
+.hero h1 .accent { color: var(--cp-accent); }
+.hero .tagline { font-size: 19px; color: var(--cp-text-muted); max-width: 760px; margin: 16px auto 0; }
+.hero-badges { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 26px; }
+.hero-badge {
+  background: var(--cp-surface); border: 1px solid var(--cp-border); border-radius: 999px;
+  padding: 6px 16px; font-size: 13px; font-weight: 600; color: var(--cp-text-muted);
+  box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14);
+}
+.hero-badge strong { color: var(--cp-accent); }
+.hero-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 14px; max-width: 900px; margin: 40px auto 0; }
+.stat {
+  background: var(--cp-surface); border: 1px solid var(--cp-border); border-radius: 16px; padding: 18px 12px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14);
+}
+.stat .num { font-size: 28px; font-weight: 750; color: var(--cp-accent); letter-spacing: -0.5px; }
+.stat .lbl { font-size: 12.5px; color: var(--cp-text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: .4px; }
+
+/* ---------- Sections ---------- */
+section { padding: 64px 0 8px; }
+.section-kicker {
+  display: inline-flex; align-items: center; gap: 8px;
+  color: var(--cp-accent); font-size: 12.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.4px;
+  background: var(--cp-accent-soft); border-radius: 999px; padding: 4px 14px; margin-bottom: 12px;
+}
+h2 { font-size: clamp(26px, 3.4vw, 36px); font-weight: 730; letter-spacing: -0.7px; line-height: 1.15; margin-bottom: 12px; }
+.section-lede { font-size: 16.5px; color: var(--cp-text-muted); max-width: 820px; margin-bottom: 30px; }
+
+.grid { display: grid; gap: 16px; }
+.grid-2 { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
+.grid-3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.grid-4 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+
+.card {
+  background: var(--cp-surface); border: 1px solid var(--cp-border); border-radius: 16px; padding: 22px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14);
+  transition: transform .15s, border-color .15s;
+}
+.card:hover { transform: translateY(-2px); border-color: var(--cp-border-strong); }
+.card .icon {
+  width: 40px; height: 40px; border-radius: 0.625rem; display: flex; align-items: center; justify-content: center;
+  background: var(--cp-accent-soft); color: var(--cp-accent); font-size: 19px; margin-bottom: 12px;
+}
+.card h3 { font-size: 17px; font-weight: 700; margin-bottom: 6px; letter-spacing: -0.2px; }
+.card h4 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+.card p { font-size: 14px; color: var(--cp-text-muted); }
+.card ul { margin: 8px 0 0 18px; font-size: 14px; color: var(--cp-text-muted); }
+.card ul li { margin-bottom: 5px; }
+.card ul li strong, .card p strong { color: var(--cp-text); }
+
+.pill {
+  display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .6px;
+  border-radius: 999px; padding: 2.5px 10px; margin-left: 8px; vertical-align: middle;
+}
+.pill.ga { background: var(--cp-accent-soft); color: var(--cp-success); border: 1px solid var(--cp-success); }
+.pill.preview { background: var(--cp-accent-soft); color: var(--cp-warning); border: 1px solid var(--cp-warning); }
+.pill.new { background: var(--cp-accent-soft); color: var(--cp-accent); border: 1px solid var(--cp-accent); }
+
+/* ---------- Pillar band ---------- */
+.pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+.pillar {
+  background: var(--cp-surface); border: 1px solid var(--cp-border); border-top: 3px solid var(--cp-accent);
+  border-radius: 16px; padding: 20px 18px; box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14);
+}
+.pillar .p-num { font-size: 12px; font-weight: 700; color: var(--cp-accent); letter-spacing: 1px; }
+.pillar h3 { font-size: 16.5px; font-weight: 720; margin: 4px 0 6px; }
+.pillar p { font-size: 13.5px; color: var(--cp-text-muted); }
+
+/* ---------- Tables ---------- */
+.table-wrap { overflow-x: auto; border: 1px solid var(--cp-border); border-radius: 16px; background: var(--cp-surface); box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th {
+  text-align: left; padding: 12px 16px; background: var(--cp-surface-soft); color: var(--cp-text-muted);
+  font-size: 12px; text-transform: uppercase; letter-spacing: .7px; border-bottom: 1px solid var(--cp-border); white-space: nowrap;
+}
+td { padding: 12px 16px; border-bottom: 1px solid var(--cp-border); color: var(--cp-text-muted); vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+td strong { color: var(--cp-text); }
+td .mono { font-family: Consolas, "Courier New", Courier, monospace; font-size: 13px; }
+
+/* ---------- Code ---------- */
+pre.code {
+  background: var(--cp-surface-soft); border: 1px solid var(--cp-border); border-radius: 0.625rem;
+  padding: 16px 18px; font-size: 13px; line-height: 1.55; overflow-x: auto; color: var(--cp-text);
+}
+pre.code .cm { color: var(--cp-text-soft); }
+pre.code .kw { color: var(--cp-accent); font-weight: 600; }
+pre.code .str { color: var(--cp-success); }
+
+/* ---------- Flow / lifecycle ---------- */
+.flow { display: flex; gap: 0; align-items: stretch; flex-wrap: wrap; margin-top: 8px; }
+.flow-step { flex: 1 1 150px; display: flex; align-items: stretch; }
+.flow-card {
+  flex: 1; background: var(--cp-surface); border: 1px solid var(--cp-border); border-radius: 16px;
+  padding: 16px 14px; text-align: center; box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14);
+}
+.flow-card .f-icon { font-size: 22px; }
+.flow-card h4 { font-size: 14.5px; font-weight: 700; margin: 6px 0 4px; }
+.flow-card p { font-size: 12.5px; color: var(--cp-text-muted); }
+.flow-arrow { display: flex; align-items: center; padding: 0 8px; color: var(--cp-accent); font-size: 20px; font-weight: 700; }
+
+/* ---------- Two-col compare ---------- */
+.compare { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+.compare .card { border-top: 3px solid var(--cp-accent); }
+
+/* ---------- Callout ---------- */
+.callout {
+  background: var(--cp-accent-soft); border: 1px solid var(--cp-accent); border-radius: 16px;
+  padding: 20px 24px; margin-top: 20px; font-size: 14.5px;
+}
+.callout strong { color: var(--cp-accent); }
+
+/* ---------- Timeline (day2) ---------- */
+.day2-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+
+/* ---------- Divider ---------- */
+.divider { border: none; border-top: 1px solid var(--cp-border); margin: 56px 0 0; }
+
+/* ---------- Live demo ---------- */
+.live-dot { display:inline-block; width:9px; height:9px; border-radius:50%; background: var(--cp-danger); margin-right:7px; animation: pulse 1.6s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.35} }
+.live-panel { background: var(--cp-surface); border:1px solid var(--cp-border); border-radius:16px; padding:22px; box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14); }
+.live-panel label { font-size:13px; font-weight:700; color: var(--cp-text-muted); display:block; margin-bottom:5px; }
+.live-panel input[type="password"], .live-panel input[type="text"], .live-panel select, .live-panel textarea {
+  width:100%; padding:9px 12px; border:1px solid var(--cp-border); border-radius:0.625rem;
+  background: var(--cp-surface-soft); color: var(--cp-text); font-size:14px; font-family: inherit;
+}
+.live-panel textarea { resize: vertical; min-height:64px; }
+.btn {
+  display:inline-block; background: var(--cp-accent); color: var(--cp-accent-fg); border:none; cursor:pointer;
+  font-family:inherit; font-size:14px; font-weight:700; padding:9px 20px; border-radius:0.625rem; transition: background .15s;
+}
+.btn:hover { background: var(--cp-accent-hover); }
+.btn:disabled { opacity:.5; cursor: default; }
+.btn.secondary { background: var(--cp-surface-soft); color: var(--cp-text); border:1px solid var(--cp-border); }
+.chat-log { margin-top:14px; display:flex; flex-direction:column; gap:10px; max-height:420px; overflow-y:auto; }
+.msg { padding:10px 14px; border-radius:0.625rem; font-size:14px; max-width:92%; white-space:pre-wrap; }
+.msg.user { align-self:flex-end; background: var(--cp-accent-soft); border:1px solid var(--cp-accent); }
+.msg.agent { align-self:flex-start; background: var(--cp-surface-soft); border:1px solid var(--cp-border); }
+.msg.sys { align-self:center; color: var(--cp-text-soft); font-size:12.5px; background:none; }
+.live-meta { font-size:12.5px; color: var(--cp-text-soft); margin-top:8px; }
+.agent-chip { display:flex; align-items:center; gap:10px; padding:10px 14px; border:1px solid var(--cp-border); border-radius:0.625rem; background: var(--cp-surface-soft); margin-bottom:8px; font-size:14px; }
+.agent-chip .a-dot { width:8px; height:8px; border-radius:50%; background: var(--cp-success); flex-shrink:0; }
+.agent-chip .a-model { margin-left:auto; font-family: Consolas, "Courier New", monospace; font-size:12.5px; color: var(--cp-text-soft); }
+
+/* ---------- Footer ---------- */
+footer { padding: 44px 0 60px; text-align: center; color: var(--cp-text-soft); font-size: 13.5px; }
+footer a { color: var(--cp-link); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+.footer-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 14px; }
+
+@media (max-width: 720px) {
+  .flow-arrow { display: none; }
+  .flow-step { flex: 1 1 100%; }
+  .nav-links { display: none; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAEOSSURBVHhe7Z0HVBRJ88D3U8/zzsAZUdKysOzCRqIRxIhZTOiZMyqYczzM2TMHzGJGRZKSMywZAQEVc8KMivn0uv6vJuzOLot6931359+z3/u9mamq7pmdqpnp7unp5fH+3yf4j67Ed0OS2f495/ru3pm1YteOjBDf7elFvtvS7/huS7/puz3tqu+OtKu+vpk0OzKvUrKKucKBku3ckXZ11470q9u3pV/dvDH92ooVKde8vWOuujqfvsY3OpxVt+aBzQ1rH+0kNj1iJBQWf6/vGL+lvzDt237O3G937s97duWs3OWbFeq7PaPId3v6Xd/tabd8t6df892Rfm3nzsyrFL6ZV3fuSC/PdjVXdvoycPS7fDOv7tiefnXTxrTry5cnX/f2irnq2gID4FB2nZoHthjWPtJFaHzKxKSp6odvAfA3paysuz9GRZWaBZ263vGk/5X5Rw9fPHLo4Pk0v/35Nw7sy3t0YP/5+3778+/6Hci/e+BAfgnF/vySA/vyyrOfAW3359EwOr8D+SWH/c6X7N2TW7JxQ1bJLwtSSoYPjSpp0STgHr/R4UsNavudMmpwZJqgkX97MzN/AU949nvdY/2W/ssEoH1V+furfoiMLHGMiro3IiLs3vozoSXRwUG3rwSdvvHodMCNssDT11+fDrj+KvD0jRfI6dM3XlIEINfLEXj6BgXaBARcp2B1wUE3XoaG3Hx5/PjVl+t/zX85cXzyy57u4S8dbQNemxsfLW1U/2CxieHhKHOjw+tNjQ534/NP/8Q91m/pL0gxMSX8mJiHI2JiHu2Pjn6cFRn56GlMzFOIi30GUZGPISryEURGPiIccLtCoqIeq9HVxcY+gYSEUggOvgdr1xSREUOTSPs2YWArPQ0Ck6NgYnj4d7NGh1/yjY5kmTU6PMvU9Kil7vF+S/+jFBf3oEZS0huLxMSyHomJZZsTEsqyEhJfPE5IeAFpaR8gLfU3SEp6DUmJLyHxD5CU9EqNri419Q1kZL6FiIhnsHZ1MQzslwQuzc+CXHwaLEz9wazRCTA3PgHmRkdK+EYHffnG+ztZGm01bdTI90fd4/+W/osUFwdVUlJeyBITXw9OSXnzq0r1NiUl5e1TleotpKb+Bmlp7yEt7TdQpbyDlJS3DLj+DlQpb9WwOi2ZigPHBsnMfA/ncn+H6OgXsGpFMfR2j4PG9kFgIzwJApPjwDfyB4HJKTA3Pvzc3PhQGN9432zzRjs7GBltNdX9Dd/Sf5HCw2/VSUp62y0x8fWG5OS38Skpv91PTwc4lwOQnk6oIEBUqvKkqt4zUNsESVW9V6NSveNA61Wq94BkZRHIzQOIjn4JSxdfhE7to0BucwqE/OMgMDnGBEAABsA7c+ND582N9x8yb7R7Et9opy2Px6us+zu+pT+e/jNhwsbvQ0NLbOLjX0yLj38Tn5T07n5S8rv3aWkAGRkAKtUHSE5+x0KSk39DgCWFA6MjKRzoPCy0ns2bmfk7FQCRES9g/txCcGl2FgSm6PijxNz4GDE39gcL01NYH/hdYHrkicDkUK658cFtZka+7Xg8SVXdH/Mt/bH0Hz+/iOr+/gVmISElnaNjX+yMj39zT6UCSEkhkBD/DhIT3kF8/FuIj3/DQnRJSHgLHwVtWHR0WLfIziZwJvQ5TJuSD3byYGhY9zAY1z9CzI2PE4EJBsAJsDA9TrBOYGFy7KWFyeFIfqO9A3i8od9aBP9tOnXqtklIyN0OYWdK50ZFvYyNjX3zW1YWXvUAcTFvITbmDcTEvGbA9TeE5rWa2Ng3UJ63GmLeEDVa+jfUXQAfBQGnSmGCdy7IbYKg/k+HwKjeUWJu4k9o558AS7OTIOQHg6VZAAZDnrmx36wGDTYoeLVnGfAcPL/T/V3f0mem0NBnDmdCni4KP1sWFRn58lZ09Ovfk5MB4uM/QHTUG4iOeg1RUa8JB9zWIjpaH280oA2Llv41FQQYWIcOPYJxnjmgsME7ADb/joOF2QmwMDsJlmanKMdbmYeAkB+ErYMbAtOjO42N9w8yMtptZ8Bf/+1O8GeSh4dH5ZCQ593PnnkRFHb21ZPwsJe/R0S8+j0q6g1ERb6ByIjXFBERrwjNawRoXn0UNi+TvxyRkbQ8PPwVhIS8gJ0778Go4dmglISAcYPjVPPPkn+KQsgPACH/NB0A5kEgMDv5UGB2PMLM5PByExO/Hqamu410f9u39PH0H09P3+8OHbrGDw5+5h0aUpYZHvYGYqJ/h7CwVxThuDxLc/bsS0LzCgEk7OxLDUweLZi8TH6KsDAN6HiUhQSXgb//U9i44TYMHZQJCkkImBieAL7RKRCan6bhI4FgJQgBK/NgsDA79VzAP5HNNzl6wMzk4Cgzs50C3R/4LX0kBQff/dHf/57A37+kY1DgszUhwWWXIsJ/g6io3+HMmZcQGvoSzoS+UhMa8pKoCWX1HM7ogaMPDaXyEVr3ggIDKjT0BQk49Yz4HXgEK1dch/790kFuEwqmDU+CuTHe8gMp6EBgAwAfAwGvLPgnrgpMj4WZmxyabm60W6z7G7+lj6TDh+/WO3bsXmt//0fTAk49OxkU+OxeeNhvEB7+AYKDX0JQ0AsIDnqpJijwBVET9ILRcwh+WR6OPiiIykeCg9H2BXXLx4BAmf/xp2TP7gewZPFV6NsnjQkAbPfjLT+IAp2vHQCBv1nyA55YmJ7ItjA7tszceI9S9zd+Sx9Je/deNj1x4uHokydLj5w6+TQ/IKCsLCTkLYSGvIXA0y/gdEAZtWQ5HVBGWAJOlwGCNmrQhmNPgWUwBGA+zH+aAgIDqaAhp0+/IMeOPSW7dj6AxYswANJBLjkLZg1Pg7lxIBGaBzMEMWAdgH4M0NuBJUL+CV++8bamur/xW/pIOnDguo2//+OVJ06UFp448ezFiRPP35869QICTr2EUyef05wq03DyOWE5efI5VIQ6rw4n6XwsVJkYMLg8cuQp+O54QBYtvEr69ckAhSQc+I2CwNyEcjiFFYN6W3AWxJYxYCUIfm9lHnDS3NTXjcfj/aD7O78lPcnBwfO7AwduuR479tjv+PHSp6dOvQJ//xfg7/8cTviXgf/xZ+B//Dm1reb4c8Jy/PhzKM8zCjovC5WP4jidj4UqEwMOl35+pbBl8z0yf94V0qcnBkAEmBsFg8A0mFiZh9IItBFZhIONVSKILcOxjhBtbnZgsKHBNAGP5/Ajj+fxrXtYX/L396/s4xNXY+PG85b795cMOnKk9MyRI0/fnQ74DY4ffwFHjz4jxzgcPfoMZRTHOHDlunDtPpbn2LFncOJEGbXcs/sRrFlzh0ybeom4d00jcpsIEJiEgqVZCIgEZ2gszjKcIYjYIgJshAkgtsAACMqwMD++wNR0e3vzhlv4Eon/t+5hfcnfv6Dq9u0XzH19r7nt21eywO/Qk9RDh0rJqZO/wdGjL+DwoaeEy6FDT4HlsD4O/3nwto93Alzfsf0BLF1yk4z3KiJdOqYSuU0kWJieASH/DIgtwmgstbG2xACIo3QiQUiRpXnAbgv+kbEWpkccv70mriDhKB9f32tNdvnenrhnzz2//fsfXzp4EG/Vb+HwoTI46FdKED+WA6XActBPg1qO63+SgwefwtEjz5jb/33w+eU6GTu6kHRqjwEQBZZmYWDFR+eH01jSWAvDQSwMB2vLSLARxlI6keDMLaEgOExofmq50PyEW926u2vq/vZvicfj+fik1dq5/a777h13d+ze9SBt395HD/fvL4VDh16C34GncGD/EwqUUex7QrGPWuJ2KRxgljRPiBo2D52PkZdyofMwNgcOlMKhg88ou43r75H5c6+RUcMLSIe2qaCwiQahGd7aw/FWT2NJYy2MAJoosLaMwQAgIkHYY6HgzDmhIOiApXlAX/63bmH9ac2a3AY7tpV47tzxIHLXzgclu3c9erNnDzr8GezbWwp79zyhQBnFbg2sjtKr5Y+JGq18rPwJFzoPY7N3bykc2I/t/yfk17UlZPbMq2T4kPOkfWsMgBgQ8iPAyjySiC0YLGmshZFAwwYAFSCvRIKw21aCM+FWlkGehoZrGuj+9m+JugNkWGzdemee746HBTt9H73fvesJ7Nr1GHbvLqWWLDsZdu3UsBvtaMjOnTS7dj5SsxPlux4TqgxKp7GjbZmy2LIxqPaWUrrVq+6SaVMvk0ED8knbVhgAsWAliAKxRRSxFkYTa8toImawEUaDjTAKcGktjAGxZRQRW0Z9EFuEvRQJwjKtBEHTjI1Xmuj+9n97+o+Dg+ePixdnO2zefPfXHTse39u37zXs2fMCdux4BDt2PGaW+vHd8Qh2+tL4+j4iO3bQoJyFlemgVQbHFnx9MfCeUHYrlt8hkyYWk/798kjrlqmgkMSByIJ2sEQUCzZWsbhOEBuUWdHQ8mhCL6OwjlBsJQhaZGS0HruFv307wCYPD/8a08ZHCJYvL+i+ceOdg1u3Pizbv/897N79ErZufcjhEQNX9hC2bX0I27fRbNv2kGzdSrNt6yNg2br1EaHR6DXlaewYW9i2jQoCym7Z0ttkwvhi0s8DAyANFJJ4EFnEgLUwFiSiOJBYxeE6QbDiJ7GisRHFYRAQiSgRJKIksLGMviuyOLNJYLrXpWZN77rfRgsxyccn22iJT1abVSsuTNuw/nbYpo33X+3a9Rp2bH8Omzc/gM2bHsDmzQ854DYFQbbQAAur37L5oRpOXioPjUa+ZfNDwkBvb3kI27c/ouyWLr5NJngVQz+PPGjdMh2UUuzgQefGgVQcDxJRPDb5CCKxiiNSUTxIMTBEtE4qSgGpOBWD5InYMvyoUHBikECwS2FisquO7rn4N6b/LFtWIFm5rHDk2pWXt69fdztzw/p7r7dtfQZbNj+BjRvuMzzgwMruEw5cuZ48NBs23CcsOjrcVss2bXwAW7c8pMpevPAWGT+uGPr1yYfWLTNAKU0CsWU82FjFg1ScAFJRAkis4gmFKJ5QMg4ysQpk4gyQCOPLbCyjIsWWIXNFFic6WVj4m317FPB4vKVLi5quXH55yZqV16PWrb5zY93ae+82bXwCG9Y/gl/X3WO4z4GV3SMaGN2vyD0arTw069bdIyy4vZ7h13X3cVtdzvpf72MQUGUv/OUW8RpbDH1750Mrl0xQSpNBbJkANlbo4EQaUQKhECO0TGZNI7dOBbl1JkhECa9thDHp1sKwTdYWAUP5/JPWuufiX5mWLylyW7Hspt+q5beurV559+Wa1SW//7r2Eaxdex/WrCkhyNo190EDbuuCX+3cg7VrkRIaVsaBLY8u8x6sW3OfQmND72Pd2vuwYf0DSrZg/k0Y61lMPHqdJ64umUQpTSbWwgTq2S6zTqIRM7Db1kkgt2FJBblNBgbFWxtRbKG1MOKY2DJkmqXlKft//R2gfftp1ZcsvNxv+fLbkSuX33m1euV9WLWyhKxedR9WrSqBlSvvkpUrS8iqlfdAA27rwuhWISU0K8tDl0eD26tX3qPQ2NDlrF51jwoClM2dcxM8RxWT3j3OE1dnNgASCVbsZNbJFSK3YcEASAepOOk3G1H8bWthVIK1MHy1tXWAq4eHh7oiCABV/iSVAaCS7veTX3qqJJFIqo4fHyFY+MulCcuW3M5cseIerFldCiuWlzDc5UDLli9D7hJEY1cCy1lWlMCKFXdpOHq2nOXL7sDy5Sy6Npp9oO3qVbh+B2bPugGjRlwiPbufJ64tsoitTEVsrJKJVIzOTWFQcWBlNDLrVJCK08BGmPzBSpDw0oIfc83cNOqwwCyg65QpHtQrYoDHtcrKoD5Dvc9AbUsI1AKA7zEIdE/yF5s8PPx/8PaONJoxI81lwYLipUuW3L6wcuUjWL3qKSxbdheWLr1Dli29A7osXaJh2dK7apaq4dpz9Jx8aKOLri3mX7HiDlm65DaZMf0aGT70Irh3zYeWzbPAVpYKEqpmz3U8XuUstExmrSI0qUQqSgWJVQoRW6rAyiLxjUgYH9fEMXL4wYMHTQAu1isre2tz9y7YP3wI9nfugB1y4wbYVwTalpSAA9o9egTWjx+D8c2bUJsQ+P/xafrQoXE/TZiQYjdjRu7gefMu7Vm48OatFSsew4oVpbB48V1YtOg2WbzoNuiyaOFtWLzwDs2iu2oWLbrDgHao0wbzqfMupmHtdfNQdouoICCLFt4mU6dcI0MGXYCunfLApdnnBYDMWoU2BJGKVURhk0ocFOmkmVMutHLJhm6dcy5Mm3J+XWzszX4lJWW9iorejCoogPFFRTC+qOCDN1LwccZfKPgwAe0KCz+MzM1993NOzvt2OTlvreLirlfTPd9fXPLyims4dWpW1xkzzi+eO6c4bMH8mw8WL8bXro9goc8d8PG5DT6/3CK/LKDx+eU2Cyxk8bmjhrJnWMjAyUOwLBpNPh8fjZ7Nw+SjlksW36HWJ028CgN+LoJObrnQogk2A+kAQOdqrnLa6WxAYHCILZOIyCKJSMUpxEGZRlq7ZJN+fYpg4vjLsGzxjadHDz/IUanKzublvQ7NyXkbnZX1Lj476118VuZbmqx3cRre6hKfk/UugbLLeBubkfEuLD3tta9K9bpvYmJJfd3z/cWlyZOTLKZNyx07Y0bh0dmzLufNm3vj2S8L7sJCH6x134YF82/B/Hk3yby5NPPn3aJA+S8MtB0LbmvD5qHBMm7S+RfcplgwX6PXzYv6RQvvUGVP8L4K/TwKwa1tDjRzwo4gvLqTqQBA5yIya3zWa8D6gY0VOj+ZONqmkjau6PwCMnPaVdi6uQROHH8C0VFlJDX1NcnIeEPS0t6Q1NQ3JC31DbDgtobXWqA+Pe0tZZeR/h7SUt9BSvKry0lJLxZGRt620j3fX1waNy5VMW1a0bKZM4uzZs28+njO7Btv581Fp92BuXNuUTXvuXNukjmzaXCdAeYx0HYslL0unHw3GG4C7gfRKZ/KM28uzfx5t8BnwW2YN+cWeI+7Ah69CqBd62xo6pgGSile/UkYBJSDEaz1006nHE/V/p3sVKSVcybp1T2PjBl9iSyYd4Ns2VQCx48+gYjwV6BKIZCTA5CbC5CdDYCfu2VzwO2K4Nrl5QLk5wHExb14HhVVut3fv8B50qT1Pzk4OHyxn6NVGjUqzWXajOIDs2Zeezpv7l2YM/smVduePQuXNLNm3YBZM8tBWGh7Gq5cv/46hVb5Wra0DI8DwWBYMO8WzJl1E8Z5XoY+Pc6Ttq5ZpIl9KlFI6ACQipJBJqZB50vFSSCySASxRSLYyVPArW0WDBlQAHNmXoUtW+7B0SNP4PTppxAc/AzCw8ogOuoV9dlZXBx+g0h/2xiLxNIw3zlSqL9XxHU1tH1SIgFVCkBExPPnQUH3Du/bd85j8WJ/8axZKw2+tH4GPJhKEsmUOp6eWT2mTr18dvYsfM4+hzmz78KM6dcZbuiB1k2fdp2waOy15fr0+srWtqVlM2fQYLDNnX0TZk6/AWNGFUMv93zSpmUmEwB4+8feP00HEDofsRbSnUMuzdJgQL98mI3O31wCAaefQkzMC4iOeQFhYc/h7NnncObMcwgNfcbwlOhyJvSZGo0dh5CnBImKfAtxsQRCQkrL/P3vnNq+PXX0okWnnJYt24N1gS8nAFxd46q4ua2rM2hQiGzcuNyxUyYVJ86ccQfmz3sGuJw29RrD9QrBGjmLxv4aTJ16nahh9VOuA4WectiypkymmToFtzW66dOuwawZuH4NRo24CD2755LWLTNIY3sVKCR4+8d3AIkgo7qBE0FiRXf72sqSoXmTVOjZ/RxMn3YZNm+6C0cOP4aQkKd4hUJ4BO30kJBnEBT0FIKCSiEwsBSCAktJUJAuqGcpLUcg5gkshbCzryEq8gOcPv2k7MiRG4EbNyaOW7DgcLM5c3YZ4gWn64d/LA0duq/asGGRVqNGpXT18spdOnHCpczJk67BzBkPYOqUWzBl8jVtJl3VoKubfA0mT7qqRq984jVCMYlysr78ZNJEGm5ZzDYVYLg9YvgFcO92Dlq1TAcne2z6JVIvgqggECeAjTAerIXxoJAkQovGKujWJQvGehbB2rW34NixxxAY+BSdAwEB+AgohdMBpRAQUAqnTj3h8JjogjYsarsADowsJAS/YfwNTp589NzP72rg2rUx46ZO9W3u5bW64RcVAIMG+VX39Ext4umZPcHLq+DAeO9LFyeMvwJTp5TApIk3YOKEq9qMv6JBLb+mZsL4q2q089FM8L5KKMZfJeXKpqF0NFeAZbz3FdymggK3hw29AN270gHgaIfdvImU09kAsLaMA5EgDpSSRHBrkw7Dh+bD/HlXYOdOvPU/geDgUjh58jEcP/4I/P0fg/8JBn/cVkPKwdpxbU9wwLL8H8Np/Iop5C0cP/7g+Z69l4KWL4/ymjx5e4svLgBGjAis6emZ38XTs2DD2LEXErzGFZd4e6Fzb8EE72sw3usKjTcDu+11Bby9rhBkvPdVYMFtr3FXiPe4K0THlmYcA0enLtubY6cNGTeWLhcDC2VDBxdBty454OqSBg62WOtPINaWcYS6C4jjQSSIBUuzGLCVJkBv92yYPasY1q+/Dfv236ecfuLEIzh67CEcOfIAjhx9qOHIJ9C2JRRHsQwGRnbiJH7F9BoOHbpXtnPnxaClSyO8xo/f3mLgwKWNvqgAGDw4qq6nZ9HQ0aMvBHp6Xrw6xrP4xbixl8Hb6zp4jb0C48ZcphlbnrFjLhNkHNox4PYYz8tkrOdlos77KfSUrbsfqswxlzGwqDyDBxZB18450NI5DeyVSdQ7f7EFjgDCQR949ceApVk0OCgSYcjAPFi16gbs2XsPDvjdBz+/+3Dw4H3w++8hDOVkR/EjlpMvYf+Bu2VbtxcF+fic9Roz5gsMgAEDQvkjRhROHzXqUuboUZdejh516XfP0cUwdswVGDP6Mr5xoxmtF0JzGTQUk9Gjigm+qWPtxnDg5q9Irge6zNHFVFChbGD/QujSMQdcWqSBHRUAcUQsiCFiS2Y8oCU9/s+5aQqMGVUAGzbeopx/wO8e7N1XAvv2lcDe/cg9eonb5UBbXbRsCAVVBgMjO3joKRw9VgZ79t4p27ipMGju3FCvkSM3fXEB8L2Hx2nbYUPyV48ccfGWp+cN8Bx9HUaNLKYYOaKYjBxxiWLUyEtAQ+toGNmIYjUj6XwUrH40RTGFphxWTsPK6H3SqI+DKRPXMShx2b9fIXRyywbnZqlgp8DxfbFEJIgmIgEOBI0lMnEccbBNIG7t0siE8YWwcdMt2H8AnXYXdu26Q7Fz913Ytfsutdy5i2E3yml27UJbHXbfISw71dDlUDB2+/Y/gYOHnsMO31tlv244HzRjdqjX0JG/tujZc+6XEQB8/tBqrq6rG/bufdZtyKC8PcOHXXw2dsw9GD3qJgwfdoli2NBLhIWV6WUoB13dsEswgsOn5B/b54jhdADiet8+BdChXTa0aKIdAFbmOCQ8higlcaR5k2TSvWsmmTK5CDZuugl79lIOhO07btH43tGw4zbFth231LCy7TtQz3KLsGxj8b0N21mYPLv3PIJ9+5/C1m03ylavyQ+aNiPYa8DQLygA3NzC67i7h9p6eCQMGzgg/+SQwRdejhpZAiOG34Ahgy+yEGTo4IswdAjNEA6s7FMM48AtQ23D2Rdnn6RcOUMvovMpfe+e50n7NlmkWWMVsZMnUEPBRYJoEPKjiNgimtjJ4oircwr06pkFU6cUwa/rr4PvTtrBm7feZMB1hi0sN4kGjpyx27TlJtFFqxyGHTsfwK49pbBpy/XnK1flBk6Zctqr74DVLTp0+DIC4D+9eqXwe/dO7OrhkfHLzz+fjx444OKLoUPQ+Vdh0MALFIM5sDJ9DB7EQSefLrp5kYEDLhAW3f1qMegCFSho19M9n7RrlUGaOiYTWxk2/2JAZBEFQj5+FRRF7OVxpLVrCnj0yYLJkwth1ZprlGM2brkJ6zdeZ8B1lhs0G64TNayMY/frhutEww0KjZ2GLdvuwXbfx7Bu/bXny5ZnB06ceMqrb98vKAB6905V9OmZPsHD45xf374Fef37XXg9aOBVGDjgMvT/+QLFAA6sTB8D+nPQyUdTpEY3L/Jzvwuk/8802mVo8lH0L6KCpX+/C8S9G3YDZ5AmVABgzT8aRBaR+HmYOgDauCaDR59MmDSpAJavvALrN91AB8KaX6/RrLtOsfZX5BrFmnXXCAsrQ/0aFo5eDZ2Pgs2zYdNd2Lz1Iaxee+X5wiVZgePH+39RAcDr0UPl2rt3zuY+vXOz+3oUPOznUfi+f79i+LnfRejXt4jiZ4Z+HkWkLwOr48LalbNl6OtRqEYrr1qvXS5VTt8i0M5XCD/3owOon0cRdO9Kfw/QxCEZbKX4PUAUiCzw28AI6itge3kstHJJIr16ppPx48+TxcsuU45cve4arFx9lWIFA719hWLFqqtqWBnXlptnxaorhGK1BjbP2l9vw/qND2DZyuKyBb9kBo0b7+/Vq++yFh06TP4iAqBq9+6qnr16ngvp3et8aZ/e54lH7wLSt88F8OhTBB59Cml60/TpVUhYWFlFoE1vBjZP714Favro2FL0LiTqfTL7RTvtfAWUDp2P+q6dcRRPGjR2SASlFJt8kYAzgFgJ8HPwSLCTx0DLFgmkR/dUMm5cHvFZfAlWrqGcBkuXX6ZYwrB0hQZWVpFcW1ZMdGHLXrn6Fqxedw8WLb1UNmdeetCYcce+nABwddrXsHuX1NE93XNVPXucJx59iqF3z0KKXhQF2vQoICy9exYASzk7xrYnA5uH3aZkGjvo6V5AEKrcXgXocI2Oo2fz9e5FBQ2l79wxB1q2UBEn+ziikEQRG6sITgBEgK08GlxaxBP3biriOeYcmffLBbUjFy0ppli45BIH3P4cmQafxRcJzSWycAkLnWfp8puwfNVdWLCwqGzmrLSg0WO+gADwkPhUdWu6q06HNmH2XTumz+vWNe98D/eL0LvXFejhXlAx3TX0dNdQzo6yPQ/uDGwedpuSccp071ZAEMqOkbt3p2VI927nKeh856mg6NWjkMrbsX0WcW6W/N7RLua93Cbyd2thBEHnC81xNpAIsJVFg0vzeOjWVQUjR+fA7HmFsHDpJVi4+BIsWHiRYr7PBYoFPhfVsDItOcd2vs8Fgsz7hQvqadg8Cxdfh8XLbsHc+YXPp81IDRw9+phX316rqWagj4/PPxQArnE13FyDrTu2ie/ZuUPG5s6d8q5173YZerhfgW5dC6Bb1/N66V4BunYUXfI16Oq07M5D187nCYLrrLxrF1rGhdV374ZBU0jldWub8b5Fk9jXDrbhL2Xis++shWGcAAgHpSwKnJvHQZfOKTBsRDZMn1UA8xfSTpy7oIhizvxCBlxnYWXIBQ60bPa8IoLMmosUUsyex81PM9/nKvyy6AbMnH3++aQpqsBhI76AAOjonFi/Y7vEth3aJ8/s5JYZ0LHDuXtdOl+Cbl0vQZfO56FL53zo0jmPA26z6JNp6MzSKQ86d8yjlmp9J5QzdMwnnTvlE2ZJyVCvLofRddHVd8rHgIFuXQqp9batU183bXz2sVIW8MBGFPhCbHn2d00AnAWFNAKaN42BTh2TYfCQTJg8LZ/Mmkc5DGbMLqCYzjBjNspops8uINNnFRBcamSFGEC0nNHhchrD9FmFMGMOA1P27HmXYc6CazB1Rt5z74lJgYMHH/Pq1ekfDoB2LZLM3Nqqhri1Td3VoW1Wmlu7nNKOboXQuWMRdOqQR9GxQy4H3GYpL2Pz0PloOrjlkg7tcwku1bZueUDJKPJIBzca7fIrLrOjWy5Fpw4YCPSxtnJNfO7kcOKGzMbvilh4/LHI4sx7K0EEFQAiizMgl4RD08bRpINbIhk4MIOMn5RHps06T6bOPA+Tp+drMWXGeTWTp+eTSdPyCS6nzCgAZPL0AkAZLde2pTlPNGVgefkwfXYxzJhzBSZOPfd8rHdiYP/+h706tcc6wD8YAK6uccJ2bVKmtWuTEdauddbVdm1yXrZvex46tC8At3a54NYuD9q3y9WDfjnas6jlbXOJGkrOoJbnqaH3WXGZan3bcxRu7fKho1sRpWvpEvvI3s6vwFq87ZzI4tAdkSDkvZUgUh0AMptwaOoUTdq3SyD9+6eTceNzKWdNmpYPE6bkaTFxar6aCVPyyPjJeQSXGlk+oIyWa9uyTJyK5WiYMuMiTJ15Gbwm5TwfPTYxsE/fw17t/+kAaNYs3LpVS9WSVq0yzrVulfG0Tauc39q2RufkQ7s2uRRtW58jbXRoi3I159Sweah8rLw1B24+tRzXGThlfaJM5jgwKC5QOucWUXeVSl+VldWaeCvB3itW5iHv8RWwkI8tgVAiswkjTZyioH3bBOjXLx3GjMulHTklH7wm5dFMzKXwnpSnhpJNYOQMahnCteWUw9qyuolTL8Ck6Zdh7PjssuGj4oL69D1IBYCLyz/YEdSkSaiDs7NqS0vn9FstXTI/tGqZTVq7noM2rXIBl0irlucI4kqRQ9GK0dHkcKhIztDqnAYtW+08rTjo1auPIw/atr5A6Zo3Db8hl2+KtLRcHGxpvjPfyjzojZV5JDVVnNA8lEitw0gTxyho1yYePPqmwegx58B7IjorD8aOz6XxPkfDbnNlFcG11ZNn3PhcivGTimDClGLwHJdVNnRkXFDPPge9Wv1DAYAjUKuIRFPrOTmFd23RTHXMuXnGs5YuudDS+Ry0dMZRNTiwQg1BXCiyGbj6bM065mOh5NngykGta6nJj/tyxaW6rGzQLl93XxTUceAxt2pZROmaNA6/IpNtCLa0XHBUYL5FZck/8cjSLOi9hSlOEh2CAQCNHaOgbes46N0nFUaOPgfjvPNgrHcueI47RzOWgd2mZDkVQNuOHqehXDmcssaNLwLvicUwakxW2eBhcUHuPf+hAMA5fmWyXYa2tsecnJyiJjRtkhrTvGnWby4tCsG5+Tlo0SybcHFungMsLZpn0zTLIizOzbPAuXk2TYscDayMSwsOujqqXO5+y+vpfWXh/inweFs6F1H5GjtGXJJJNp20tJy/V8BfFy4wO3BZYHb8icA04C1ODS+zDofGDpHQunUc9OyVCsNH5lCPAc+xuTDK8xxDzh9mJAf95dCyMeMKYZz3JRg+OrNs0ODYoK7uB7ycWy1r4eDwN3cE8fn7qjk4nLR2dAzu7eQQu7qJU1pOsyZ48ougWZNz0LRxFuGCuuZNaZo1yaJo2jiTsNAy1GVDM7RhYWy1aMpBV0eVy+43m9ovTXk7luZNMWALqXwOdhEXZZItxyws5m/jm63w55vuSDc3OXDN3MS/DKeFxwBwcoiEVq1iwb2HCoYMQ+fkUncCDIY/yzAOujouozwLwXPsJRg6PLNswIDYoM5d/6EAaNrU/wd7eVBTe9uwSQ72sQcdHdKKmzjhiS6AJk450Ngxk+iAMoYMFh2bLAZuHtY2Exo7adOEA7d8J4cMgjBlAk35Y2nilEXRtPE56rjxeOyUkRdsrLcfFvAXbDA19tltarQ21MzIN4tvfPSBJT8QpOJwcLSPBNeWMdC9ewoMGpwNw0eeg2HDc8iQodlkyLBsMnR4NlAMywZKNjSbDB2WA0OH60LbUHbDcjQwebRAm+G4rwIYOfoi9kGU9f05JqRz5wMTXFqvaNm8uY/R39oKaN48sKatPKKTUh69xl6ZEOVgl3rHySEDmjjlUScc1xFHexoHu3SiC8qdHNBhmWhDHOx00bZ1xPI4ZbL7YPZTLp+jfTpn/xq9Jj+978aOOdDE6TygvVIeecFatOsQ39RntXGjOesaNViw19hwfYSZ0cEbFmaniUQUAfa2EeDiHA3duiZD/wFZMGRoDgwekk0GDsoiAwdnkUFDsoBicBZQskFZBANl0BBdaBuabDVsHi6UzZAsGDr8PAwfcREGDMwo6+MRE9yp0/7xLVsuc/nbA8BJ4t9QKY8eZiuPP2mnTLpop1Q9d7DDE54DjvaZeMIp7G1p7JTpRBeUO9ihbSbaEDulLmlatvZYHqdMdh/Mfjj52DzpnP1r9Lr5He2zwcnhPKC9Qhp1wVq818/MZMnShg0m+zSoN2lVo/pLj5o23H+RDoBIsFNGgHPzKOjSKQn69suEgYNyYMDAbNK/fxbpPyCL9B+YBRQDKGjZgGzoP5CF0Q/MhP4DWLJhAANVji5Y1sAsGDy0AIYOK4af+6e/6Nk78mS71puHOzh429vaDq//twWAD49XyVEcKLaTJ823VSbn2ylVb20VaWCrwBOvdrgWtoryaDuovN5WkUZYUE/bY3mUQ7X2g/vmQOWvaP+6eeyUWeBol08HgCymSCzy2883XbKwQQOvKbVrD51hWG/uNrNGe/Ms+adBKooCOzl2B0eRjm5JpHefDHQu+bl/FvTrlwn9fq6ILDV9+2USXbh6qhxdmHIGDS6CoUOvQb9+GS+6dT/j5+Q0o2u1aj/xeTxejb+lDuDKc63iUHulga04tLmdLHmrnTLtiaN9Idgpc0EpTyNIeUfqpyIHsbDlsWVq7OkAQDS26YRFt5yK0JSdCQ62+VTZCllskbXoyD6+6fJ59eoNG1XToOvw+nUnLzVrtDsd/y8QA8BWht3BkcStXSLp2TOd9O2XRfr2zQIPj0xt+nLgyPv0ySAIBg9LH928FdC/fwEMHHgJevdOe9KpU8BWC4tuLXg8Hs5Ijp+H//UBIKm/pYbCzE8gtwlzt5WnHLJVpL1ytL8Idsq8cgGglGuj64CKHK/rIBpuPtb5/7sAsFcHQFyRtej4XjOT1TNr1+vX78ea9l3r1R411azRzgT8x1CpVRTYSsOhiVMkadcmgbi7p5E+fTJJn96Z0LtXBvTi0lsD6lh69UonSM9eGWp69cL8LNr2lKx3lnrZs4eKdO8eV9yuzaEVjRo5O/B4vOrMP5f/tQGAU5MpFKcaWFufampjEzZWIU0KVMrTyuxtC8BOeU7vCVbIaPQFwB/hjzj4U3cWXfARgAGA63JJXJHI6tQevunaqbVr9+pcrVrtZnUMBgwzNdweZmF64oMNDgqRhlEB0LZ1AnTrlgY90ak9M6Bnj3To0SMd3N3TCUsP9wxAevbQgDaUHYceHD2Wo00m9OqZAz3cM6F7t5Q3XTpG3XNzC4p3br59prGxs4K5/WMA/LWfh2MAyOWhFlJpaC+JJGqpXJYcp5SnvcDbv50yp9yJ/f8cAOamGybVrdutzXff8WR1Ddx7GDfYfExgfOSp2CIQFJJQaOIYCW1aJUCXLmng7p4B7t0zoHu3dOjWLR26dk0nLN26pgOCOl3QlqV7N8zPomubCe7dc7Cc3zt1jHvQtvWpLBfnfQccbJeMrFu3Oc5Gjn9L89cHACalJNRWLomaIpPEHpXLUgqU8rQ3ePXbKbPLnVjmFovLcjpddJ/3urDBVJGeWy/4VABodHhsuMwCO2U+FWRyaXwhFQBm6yc2rOfhWrUqT2RQvUO7hvVWbjI12llkZX7kucz69PvGDlHQumUidO6URjmtW9cM6NolnaJzp3TC0qVTGiBdO3Ng7LogndMounZOZ2DtaBt6mQndup6DTh1VH9q2OVvcvOmOE0rlgvlWFsM6164twTmIcbq4v/b2j8nHh1fJVhbpqpDEbVBKk9KU8pT7Snnab+h8O2VmuRP9R/iUgz+l11cxrAhuANBlZmoFgLXoxF4L8/UTTRoOdv3+++8talZr26xenVnzjQ3XRVjw916VWp985WgXBa1ckqGjWyrlpC6d0qFzxzSKTh24pJYHbVh0dRR03s4dM6BTh3TKrmPHNGjfPv6Fs7O/Siabu6pRo3b9DQys7Xm8hjgzCFYA//qr38HB50elLLqHQprkr5Sm3FbKU9/aKtJ/x1vo55z4j/EpB39K/78OAEvzjRNMG411qVatkdmPPzrZ/lRrnFej+osOCky3Z0vEJ5452EZByxbJ0L4tOiwdOrqlQ4f2aTTtNLi1Sy1P+zQ1HdqlUrA6ehvLwjKzoUP7TGjfNvm31q0jS52dTxY5Om4+IhAM8q5WraErj8ez4PF4tZjb/1+fJJItDRWK2JFKWUqiUp72jr7t40nHqz9D/ZzWdhz77Naq0ZeDsS3nrPLlfLoO8Clb7qOC2lZw6gBUK4AOADOzyS3q1jU1qllVLq5dffAAw7ozN/CNN8XbWPk/slNEQYumydC2lQrat02Ddm3SSNvWqaQd0iYVNKi0aIu0TuXYauvbt0mD9m0ywK1tJnRslw9ubXGYesyLJo0PnpPLlxy1sBg1v0GD5u48Hk/O4/FwWhicfvYvvvo9PCorFIOqS6UHbOTy2JkKmaoAm30Odlj7x6uHuur0nvQ/EgAf439pq1tfsFdmUf0AqFMHgGDTeD5/drMGDWSG1ao15Nes2rlLvZ+8FvCN1wVbC4/ds5VFQbPGydDKJQXatEqF1q6ppFVLFWndUkXauKqApTUDdxvt9NnSpDKooK1rOn6E8nvzpsHXZZLlJ42Mus6vVUvU74cf6jTB93E8Hg9nBvvrp4fju/pUE4tXGdnYHHWRy6NXKOWpV7Dp52CHHUAYANSJ1XvS//8GwJbxfL5P04YNbfEZa1iNZ92sdo2+Y0yNVh20tjx+F78aauaUBq4t0qg/lnB1SacmlXB1ToPWLulqWjG0dqHl+NGJq3M6RSvEJYP6X4LWLbOhtUsWJWvZIglcmse8atE49IGTw5EihXzjGXOzUctr1hQN4vF4LjweT8jj8fAfSHCa2L++8icUbqxlbe0ns7EJ6CuXx25XyFU36DvAea3OGI0Dyjtb10YX1p7tTv6c5zl3PxXJ9el1Kd8MPLlXYLbD29h4adOaNdvWZa40cY0fnHuYNlq8RWxx/BbOEdTUIRNaNs+AVs700qVZBrV0baEHlDO0bIFgHiQLWjbPAdcW+eDaIhdcmqVCM6fod40dAu4qJFtSBIKJfoaG7gt/+slhSOXKBq14PJ4Nj8fDv6LDW//f0/RTKPwayGRB7WWSs7MV8vjTSoWqBNv99ra5X3kArGxaq5YbXml4shtVqWbe0thw3mIrwcHzUlEIOCpjoZlTwocWTZI+NHNKet/UMfF9M6fE980bJ3ygSdTglPChuVM8vaRl75s6Jrxv6hj/rqlj/NumjglvmzrGvmpsH/bYQXHyukK6U2VpPm2fgUHjmbxK1X6meuF5PAkeB9Pz99df+WxSKk+bK2yix8plcceUsqR8pVz1HNvOtopsquJGOxjb+mqoFzjcAKioO1gDnYd+k/d5AaC9T10drf9YAGh0+EaS6QqWxBVZcwLAwGBAbfzmkbrlfmdga1h/4nhLsy1nxRZ+txQ2/qUOtkFPnOxDnzoqQ0sdFMFPHJTBTxxsQygcbUNLUU7plEEUjsrgUkdbtA95bK8IuG8rO3ZTIT1YLJfsPS+x3pZhbbUm2spiwQlzU68t9et2nl61asM+PB7Pmcfj4V/O4Exg+Fe0f/1zn5vk8jNyW0niaqUspUgpV71QytPe0w7NLPeMZ9/csTVsVq/pEdTvjE913nzquf5n0BsAWAdgAoBPBcBQfNFShT7xVa3q1RvY19Tol80C/sposeWWHJn17kK5ZH+xXLzvkly89wIitaaR2ey7KBPvvYRIRXsQalsu3n9Jbr23UCLami2yXJUgMJ97xtTY66hh/X476tZut7xmTcm0atUaDq1cuWYXHu8HrPCJqlevbmhoaFidmRP477v6cWcKRZSzUpZ8wFaW+tROQTf9OC95/g0BgCccK1wmBgadWzesN2qqcaOJW8xMZx+1NF8YLLRYEi40XxwmNFt0BrE0XxxKs+SMpdniszQLEdSdFZovOyPkLwoSmM06ZmrktdvQsO+G2gZtF1X/wXpKpUo1h/F4vG5MZQ/7+QU8Hq8+Ot/Dw+Pvae9TCei5fk1M1tVRSKO72cpVp5Wy1N/sbc9Tz8zyJ1PjIH0BwH0E6AYNGxS6ztfV61JRUHDyqB8nXL1uoGnVAaSxF0Qi/30CqhWwvJmBgTv758/f1ajBq1e9ukxRo0Zz99q1XMfWru02u37dzosb1Ou6skGdLivr1emygqJu1+U0nZfXq91pBQWl60TpDOu6L61ft9uienU6zDUwcJ5So4bdmGrVhAMrV67bncfjtebxePgHUyIej2fM1Paxr//v6e1TJw//yvjP10Khv0QujRullKti8ATRTT99/f4VOaNiGXtXqOhl0V8dAGwQfGYAVKpbt27NatWqmTIOasvj8dwrVar0c6VKlQbrMAjBCVNZWFmlSpUGYp7KlSt7VK5cuQePx+vMlNWcx+PZ4bO+WrVqZjVq1KiP+2P6+f+e2j43CYVnv7exCbGysYlyl0sTlyvlqhxs89OdPx8PAH1Xu35bjYP/qgCgWyn6A4Apg3oZxA0Aa5H/ProfQCsAeEKh8HsDAx5WCvEFDDbH0GHNmEoa3rJZcFsfOHgDHY3PdUcmP/boYQUPb/V4xdevXZtn0KhRox//iee9OhkqIqrLrGNd5dLEuUpZyklbeeo1vJLopl+WXseyJ/RTz3t9VORMjV5/MHxMxgTWR8vkvgtAmUIae8FGfGy/leXmCZZmS5pzAwCfwXw+VRfAfgHsIEKHmTN98hWBjmVBW+zBw7sI5sUmHbbp66LTDQ151U1MqCYntjqw4vn3XvXcZGHhb6CQxvZWypJ3K+UpmbaK1Ed41djb4tWvqf2XP6lfbwBgYgZe4pVZrX79+jXq1KlTy8DAAG0qAoOFBV/c4G0d2/E/mJiY/IB3FbzSMbiw7C/m/wD5/H0/KWUxwxXSpFCFTHVTKU99RQcAVgD1v/jR5wBd3Uf4pLP0l0n3A+g+11mdbpn044kbIHQrwJ4KgDSQS2MuiMXH9ltWEABMQidVRsfh/yGiE5lntT7wauaCwYNXN+XwL8rp3CQUbqyvkMVOlEuT0hQyVZlSrvodTyD75k/XQX+Eip1ZMdpOUweLWq8/AMqjfYdi82ZRAYBlyySxRWwl0KziAMBEtZL+JJiX5ctMNjaHrRSyeB+5NPmSUp6qdjpdo/4WAF9tkvB8qooara0ntwpsKZcmblbIUu9qD/nS73yNQzUdQVxnaDtQ43xdu4rg1hE4+ypnp2vLyrj74bZSaDhDwrArmGkF/CsDQG52uLbYwl8uE4cPlMuSjypkaU/pzp/yo361T/r/jwDQv69vAaBONuYn+dbWYV3k0pj5CllytFKe9konACq6baOcQvdqo5d0cHz5ARB7QSw6tt/SfOuEf2MA/EcmOquQSGK9ZbLEfQp5Sq5Snv4Gh30zb/64z1/1M5Q+weXf4KGTuM1BTVBoHMhxCusw3QDScuQfoXywlT8+Wkd/GIIy7AgSi/z3m1MBsKzFvy0AKkmlES2k0vjlcnlSjEKOzT8c9Ytj/jWdP197AOCXQQLBZm8+f5FWT+C/IkkkEW1ksvjdCnlKkUKe+sxWkfaBfvlDD/tmKlCfGQDUSVa/ry9/+9UKAE5Z5WWfgs3zsXzs8WmOnw4AqotbPSQstlAsOrbT3Hyjp7Hxgia1a3tgB86/JlWWSiO6yaUJpxUy1UOFPPUDPVDj021/fQHwd/I5AcDCvYvReXFMIA5vSweZNDbfSnh0i6np6mGNGk1zqFOnI/be/TuShaFPA5mE6v1LUMpT39mqX/t+uu3//z8ACqjfKJPGnLMSHlpnYrL45wYNvOV163bHrtuvOwmFG7+3MFzTwMb8RBOFJG6BUpacj1e9nS1+8o0nTD0A5LOe0dxnr0b/8QDRfV7rymlHfdTB1LFpt1I+PiSMBfs4HGwLqcecXBKbJRTuW2ZkOqN73boDxTzD9thv/3UnfPEjEpxQSKxC+yts4nxt5arrWPPHihHjfO4V85cFgL4XSJ8bALpXNc3nB4C9bSFVhlQSrbK03DG3gdGItgYGruY8k6b4du7rTrbCs/VtRMFtpaKImQpJ/GlbReo9HPb9dweAPmfpl9HoyP5EALDHwvYDpL6TSsKiBYK13gb1qO/uDXn0i56vOzWWnzKRW4f1l9vEbJZL4pOV8tQn2PSjO3/0O+xz+JRTdeUs+p7nXAezfflcW24nk/596QsQDG62fpMFCnnyM4kk6LSJybz+zLv8v38E7j+RnBRnREpJzBS5JC5YIUsqVspTX9Bf/NIDQHUd9LlU5OiK5CwfCwCF7H8ZADiuAYMg7XeFTPVeLou9a219ws/Q0Lsr890dXv346vbrTg7yMHuFLOFXpSzlokKmeqWUp32gm36fbv6VP9G6TtU3bh9tWNvyev0BQNuzb/E0b/LK23LhOl47AOirHgeDKGSpv8llCc9lkogisfjo1kaNvNvjKB3m6v8bR+L+A0ki4VWVy8+2tVWkHLdVpL3Ffn9Or1+5E6oL1zH6KnH6+NRVq4+KA4wts3wdo7zTuaAt3uGyQS5NeS2TRN6xsQ5MEon2LG/Y0Kslj0eN/cOr/58Zk/fXJxzaJKkqFm82UigiflYqUqLsbXGOv2KwVeQwJzydGgTyMbSvzIodxOVLCQAc34itHbk06bmNdVCuULj3CJ+/cnLDhoNxwCb73f3XGQAODr7fSST7GtrYBDZRymOmKBWqFBzu5WB3AZTybGbiBP0nW3OCNU7h3i0+fuJ1y6joFv0xuI8QXZ3ucVVkh5NEFlLIpQmPrYQHzhobT19Uv37f3jVrUvPusDNvfbmjdv6bZGKy7gcbmyCpVBreTymPW2erUJ3Dq5Ju+uFzsaITp/9E4zb7HP4jztR1/ufl+Zhj/0gAFIC9bR7IpdE3Lcx/3WNg0GZYlSo1m+F4TeaDUHb41teXJJItNWSySFeZLGaOQpZwQqlIvYInhp7wEWvHFZ04/SdaW/5HnKm241LOTjsPvU+2JaCLrvO1jw8fE5r5jJTyxLdS6+Acc7NFy3/8kd+JGaOPFUAcwPllj9v7bxI17FsR21umSNylkCdnKOSqh/SJ0m76aZyp72TqP+m6Oq6e7kgq/7zWV5vXVyY+atgKJ9Mi+KxA0+wHO33w9XYakUvjXslsQm9ai/zOmBrPnPzDD3Wa4s2Raf9/3bV/oXBPfbk83lOuSIlQyFPvKOSpr+kTrd30+1oDQClXvZPahN2xtjqUYin4dYdJoxEDq1alvvZhZ974Oq98NkkkvmYKWcJsuVJ1XoGfezMnXLfd/7kB8Ck+FQAsdBCodeX2RQcA3SGkMzbhI8GAZdH9GvQA13OgkCa+shafPCfgrzpgZOg1o06dDu2YT75w1s2vv/NHKt1lo5AnrFQqUu9h25/+5EvXWZoOmo+fYP1XMBdOXr0B8Cl9BWWVk+nKaegAoHv9cJkKUpuo+0LL3WcaNPBcUKOGY68ffzRWMp97sR9jfqXJg1dZLO5eUybzb6aUJ25XKtKfO9pfUg+Jok/m1xIAbG+mejaT32WSxJd46xdbHVHx+Us2//RT2yE8XjX8YBO/2cNn/z/7Td5fmfATJLF4VU0rq20WMpvgHgp50kFbRXqZo90FnQDQdzI1cJ3DCRY1nwoGTTladnr3+ecfO3iMOWBPzWOcR6GQqT5IrEOuWwi2hJsYTd9Yt4HH2OrVbfDTbGz31/vqn/0YANbWm+taWe1RSq0DhyjkCf5KedozHA2j/QjQ7wwWfQHADYT/XQB86nXup2AnsEwlClnKB5kk5rHIcn+ioeGYtT/+aDOi8vcG7b77rrqM+Ur363/2YwCYmY2rbWo6XyoW7h0gl0UfU8rTnzvaXWQmfqArSCy2Cu1tFntbGnobXxvngJ2CgZo9TNdGF9ZOY6tPXzH67OhuXXtqHAM9e5lcmvibTBLxTGIdfMda5F9kZbEnzsz4l+21arUfg395zOPx0Pn4mTZ2+2K7/+vs9uWk/9Svz6thYCA2F5gu6CaVntmnUKSWOmAA2NOPAbpCiEucM0cDK/unYG/j7EAVbTmu43HjnayQWlfKVfg3r0/EVn4XBIJ1cSZG0w7Wq9tveY0aLT2//97cjZmYwQS/y8cXYl93xU+T8PmGz7mGxoZDW4nFB3+VSiMvKWTx7+SyxA9KefJbhSzpN6U86R2ikOE2DSv7p1DIkvDYKHTlclnSG7kUSXwlkya8lEvjnkttwu6KrQ7mCcxXhDVsOG5nrVoucypVqj6Ax+O14Vz5Bvhp9xf5efZflNgAaFC3bksnU9O5ky0sNh0XWvqmi6z2F4pFR4rFoqNXxaLDV8SiI5f/J1gxcGTWHMrZV8hhDmo5dZxWwoMXhJZ78i0F2zMF5huTzflrosxMF542bjR5X4MGA9cYGLSZVu070348Hg9f80pZ52OTD6fA1z1JX3PCAMB2bt0aVc0kBgbOPerW7TazQYOBmxs1mnTUxGTeGROTXyJNTeeHm5rOD/uvMZ4fZmrEgOuM3Mz0l7Ms5fL8IX4JNzVdEGZkNCPQ0NDzSN06Hrt++qnNrz/8IF9UrarJjO+/N/T+7ruGQypX/ql7FV41nJ8He/p0n/n/mqsfE/5Y/OG1eLxqZlWq1GxatWr93j9Ul3jXrt1hUf36P2+o12DQ1nr1+m+pV+/nzf81dTlw5A3qDdjEUi7PZ9N/U70GAzc3aDBwY506PVfXrOmysFo18fRKlX7ACh7e6nFK9Q7MpE04q5cVM9Mm6/x/leO5CSs7+BjAN16iKlWqNK9cuV6X6tVFg2rUcBhbq5bDhOrV7SZUr65gUI4vD6urCI7dDwxa+e29Negr83P2pfSuVctpnIFBE8+aNZXDq1WzGFC1ap2elSvzOjK3+sZMRQ9n1sYXPPWwAsxM5/KvqPBVlDDy8QTg5IM48BGvDLsqVao4V65cuX3lypXxlSjOXceC27pw9frQZ6dbhi4V2eqWzdKROd7WVapUcalSpUqzKlWqOH733Xc4uya+0sVRvUa1atWqg5M58fn8aq6urlWYSZ7+tVc/m/AEYKcHdn5gDxg+F/GE4TMSK0lYS0bwCmLXuaD8Y+iz0y1Dl4psK5LhceLxYgDjseMUbDj9GnbqYJ8+vtWjrniO478lTmKDAB8HOPwJa8V40jAgWPBEfinoHhcu8THGTsWG/fgY0Hhnw9/EzrXHnZTpW9KT8MTgScLHAg6D5k5ppjvlGQVeVSy6us/R/0n0HRfrZDx2dgDnN0cz6f8AVgKRYqXpEGIAAAAASUVORK5CYII=" alt="Microsoft Foundry logo" />
+      Microsoft Foundry
+    </div>
+    <div class="nav-links">
+      <a href="#news">What's New</a>
+      <a href="#platform">Platform</a>
+      <a href="#models">Models</a>
+      <a href="#anthropic">Anthropic</a>
+      <a href="#agents">Agent Service</a>
+      <a href="#hosted">Hosted Agents</a>
+      <a href="#maf">Agent Framework</a>
+      <a href="#iq">Foundry IQ</a>
+      <a href="#day2">Day 2 Ops</a>
+      <a href="#local">Local</a>
+      <a href="#live">🔴 Live Demo</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <img class="hero-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAEOSSURBVHhe7Z0HVBRJ88D3U8/zzsAZUdKysOzCRqIRxIhZTOiZMyqYczzM2TMHzGJGRZKSMywZAQEVc8KMivn0uv6vJuzOLot6931359+z3/u9mamq7pmdqpnp7unp5fH+3yf4j67Ed0OS2f495/ru3pm1YteOjBDf7elFvtvS7/huS7/puz3tqu+OtKu+vpk0OzKvUrKKucKBku3ckXZ11470q9u3pV/dvDH92ooVKde8vWOuujqfvsY3OpxVt+aBzQ1rH+0kNj1iJBQWf6/vGL+lvzDt237O3G937s97duWs3OWbFeq7PaPId3v6Xd/tabd8t6df892Rfm3nzsyrFL6ZV3fuSC/PdjVXdvoycPS7fDOv7tiefnXTxrTry5cnX/f2irnq2gID4FB2nZoHthjWPtJFaHzKxKSp6odvAfA3paysuz9GRZWaBZ263vGk/5X5Rw9fPHLo4Pk0v/35Nw7sy3t0YP/5+3778+/6Hci/e+BAfgnF/vySA/vyyrOfAW3359EwOr8D+SWH/c6X7N2TW7JxQ1bJLwtSSoYPjSpp0STgHr/R4UsNavudMmpwZJqgkX97MzN/AU949nvdY/2W/ssEoH1V+furfoiMLHGMiro3IiLs3vozoSXRwUG3rwSdvvHodMCNssDT11+fDrj+KvD0jRfI6dM3XlIEINfLEXj6BgXaBARcp2B1wUE3XoaG3Hx5/PjVl+t/zX85cXzyy57u4S8dbQNemxsfLW1U/2CxieHhKHOjw+tNjQ534/NP/8Q91m/pL0gxMSX8mJiHI2JiHu2Pjn6cFRn56GlMzFOIi30GUZGPISryEURGPiIccLtCoqIeq9HVxcY+gYSEUggOvgdr1xSREUOTSPs2YWArPQ0Ck6NgYnj4d7NGh1/yjY5kmTU6PMvU9Kil7vF+S/+jFBf3oEZS0huLxMSyHomJZZsTEsqyEhJfPE5IeAFpaR8gLfU3SEp6DUmJLyHxD5CU9EqNri419Q1kZL6FiIhnsHZ1MQzslwQuzc+CXHwaLEz9wazRCTA3PgHmRkdK+EYHffnG+ztZGm01bdTI90fd4/+W/osUFwdVUlJeyBITXw9OSXnzq0r1NiUl5e1TleotpKb+Bmlp7yEt7TdQpbyDlJS3DLj+DlQpb9WwOi2ZigPHBsnMfA/ncn+H6OgXsGpFMfR2j4PG9kFgIzwJApPjwDfyB4HJKTA3Pvzc3PhQGN9432zzRjs7GBltNdX9Dd/Sf5HCw2/VSUp62y0x8fWG5OS38Skpv91PTwc4lwOQnk6oIEBUqvKkqt4zUNsESVW9V6NSveNA61Wq94BkZRHIzQOIjn4JSxdfhE7to0BucwqE/OMgMDnGBEAABsA7c+ND582N9x8yb7R7Et9opy2Px6us+zu+pT+e/jNhwsbvQ0NLbOLjX0yLj38Tn5T07n5S8rv3aWkAGRkAKtUHSE5+x0KSk39DgCWFA6MjKRzoPCy0ns2bmfk7FQCRES9g/txCcGl2FgSm6PijxNz4GDE39gcL01NYH/hdYHrkicDkUK658cFtZka+7Xg8SVXdH/Mt/bH0Hz+/iOr+/gVmISElnaNjX+yMj39zT6UCSEkhkBD/DhIT3kF8/FuIj3/DQnRJSHgLHwVtWHR0WLfIziZwJvQ5TJuSD3byYGhY9zAY1z9CzI2PE4EJBsAJsDA9TrBOYGFy7KWFyeFIfqO9A3i8od9aBP9tOnXqtklIyN0OYWdK50ZFvYyNjX3zW1YWXvUAcTFvITbmDcTEvGbA9TeE5rWa2Ng3UJ63GmLeEDVa+jfUXQAfBQGnSmGCdy7IbYKg/k+HwKjeUWJu4k9o558AS7OTIOQHg6VZAAZDnrmx36wGDTYoeLVnGfAcPL/T/V3f0mem0NBnDmdCni4KP1sWFRn58lZ09Ovfk5MB4uM/QHTUG4iOeg1RUa8JB9zWIjpaH280oA2Llv41FQQYWIcOPYJxnjmgsME7ADb/joOF2QmwMDsJlmanKMdbmYeAkB+ErYMbAtOjO42N9w8yMtptZ8Bf/+1O8GeSh4dH5ZCQ593PnnkRFHb21ZPwsJe/R0S8+j0q6g1ERb6ByIjXFBERrwjNawRoXn0UNi+TvxyRkbQ8PPwVhIS8gJ0778Go4dmglISAcYPjVPPPkn+KQsgPACH/NB0A5kEgMDv5UGB2PMLM5PByExO/Hqamu410f9u39PH0H09P3+8OHbrGDw5+5h0aUpYZHvYGYqJ/h7CwVxThuDxLc/bsS0LzCgEk7OxLDUweLZi8TH6KsDAN6HiUhQSXgb//U9i44TYMHZQJCkkImBieAL7RKRCan6bhI4FgJQgBK/NgsDA79VzAP5HNNzl6wMzk4Cgzs50C3R/4LX0kBQff/dHf/57A37+kY1DgszUhwWWXIsJ/g6io3+HMmZcQGvoSzoS+UhMa8pKoCWX1HM7ogaMPDaXyEVr3ggIDKjT0BQk49Yz4HXgEK1dch/790kFuEwqmDU+CuTHe8gMp6EBgAwAfAwGvLPgnrgpMj4WZmxyabm60W6z7G7+lj6TDh+/WO3bsXmt//0fTAk49OxkU+OxeeNhvEB7+AYKDX0JQ0AsIDnqpJijwBVET9ILRcwh+WR6OPiiIykeCg9H2BXXLx4BAmf/xp2TP7gewZPFV6NsnjQkAbPfjLT+IAp2vHQCBv1nyA55YmJ7ItjA7tszceI9S9zd+Sx9Je/deNj1x4uHokydLj5w6+TQ/IKCsLCTkLYSGvIXA0y/gdEAZtWQ5HVBGWAJOlwGCNmrQhmNPgWUwBGA+zH+aAgIDqaAhp0+/IMeOPSW7dj6AxYswANJBLjkLZg1Pg7lxIBGaBzMEMWAdgH4M0NuBJUL+CV++8bamur/xW/pIOnDguo2//+OVJ06UFp448ezFiRPP35869QICTr2EUyef05wq03DyOWE5efI5VIQ6rw4n6XwsVJkYMLg8cuQp+O54QBYtvEr69ckAhSQc+I2CwNyEcjiFFYN6W3AWxJYxYCUIfm9lHnDS3NTXjcfj/aD7O78lPcnBwfO7AwduuR479tjv+PHSp6dOvQJ//xfg7/8cTviXgf/xZ+B//Dm1reb4c8Jy/PhzKM8zCjovC5WP4jidj4UqEwMOl35+pbBl8z0yf94V0qcnBkAEmBsFg8A0mFiZh9IItBFZhIONVSKILcOxjhBtbnZgsKHBNAGP5/Ajj+fxrXtYX/L396/s4xNXY+PG85b795cMOnKk9MyRI0/fnQ74DY4ffwFHjz4jxzgcPfoMZRTHOHDlunDtPpbn2LFncOJEGbXcs/sRrFlzh0ybeom4d00jcpsIEJiEgqVZCIgEZ2gszjKcIYjYIgJshAkgtsAACMqwMD++wNR0e3vzhlv4Eon/t+5hfcnfv6Dq9u0XzH19r7nt21eywO/Qk9RDh0rJqZO/wdGjL+DwoaeEy6FDT4HlsD4O/3nwto93Alzfsf0BLF1yk4z3KiJdOqYSuU0kWJieASH/DIgtwmgstbG2xACIo3QiQUiRpXnAbgv+kbEWpkccv70mriDhKB9f32tNdvnenrhnzz2//fsfXzp4EG/Vb+HwoTI46FdKED+WA6XActBPg1qO63+SgwefwtEjz5jb/33w+eU6GTu6kHRqjwEQBZZmYWDFR+eH01jSWAvDQSwMB2vLSLARxlI6keDMLaEgOExofmq50PyEW926u2vq/vZvicfj+fik1dq5/a777h13d+ze9SBt395HD/fvL4VDh16C34GncGD/EwqUUex7QrGPWuJ2KRxgljRPiBo2D52PkZdyofMwNgcOlMKhg88ou43r75H5c6+RUcMLSIe2qaCwiQahGd7aw/FWT2NJYy2MAJoosLaMwQAgIkHYY6HgzDmhIOiApXlAX/63bmH9ac2a3AY7tpV47tzxIHLXzgclu3c9erNnDzr8GezbWwp79zyhQBnFbg2sjtKr5Y+JGq18rPwJFzoPY7N3bykc2I/t/yfk17UlZPbMq2T4kPOkfWsMgBgQ8iPAyjySiC0YLGmshZFAwwYAFSCvRIKw21aCM+FWlkGehoZrGuj+9m+JugNkWGzdemee746HBTt9H73fvesJ7Nr1GHbvLqWWLDsZdu3UsBvtaMjOnTS7dj5SsxPlux4TqgxKp7GjbZmy2LIxqPaWUrrVq+6SaVMvk0ED8knbVhgAsWAliAKxRRSxFkYTa8toImawEUaDjTAKcGktjAGxZRQRW0Z9EFuEvRQJwjKtBEHTjI1Xmuj+9n97+o+Dg+ePixdnO2zefPfXHTse39u37zXs2fMCdux4BDt2PGaW+vHd8Qh2+tL4+j4iO3bQoJyFlemgVQbHFnx9MfCeUHYrlt8hkyYWk/798kjrlqmgkMSByIJ2sEQUCzZWsbhOEBuUWdHQ8mhCL6OwjlBsJQhaZGS0HruFv307wCYPD/8a08ZHCJYvL+i+ceOdg1u3Pizbv/897N79ErZufcjhEQNX9hC2bX0I27fRbNv2kGzdSrNt6yNg2br1EaHR6DXlaewYW9i2jQoCym7Z0ttkwvhi0s8DAyANFJJ4EFnEgLUwFiSiOJBYxeE6QbDiJ7GisRHFYRAQiSgRJKIksLGMviuyOLNJYLrXpWZN77rfRgsxyccn22iJT1abVSsuTNuw/nbYpo33X+3a9Rp2bH8Omzc/gM2bHsDmzQ854DYFQbbQAAur37L5oRpOXioPjUa+ZfNDwkBvb3kI27c/ouyWLr5NJngVQz+PPGjdMh2UUuzgQefGgVQcDxJRPDb5CCKxiiNSUTxIMTBEtE4qSgGpOBWD5InYMvyoUHBikECwS2FisquO7rn4N6b/LFtWIFm5rHDk2pWXt69fdztzw/p7r7dtfQZbNj+BjRvuMzzgwMruEw5cuZ48NBs23CcsOjrcVss2bXwAW7c8pMpevPAWGT+uGPr1yYfWLTNAKU0CsWU82FjFg1ScAFJRAkis4gmFKJ5QMg4ysQpk4gyQCOPLbCyjIsWWIXNFFic6WVj4m317FPB4vKVLi5quXH55yZqV16PWrb5zY93ae+82bXwCG9Y/gl/X3WO4z4GV3SMaGN2vyD0arTw069bdIyy4vZ7h13X3cVtdzvpf72MQUGUv/OUW8RpbDH1750Mrl0xQSpNBbJkANlbo4EQaUQKhECO0TGZNI7dOBbl1JkhECa9thDHp1sKwTdYWAUP5/JPWuufiX5mWLylyW7Hspt+q5beurV559+Wa1SW//7r2Eaxdex/WrCkhyNo190EDbuuCX+3cg7VrkRIaVsaBLY8u8x6sW3OfQmND72Pd2vuwYf0DSrZg/k0Y61lMPHqdJ64umUQpTSbWwgTq2S6zTqIRM7Db1kkgt2FJBblNBgbFWxtRbKG1MOKY2DJkmqXlKft//R2gfftp1ZcsvNxv+fLbkSuX33m1euV9WLWyhKxedR9WrSqBlSvvkpUrS8iqlfdAA27rwuhWISU0K8tDl0eD26tX3qPQ2NDlrF51jwoClM2dcxM8RxWT3j3OE1dnNgASCVbsZNbJFSK3YcEASAepOOk3G1H8bWthVIK1MHy1tXWAq4eHh7oiCABV/iSVAaCS7veTX3qqJJFIqo4fHyFY+MulCcuW3M5cseIerFldCiuWlzDc5UDLli9D7hJEY1cCy1lWlMCKFXdpOHq2nOXL7sDy5Sy6Npp9oO3qVbh+B2bPugGjRlwiPbufJ64tsoitTEVsrJKJVIzOTWFQcWBlNDLrVJCK08BGmPzBSpDw0oIfc83cNOqwwCyg65QpHtQrYoDHtcrKoD5Dvc9AbUsI1AKA7zEIdE/yF5s8PPx/8PaONJoxI81lwYLipUuW3L6wcuUjWL3qKSxbdheWLr1Dli29A7osXaJh2dK7apaq4dpz9Jx8aKOLri3mX7HiDlm65DaZMf0aGT70Irh3zYeWzbPAVpYKEqpmz3U8XuUstExmrSI0qUQqSgWJVQoRW6rAyiLxjUgYH9fEMXL4wYMHTQAu1isre2tz9y7YP3wI9nfugB1y4wbYVwTalpSAA9o9egTWjx+D8c2bUJsQ+P/xafrQoXE/TZiQYjdjRu7gefMu7Vm48OatFSsew4oVpbB48V1YtOg2WbzoNuiyaOFtWLzwDs2iu2oWLbrDgHao0wbzqfMupmHtdfNQdouoICCLFt4mU6dcI0MGXYCunfLApdnnBYDMWoU2BJGKVURhk0ocFOmkmVMutHLJhm6dcy5Mm3J+XWzszX4lJWW9iorejCoogPFFRTC+qOCDN1LwccZfKPgwAe0KCz+MzM1993NOzvt2OTlvreLirlfTPd9fXPLyims4dWpW1xkzzi+eO6c4bMH8mw8WL8bXro9goc8d8PG5DT6/3CK/LKDx+eU2Cyxk8bmjhrJnWMjAyUOwLBpNPh8fjZ7Nw+SjlksW36HWJ028CgN+LoJObrnQogk2A+kAQOdqrnLa6WxAYHCILZOIyCKJSMUpxEGZRlq7ZJN+fYpg4vjLsGzxjadHDz/IUanKzublvQ7NyXkbnZX1Lj476118VuZbmqx3cRre6hKfk/UugbLLeBubkfEuLD3tta9K9bpvYmJJfd3z/cWlyZOTLKZNyx07Y0bh0dmzLufNm3vj2S8L7sJCH6x134YF82/B/Hk3yby5NPPn3aJA+S8MtB0LbmvD5qHBMm7S+RfcplgwX6PXzYv6RQvvUGVP8L4K/TwKwa1tDjRzwo4gvLqTqQBA5yIya3zWa8D6gY0VOj+ZONqmkjau6PwCMnPaVdi6uQROHH8C0VFlJDX1NcnIeEPS0t6Q1NQ3JC31DbDgtobXWqA+Pe0tZZeR/h7SUt9BSvKry0lJLxZGRt620j3fX1waNy5VMW1a0bKZM4uzZs28+njO7Btv581Fp92BuXNuUTXvuXNukjmzaXCdAeYx0HYslL0unHw3GG4C7gfRKZ/KM28uzfx5t8BnwW2YN+cWeI+7Ah69CqBd62xo6pgGSile/UkYBJSDEaz1006nHE/V/p3sVKSVcybp1T2PjBl9iSyYd4Ns2VQCx48+gYjwV6BKIZCTA5CbC5CdDYCfu2VzwO2K4Nrl5QLk5wHExb14HhVVut3fv8B50qT1Pzk4OHyxn6NVGjUqzWXajOIDs2Zeezpv7l2YM/smVduePQuXNLNm3YBZM8tBWGh7Gq5cv/46hVb5Wra0DI8DwWBYMO8WzJl1E8Z5XoY+Pc6Ttq5ZpIl9KlFI6ACQipJBJqZB50vFSSCySASxRSLYyVPArW0WDBlQAHNmXoUtW+7B0SNP4PTppxAc/AzCw8ogOuoV9dlZXBx+g0h/2xiLxNIw3zlSqL9XxHU1tH1SIgFVCkBExPPnQUH3Du/bd85j8WJ/8axZKw2+tH4GPJhKEsmUOp6eWT2mTr18dvYsfM4+hzmz78KM6dcZbuiB1k2fdp2waOy15fr0+srWtqVlM2fQYLDNnX0TZk6/AWNGFUMv93zSpmUmEwB4+8feP00HEDofsRbSnUMuzdJgQL98mI3O31wCAaefQkzMC4iOeQFhYc/h7NnncObMcwgNfcbwlOhyJvSZGo0dh5CnBImKfAtxsQRCQkrL/P3vnNq+PXX0okWnnJYt24N1gS8nAFxd46q4ua2rM2hQiGzcuNyxUyYVJ86ccQfmz3sGuJw29RrD9QrBGjmLxv4aTJ16nahh9VOuA4WectiypkymmToFtzW66dOuwawZuH4NRo24CD2755LWLTNIY3sVKCR4+8d3AIkgo7qBE0FiRXf72sqSoXmTVOjZ/RxMn3YZNm+6C0cOP4aQkKd4hUJ4BO30kJBnEBT0FIKCSiEwsBSCAktJUJAuqGcpLUcg5gkshbCzryEq8gOcPv2k7MiRG4EbNyaOW7DgcLM5c3YZ4gWn64d/LA0duq/asGGRVqNGpXT18spdOnHCpczJk67BzBkPYOqUWzBl8jVtJl3VoKubfA0mT7qqRq984jVCMYlysr78ZNJEGm5ZzDYVYLg9YvgFcO92Dlq1TAcne2z6JVIvgqggECeAjTAerIXxoJAkQovGKujWJQvGehbB2rW34NixxxAY+BSdAwEB+AgohdMBpRAQUAqnTj3h8JjogjYsarsADowsJAS/YfwNTp589NzP72rg2rUx46ZO9W3u5bW64RcVAIMG+VX39Ext4umZPcHLq+DAeO9LFyeMvwJTp5TApIk3YOKEq9qMv6JBLb+mZsL4q2q089FM8L5KKMZfJeXKpqF0NFeAZbz3FdymggK3hw29AN270gHgaIfdvImU09kAsLaMA5EgDpSSRHBrkw7Dh+bD/HlXYOdOvPU/geDgUjh58jEcP/4I/P0fg/8JBn/cVkPKwdpxbU9wwLL8H8Np/Iop5C0cP/7g+Z69l4KWL4/ymjx5e4svLgBGjAis6emZ38XTs2DD2LEXErzGFZd4e6Fzb8EE72sw3usKjTcDu+11Bby9rhBkvPdVYMFtr3FXiPe4K0THlmYcA0enLtubY6cNGTeWLhcDC2VDBxdBty454OqSBg62WOtPINaWcYS6C4jjQSSIBUuzGLCVJkBv92yYPasY1q+/Dfv236ecfuLEIzh67CEcOfIAjhx9qOHIJ9C2JRRHsQwGRnbiJH7F9BoOHbpXtnPnxaClSyO8xo/f3mLgwKWNvqgAGDw4qq6nZ9HQ0aMvBHp6Xrw6xrP4xbixl8Hb6zp4jb0C48ZcphlbnrFjLhNkHNox4PYYz8tkrOdlos77KfSUrbsfqswxlzGwqDyDBxZB18450NI5DeyVSdQ7f7EFjgDCQR949ceApVk0OCgSYcjAPFi16gbs2XsPDvjdBz+/+3Dw4H3w++8hDOVkR/EjlpMvYf+Bu2VbtxcF+fic9Roz5gsMgAEDQvkjRhROHzXqUuboUZdejh516XfP0cUwdswVGDP6Mr5xoxmtF0JzGTQUk9Gjigm+qWPtxnDg5q9Irge6zNHFVFChbGD/QujSMQdcWqSBHRUAcUQsiCFiS2Y8oCU9/s+5aQqMGVUAGzbeopx/wO8e7N1XAvv2lcDe/cg9eonb5UBbXbRsCAVVBgMjO3joKRw9VgZ79t4p27ipMGju3FCvkSM3fXEB8L2Hx2nbYUPyV48ccfGWp+cN8Bx9HUaNLKYYOaKYjBxxiWLUyEtAQ+toGNmIYjUj6XwUrH40RTGFphxWTsPK6H3SqI+DKRPXMShx2b9fIXRyywbnZqlgp8DxfbFEJIgmIgEOBI0lMnEccbBNIG7t0siE8YWwcdMt2H8AnXYXdu26Q7Fz913Ytfsutdy5i2E3yml27UJbHXbfISw71dDlUDB2+/Y/gYOHnsMO31tlv244HzRjdqjX0JG/tujZc+6XEQB8/tBqrq6rG/bufdZtyKC8PcOHXXw2dsw9GD3qJgwfdoli2NBLhIWV6WUoB13dsEswgsOn5B/b54jhdADiet8+BdChXTa0aKIdAFbmOCQ8higlcaR5k2TSvWsmmTK5CDZuugl79lIOhO07btH43tGw4zbFth231LCy7TtQz3KLsGxj8b0N21mYPLv3PIJ9+5/C1m03ylavyQ+aNiPYa8DQLygA3NzC67i7h9p6eCQMGzgg/+SQwRdejhpZAiOG34Ahgy+yEGTo4IswdAjNEA6s7FMM48AtQ23D2Rdnn6RcOUMvovMpfe+e50n7NlmkWWMVsZMnUEPBRYJoEPKjiNgimtjJ4oircwr06pkFU6cUwa/rr4PvTtrBm7feZMB1hi0sN4kGjpyx27TlJtFFqxyGHTsfwK49pbBpy/XnK1flBk6Zctqr74DVLTp0+DIC4D+9eqXwe/dO7OrhkfHLzz+fjx444OKLoUPQ+Vdh0MALFIM5sDJ9DB7EQSefLrp5kYEDLhAW3f1qMegCFSho19M9n7RrlUGaOiYTWxk2/2JAZBEFQj5+FRRF7OVxpLVrCnj0yYLJkwth1ZprlGM2brkJ6zdeZ8B1lhs0G64TNayMY/frhutEww0KjZ2GLdvuwXbfx7Bu/bXny5ZnB06ceMqrb98vKAB6905V9OmZPsHD45xf374Fef37XXg9aOBVGDjgMvT/+QLFAA6sTB8D+nPQyUdTpEY3L/Jzvwuk/8802mVo8lH0L6KCpX+/C8S9G3YDZ5AmVABgzT8aRBaR+HmYOgDauCaDR59MmDSpAJavvALrN91AB8KaX6/RrLtOsfZX5BrFmnXXCAsrQ/0aFo5eDZ2Pgs2zYdNd2Lz1Iaxee+X5wiVZgePH+39RAcDr0UPl2rt3zuY+vXOz+3oUPOznUfi+f79i+LnfRejXt4jiZ4Z+HkWkLwOr48LalbNl6OtRqEYrr1qvXS5VTt8i0M5XCD/3owOon0cRdO9Kfw/QxCEZbKX4PUAUiCzw28AI6itge3kstHJJIr16ppPx48+TxcsuU45cve4arFx9lWIFA719hWLFqqtqWBnXlptnxaorhGK1BjbP2l9vw/qND2DZyuKyBb9kBo0b7+/Vq++yFh06TP4iAqBq9+6qnr16ngvp3et8aZ/e54lH7wLSt88F8OhTBB59Cml60/TpVUhYWFlFoE1vBjZP714Favro2FL0LiTqfTL7RTvtfAWUDp2P+q6dcRRPGjR2SASlFJt8kYAzgFgJ8HPwSLCTx0DLFgmkR/dUMm5cHvFZfAlWrqGcBkuXX6ZYwrB0hQZWVpFcW1ZMdGHLXrn6Fqxedw8WLb1UNmdeetCYcce+nABwddrXsHuX1NE93XNVPXucJx59iqF3z0KKXhQF2vQoICy9exYASzk7xrYnA5uH3aZkGjvo6V5AEKrcXgXocI2Oo2fz9e5FBQ2l79wxB1q2UBEn+ziikEQRG6sITgBEgK08GlxaxBP3biriOeYcmffLBbUjFy0ppli45BIH3P4cmQafxRcJzSWycAkLnWfp8puwfNVdWLCwqGzmrLSg0WO+gADwkPhUdWu6q06HNmH2XTumz+vWNe98D/eL0LvXFejhXlAx3TX0dNdQzo6yPQ/uDGwedpuSccp071ZAEMqOkbt3p2VI927nKeh856mg6NWjkMrbsX0WcW6W/N7RLua93Cbyd2thBEHnC81xNpAIsJVFg0vzeOjWVQUjR+fA7HmFsHDpJVi4+BIsWHiRYr7PBYoFPhfVsDItOcd2vs8Fgsz7hQvqadg8Cxdfh8XLbsHc+YXPp81IDRw9+phX316rqWagj4/PPxQArnE13FyDrTu2ie/ZuUPG5s6d8q5173YZerhfgW5dC6Bb1/N66V4BunYUXfI16Oq07M5D187nCYLrrLxrF1rGhdV374ZBU0jldWub8b5Fk9jXDrbhL2Xis++shWGcAAgHpSwKnJvHQZfOKTBsRDZMn1UA8xfSTpy7oIhizvxCBlxnYWXIBQ60bPa8IoLMmosUUsyex81PM9/nKvyy6AbMnH3++aQpqsBhI76AAOjonFi/Y7vEth3aJ8/s5JYZ0LHDuXtdOl+Cbl0vQZfO56FL53zo0jmPA26z6JNp6MzSKQ86d8yjlmp9J5QzdMwnnTvlE2ZJyVCvLofRddHVd8rHgIFuXQqp9batU183bXz2sVIW8MBGFPhCbHn2d00AnAWFNAKaN42BTh2TYfCQTJg8LZ/Mmkc5DGbMLqCYzjBjNspops8uINNnFRBcamSFGEC0nNHhchrD9FmFMGMOA1P27HmXYc6CazB1Rt5z74lJgYMHH/Pq1ekfDoB2LZLM3Nqqhri1Td3VoW1Wmlu7nNKOboXQuWMRdOqQR9GxQy4H3GYpL2Pz0PloOrjlkg7tcwku1bZueUDJKPJIBzca7fIrLrOjWy5Fpw4YCPSxtnJNfO7kcOKGzMbvilh4/LHI4sx7K0EEFQAiizMgl4RD08bRpINbIhk4MIOMn5RHps06T6bOPA+Tp+drMWXGeTWTp+eTSdPyCS6nzCgAZPL0AkAZLde2pTlPNGVgefkwfXYxzJhzBSZOPfd8rHdiYP/+h706tcc6wD8YAK6uccJ2bVKmtWuTEdauddbVdm1yXrZvex46tC8At3a54NYuD9q3y9WDfjnas6jlbXOJGkrOoJbnqaH3WXGZan3bcxRu7fKho1sRpWvpEvvI3s6vwFq87ZzI4tAdkSDkvZUgUh0AMptwaOoUTdq3SyD9+6eTceNzKWdNmpYPE6bkaTFxar6aCVPyyPjJeQSXGlk+oIyWa9uyTJyK5WiYMuMiTJ15Gbwm5TwfPTYxsE/fw17t/+kAaNYs3LpVS9WSVq0yzrVulfG0Tauc39q2RufkQ7s2uRRtW58jbXRoi3I159Sweah8rLw1B24+tRzXGThlfaJM5jgwKC5QOucWUXeVSl+VldWaeCvB3itW5iHv8RWwkI8tgVAiswkjTZyioH3bBOjXLx3GjMulHTklH7wm5dFMzKXwnpSnhpJNYOQMahnCteWUw9qyuolTL8Ck6Zdh7PjssuGj4oL69D1IBYCLyz/YEdSkSaiDs7NqS0vn9FstXTI/tGqZTVq7noM2rXIBl0irlucI4kqRQ9GK0dHkcKhIztDqnAYtW+08rTjo1auPIw/atr5A6Zo3Db8hl2+KtLRcHGxpvjPfyjzojZV5JDVVnNA8lEitw0gTxyho1yYePPqmwegx58B7IjorD8aOz6XxPkfDbnNlFcG11ZNn3PhcivGTimDClGLwHJdVNnRkXFDPPge9Wv1DAYAjUKuIRFPrOTmFd23RTHXMuXnGs5YuudDS+Ry0dMZRNTiwQg1BXCiyGbj6bM065mOh5NngykGta6nJj/tyxaW6rGzQLl93XxTUceAxt2pZROmaNA6/IpNtCLa0XHBUYL5FZck/8cjSLOi9hSlOEh2CAQCNHaOgbes46N0nFUaOPgfjvPNgrHcueI47RzOWgd2mZDkVQNuOHqehXDmcssaNLwLvicUwakxW2eBhcUHuPf+hAMA5fmWyXYa2tsecnJyiJjRtkhrTvGnWby4tCsG5+Tlo0SybcHFungMsLZpn0zTLIizOzbPAuXk2TYscDayMSwsOujqqXO5+y+vpfWXh/inweFs6F1H5GjtGXJJJNp20tJy/V8BfFy4wO3BZYHb8icA04C1ODS+zDofGDpHQunUc9OyVCsNH5lCPAc+xuTDK8xxDzh9mJAf95dCyMeMKYZz3JRg+OrNs0ODYoK7uB7ycWy1r4eDwN3cE8fn7qjk4nLR2dAzu7eQQu7qJU1pOsyZ48ougWZNz0LRxFuGCuuZNaZo1yaJo2jiTsNAy1GVDM7RhYWy1aMpBV0eVy+43m9ovTXk7luZNMWALqXwOdhEXZZItxyws5m/jm63w55vuSDc3OXDN3MS/DKeFxwBwcoiEVq1iwb2HCoYMQ+fkUncCDIY/yzAOujouozwLwXPsJRg6PLNswIDYoM5d/6EAaNrU/wd7eVBTe9uwSQ72sQcdHdKKmzjhiS6AJk450Ngxk+iAMoYMFh2bLAZuHtY2Exo7adOEA7d8J4cMgjBlAk35Y2nilEXRtPE56rjxeOyUkRdsrLcfFvAXbDA19tltarQ21MzIN4tvfPSBJT8QpOJwcLSPBNeWMdC9ewoMGpwNw0eeg2HDc8iQodlkyLBsMnR4NlAMywZKNjSbDB2WA0OH60LbUHbDcjQwebRAm+G4rwIYOfoi9kGU9f05JqRz5wMTXFqvaNm8uY/R39oKaN48sKatPKKTUh69xl6ZEOVgl3rHySEDmjjlUScc1xFHexoHu3SiC8qdHNBhmWhDHOx00bZ1xPI4ZbL7YPZTLp+jfTpn/xq9Jj+978aOOdDE6TygvVIeecFatOsQ39RntXGjOesaNViw19hwfYSZ0cEbFmaniUQUAfa2EeDiHA3duiZD/wFZMGRoDgwekk0GDsoiAwdnkUFDsoBicBZQskFZBANl0BBdaBuabDVsHi6UzZAsGDr8PAwfcREGDMwo6+MRE9yp0/7xLVsuc/nbA8BJ4t9QKY8eZiuPP2mnTLpop1Q9d7DDE54DjvaZeMIp7G1p7JTpRBeUO9ihbSbaEDulLmlatvZYHqdMdh/Mfjj52DzpnP1r9Lr5He2zwcnhPKC9Qhp1wVq818/MZMnShg0m+zSoN2lVo/pLj5o23H+RDoBIsFNGgHPzKOjSKQn69suEgYNyYMDAbNK/fxbpPyCL9B+YBRQDKGjZgGzoP5CF0Q/MhP4DWLJhAANVji5Y1sAsGDy0AIYOK4af+6e/6Nk78mS71puHOzh429vaDq//twWAD49XyVEcKLaTJ823VSbn2ylVb20VaWCrwBOvdrgWtoryaDuovN5WkUZYUE/bY3mUQ7X2g/vmQOWvaP+6eeyUWeBol08HgCymSCzy2883XbKwQQOvKbVrD51hWG/uNrNGe/Ms+adBKooCOzl2B0eRjm5JpHefDHQu+bl/FvTrlwn9fq6ILDV9+2USXbh6qhxdmHIGDS6CoUOvQb9+GS+6dT/j5+Q0o2u1aj/xeTxejb+lDuDKc63iUHulga04tLmdLHmrnTLtiaN9Idgpc0EpTyNIeUfqpyIHsbDlsWVq7OkAQDS26YRFt5yK0JSdCQ62+VTZCllskbXoyD6+6fJ59eoNG1XToOvw+nUnLzVrtDsd/y8QA8BWht3BkcStXSLp2TOd9O2XRfr2zQIPj0xt+nLgyPv0ySAIBg9LH928FdC/fwEMHHgJevdOe9KpU8BWC4tuLXg8Hs5Ijp+H//UBIKm/pYbCzE8gtwlzt5WnHLJVpL1ytL8Idsq8cgGglGuj64CKHK/rIBpuPtb5/7sAsFcHQFyRtej4XjOT1TNr1+vX78ea9l3r1R411azRzgT8x1CpVRTYSsOhiVMkadcmgbi7p5E+fTJJn96Z0LtXBvTi0lsD6lh69UonSM9eGWp69cL8LNr2lKx3lnrZs4eKdO8eV9yuzaEVjRo5O/B4vOrMP5f/tQGAU5MpFKcaWFufampjEzZWIU0KVMrTyuxtC8BOeU7vCVbIaPQFwB/hjzj4U3cWXfARgAGA63JJXJHI6tQevunaqbVr9+pcrVrtZnUMBgwzNdweZmF64oMNDgqRhlEB0LZ1AnTrlgY90ak9M6Bnj3To0SMd3N3TCUsP9wxAevbQgDaUHYceHD2Wo00m9OqZAz3cM6F7t5Q3XTpG3XNzC4p3br59prGxs4K5/WMA/LWfh2MAyOWhFlJpaC+JJGqpXJYcp5SnvcDbv50yp9yJ/f8cAOamGybVrdutzXff8WR1Ddx7GDfYfExgfOSp2CIQFJJQaOIYCW1aJUCXLmng7p4B7t0zoHu3dOjWLR26dk0nLN26pgOCOl3QlqV7N8zPomubCe7dc7Cc3zt1jHvQtvWpLBfnfQccbJeMrFu3Oc5Gjn9L89cHACalJNRWLomaIpPEHpXLUgqU8rQ3ePXbKbPLnVjmFovLcjpddJ/3urDBVJGeWy/4VABodHhsuMwCO2U+FWRyaXwhFQBm6yc2rOfhWrUqT2RQvUO7hvVWbjI12llkZX7kucz69PvGDlHQumUidO6URjmtW9cM6NolnaJzp3TC0qVTGiBdO3Ng7LogndMounZOZ2DtaBt6mQndup6DTh1VH9q2OVvcvOmOE0rlgvlWFsM6164twTmIcbq4v/b2j8nHh1fJVhbpqpDEbVBKk9KU8pT7Snnab+h8O2VmuRP9R/iUgz+l11cxrAhuANBlZmoFgLXoxF4L8/UTTRoOdv3+++8talZr26xenVnzjQ3XRVjw916VWp985WgXBa1ckqGjWyrlpC6d0qFzxzSKTh24pJYHbVh0dRR03s4dM6BTh3TKrmPHNGjfPv6Fs7O/Siabu6pRo3b9DQys7Xm8hjgzCFYA//qr38HB50elLLqHQprkr5Sm3FbKU9/aKtJ/x1vo55z4j/EpB39K/78OAEvzjRNMG411qVatkdmPPzrZ/lRrnFej+osOCky3Z0vEJ5452EZByxbJ0L4tOiwdOrqlQ4f2aTTtNLi1Sy1P+zQ1HdqlUrA6ehvLwjKzoUP7TGjfNvm31q0jS52dTxY5Om4+IhAM8q5WraErj8ez4PF4tZjb/1+fJJItDRWK2JFKWUqiUp72jr7t40nHqz9D/ZzWdhz77Naq0ZeDsS3nrPLlfLoO8Clb7qOC2lZw6gBUK4AOADOzyS3q1jU1qllVLq5dffAAw7ozN/CNN8XbWPk/slNEQYumydC2lQrat02Ddm3SSNvWqaQd0iYVNKi0aIu0TuXYauvbt0mD9m0ywK1tJnRslw9ubXGYesyLJo0PnpPLlxy1sBg1v0GD5u48Hk/O4/FwWhicfvYvvvo9PCorFIOqS6UHbOTy2JkKmaoAm30Odlj7x6uHuur0nvQ/EgAf439pq1tfsFdmUf0AqFMHgGDTeD5/drMGDWSG1ao15Nes2rlLvZ+8FvCN1wVbC4/ds5VFQbPGydDKJQXatEqF1q6ppFVLFWndUkXauKqApTUDdxvt9NnSpDKooK1rOn6E8nvzpsHXZZLlJ42Mus6vVUvU74cf6jTB93E8Hg9nBvvrp4fju/pUE4tXGdnYHHWRy6NXKOWpV7Dp52CHHUAYANSJ1XvS//8GwJbxfL5P04YNbfEZa1iNZ92sdo2+Y0yNVh20tjx+F78aauaUBq4t0qg/lnB1SacmlXB1ToPWLulqWjG0dqHl+NGJq3M6RSvEJYP6X4LWLbOhtUsWJWvZIglcmse8atE49IGTw5EihXzjGXOzUctr1hQN4vF4LjweT8jj8fAfSHCa2L++8icUbqxlbe0ns7EJ6CuXx25XyFU36DvAea3OGI0Dyjtb10YX1p7tTv6c5zl3PxXJ9el1Kd8MPLlXYLbD29h4adOaNdvWZa40cY0fnHuYNlq8RWxx/BbOEdTUIRNaNs+AVs700qVZBrV0baEHlDO0bIFgHiQLWjbPAdcW+eDaIhdcmqVCM6fod40dAu4qJFtSBIKJfoaG7gt/+slhSOXKBq14PJ4Nj8fDv6LDW//f0/RTKPwayGRB7WWSs7MV8vjTSoWqBNv99ra5X3kArGxaq5YbXml4shtVqWbe0thw3mIrwcHzUlEIOCpjoZlTwocWTZI+NHNKet/UMfF9M6fE980bJ3ygSdTglPChuVM8vaRl75s6Jrxv6hj/rqlj/NumjglvmzrGvmpsH/bYQXHyukK6U2VpPm2fgUHjmbxK1X6meuF5PAkeB9Pz99df+WxSKk+bK2yix8plcceUsqR8pVz1HNvOtopsquJGOxjb+mqoFzjcAKioO1gDnYd+k/d5AaC9T10drf9YAGh0+EaS6QqWxBVZcwLAwGBAbfzmkbrlfmdga1h/4nhLsy1nxRZ+txQ2/qUOtkFPnOxDnzoqQ0sdFMFPHJTBTxxsQygcbUNLUU7plEEUjsrgUkdbtA95bK8IuG8rO3ZTIT1YLJfsPS+x3pZhbbUm2spiwQlzU68t9et2nl61asM+PB7Pmcfj4V/O4Exg+Fe0f/1zn5vk8jNyW0niaqUspUgpV71QytPe0w7NLPeMZ9/csTVsVq/pEdTvjE913nzquf5n0BsAWAdgAoBPBcBQfNFShT7xVa3q1RvY19Tol80C/sposeWWHJn17kK5ZH+xXLzvkly89wIitaaR2ey7KBPvvYRIRXsQalsu3n9Jbr23UCLami2yXJUgMJ97xtTY66hh/X476tZut7xmTcm0atUaDq1cuWYXHu8HrPCJqlevbmhoaFidmRP477v6cWcKRZSzUpZ8wFaW+tROQTf9OC95/g0BgCccK1wmBgadWzesN2qqcaOJW8xMZx+1NF8YLLRYEi40XxwmNFt0BrE0XxxKs+SMpdniszQLEdSdFZovOyPkLwoSmM06ZmrktdvQsO+G2gZtF1X/wXpKpUo1h/F4vG5MZQ/7+QU8Hq8+Ot/Dw+Pvae9TCei5fk1M1tVRSKO72cpVp5Wy1N/sbc9Tz8zyJ1PjIH0BwH0E6AYNGxS6ztfV61JRUHDyqB8nXL1uoGnVAaSxF0Qi/30CqhWwvJmBgTv758/f1ajBq1e9ukxRo0Zz99q1XMfWru02u37dzosb1Ou6skGdLivr1emygqJu1+U0nZfXq91pBQWl60TpDOu6L61ft9uienU6zDUwcJ5So4bdmGrVhAMrV67bncfjtebxePgHUyIej2fM1Paxr//v6e1TJw//yvjP10Khv0QujRullKti8ATRTT99/f4VOaNiGXtXqOhl0V8dAGwQfGYAVKpbt27NatWqmTIOasvj8dwrVar0c6VKlQbrMAjBCVNZWFmlSpUGYp7KlSt7VK5cuQePx+vMlNWcx+PZ4bO+WrVqZjVq1KiP+2P6+f+e2j43CYVnv7exCbGysYlyl0sTlyvlqhxs89OdPx8PAH1Xu35bjYP/qgCgWyn6A4Apg3oZxA0Aa5H/ProfQCsAeEKh8HsDAx5WCvEFDDbH0GHNmEoa3rJZcFsfOHgDHY3PdUcmP/boYQUPb/V4xdevXZtn0KhRox//iee9OhkqIqrLrGNd5dLEuUpZyklbeeo1vJLopl+WXseyJ/RTz3t9VORMjV5/MHxMxgTWR8vkvgtAmUIae8FGfGy/leXmCZZmS5pzAwCfwXw+VRfAfgHsIEKHmTN98hWBjmVBW+zBw7sI5sUmHbbp66LTDQ151U1MqCYntjqw4vn3XvXcZGHhb6CQxvZWypJ3K+UpmbaK1Ed41djb4tWvqf2XP6lfbwBgYgZe4pVZrX79+jXq1KlTy8DAAG0qAoOFBV/c4G0d2/E/mJiY/IB3FbzSMbiw7C/m/wD5/H0/KWUxwxXSpFCFTHVTKU99RQcAVgD1v/jR5wBd3Uf4pLP0l0n3A+g+11mdbpn044kbIHQrwJ4KgDSQS2MuiMXH9ltWEABMQidVRsfh/yGiE5lntT7wauaCwYNXN+XwL8rp3CQUbqyvkMVOlEuT0hQyVZlSrvodTyD75k/XQX+Eip1ZMdpOUweLWq8/AMqjfYdi82ZRAYBlyySxRWwl0KziAMBEtZL+JJiX5ctMNjaHrRSyeB+5NPmSUp6qdjpdo/4WAF9tkvB8qooara0ntwpsKZcmblbIUu9qD/nS73yNQzUdQVxnaDtQ43xdu4rg1hE4+ypnp2vLyrj74bZSaDhDwrArmGkF/CsDQG52uLbYwl8uE4cPlMuSjypkaU/pzp/yo361T/r/jwDQv69vAaBONuYn+dbWYV3k0pj5CllytFKe9konACq6baOcQvdqo5d0cHz5ARB7QSw6tt/SfOuEf2MA/EcmOquQSGK9ZbLEfQp5Sq5Snv4Gh30zb/64z1/1M5Q+weXf4KGTuM1BTVBoHMhxCusw3QDScuQfoXywlT8+Wkd/GIIy7AgSi/z3m1MBsKzFvy0AKkmlES2k0vjlcnlSjEKOzT8c9Ytj/jWdP197AOCXQQLBZm8+f5FWT+C/IkkkEW1ksvjdCnlKkUKe+sxWkfaBfvlDD/tmKlCfGQDUSVa/ry9/+9UKAE5Z5WWfgs3zsXzs8WmOnw4AqotbPSQstlAsOrbT3Hyjp7Hxgia1a3tgB86/JlWWSiO6yaUJpxUy1UOFPPUDPVDj021/fQHwd/I5AcDCvYvReXFMIA5vSweZNDbfSnh0i6np6mGNGk1zqFOnI/be/TuShaFPA5mE6v1LUMpT39mqX/t+uu3//z8ACqjfKJPGnLMSHlpnYrL45wYNvOV163bHrtuvOwmFG7+3MFzTwMb8RBOFJG6BUpacj1e9nS1+8o0nTD0A5LOe0dxnr0b/8QDRfV7rymlHfdTB1LFpt1I+PiSMBfs4HGwLqcecXBKbJRTuW2ZkOqN73boDxTzD9thv/3UnfPEjEpxQSKxC+yts4nxt5arrWPPHihHjfO4V85cFgL4XSJ8bALpXNc3nB4C9bSFVhlQSrbK03DG3gdGItgYGruY8k6b4du7rTrbCs/VtRMFtpaKImQpJ/GlbReo9HPb9dweAPmfpl9HoyP5EALDHwvYDpL6TSsKiBYK13gb1qO/uDXn0i56vOzWWnzKRW4f1l9vEbJZL4pOV8tQn2PSjO3/0O+xz+JRTdeUs+p7nXAezfflcW24nk/596QsQDG62fpMFCnnyM4kk6LSJybz+zLv8v38E7j+RnBRnREpJzBS5JC5YIUsqVspTX9Bf/NIDQHUd9LlU5OiK5CwfCwCF7H8ZADiuAYMg7XeFTPVeLou9a219ws/Q0Lsr890dXv346vbrTg7yMHuFLOFXpSzlokKmeqWUp32gm36fbv6VP9G6TtU3bh9tWNvyev0BQNuzb/E0b/LK23LhOl47AOirHgeDKGSpv8llCc9lkogisfjo1kaNvNvjKB3m6v8bR+L+A0ki4VWVy8+2tVWkHLdVpL3Ffn9Or1+5E6oL1zH6KnH6+NRVq4+KA4wts3wdo7zTuaAt3uGyQS5NeS2TRN6xsQ5MEon2LG/Y0Kslj0eN/cOr/58Zk/fXJxzaJKkqFm82UigiflYqUqLsbXGOv2KwVeQwJzydGgTyMbSvzIodxOVLCQAc34itHbk06bmNdVCuULj3CJ+/cnLDhoNxwCb73f3XGQAODr7fSST7GtrYBDZRymOmKBWqFBzu5WB3AZTybGbiBP0nW3OCNU7h3i0+fuJ1y6joFv0xuI8QXZ3ucVVkh5NEFlLIpQmPrYQHzhobT19Uv37f3jVrUvPusDNvfbmjdv6bZGKy7gcbmyCpVBreTymPW2erUJ3Dq5Ju+uFzsaITp/9E4zb7HP4jztR1/ufl+Zhj/0gAFIC9bR7IpdE3Lcx/3WNg0GZYlSo1m+F4TeaDUHb41teXJJItNWSySFeZLGaOQpZwQqlIvYInhp7wEWvHFZ04/SdaW/5HnKm241LOTjsPvU+2JaCLrvO1jw8fE5r5jJTyxLdS6+Acc7NFy3/8kd+JGaOPFUAcwPllj9v7bxI17FsR21umSNylkCdnKOSqh/SJ0m76aZyp72TqP+m6Oq6e7kgq/7zWV5vXVyY+atgKJ9Mi+KxA0+wHO33w9XYakUvjXslsQm9ai/zOmBrPnPzDD3Wa4s2Raf9/3bV/oXBPfbk83lOuSIlQyFPvKOSpr+kTrd30+1oDQClXvZPahN2xtjqUYin4dYdJoxEDq1alvvZhZ974Oq98NkkkvmYKWcJsuVJ1XoGfezMnXLfd/7kB8Ck+FQAsdBCodeX2RQcA3SGkMzbhI8GAZdH9GvQA13OgkCa+shafPCfgrzpgZOg1o06dDu2YT75w1s2vv/NHKt1lo5AnrFQqUu9h25/+5EvXWZoOmo+fYP1XMBdOXr0B8Cl9BWWVk+nKaegAoHv9cJkKUpuo+0LL3WcaNPBcUKOGY68ffzRWMp97sR9jfqXJg1dZLO5eUybzb6aUJ25XKtKfO9pfUg+Jok/m1xIAbG+mejaT32WSxJd46xdbHVHx+Us2//RT2yE8XjX8YBO/2cNn/z/7Td5fmfATJLF4VU0rq20WMpvgHgp50kFbRXqZo90FnQDQdzI1cJ3DCRY1nwoGTTladnr3+ecfO3iMOWBPzWOcR6GQqT5IrEOuWwi2hJsYTd9Yt4HH2OrVbfDTbGz31/vqn/0YANbWm+taWe1RSq0DhyjkCf5KedozHA2j/QjQ7wwWfQHADYT/XQB86nXup2AnsEwlClnKB5kk5rHIcn+ioeGYtT/+aDOi8vcG7b77rrqM+Ur363/2YwCYmY2rbWo6XyoW7h0gl0UfU8rTnzvaXWQmfqArSCy2Cu1tFntbGnobXxvngJ2CgZo9TNdGF9ZOY6tPXzH67OhuXXtqHAM9e5lcmvibTBLxTGIdfMda5F9kZbEnzsz4l+21arUfg395zOPx0Pn4mTZ2+2K7/+vs9uWk/9Svz6thYCA2F5gu6CaVntmnUKSWOmAA2NOPAbpCiEucM0cDK/unYG/j7EAVbTmu43HjnayQWlfKVfg3r0/EVn4XBIJ1cSZG0w7Wq9tveY0aLT2//97cjZmYwQS/y8cXYl93xU+T8PmGz7mGxoZDW4nFB3+VSiMvKWTx7+SyxA9KefJbhSzpN6U86R2ikOE2DSv7p1DIkvDYKHTlclnSG7kUSXwlkya8lEvjnkttwu6KrQ7mCcxXhDVsOG5nrVoucypVqj6Ax+O14Vz5Bvhp9xf5efZflNgAaFC3bksnU9O5ky0sNh0XWvqmi6z2F4pFR4rFoqNXxaLDV8SiI5f/J1gxcGTWHMrZV8hhDmo5dZxWwoMXhJZ78i0F2zMF5huTzflrosxMF542bjR5X4MGA9cYGLSZVu070348Hg9f80pZ52OTD6fA1z1JX3PCAMB2bt0aVc0kBgbOPerW7TazQYOBmxs1mnTUxGTeGROTXyJNTeeHm5rOD/uvMZ4fZmrEgOuM3Mz0l7Ms5fL8IX4JNzVdEGZkNCPQ0NDzSN06Hrt++qnNrz/8IF9UrarJjO+/N/T+7ruGQypX/ql7FV41nJ8He/p0n/n/mqsfE/5Y/OG1eLxqZlWq1GxatWr93j9Ul3jXrt1hUf36P2+o12DQ1nr1+m+pV+/nzf81dTlw5A3qDdjEUi7PZ9N/U70GAzc3aDBwY506PVfXrOmysFo18fRKlX7ACh7e6nFK9Q7MpE04q5cVM9Mm6/x/leO5CSs7+BjAN16iKlWqNK9cuV6X6tVFg2rUcBhbq5bDhOrV7SZUr65gUI4vD6urCI7dDwxa+e29Negr83P2pfSuVctpnIFBE8+aNZXDq1WzGFC1ap2elSvzOjK3+sZMRQ9n1sYXPPWwAsxM5/KvqPBVlDDy8QTg5IM48BGvDLsqVao4V65cuX3lypXxlSjOXceC27pw9frQZ6dbhi4V2eqWzdKROd7WVapUcalSpUqzKlWqOH733Xc4uya+0sVRvUa1atWqg5M58fn8aq6urlWYSZ7+tVc/m/AEYKcHdn5gDxg+F/GE4TMSK0lYS0bwCmLXuaD8Y+iz0y1Dl4psK5LhceLxYgDjseMUbDj9GnbqYJ8+vtWjrniO478lTmKDAB8HOPwJa8V40jAgWPBEfinoHhcu8THGTsWG/fgY0Hhnw9/EzrXHnZTpW9KT8MTgScLHAg6D5k5ppjvlGQVeVSy6us/R/0n0HRfrZDx2dgDnN0cz6f8AVgKRYqXpEGIAAAAASUVORK5CYII=" alt="Microsoft Foundry logo" />
+  <h1>Microsoft <span class="accent">Foundry</span></h1>
+  <p class="tagline">The unified enterprise AI platform for building, deploying, and operating models, agents, and AI apps at scale. One catalog, one runtime, one control plane.</p>
+  <div class="hero-badges">
+    <span class="hero-badge">🏭 <strong>Agent Factory</strong> for the enterprise</span>
+    <span class="hero-badge">☁️ Azure-native · Cross-cloud</span>
+    <span class="hero-badge">🔐 Entra ID · RBAC · Governance built-in</span>
+    <span class="hero-badge">🧪 Evals &amp; Red Teaming as first-class ops</span>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><div class="num">11,000+</div><div class="lbl">Models in catalog</div></div>
+    <div class="stat"><div class="num">1,400+</div><div class="lbl">Tool connectors</div></div>
+    <div class="stat"><div class="num">1 SDK</div><div class="lbl">Agent Framework (Py / .NET)</div></div>
+    <div class="stat"><div class="num">70k+</div><div class="lbl">Organizations building on Foundry</div></div>
+  </div>
+</header>
+
+<!-- ================= WHAT'S NEW ================= -->
+<section id="news">
+  <div class="container">
+    <span class="section-kicker">🗞️ Auto-updated weekly</span>
+    <h2>What's new in Foundry &amp; Agent Framework</h2>
+    <p class="section-lede">This feed refreshes itself: a GitHub Actions workflow scans the Microsoft Foundry blog and Agent Framework releases every week, summarizes what changed, and commits the results here. <span id="newsUpdated" style="font-weight:600;"></span></p>
+    <div class="grid grid-3" id="newsGrid">
+      <div class="card"><p>Loading latest updates…</p></div>
+    </div>
+  </div>
+  <hr class="divider"/>
+</section>
+
+<!-- ================= PLATFORM ================= -->
+<section id="platform">
+  <div class="container">
+    <span class="section-kicker">The Big Picture</span>
+    <h2>One platform, five pillars</h2>
+    <p class="section-lede"><strong>Microsoft Foundry</strong> is an <em>agent-first</em> AI factory that spans cloud, edge, and Microsoft 365 — a shift from a model-centric toolbox to a complete platform for agentic apps. Everything below rolls up into these pillars.</p>
+    <div class="pillars">
+      <div class="pillar"><div class="p-num">01</div><h3>Foundry Models</h3><p>Unified catalog of frontier &amp; open models — OpenAI, Anthropic, Grok, Mistral, Llama, Phi, Hugging Face — with routing, fine-tuning &amp; provisioned throughput.</p></div>
+      <div class="pillar"><div class="p-num">02</div><h3>Foundry Agent Service</h3><p>Managed runtime to build, host, orchestrate, and scale single- and multi-agent systems with identity, memory, and tools.</p></div>
+      <div class="pillar"><div class="p-num">03</div><h3>Foundry IQ &amp; Tools</h3><p>Unified knowledge/RAG layer plus a catalog of 1,400+ connectors and MCP tools that ground agents in enterprise data and actions.</p></div>
+      <div class="pillar"><div class="p-num">04</div><h3>Foundry Control Plane</h3><p>Day 2 home base: observability, evaluations, red teaming, guardrails, policy, cost and fleet governance across every agent &amp; model.</p></div>
+      <div class="pillar"><div class="p-num">05</div><h3>Foundry Local</h3><p>On-device inference runtime for Windows, macOS &amp; edge — run models and agents offline with the same tooling.</p></div>
+    </div>
+
+    <div class="callout">
+      💡 <strong>Why it matters:</strong> Instead of stitching together a model host, an orchestration library, a vector DB, an eval harness, and a monitoring stack from five vendors, Foundry gives you the full lifecycle — <em>build → deploy → operate → govern</em> — under one roof, with Azure identity, networking, compliance, and billing already wired in.
+    </div>
+  </div>
+  <hr class="divider"/>
+</section>
+
+<!-- ================= MODELS ================= -->
+<section id="models">
+  <div class="container">
+    <span class="section-kicker">Pillar 01 · Models</span>
+    <h2>Foundry Models — every frontier model, one endpoint</h2>
+    <p class="section-lede">The model catalog is the front door: sold-direct-by-Azure frontier models plus thousands of partner and open-weight models, all deployable behind a consistent API with unified auth, quota, and billing.</p>
+
+    <div class="grid grid-3">
+      <div class="card"><div class="icon">🗂️</div><h3>Unified Catalog</h3><p>OpenAI (GPT-5 family, o-series, Sora), <strong>Anthropic Claude</strong>, xAI Grok, Mistral, Meta Llama, Cohere, DeepSeek, Microsoft Phi, plus 10k+ Hugging Face models — searchable, benchmarked, and leaderboard-ranked in the portal.</p></div>
+      <div class="card"><div class="icon">🔀</div><h3>Model Router <span class="pill ga">GA</span></h3><p>Automatically routes each request to the best-fit model for quality vs. cost — no code changes. Swap or add underlying models without redeploying your app.</p></div>
+      <div class="card"><div class="icon">🎛️</div><h3>Fine-Tuning &amp; RFT</h3><p>Supervised fine-tuning, distillation, and <strong>reinforcement fine-tuning</strong> on frontier models; bring datasets, run training jobs, and deploy tuned variants under the same governance.</p></div>
+      <div class="card"><div class="icon">📦</div><h3>Flexible Deployment</h3><p>Global Standard (serverless, pay-per-token), Data Zone &amp; regional deployments for residency, and <strong>Provisioned Throughput (PTU)</strong> for guaranteed latency at scale.</p></div>
+      <div class="card"><div class="icon">🧩</div><h3>Bring Your Own Model</h3><p>Register custom or open-weight models behind the Foundry gateway so home-grown models get the same routing, monitoring, and policy enforcement as catalog models.</p></div>
+      <div class="card"><div class="icon">📊</div><h3>Benchmarks &amp; Leaderboards</h3><p>Compare models on quality, cost, and throughput with built-in benchmarking before you commit — then A/B in production with evals.</p></div>
+    </div>
+  </div>
+  <hr class="divider"/>
+</section>
+
+<!-- ================= ANTHROPIC ================= -->
+<section id="anthropic">
+  <div class="container">
+    <span class="section-kicker">Spotlight</span>
+    <h2>Anthropic Claude in Foundry <span class="pill ga">GA</span></h2>
+    <p class="section-lede">Frontier Claude models are first-party citizens in Foundry — making Azure the only cloud where you can mix OpenAI, Anthropic, and open models behind one governed endpoint. Claude also powers agent scenarios across Microsoft 365 Copilot and Copilot Studio.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Model</th><th>Best for</th><th>Context</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Claude Opus 4.x</strong></td><td>Deepest reasoning, complex agentic coding, long-horizon tasks</td><td>~200K tokens</td><td>Flagship tier; highest capability &amp; cost</td></tr>
+          <tr><td><strong>Claude Sonnet 4.5 / 4.6</strong></td><td>The workhorse — agents, coding, computer use, office tasks</td><td>~200K tokens</td><td>Best capability-to-cost balance; most popular for agents</td></tr>
+          <tr><td><strong>Claude Haiku 4.5</strong></td><td>High-volume, low-latency: chat, classification, sub-agents</td><td>~200K tokens</td><td>Most cost-efficient; great for fan-out multi-agent work</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid grid-2" style="margin-top:16px;">
+      <div class="card">
+        <div class="icon">🏗️</div><h3>How it works: two hosting paths</h3>
+        <ul>
+          <li><strong>Hosted on Azure:</strong> inference runs entirely on Azure infrastructure (e.g., East US 2, Sweden Central) with Entra ID auth, RBAC, data-zone residency options, and Azure SLAs — recommended for production.</li>
+          <li><strong>Hosted on Anthropic:</strong> Foundry endpoint proxies to Anthropic's infrastructure — earliest access to brand-new models/features before Azure-hosted GA.</li>
+          <li>Same Foundry APIs &amp; SDKs (Python, C#, TypeScript, Java) either way — including the native Anthropic Messages API shape.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="icon">💳</div><h3>Enterprise mechanics</h3>
+        <ul>
+          <li><strong>Billing via Azure Marketplace</strong> using Claude Consumption Units (CCUs) mapped to token pricing — shows up on your Azure bill.</li>
+          <li>Spend can count toward your <strong>MACC</strong> (Microsoft Azure Consumption Commitment).</li>
+          <li><strong>Prompt caching &amp; tool streaming</strong> supported for cost/latency wins in agentic loops.</li>
+          <li><strong>Zero Data Retention</strong> option for regulated, high-sensitivity workloads.</li>
+          <li>Works with Model Router, evals, red teaming, tracing, and content safety like any other Foundry model.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout">🤝 <strong>Why this matters:</strong> Multi-model is the default strategy now. Route coding &amp; computer-use agents to Claude Sonnet, deep research to Opus or GPT-5, and high-volume triage to Haiku or mini models — all in one platform, one bill, one compliance boundary. No separate Anthropic account required.</div>
+  </div>
+  <hr class="divider"/>
+</section>
+
+<!-- ================= AGENT SERVICE ================= -->
+<section id="agents">
+  <div class="container">
+    <span class="section-kicker">Pillar 02 · Agents</span>
+    <h2>Foundry Agent Service — agents as managed cloud resources</h2>
+    <p class="section-lede">The Agent Service turns "an agent" from a script on someone's laptop into a durable, secured, observable cloud resource: model + instructions + tools + knowledge + memory + identity, exposed as an API.</p>
+
+    <div class="grid grid-3">
+      <div class="card"><div class="icon">⚙️</div><h3>Declarative Prompt Agents</h3><p>Define agents with instructions, model, tools &amp; knowledge in the portal, SDK, or a versioned <span style="font-family:Consolas,monospace">agent.yaml</span> — deploy in minutes without managing infra.</p></div>
+      <div class="card"><div class="icon">🧠</div><h3>Agent Memory <span class="pill preview">Preview</span></h3><p>Persistent, context-aware memory across sessions and long-running workflows — agents remember users, preferences, and prior task state.</p></div>
+      <div class="card"><div class="icon">🛠️</div><h3>Tools &amp; MCP</h3><p>Built-in tools (Bing grounding, code interpreter, file search, browser/computer use) plus <strong>Model Context Protocol</strong> servers and 1,400+ Logic Apps connectors — Stripe, Atlassian, Databricks, ServiceNow, and more.</p></div>
+      <div class="card"><div class="icon">🪪</div><h3>Entra Agent ID</h3><p>Every agent gets a first-class Microsoft Entra identity — auditable, permissioned, and governable like any employee or service principal. No more shared API keys.</p></div>
+      <div class="card"><div class="icon">🕸️</div><h3>Multi-Agent Workflows <span class="pill ga">GA</span></h3><p>Compose agents into orchestrated workflows — sequential, concurrent, handoff — with durable state, retries, and human-in-the-loop approval steps.</p></div>
+      <div class="card"><div class="icon">🌐</div><h3>Cross-Cloud &amp; A2A</h3><p>Agents connect to data and services in Azure, AWS, and GCP, and interoperate with external agents via the open <strong>Agent-to-Agent (A2A)</strong> protocol.</p></div>
+    </div>
+  </div>
+  <hr class="divider"/>
+</section>
+
+<!-- ================= HOSTED AGENTS ================= -->
+<section id="hosted">
+  <div class="container">
+    <span class="section-kicker">Spotlight</span>
+    <h2>Hosted Agents — bring your code-first agents into Foundry</h2>
+    <p class="section-lede">Hosted agents let you take an agent you wrote in <strong>any framework</strong> — Microsoft Agent Framework, LangGraph, CrewAI, OpenAI Agents SDK — package it as a container, and run it <em>inside</em> Foundry as a managed, serverless resource.</p>
+
+    <div class="flow">
+      <div class="flow-step"><div class="flow-card"><div class="f-icon">💻</div><h4>1 · Build locally</h4><p>Write your agent in Python/.NET with the framework of your choice.</p></div></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><div class="flow-card"><div class="f-icon">📦</div><h4>2 · Containerize</h4><p>Docker build → push to Azure Container Registry.</p></div></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><div class="flow-card"><div class="f-icon">🚀</div><h4>3 · Create hosted agent</h4><p>Register the image as an agent version in your Foundry project.</p></div></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><div class="flow-card"><div class="f-icon">📈</div><h4>4 · Operate</h4><p>Invoke via the standard Responses API; scale, trace, evaluate &amp; govern in the Control Plane.</p></div></div>
+    </div>
+
+    <div class="grid grid-2" style="margin-top:20px;">
+      <div class="card">
+        <div class="icon">💎</div><h3>The value of bringing agents into Foundry</h3>
+        <ul>
+          <li><strong>Zero infra ops:</strong> no AKS clusters, ingress, or autoscaling to manage — Foundry runs the containers serverlessly.</li>
+          <li><strong>Instant enterprise-grade:</strong> Entra identity, VNet/private networking, RBAC and audit inherited automatically.</li>
+          <li><strong>Unified observability:</strong> your custom agent shows up in the same traces, dashboards, and eval pipelines as declarative agents.</li>
+          <li><strong>One invocation surface:</strong> every agent — prompt-based or code-first — is callable through the same OpenAI-compatible Responses API.</li>
+          <li><strong>Fleet governance:</strong> security teams see and control all agents in one registry instead of shadow deployments.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="icon">🧾</div><h3>Anatomy of a hosted agent</h3>
+<pre class="code"><span class="cm"># agent.yaml — versioned agent definition</span>
+<span class="kw">name</span>: contoso-support-agent
+<span class="kw">kind</span>: hosted
+<span class="kw">image</span>: contosoacr.azurecr.io/support-agent:v3
+<span class="kw">protocol</span>: responses      <span class="cm"># OpenAI-compatible</span>
+<span class="kw">cpu</span>: 1
+<span class="kw">memory</span>: 2Gi
+<span class="kw">env</span>:
+  - <span class="kw">name</span>: MODEL_DEPLOYMENT
+    <span class="kw">value</span>: <span class="str">"claude-sonnet-4-5"</span></pre>
+        <p style="margin-top:10px;">Versioned, reviewable, CI/CD-friendly — agents become artifacts you promote through environments like any other software.</p>
+      </div>
+    </div>
+  </div>
+  <hr class="divider"/>
+</section>
+
+<!-- ================= AGENT FRAMEWORK ================= -->
+<section id="maf">
+  <div class="container">
+    <span class="section-kicker">Open Source SDK</span>
+    <h2>Microsoft Agent Framework <span class="pill ga">GA</span></h2>
+    <p class="section-lede">The open-source SDK + runtime for building agents and multi-agent workflows in <strong>Python and .NET</strong>. It's the convergence of <strong>Semantic Kernel</strong> (enterprise durability) and <strong>AutoGen</strong> (cutting-edge orchestration) into one production-ready framework — both predecessors are now in maintenance mode.</p>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="icon">🤖</div><h3>Agents</h3>
+        <p>LLM-driven, tool-using, autonomous. Ideal for open-ended tasks where the model decides the path.</p>
+        <ul>
+          <li>Any Foundry model (OpenAI, Claude, local) as the brain</li>
+          <li>Function tools, MCP servers, OpenAPI, A2A messaging</li>
+          <li>Pluggable memory &amp; threads (Azure SQL, Redis, vector stores)</li>
+          <li>Middleware for auth, filtering &amp; telemetry</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="icon">🧭</div><h3>Workflows</h3>
+        <p>Explicit, typed, graph-based orchestration for structured business processes where you decide the path.</p>
+        <ul>
+          <li><strong>Patterns:</strong> sequential · concurrent · handoff · magentic (dynamic manager)</li>
+          <li>Checkpointing &amp; durable long-running state</li>
+          <li><strong>Human-in-the-loop</strong> pauses &amp; approvals</li>
+          <li>Type-safe routing with conditional edges</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid grid-2" style="margin-top:16px;">
+      <div class="card">
+        <h4>Get running in three lines</h4>
+<pre class="code"><span class="cm"># pip install agent-framework</span>
+<span class="kw">from</span> agent_framework.azure <span class="kw">import</span> AzureAIAgentClient
+
+agent = AzureAIAgentClient().create_agent(
+    instructions=<span class="str">"You are a helpful support agent."</span>,
+    tools=[lookup_order, issue_refund],
+)
+result = <span class="kw">await</span> agent.run(<span class="str">"Where is order #4821?"</span>)</pre>
+      </div>
+      <div class="card">
+        <h4>Enterprise-ready by default</h4>
+        <ul>
+          <li><strong>OpenTelemetry</strong> tracing baked in — every step observable in Foundry &amp; Azure Monitor</li>
+          <li><strong>Entra ID</strong> auth; no keys in code</li>
+          <li>Open standards: <strong>MCP · A2A · OpenAPI</strong> for cross-vendor interop</li>
+          <li>Deploy anywhere: local dev → containers → <strong>Foundry hosted agents</strong> with no rewrite</li>
+          <li>.NET: <span style="font-family:Consolas,monospace">dotnet add package Microsoft.Agents.AI</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout">🔁 <strong>Local-to-cloud continuum:</strong> the same MAF agent you debug on your laptop deploys unchanged as a Foundry hosted agent — that pairing (open SDK + managed runtime) is the core developer story of Microsoft's agentic stack.</div>
+  </div>
+  <hr class="divider"/>
+</section>
+
+<!-- ================= FOUNDRY IQ ================= -->
+<section id="iq">
+  <div class="container">
+    <span class="section-kicker">Pillar 03 · Knowledge</span>
+    <h2>Foundry IQ — the shared knowledge layer</h2>
+    <p class="section-lede">Foundry IQ (powered by Azure AI Search) turns retrieval into a reusable platform capability: <strong>knowledge bases</strong> that any agent can ground on, instead of bespoke RAG pipelines per app.</p>
+    <div class="grid grid-3">
+      <div class="card"><div class="icon">📚</div><h3>Knowledge Bases</h3><p>Point at SharePoint, Fabric/OneLake, Azure Blob, websites, and databases; IQ handles ingestion, chunking, indexing, and freshness automatically.</p></div>
+      <div class="card"><div class="icon">🎯</div><h3>Agentic Retrieval</h3><p>Query planning, iterative multi-source search, and answer synthesis with citations — delivering up to ~40% better relevance than naive vector RAG.</p></div>
+      <div class="card"><div class="icon">🔒</div><h3>Document-Level Security</h3><p>Results are trimmed to the caller's permissions — the agent only sees what the user is entitled to see. Compliance travels with the data.</p></div>
+    </div>
+  </div>
+  <hr class="divider"/>
+</section>
+
+<!-- ================= DAY 2 ================= -->
+<section id="day2">
+  <div class="container">
+    <span class="section-kicker">Pillar 04 · Operate &amp; Govern</span>
+    <h2>Day 2 Operations — where trust is earned</h2>
+    <p class="section-lede">Shipping an agent is Day 1. Foundry's Control Plane makes Day 2 — evaluating, securing, watching, and governing AI in production — a continuous, automated discipline rather than an afterthought.</p>
+
+    <div class="day2-grid">
+      <div class="card">
+        <div class="icon">🧪</div><h3>Evaluations <span class="pill ga">GA</span></h3>
+        <ul>
+          <li>Built-in evaluators: groundedness, relevance, coherence, fluency, safety, plus <strong>agentic evaluators</strong> — intent resolution, tool-call accuracy, task adherence</li>
+          <li>Custom &amp; LLM-as-judge evaluators for domain rules</li>
+          <li>Run in dev, in <strong>CI/CD gates</strong> (GitHub Actions / Azure DevOps), and continuously on live traffic</li>
+          <li>Batch evals over datasets curated straight from production traces</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="icon">🛡️</div><h3>AI Red Teaming Agent</h3>
+        <ul>
+          <li>Automated adversarial testing built on Microsoft's open-source <strong>PyRIT</strong> framework</li>
+          <li>Simulates prompt injection, jailbreaks, data exfiltration &amp; harmful-content attacks across risk categories (violence, hate, self-harm, sexual)</li>
+          <li>Reports <strong>Attack Success Rate (ASR)</strong> with per-attack logs for remediation</li>
+          <li>Run pre-deployment or on a schedule against live agents for continuous regression checks</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="icon">🔭</div><h3>Observability &amp; Tracing</h3>
+        <ul>
+          <li>End-to-end <strong>OpenTelemetry traces</strong> of every agent step: model calls, tool invocations, retrieval, handoffs</li>
+          <li>Unified dashboards in the Control Plane's <strong>Operate</strong> view — quality, cost, latency, token burn per agent</li>
+          <li>Deep Azure Monitor / Application Insights integration and alerting on drift or quality regressions</li>
+          <li>Full audit trails for incident investigation and compliance</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="icon">🚧</div><h3>Guardrails &amp; Content Safety</h3>
+        <ul>
+          <li><strong>Azure AI Content Safety</strong> filters on inputs &amp; outputs: hate, violence, sexual, self-harm</li>
+          <li><strong>Prompt Shields</strong> against injection &amp; jailbreak attempts; groundedness detection against hallucination</li>
+          <li>Protected-material detection and PII redaction</li>
+          <li>Policy-enforced defaults across the fleet — not per-app opt-ins</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="icon">🏛️</div><h3>Governance &amp; Fleet Management</h3>
+        <ul>
+          <li><strong>Foundry Control Plane:</strong> one registry of every agent, model &amp; tool with ownership and lifecycle state</li>
+          <li><strong>Entra Agent ID</strong> for identity &amp; least-privilege permissions; conditional access for agents</li>
+          <li>Integration with <strong>Microsoft Purview</strong> (data compliance) &amp; <strong>Defender</strong> (threat protection)</li>
+          <li>Maps to NIST AI RMF (Map · Measure · Manage) and supports EU AI Act readiness</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="icon">💰</div><h3>Cost &amp; Quota Control</h3>
+        <ul>
+          <li>Token quotas and rate limits per project, per deployment, per agent</li>
+          <li>Spend dashboards spanning serverless, PTU, and Marketplace (e.g., Claude CCU) billing</li>
+          <li>Model Router + prompt caching + batch API as built-in cost levers</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin-top:48px; font-size:24px;">The GenAIOps loop</h2>
+    <div class="flow">
+      <div class="flow-step"><div class="flow-card"><div class="f-icon">🧱</div><h4>Build</h4><p>Pick models, define agents, ground with IQ</p></div></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><div class="flow-card"><div class="f-icon">🧪</div><h4>Evaluate</h4><p>Quality + safety evals, red team scans</p></div></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><div class="flow-card"><div class="f-icon">🚀</div><h4>Deploy</h4><p>CI/CD gates → hosted agents / endpoints</p></div></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><div class="flow-card"><div class="f-icon">🔭</div><h4>Observe</h4><p>Traces, dashboards, alerts, cost</p></div></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step"><div class="flow-card"><div class="f-icon">🔁</div><h4>Improve</h4><p>Trace-driven datasets, prompt optimization, re-eval</p></div></div>
+    </div>
+  </div>
+  <hr class="divider"/>
+</section>
+
+<!-- ================= LOCAL + M365 ================= -->
+<section id="local">
+  <div class="container">
+    <span class="section-kicker">Pillar 05 · Edge &amp; Ecosystem</span>
+    <h2>Foundry Local &amp; the broader ecosystem</h2>
+    <div class="grid grid-3">
+      <div class="card"><div class="icon">💻</div><h3>Foundry Local</h3><p>Run optimized open models (Phi, Mistral, Qwen, DeepSeek…) <strong>on-device</strong> on Windows &amp; macOS via ONNX Runtime — OpenAI-compatible local API, zero cloud cost, full privacy, offline-capable. Same catalog &amp; tooling mindset, at the edge.</p></div>
+      <div class="card"><div class="icon">🧑‍💼</div><h3>Microsoft 365 &amp; Copilot Studio</h3><p>Publish Foundry agents into Teams, Microsoft 365 Copilot, and BizChat; Copilot Studio makers and Foundry developers share models (including Claude), connectors, and governance.</p></div>
+      <div class="card"><div class="icon">👩‍💻</div><h3>Developer surface</h3><p>Foundry portal, <strong>Foundry CLI</strong>, VS Code extension, GitHub integration, and REST/SDKs (Python, C#, TS, Java). Templates and quickstarts take you from idea → deployed agent in minutes.</p></div>
+    </div>
+
+    <h2 style="margin-top:48px; font-size:24px;">Cheat sheet — what to reach for, when</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>You want to…</th><th>Use</th></tr></thead>
+        <tbody>
+          <tr><td>Call a frontier model (GPT-5, Claude, Grok…) with enterprise auth</td><td><strong>Foundry Models</strong> — serverless deployment or PTU</td></tr>
+          <tr><td>Auto-pick the cheapest model that's good enough</td><td><strong>Model Router</strong></td></tr>
+          <tr><td>Stand up a tool-using agent without writing infra</td><td><strong>Foundry Agent Service</strong> (prompt agents)</td></tr>
+          <tr><td>Run your LangGraph / CrewAI / MAF agent as a managed service</td><td><strong>Hosted agents</strong> (container → Foundry)</td></tr>
+          <tr><td>Write agent code with orchestration, memory &amp; HITL</td><td><strong>Microsoft Agent Framework</strong> (Python / .NET)</td></tr>
+          <tr><td>Ground agents on enterprise data with permission trimming</td><td><strong>Foundry IQ</strong> knowledge bases</td></tr>
+          <tr><td>Prove quality before &amp; after shipping</td><td><strong>Evaluations</strong> (+ CI/CD gates)</td></tr>
+          <tr><td>Attack your own app before adversaries do</td><td><strong>AI Red Teaming Agent</strong> (PyRIT)</td></tr>
+          <tr><td>Watch, alert, and audit production agents</td><td><strong>Control Plane</strong> observability + Azure Monitor</td></tr>
+          <tr><td>Block harmful content &amp; prompt injection</td><td><strong>Content Safety</strong> guardrails + Prompt Shields</td></tr>
+          <tr><td>Give every agent an identity &amp; least privilege</td><td><strong>Entra Agent ID</strong></td></tr>
+          <tr><td>Run models offline / on-device</td><td><strong>Foundry Local</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LIVE DEMO ================= -->
+<section id="live">
+  <div class="container">
+    <span class="section-kicker"><span class="live-dot"></span>Live from Sweden Central</span>
+    <h2>See it running — live in Foundry</h2>
+    <p class="section-lede">This section is wired to a <strong>real Foundry project</strong> — resource <span class="mono" style="font-family:Consolas,monospace">swedenfoundry93</span>, project <span style="font-family:Consolas,monospace">foundry-showcase</span> — with three sample agents deployed on models from this subscription. Paste a short-lived access token below to list the agents and chat with them <em>directly from this page</em>.</p>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="icon">🏗️</div><h3>The live project</h3>
+        <ul>
+          <li><strong>Resource:</strong> <span style="font-family:Consolas,monospace">swedenfoundry93</span> (AIServices, S0)</li>
+          <li><strong>Project:</strong> <span style="font-family:Consolas,monospace">foundry-showcase</span></li>
+          <li><strong>Region:</strong> Sweden Central 🇸🇪</li>
+          <li><strong>Model deployments:</strong> <span style="font-family:Consolas,monospace">gpt-5.4 · gpt-5.4-mini · gpt-5.4-nano · Phi-4-reasoning · gpt-image-2 · text-embedding-3-large</span></li>
+        </ul>
+        <p style="margin-top:10px;"><a href="https://ai.azure.com/foundryProject/overview?wsid=/subscriptions/65135929-9d4d-48c2-bea4-86a24070ea4c/resourceGroups/fy26aifoundry/providers/Microsoft.CognitiveServices/accounts/swedenfoundry93/projects/foundry-showcase&amp;tid=16b3c013-d300-468d-ac64-7eda0820b6d3" target="_blank" rel="noopener" style="color:var(--cp-link); font-weight:600;">Open project in the Foundry portal ↗</a></p>
+      </div>
+      <div class="card">
+        <div class="icon">🤖</div><h3>Sample agents deployed <span class="pill new">New Agent Service</span></h3>
+        <div class="agent-chip"><span class="a-dot"></span><strong>foundry-concierge</strong> — explains Foundry capabilities<span class="a-model">gpt-5.4-mini · v1</span></div>
+        <div class="agent-chip"><span class="a-dot"></span><strong>deep-research-analyst</strong> — structured analysis &amp; trade-offs<span class="a-model">gpt-5.4 · v1</span></div>
+        <div class="agent-chip"><span class="a-dot"></span><strong>triage-bot</strong> — high-volume request classification<span class="a-model">gpt-5.4-nano · v1</span></div>
+        <p style="margin-top:8px;">Built as <strong>versioned prompt agents</strong> in the new Foundry Agent Service and invoked through the OpenAI-compatible <strong>Responses API</strong> — three archetypes on three model tiers, exactly the multi-model routing story Foundry is built for.</p>
+      </div>
+    </div>
+
+    <div class="live-panel" style="margin-top:16px;">
+      <h3 style="font-size:17px; font-weight:700; margin-bottom:12px;">🎮 Interactive console</h3>
+      <label for="tok">Access token <span style="font-weight:400;">(run: <span style="font-family:Consolas,monospace">az account get-access-token --scope https://ai.azure.com/.default --query accessToken -o tsv</span>)</span></label>
+      <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:14px;">
+        <input type="password" id="tok" placeholder="Paste bearer token (kept in memory only, never stored)" style="flex:1; min-width:260px;" />
+        <button class="btn" id="btnConnect">Connect &amp; load agents</button>
+      </div>
+      <div id="liveControls" style="display:none;">
+        <label for="agentSel">Agent</label>
+        <select id="agentSel" style="margin-bottom:12px;"></select>
+        <label for="prompt">Message</label>
+        <textarea id="prompt">In one sentence, why should an enterprise bring its agents into Microsoft Foundry?</textarea>
+        <div style="margin-top:10px; display:flex; gap:10px; align-items:center;">
+          <button class="btn" id="btnSend">Send to agent</button>
+          <span id="liveStatus" class="live-meta"></span>
+        </div>
+      </div>
+      <div class="chat-log" id="chatLog"></div>
+      <p class="live-meta">Calls go from your browser straight to <span style="font-family:Consolas,monospace">swedenfoundry93.services.ai.azure.com</span> over HTTPS using the new Agent Service <strong>Responses API</strong> (<span style="font-family:Consolas,monospace">POST /openai/v1/responses</span> with an <span style="font-family:Consolas,monospace">agent_reference</span>), with multi-turn continuity via <span style="font-family:Consolas,monospace">previous_response_id</span>. Tokens expire in ~1 hour and never leave this page.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://ai.azure.com" target="_blank" rel="noopener">Foundry Portal</a>
+    <a href="https://learn.microsoft.com/azure/ai-foundry/" target="_blank" rel="noopener">Docs</a>
+    <a href="https://github.com/microsoft/agent-framework" target="_blank" rel="noopener">Agent Framework (GitHub)</a>
+    <a href="https://learn.microsoft.com/azure/ai-foundry/concepts/ai-red-teaming-agent" target="_blank" rel="noopener">AI Red Teaming Agent</a>
+    <a href="https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/claude-models" target="_blank" rel="noopener">Claude in Foundry</a>
+  </div>
+  Unofficial overview for learning &amp; demo purposes · Reflects public announcements through Ignite 2025 and subsequent updates · Not an official Microsoft publication.
+</footer>
+
+<script>
+  // Highlight active nav link on scroll
+  const links = [...document.querySelectorAll('.nav-links a')];
+  const sections = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+  sections.forEach(s => obs.observe(s));
+
+  // ---------- What's New feed (auto-updated by GitHub Actions) ----------
+  (async () => {
+    const grid = document.getElementById('newsGrid');
+    if (!grid) return;
+    try {
+      const r = await fetch('news.json', { cache: 'no-store' });
+      if (!r.ok) throw new Error(r.status);
+      const news = await r.json();
+      const upd = document.getElementById('newsUpdated');
+      if (upd && news.last_updated) upd.textContent = `Last refreshed: ${news.last_updated}.`;
+      grid.innerHTML = '';
+      (news.items || []).slice(0, 12).forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        const srcIcon = item.source === 'agent-framework' ? '🧩' : '🏭';
+        const tags = (item.tags || []).map(t => `<span class="pill new">${t}</span>`).join(' ');
+        card.innerHTML = `
+          <div class="icon">${srcIcon}</div>
+          <h3 style="font-size:15.5px;">${item.title}</h3>
+          <p style="font-size:13px; color:var(--cp-text-soft); margin-bottom:6px;">${item.date || ''}</p>
+          <p>${item.summary || ''}</p>
+          <p style="margin-top:10px;">${item.url ? `<a href="${item.url}" target="_blank" rel="noopener" style="color:var(--cp-link); font-weight:600; font-size:13.5px;">Read more ↗</a>` : ''} ${tags}</p>`;
+        grid.appendChild(card);
+      });
+      if (!grid.children.length) grid.innerHTML = '<div class="card"><p>No updates yet — the weekly workflow will populate this feed.</p></div>';
+    } catch (e) {
+      grid.innerHTML = '<div class="card"><p>Could not load news.json — if you opened this file directly from disk, serve it over HTTP or visit the GitHub Pages site.</p></div>';
+    }
+  })();
+
+  // ---------- Live Foundry console (new Agent Service) ----------
+  const BASE = "https://swedenfoundry93.services.ai.azure.com/api/projects/foundry-showcase";
+  const AGENTS_API = "api-version=2025-11-15-preview";
+  const $ = id => document.getElementById(id);
+  const log = (cls, text) => {
+    const d = document.createElement('div');
+    d.className = 'msg ' + cls; d.textContent = text;
+    $('chatLog').appendChild(d); $('chatLog').scrollTop = $('chatLog').scrollHeight;
+    return d;
+  };
+  const hdrs = () => ({ 'Authorization': 'Bearer ' + $('tok').value.trim(), 'Content-Type': 'application/json' });
+  const lastResponseByAgent = {};
+
+  $('btnConnect').addEventListener('click', async () => {
+    if (!$('tok').value.trim()) { log('sys', '⚠ Paste an access token first.'); return; }
+    $('btnConnect').disabled = true; $('btnConnect').textContent = 'Connecting…';
+    try {
+      const r = await fetch(`${BASE}/agents?${AGENTS_API}`, { headers: hdrs() });
+      if (!r.ok) throw new Error(`${r.status} ${r.statusText}: ${(await r.text()).slice(0, 300)}`);
+      const res = await r.json();
+      const sel = $('agentSel'); sel.innerHTML = '';
+      res.data.forEach(a => {
+        const def = a.versions?.latest?.definition || {};
+        const o = document.createElement('option');
+        o.value = a.name;
+        o.textContent = `${a.name}  v${a.versions?.latest?.version ?? '?'}  [${def.model || 'prompt agent'}]`;
+        sel.appendChild(o);
+      });
+      $('liveControls').style.display = 'block';
+      log('sys', `✅ Connected — ${res.data.length} versioned agents live in foundry-showcase (Sweden Central).`);
+    } catch (e) {
+      log('sys', '❌ ' + e.message + ' — check the token is fresh and has access to the project.');
+    }
+    $('btnConnect').disabled = false; $('btnConnect').textContent = 'Connect & load agents';
+  });
+
+  $('btnSend').addEventListener('click', async () => {
+    const q = $('prompt').value.trim(); if (!q) return;
+    const agentName = $('agentSel').value;
+    $('btnSend').disabled = true; $('liveStatus').textContent = 'invoking agent via Responses API…';
+    log('user', q);
+    const t0 = Date.now();
+    try {
+      const body = {
+        agent_reference: { type: 'agent_reference', name: agentName },
+        input: q
+      };
+      if (lastResponseByAgent[agentName]) body.previous_response_id = lastResponseByAgent[agentName];
+      const r = await fetch(`${BASE}/openai/v1/responses`, { method: 'POST', headers: hdrs(), body: JSON.stringify(body) });
+      if (!r.ok) throw new Error(`${r.status} ${r.statusText}: ${(await r.text()).slice(0, 300)}`);
+      const res = await r.json();
+      if (res.status !== 'completed') throw new Error('response status: ' + res.status);
+      lastResponseByAgent[agentName] = res.id;
+      const text = (res.output || [])
+        .filter(o => o.type === 'message')
+        .flatMap(o => o.content || [])
+        .map(c => c.text || '')
+        .join('\n');
+      log('agent', text || '(no reply)');
+      $('liveStatus').textContent = `done in ${((Date.now() - t0) / 1000).toFixed(1)}s · ${res.usage?.total_tokens ?? '?'} tokens`;
+    } catch (e) {
+      log('sys', '❌ ' + e.message);
+      $('liveStatus').textContent = '';
+    }
+    $('btnSend').disabled = false;
+  });
+</script>
+</body>
+</html>
