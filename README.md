@@ -1,4 +1,4 @@
-# Foundry Demo Site
+# Hammad's Foundry Updates Portal
 
 A living, single-page guide to **Microsoft Foundry** and the **Microsoft Agent Framework** — models, agents, hosted agents, Foundry IQ, and Day 2 operations (evaluations, red teaming, observability, governance) — with a live demo wired to a real Foundry project in Sweden Central.
 
