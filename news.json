@@ -2,12 +2,55 @@
   "last_updated": "2026-07-07",
   "items": [
     {
+      "date": "2026-07-07",
+      "title": "What’s New in Microsoft Foundry | June 2026",
+      "summary": "Microsoft Foundry has announced the general availability of Claude, alongside new features including autopilot agents, expanded Toolboxes and Routines, and a private preview of the Agent Optimizer. These updates enhance the platform's capabilities, enabling developers to create more efficient and effective AI-driven applications.",
+      "url": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-june-2026/",
+      "source": "foundry",
+      "tags": [
+        "Update"
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "title": "dotnet-1.13.0",
+      "summary": "The .NET 1.13.0 release introduces several enhancements, including improved shell handling for dotnet-format, added skill approval options, and per-user session isolation for Foundry Hosting. Notably, it also includes breaking changes to the FileAccess/FileMemory store API and refactors OpenAI Hosting options for better security and usability.",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.13.0",
+      "source": "agent-framework",
+      "tags": [
+        "SDK"
+      ]
+    },
+    {
+      "date": "2026-07-02",
+      "title": "dotnet-1.12.0",
+      "summary": "The .NET 1.12.0 release introduces several enhancements, including OAuth consent support for Foundry hosted-agent toolbox and a new BackgroundTaskCompletionLoopEvaluator for harness background agents. It also includes breaking changes, such as aligning Foundry.Hosting experimental flags with MAAI001 and extracting caching functionality into a new CachingAgentSkillsSource, improving overall framework stability and functionality.",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.12.0",
+      "source": "agent-framework",
+      "tags": [
+        "SDK"
+      ]
+    },
+    {
       "date": "2026-07-02",
       "title": "Claude models generally available in Microsoft Foundry",
       "summary": "Anthropic's Claude Opus, Sonnet, and Haiku families are now GA in Foundry with Azure-hosted and Anthropic-hosted deployment options, Entra ID auth, Marketplace billing (CCUs), MACC eligibility, and zero-data-retention options for regulated workloads.",
       "url": "https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/claude-models",
       "source": "foundry",
-      "tags": ["Models", "GA"]
+      "tags": [
+        "Models",
+        "GA"
+      ]
+    },
+    {
+      "date": "2026-06-30",
+      "title": "python-1.10.0",
+      "summary": "The agent-framework version 1.10.0 introduces several enhancements, including explicit emission of available resources in skill content, improved error handling for skill scripts, and the addition of a FoundryAgent conversation session helper. Key changes include breaking updates to file access approvals and the Foundry Hosted Agent V2 protocol upgrade, which enhance security and functionality for developers.",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.10.0",
+      "source": "agent-framework",
+      "tags": [
+        "SDK"
+      ]
     },
     {
       "date": "2026-04-15",
@@ -15,7 +58,10 @@
       "summary": "The open-source SDK unifying Semantic Kernel and AutoGen hits 1.0 for Python and .NET — agents, typed workflows, orchestration patterns (sequential, concurrent, handoff, magentic), MCP/A2A/OpenAPI interop, and OpenTelemetry built in.",
       "url": "https://github.com/microsoft/agent-framework",
       "source": "agent-framework",
-      "tags": ["SDK", "GA"]
+      "tags": [
+        "SDK",
+        "GA"
+      ]
     },
     {
       "date": "2025-11-18",
@@ -23,7 +69,10 @@
       "summary": "Azure AI Foundry becomes Microsoft Foundry: a redesigned agent-first portal, hosted agents for any framework, Foundry IQ knowledge bases, the Foundry Control Plane for Day 2 operations, and Entra Agent ID for agent identity.",
       "url": "https://devblogs.microsoft.com/foundry/",
       "source": "foundry",
-      "tags": ["Platform", "Ignite"]
+      "tags": [
+        "Platform",
+        "Ignite"
+      ]
     },
     {
       "date": "2025-11-18",
@@ -31,7 +80,10 @@
       "summary": "Bring code-first agents built with Microsoft Agent Framework, LangGraph, or CrewAI into Foundry as managed container-based agents — invoked via the Responses API with built-in scaling, identity, tracing, and governance.",
       "url": "https://learn.microsoft.com/azure/ai-foundry/agents/concepts/hosted-agents",
       "source": "foundry",
-      "tags": ["Agents", "Preview"]
+      "tags": [
+        "Agents",
+        "Preview"
+      ]
     },
     {
       "date": "2025-11-18",
@@ -39,7 +91,10 @@
       "summary": "Foundry's Model Router automatically routes each request to the best-fit model for quality vs. cost across the catalog — swap or add underlying models without changing application code.",
       "url": "https://learn.microsoft.com/azure/ai-foundry/openai/concepts/model-router",
       "source": "foundry",
-      "tags": ["Models", "GA"]
+      "tags": [
+        "Models",
+        "GA"
+      ]
     },
     {
       "date": "2025-11-18",
@@ -47,7 +102,9 @@
       "summary": "Automated adversarial testing built on PyRIT plus agentic evaluators (intent resolution, tool-call accuracy, task adherence) now run pre-deployment and continuously against live traffic from the Foundry Control Plane.",
       "url": "https://learn.microsoft.com/azure/ai-foundry/concepts/ai-red-teaming-agent",
       "source": "foundry",
-      "tags": ["Day 2 Ops"]
+      "tags": [
+        "Day 2 Ops"
+      ]
     }
   ]
 }
