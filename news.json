@@ -1,6 +1,16 @@
 {
-  "last_updated": "2026-07-07",
+  "last_updated": "2026-07-13",
   "items": [
+    {
+      "date": "2026-07-10",
+      "title": "python-1.11.0",
+      "summary": "The Microsoft Agent Framework 1.11.0 release introduces key features such as message injection middleware for dynamic message handling, progressive MCP disclosure for on-demand tool schema management, and a refresh interval for cached skill lists. These enhancements improve agent responsiveness, context-aware filtering, and overall performance, enabling developers to create more efficient and adaptable AI agents.",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.11.0",
+      "source": "agent-framework",
+      "tags": [
+        "SDK"
+      ]
+    },
     {
       "date": "2026-07-07",
       "title": "What’s New in Microsoft Foundry | June 2026",
