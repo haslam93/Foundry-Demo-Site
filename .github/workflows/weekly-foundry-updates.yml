@@ -1,42 +1,79 @@
-name: Weekly Foundry & Agent Framework updates
+name: Weekly Microsoft Foundry updates
 
 on:
   schedule:
     - cron: "0 13 * * 1" # Mondays 13:00 UTC
   workflow_dispatch:
 
-permissions:
-  contents: write
-  models: read
+concurrency:
+  group: weekly-foundry-updates
+  cancel-in-progress: false
 
 jobs:
   update-news:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      models: read
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
 
       - name: Install dependencies
-        run: pip install requests feedparser
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
 
-      - name: Fetch & summarize latest updates
+      - name: Fetch and summarize latest updates
+        id: refresh
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/update_news.py
 
+      - name: Validate generated site data
+        id: validate
+        if: always()
+        run: |
+          python -m json.tool news.json > /dev/null
+          python -m py_compile scripts/update_news.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          data = json.loads(Path("news.json").read_text(encoding="utf-8"))
+          assert data["schema_version"] == 2
+          assert data["last_checked"]
+          assert data["items"]
+          assert len(data["sources"]) == 5
+          assert all(source["status"] in {"ok", "error"} for source in data["sources"])
+          assert all(item["id"] and item["title"] and item["url"] for item in data["items"])
+          PY
+
       - name: Commit changes
+        if: always() && steps.validate.outcome == 'success'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if ! git diff --quiet news.json; then
             git add news.json
-            git commit -m "chore: weekly Foundry & Agent Framework news refresh"
+            git commit -m "chore: refresh Microsoft Foundry updates"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
             git push
           else
             echo "No changes to commit."
           fi
+
+      - name: Report source failures
+        if: always() && steps.refresh.outcome == 'failure'
+        run: |
+          echo "::error::One or more update sources failed. Healthy-source updates and source status were preserved in news.json."
+          exit 1

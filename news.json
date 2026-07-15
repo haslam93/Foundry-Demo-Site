@@ -1,25 +1,58 @@
 {
-  "last_updated": "2026-07-13",
+  "last_updated": "2026-07-15",
   "items": [
     {
+      "id": "e2a1fd3590bb82539cbd",
+      "date": "2026-07-14",
+      "title": "Foundry Local CLI 0.10.2 (Preview)",
+      "summary": "Foundry Local CLI 0.10.2 restores the original Microsoft.FoundryLocal MSIX package identity so Windows and winget perform in-place upgrades instead of installing a duplicate app. Users of earlier 0.10.x builds should uninstall the duplicate package before upgrading.",
+      "url": "https://github.com/microsoft/Foundry-Local/releases/tag/cli-preview-0.10.2",
+      "source": "foundry-local",
+      "source_label": "Foundry Local",
+      "tags": [
+        "Preview",
+        "Local"
+      ]
+    },
+    {
+      "id": "039e19d37d55bb9ad533",
       "date": "2026-07-10",
       "title": "python-1.11.0",
-      "summary": "The Microsoft Agent Framework 1.11.0 release introduces key features such as message injection middleware for dynamic message handling, progressive MCP disclosure for on-demand tool schema management, and a refresh interval for cached skill lists. These enhancements improve agent responsiveness, context-aware filtering, and overall performance, enabling developers to create more efficient and adaptable AI agents.",
+      "summary": "Agent Framework Python 1.11 adds mid-run message injection, progressive MCP tool disclosure, context-aware skill filtering, cache TTLs, hosting protocol helpers, and long-stream keepalives. The release also includes experimental breaking changes and multi-workflow Durable Task hosting updates.",
       "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.11.0",
       "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
       "tags": [
-        "SDK"
+        "SDK",
+        "Models",
+        "Agents",
+        "Tools"
+      ]
+    },
+    {
+      "id": "8f4b9d4d69eb806a51c8",
+      "date": "2026-07-08",
+      "title": "Microsoft Foundry docs: What's new for June 2026 - Microsoft Foundry",
+      "summary": "Discover documentation and product updates in Microsoft Foundry for June 2026.",
+      "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
+      "source": "foundry-docs",
+      "source_label": "Microsoft Learn",
+      "tags": [
+        "Platform",
+        "Documentation"
       ]
     },
     {
       "date": "2026-07-07",
       "title": "What’s New in Microsoft Foundry | June 2026",
-      "summary": "Microsoft Foundry has announced the general availability of Claude, alongside new features including autopilot agents, expanded Toolboxes and Routines, and a private preview of the Agent Optimizer. These updates enhance the platform's capabilities, enabling developers to create more efficient and effective AI-driven applications.",
-      "url": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-june-2026/",
-      "source": "foundry",
+      "summary": "The June roundup covers Claude GA, autopilot agents, Toolboxes and Routines, richer Memory, Foundry Local on Azure Local, Voice Live updates, and the Agent Optimizer private preview. Availability varies by capability, so this guide cross-checks individual status against Azure Updates and Microsoft Learn.",
+      "url": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-june-2026",
+      "source": "foundry-blog",
       "tags": [
         "Update"
-      ]
+      ],
+      "source_label": "Microsoft Foundry Blog",
+      "id": "125f6afae9dd99ed8694"
     },
     {
       "date": "2026-07-03",
@@ -29,7 +62,9 @@
       "source": "agent-framework",
       "tags": [
         "SDK"
-      ]
+      ],
+      "source_label": "Microsoft Agent Framework",
+      "id": "9618e0ed7a2c142b940c"
     },
     {
       "date": "2026-07-02",
@@ -39,17 +74,48 @@
       "source": "agent-framework",
       "tags": [
         "SDK"
-      ]
+      ],
+      "source_label": "Microsoft Agent Framework",
+      "id": "413ab0b86dbccc43b118"
     },
     {
       "date": "2026-07-02",
       "title": "Claude models generally available in Microsoft Foundry",
       "summary": "Anthropic's Claude Opus, Sonnet, and Haiku families are now GA in Foundry with Azure-hosted and Anthropic-hosted deployment options, Entra ID auth, Marketplace billing (CCUs), MACC eligibility, and zero-data-retention options for regulated workloads.",
       "url": "https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/claude-models",
-      "source": "foundry",
+      "source": "foundry-docs",
       "tags": [
-        "Models",
-        "GA"
+        "GA",
+        "Models"
+      ],
+      "source_label": "Microsoft Learn",
+      "id": "e62c5d4ef6bf74144c09"
+    },
+    {
+      "id": "c29ee8a9b6dbfb8e60ff",
+      "date": "2026-07-01",
+      "title": "[Launched] Public Preview: Document PII playground sample in Microsoft Foundry NextGen",
+      "summary": "A public-preview sample playground in the Microsoft Foundry portal demonstrates document-based PII detection and redaction using a prepared document, making the feature easier to evaluate before integrating it into an application.",
+      "url": "https://azure.microsoft.com/updates?id=563331",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview",
+        "Security"
+      ]
+    },
+    {
+      "id": "c293dc5d6cb568961757",
+      "date": "2026-07-01",
+      "title": "[Launched] Generally Available: Document PII NextGen Playground in Azure AI Language",
+      "summary": "The refreshed Document PII playground is generally available in Azure AI Language, with curated sample inputs and outputs for evaluating document-level PII detection and redaction in the Microsoft Foundry experience.",
+      "url": "https://azure.microsoft.com/updates?id=564382",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "GA",
+        "Evaluation",
+        "Security"
       ]
     },
     {
@@ -60,61 +126,157 @@
       "source": "agent-framework",
       "tags": [
         "SDK"
+      ],
+      "source_label": "Microsoft Agent Framework",
+      "id": "9b6475ce243b81f89923"
+    },
+    {
+      "id": "7bac9f0a00f7e7b36a54",
+      "date": "2026-06-30",
+      "title": "[Launched] Generally Available: Toolboxes in Microsoft Foundry",
+      "summary": "Toolboxes are generally available in Microsoft Foundry, providing a reusable, governed endpoint for tools that can be invoked by prompt agents or external clients instead of rebuilding separate tool lists for every agent.",
+      "url": "https://azure.microsoft.com/updates?id=563481",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "GA",
+        "Agents",
+        "Tools"
+      ]
+    },
+    {
+      "id": "5f0fcd9cc68f45856126",
+      "date": "2026-06-25",
+      "title": "dotnet-1.11.1",
+      "summary": "Agent Framework .NET 1.11.1 makes AgentSkillsProvider tools require approval by default, adds AOT-safe declarative workflow checkpointing options, and fixes checkpoint-resume behavior. Review the release notes before upgrading because the approval default is a breaking change.",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.11.1",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Agents",
+        "Tools",
+        "Knowledge"
       ]
     },
     {
       "date": "2026-04-15",
       "title": "Microsoft Agent Framework 1.0 released",
-      "summary": "The open-source SDK unifying Semantic Kernel and AutoGen hits 1.0 for Python and .NET — agents, typed workflows, orchestration patterns (sequential, concurrent, handoff, magentic), MCP/A2A/OpenAPI interop, and OpenTelemetry built in.",
+      "summary": "The open-source SDK unifying Semantic Kernel and AutoGen hits 1.0 for Python and .NET — agents, typed workflows, orchestration patterns (sequential, concurrent, handoff, Magentic), MCP/A2A/OpenAPI interop, and OpenTelemetry built in.",
       "url": "https://github.com/microsoft/agent-framework",
       "source": "agent-framework",
       "tags": [
         "SDK",
         "GA"
-      ]
-    },
-    {
-      "date": "2025-11-18",
-      "title": "Microsoft Foundry unveiled at Ignite 2025",
-      "summary": "Azure AI Foundry becomes Microsoft Foundry: a redesigned agent-first portal, hosted agents for any framework, Foundry IQ knowledge bases, the Foundry Control Plane for Day 2 operations, and Entra Agent ID for agent identity.",
-      "url": "https://devblogs.microsoft.com/foundry/",
-      "source": "foundry",
-      "tags": [
-        "Platform",
-        "Ignite"
-      ]
-    },
-    {
-      "date": "2025-11-18",
-      "title": "Hosted agents in Foundry Agent Service (public preview)",
-      "summary": "Bring code-first agents built with Microsoft Agent Framework, LangGraph, or CrewAI into Foundry as managed container-based agents — invoked via the Responses API with built-in scaling, identity, tracing, and governance.",
-      "url": "https://learn.microsoft.com/azure/ai-foundry/agents/concepts/hosted-agents",
-      "source": "foundry",
-      "tags": [
-        "Agents",
-        "Preview"
-      ]
+      ],
+      "source_label": "Microsoft Agent Framework",
+      "id": "0237577821c108387618"
     },
     {
       "date": "2025-11-18",
       "title": "Model Router reaches general availability",
       "summary": "Foundry's Model Router automatically routes each request to the best-fit model for quality vs. cost across the catalog — swap or add underlying models without changing application code.",
       "url": "https://learn.microsoft.com/azure/ai-foundry/openai/concepts/model-router",
-      "source": "foundry",
+      "source": "foundry-docs",
       "tags": [
         "Models",
         "GA"
-      ]
+      ],
+      "source_label": "Microsoft Learn",
+      "id": "518441eb1a4969577582"
+    },
+    {
+      "date": "2025-11-18",
+      "title": "Microsoft Foundry unveiled at Ignite 2025",
+      "summary": "Azure AI Foundry becomes Microsoft Foundry: a redesigned agent-first portal, hosted agents for any framework, Foundry IQ knowledge bases, the Foundry Control Plane for Day 2 operations, and Entra Agent ID for agent identity.",
+      "url": "https://devblogs.microsoft.com/foundry",
+      "source": "foundry-blog",
+      "tags": [
+        "Platform",
+        "Ignite"
+      ],
+      "source_label": "Microsoft Foundry Blog",
+      "id": "b9c11381ec2a223fa555"
+    },
+    {
+      "date": "2025-11-18",
+      "title": "Hosted agents in Foundry Agent Service (public preview)",
+      "summary": "Bring code-first agents built with Microsoft Agent Framework, LangGraph, or CrewAI into Foundry as managed container-based agents — invoked via the Responses API with built-in scaling, identity, tracing, and governance.",
+      "url": "https://learn.microsoft.com/azure/ai-foundry/agents/concepts/hosted-agents",
+      "source": "foundry-docs",
+      "tags": [
+        "Preview",
+        "Agents"
+      ],
+      "source_label": "Microsoft Learn",
+      "id": "6fa48766c03d64e7c8db"
     },
     {
       "date": "2025-11-18",
       "title": "AI Red Teaming Agent and continuous evaluations in the Control Plane",
       "summary": "Automated adversarial testing built on PyRIT plus agentic evaluators (intent resolution, tool-call accuracy, task adherence) now run pre-deployment and continuously against live traffic from the Foundry Control Plane.",
       "url": "https://learn.microsoft.com/azure/ai-foundry/concepts/ai-red-teaming-agent",
-      "source": "foundry",
+      "source": "foundry-docs",
       "tags": [
         "Day 2 Ops"
-      ]
+      ],
+      "source_label": "Microsoft Learn",
+      "id": "e6c0a3b78f22e0ebe77f"
+    }
+  ],
+  "schema_version": 2,
+  "last_checked": "2026-07-15T15:15:15Z",
+  "item_count": 17,
+  "sources": [
+    {
+      "id": "azure-updates",
+      "label": "Azure Updates",
+      "kind": "Release status",
+      "url": "https://azure.microsoft.com/updates/?products=ai-foundry",
+      "authority": "Canonical availability",
+      "status": "ok",
+      "checked_at": "2026-07-15T15:15:15Z",
+      "items_seen": 3
+    },
+    {
+      "id": "foundry-docs",
+      "label": "Microsoft Learn",
+      "kind": "Documentation",
+      "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
+      "authority": "Canonical product guidance",
+      "status": "ok",
+      "checked_at": "2026-07-15T15:15:15Z",
+      "items_seen": 1
+    },
+    {
+      "id": "foundry-blog",
+      "label": "Microsoft Foundry Blog",
+      "kind": "Announcements",
+      "url": "https://devblogs.microsoft.com/foundry/",
+      "authority": "Launch context",
+      "status": "ok",
+      "checked_at": "2026-07-15T15:15:15Z",
+      "items_seen": 1
+    },
+    {
+      "id": "agent-framework",
+      "label": "Microsoft Agent Framework",
+      "kind": "SDK releases",
+      "url": "https://github.com/microsoft/agent-framework/releases",
+      "authority": "Canonical SDK releases",
+      "status": "ok",
+      "checked_at": "2026-07-15T15:15:15Z",
+      "items_seen": 5
+    },
+    {
+      "id": "foundry-local",
+      "label": "Foundry Local",
+      "kind": "Runtime releases",
+      "url": "https://github.com/microsoft/Foundry-Local/releases",
+      "authority": "Canonical runtime releases",
+      "status": "ok",
+      "checked_at": "2026-07-15T15:15:15Z",
+      "items_seen": 1
     }
   ]
 }

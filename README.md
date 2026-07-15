@@ -1,15 +1,20 @@
-# Hammad's Foundry Updates Portal
+# Hammad's Microsoft Foundry Field Guide
 
-A living, single-page guide to **Microsoft Foundry** and the **Microsoft Agent Framework** — models, agents, hosted agents, Foundry IQ, and Day 2 operations (evaluations, red teaming, observability, governance) — with a live demo wired to a real Foundry project in Sweden Central.
+A living, single-page guide to **Microsoft Foundry**: official updates, source health, platform capabilities, Agent Framework releases, decision guidance, and a live demo wired to a real Foundry project in Sweden Central.
 
 **Live site:** https://haslam93.github.io/Foundry-Demo-Site/
 
 ## What's inside
 
-- `index.html` — the entire site: platform guide, Anthropic Claude section, Agent Framework deep dive, Day 2 ops, and an interactive console that talks to real Foundry agents via the Responses API.
-- `news.json` — the "What's New" feed rendered at the top of the site.
-- `scripts/update_news.py` — pulls the [Foundry dev blog](https://devblogs.microsoft.com/foundry/) RSS and [microsoft/agent-framework](https://github.com/microsoft/agent-framework) releases, summarizes new items with GitHub Models, and merges them into `news.json`.
-- `.github/workflows/weekly-foundry-updates.yml` — runs the updater **every Monday** (and on demand via *Run workflow*), committing changes so GitHub Pages redeploys automatically.
+- `index.html` — the site, including a searchable update timeline, official source registry, platform guide, Agent Framework deep dive, Day 2 operations, capability cheat sheet, and Responses API console.
+- `news.json` — versioned feed data plus source-check status and refresh timestamps.
+- `scripts/update_news.py` — validates and merges updates from:
+  - [Azure Updates](https://azure.microsoft.com/updates/?products=ai-foundry) for release status.
+  - [Microsoft Learn](https://learn.microsoft.com/azure/foundry/whats-new-foundry) for current product guidance.
+  - [Microsoft Foundry Blog](https://devblogs.microsoft.com/foundry/) for announcements and monthly roundups.
+  - [Microsoft Agent Framework releases](https://github.com/microsoft/agent-framework/releases) for SDK changes.
+  - [Foundry Local releases](https://github.com/microsoft/Foundry-Local/releases) for local runtime changes.
+- `.github/workflows/weekly-foundry-updates.yml` — runs every Monday and on demand. It caches pinned dependencies, retries source requests, validates generated JSON, and exposes source health in the workflow summary. If one source fails, healthy-source updates and the failure status are still published, then the job fails visibly for follow-up.
 
 ## Live demo section
 
@@ -26,8 +31,8 @@ Tokens expire in about an hour and never leave the page. Only identities with ac
 Run the updater locally:
 
 ```bash
-pip install requests feedparser
+python -m pip install -r requirements.txt
 python scripts/update_news.py
 ```
 
-Without a `GITHUB_TOKEN`, summaries fall back to article excerpts.
+Without a `GITHUB_TOKEN`, summaries use official source excerpts. In GitHub Actions, the repository token can use GitHub Models to create concise developer-focused summaries.
