@@ -1,12 +1,137 @@
 {
-  "last_updated": "2026-07-15",
+  "last_updated": "2026-07-20",
   "items": [
+    {
+      "id": "ae818f49214139c82ea6",
+      "date": "2026-07-15",
+      "title": "Announcing: Tracing for Microsoft Agent Framework (Python and .NET)",
+      "summary": "Microsoft Foundry has introduced tracing for the Microsoft Agent Framework in public preview for both Python and .NET, enabling developers to monitor agent behavior, tool interactions, and model engagements during execution. This enhancement is significant for improving debugging and performance analysis in agent-based applications.",
+      "url": "https://azure.microsoft.com/updates?id=564071",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Models",
+        "Agents"
+      ]
+    },
+    {
+      "id": "4f4ce17b2d6a6acb3ea9",
+      "date": "2026-07-15",
+      "title": "Announcing: Multi-agent orchestration patterns including Magentic in Microsoft Agent Framework",
+      "summary": "Microsoft Agent Framework has reached general availability for multi-agent orchestration patterns, introducing the Magentic pattern, which achieved a 38 percent improvement on GAIA and competitive results on AssistantBench and WebArena benchmarks. This update enhances developers' capabilities in creating more efficient and effective multi-agent systems.",
+      "url": "https://azure.microsoft.com/updates?id=563571",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Agents"
+      ]
+    },
+    {
+      "id": "a6b66f23cb4b9afa8a55",
+      "date": "2026-07-15",
+      "title": "Announcing: Multi-agent orchestration SDK with the Microsoft Foundry Agent Framework in C# and Python",
+      "summary": "Microsoft Foundry has launched the Agent Framework, a multi-agent orchestration SDK available in C# and Python. This update consolidates existing patterns from AutoGen and Semantic Kernel, providing developers with a unified set of abstractions, which simplifies the development process and enhances the efficiency of building multi-agent systems.",
+      "url": "https://azure.microsoft.com/updates?id=564312",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Agents",
+        "SDK"
+      ]
+    },
+    {
+      "id": "54fd634d4a37735016a8",
+      "date": "2026-07-15",
+      "title": "Announcing: GitHub Copilot and Claude Code connectors in Microsoft Agent Framework",
+      "summary": "Microsoft Agent Framework has introduced generally available connectors for GitHub Copilot and Claude Code, enabling developers to create .NET and Python agents that can delegate coding tasks seamlessly. This update simplifies the integration process, allowing for more efficient development workflows without the need for custom adapter code.",
+      "url": "https://azure.microsoft.com/updates?id=563701",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Models",
+        "Agents"
+      ]
+    },
+    {
+      "id": "4728e0d100b0fb03bbcc",
+      "date": "2026-07-15",
+      "title": "Announcing: Episodic procedural memory in Microsoft Agent Framework",
+      "summary": "Microsoft Agent Framework has introduced episodic procedural memory in public preview, allowing agents to remember and replay successful task patterns for similar future requests. This enhancement improves the efficiency and effectiveness of agent interactions, making them more responsive to user needs.",
+      "url": "https://azure.microsoft.com/updates?id=563561",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Agents"
+      ]
+    },
+    {
+      "id": "408a0ae83a513b212238",
+      "date": "2026-07-15",
+      "title": "Announcing: DevUI Agent Inspector for Microsoft Agent Framework",
+      "summary": "Microsoft Agent Framework has introduced the DevUI Agent Inspector in public preview, providing developers with a local debugging interface that displays agent runs as a navigable tree. This feature allows for pausing, replaying, and editing prompts during execution, enhancing the debugging process and improving development efficiency.",
+      "url": "https://azure.microsoft.com/updates?id=563551",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Models",
+        "Agents"
+      ]
+    },
+    {
+      "id": "65c14f1675aa7d922040",
+      "date": "2026-07-15",
+      "title": "Announcing: CodeAct pattern and Hyperlight containers in Microsoft Agent Framework",
+      "summary": "Microsoft Agent Framework has introduced the CodeAct pattern in public preview, allowing agents to consolidate multi-step plans into a single executable code block, significantly reducing end-to-end latency in representative workloads. This enhancement streamlines agent operations, improving efficiency for developers.",
+      "url": "https://azure.microsoft.com/updates?id=563566",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Agents"
+      ]
+    },
+    {
+      "id": "56d2153a4bc1c7b2dc15",
+      "date": "2026-07-15",
+      "title": "Announcing: Agent Harness in Microsoft Agent Framework",
+      "summary": "Microsoft Agent Framework has reached general availability for Agent Harness, allowing customers to transition their pilot agents into production seamlessly while maintaining backward compatibility. This update is significant as it enables developers to deploy their agent solutions reliably in a production environment.",
+      "url": "https://azure.microsoft.com/updates?id=563546",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Agents"
+      ]
+    },
+    {
+      "id": "d2c6f0edf7a67bf3dbf3",
+      "date": "2026-07-15",
+      "title": "Announcing: Agent Channel for Microsoft Agent Framework multi-agent communication",
+      "summary": "Microsoft Agent Framework has introduced the Agent Channel in public preview, allowing agents to communicate through structured messages without the need for custom routing code. This feature supports both request-response and fire-and-forget messaging, streamlining multi-agent interactions and enhancing development efficiency.",
+      "url": "https://azure.microsoft.com/updates?id=563556",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Agents"
+      ]
+    },
     {
       "id": "e2a1fd3590bb82539cbd",
       "date": "2026-07-14",
       "title": "Foundry Local CLI 0.10.2 (Preview)",
       "summary": "Foundry Local CLI 0.10.2 restores the original Microsoft.FoundryLocal MSIX package identity so Windows and winget perform in-place upgrades instead of installing a duplicate app. Users of earlier 0.10.x builds should uninstall the duplicate package before upgrading.",
       "url": "https://github.com/microsoft/Foundry-Local/releases/tag/cli-preview-0.10.2",
+      "source": "foundry-local",
+      "source_label": "Foundry Local",
+      "tags": [
+        "Preview",
+        "Local"
+      ]
+    },
+    {
+      "id": "42d75a7600e91cc210e7",
+      "date": "2026-07-14",
+      "title": "Foundry Local CLI 0.10.2 (Preview)",
+      "summary": "The Foundry Local CLI 0.10.2 (Preview) has restored the MSIX package identity to Microsoft.FoundryLocal, enabling proper winget upgrades and in-place MSIX upgrades for users. This change resolves issues from the previous version that treated the app as separate, ensuring a smoother upgrade process for developers. Users are advised to uninstall earlier 0.10.x builds to prevent duplicate installations.",
+      "url": "https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.10.2",
       "source": "foundry-local",
       "source_label": "Foundry Local",
       "tags": [
@@ -225,8 +350,8 @@
     }
   ],
   "schema_version": 2,
-  "last_checked": "2026-07-15T15:15:15Z",
-  "item_count": 17,
+  "last_checked": "2026-07-20T15:09:28Z",
+  "item_count": 27,
   "sources": [
     {
       "id": "azure-updates",
@@ -235,8 +360,8 @@
       "url": "https://azure.microsoft.com/updates/?products=ai-foundry",
       "authority": "Canonical availability",
       "status": "ok",
-      "checked_at": "2026-07-15T15:15:15Z",
-      "items_seen": 3
+      "checked_at": "2026-07-20T15:09:28Z",
+      "items_seen": 12
     },
     {
       "id": "foundry-docs",
@@ -245,7 +370,7 @@
       "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
       "authority": "Canonical product guidance",
       "status": "ok",
-      "checked_at": "2026-07-15T15:15:15Z",
+      "checked_at": "2026-07-20T15:09:28Z",
       "items_seen": 1
     },
     {
@@ -255,7 +380,7 @@
       "url": "https://devblogs.microsoft.com/foundry/",
       "authority": "Launch context",
       "status": "ok",
-      "checked_at": "2026-07-15T15:15:15Z",
+      "checked_at": "2026-07-20T15:09:28Z",
       "items_seen": 1
     },
     {
@@ -265,8 +390,8 @@
       "url": "https://github.com/microsoft/agent-framework/releases",
       "authority": "Canonical SDK releases",
       "status": "ok",
-      "checked_at": "2026-07-15T15:15:15Z",
-      "items_seen": 5
+      "checked_at": "2026-07-20T15:09:28Z",
+      "items_seen": 4
     },
     {
       "id": "foundry-local",
@@ -275,7 +400,7 @@
       "url": "https://github.com/microsoft/Foundry-Local/releases",
       "authority": "Canonical runtime releases",
       "status": "ok",
-      "checked_at": "2026-07-15T15:15:15Z",
+      "checked_at": "2026-07-20T15:09:28Z",
       "items_seen": 1
     }
   ]
