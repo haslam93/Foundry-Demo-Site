@@ -1,6 +1,119 @@
 {
-  "last_updated": "2026-07-20",
+  "last_updated": "2026-07-27",
   "items": [
+    {
+      "id": "aff8b8a646f4bb6ab2fb",
+      "date": "2026-07-23",
+      "title": "python-hosting-a2a-1.0.0a260723",
+      "summary": "The Microsoft Agent Framework has introduced version 1.0.0a260723, which adds progressive agent and workflow A2A adapters featuring native card generation, skill discovery, typed conversion, and mode-aware validation. Additionally, the app-owned A2A hosting sample has been updated to utilize the new progressive adapter surface. These enhancements improve the integration and functionality of agents in applications, streamlining development processes for developers.",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-hosting-a2a-1.0.0a260723",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Agents"
+      ]
+    },
+    {
+      "id": "d7bc887273c35bece83d",
+      "date": "2026-07-23",
+      "title": "python-github-copilot-1.0.0",
+      "summary": "The Microsoft Agent Framework has promoted the agent-framework-github-copilot package from release candidate to stable, allowing developers to forward input attachments such as images and documents to GitHub Copilot as inline blobs. This update enhances the integration capabilities of GitHub Copilot, improving the development workflow for users.",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-github-copilot-1.0.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Agents"
+      ]
+    },
+    {
+      "id": "676ea48abbcb7b8b18bc",
+      "date": "2026-07-23",
+      "title": "python-1.12.1",
+      "summary": "The Microsoft Agent Framework has released version 1.12.1, promoting the agent-framework-ag-ui package to stable and adding explicit prompt cache breakpoints for GPT-5.6 models. Additionally, security guidance for custom MCP Streamable HTTP clients has been introduced, and several fixes have been made to improve the functionality and reliability of tool calls and Gemini 3 thought signatures. This update enhances developer capabilities and security in building AI-driven applications.",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.12.1",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Models",
+        "Agents",
+        "Tools"
+      ]
+    },
+    {
+      "id": "a537f00b346f6c8b4f43",
+      "date": "2026-07-22",
+      "title": "dotnet-1.15.0",
+      "summary": "The Microsoft Agent Framework has released dotnet-1.15.0, which includes breaking changes to the Hosting OpenAI Responses protocol helpers, enhancements for security and logging, and new examples for Dapr as an agent provider. This update improves workflow credential management and supports advanced features for OpenAI clients, making it crucial for developers to adopt these changes to enhance application security and functionality.",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.15.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Models",
+        "Agents",
+        "Tools"
+      ]
+    },
+    {
+      "id": "84ff45872a857250044e",
+      "date": "2026-07-22",
+      "title": "dotnet-1.14.0",
+      "summary": "The Microsoft Agent Framework has released .NET version 1.14.0, which includes several breaking changes such as the graduation of various components from experimental status, enhancements to message handling, and the restructuring of the AG-UI SDK into separate packages. These updates improve functionality and stability for developers, ensuring a more robust framework for building agent-based applications.",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.14.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Agents",
+        "Tools"
+      ]
+    },
+    {
+      "id": "4526bf80c038076c4fb6",
+      "date": "2026-07-22",
+      "title": "Building Agents that Act on Your Behalf with Toolboxes in Foundry",
+      "summary": "Microsoft Foundry has introduced Toolboxes, which enable agents to act on behalf of users by managing identity delegation for tasks such as accessing Entra-protected servers and Microsoft 365 resources. This update enhances the capability of internal employee agents, allowing for more efficient and secure interactions within organizational systems.",
+      "url": "https://devblogs.microsoft.com/foundry/building-agents-that-act-on-your-behalf-with-toolboxes-in-foundry",
+      "source": "foundry-blog",
+      "source_label": "Microsoft Foundry Blog",
+      "tags": [
+        "Agents",
+        "Tools",
+        "Security"
+      ]
+    },
+    {
+      "id": "5bdba8219c526e0e149d",
+      "date": "2026-07-21",
+      "title": "python-1.12.0",
+      "summary": "The release of Python 1.12.0 introduces several updates, including an alpha Azure Cosmos DB semantic-memory context provider, enhancements to workflow and hosting capabilities, and the promotion of various components to stable or beta status. Notably, the agent-framework-foundry-hosting package is now in beta and included in the main installation surface, which improves accessibility for developers. These changes enhance the framework's functionality and stability, facilitating more robust application development.",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.12.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Models",
+        "Agents",
+        "Tools"
+      ]
+    },
+    {
+      "id": "10163d04d99a04383c77",
+      "date": "2026-07-20",
+      "title": "[In preview] Public Preview: Protect sensitive generative AI telemetry in Application Insights and Microsoft Foundry",
+      "summary": "Microsoft Foundry has introduced a public preview feature that allows Azure Monitor Application Insights to store generative AI content in a dedicated GenAIContent table, enabling enhanced access controls for sensitive AI telemetry. This update is significant as it improves data security and compliance for developers handling sensitive information in their applications.",
+      "url": "https://azure.microsoft.com/updates?id=567594",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview",
+        "Observability",
+        "Security"
+      ]
+    },
     {
       "id": "ae818f49214139c82ea6",
       "date": "2026-07-15",
@@ -350,8 +463,8 @@
     }
   ],
   "schema_version": 2,
-  "last_checked": "2026-07-20T15:09:28Z",
-  "item_count": 27,
+  "last_checked": "2026-07-27T15:40:24Z",
+  "item_count": 35,
   "sources": [
     {
       "id": "azure-updates",
@@ -360,8 +473,8 @@
       "url": "https://azure.microsoft.com/updates/?products=ai-foundry",
       "authority": "Canonical availability",
       "status": "ok",
-      "checked_at": "2026-07-20T15:09:28Z",
-      "items_seen": 12
+      "checked_at": "2026-07-27T15:40:24Z",
+      "items_seen": 10
     },
     {
       "id": "foundry-docs",
@@ -370,7 +483,7 @@
       "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
       "authority": "Canonical product guidance",
       "status": "ok",
-      "checked_at": "2026-07-20T15:09:28Z",
+      "checked_at": "2026-07-27T15:40:24Z",
       "items_seen": 1
     },
     {
@@ -380,8 +493,8 @@
       "url": "https://devblogs.microsoft.com/foundry/",
       "authority": "Launch context",
       "status": "ok",
-      "checked_at": "2026-07-20T15:09:28Z",
-      "items_seen": 1
+      "checked_at": "2026-07-27T15:40:24Z",
+      "items_seen": 2
     },
     {
       "id": "agent-framework",
@@ -390,8 +503,8 @@
       "url": "https://github.com/microsoft/agent-framework/releases",
       "authority": "Canonical SDK releases",
       "status": "ok",
-      "checked_at": "2026-07-20T15:09:28Z",
-      "items_seen": 4
+      "checked_at": "2026-07-27T15:40:24Z",
+      "items_seen": 7
     },
     {
       "id": "foundry-local",
@@ -400,7 +513,7 @@
       "url": "https://github.com/microsoft/Foundry-Local/releases",
       "authority": "Canonical runtime releases",
       "status": "ok",
-      "checked_at": "2026-07-20T15:09:28Z",
+      "checked_at": "2026-07-27T15:40:24Z",
       "items_seen": 1
     }
   ]
