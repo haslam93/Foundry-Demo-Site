@@ -1,6 +1,47 @@
 {
-  "last_updated": "2026-07-27",
+  "last_updated": "2026-08-03",
   "items": [
+    {
+      "id": "93755f247d247961d010",
+      "date": "2026-07-30",
+      "title": "v1.2.4 Foundry Local",
+      "summary": "Resolves FL winml variant bug where webgpu execution provider was being discovered twice (through winml catalog eps in addition to FL eps) Resolves race condition reported in #867 CLI release will follow shortly.",
+      "url": "https://github.com/microsoft/foundry-local/releases/tag/v1.2.4",
+      "source": "foundry-local",
+      "source_label": "Foundry Local",
+      "tags": [
+        "Local"
+      ]
+    },
+    {
+      "id": "a1d3e06e6f84ac229e30",
+      "date": "2026-07-30",
+      "title": "python-1.13.0",
+      "summary": "[1.13.0] - 2026-07-30 Added agent-framework-core , agent-framework-foundry-hosting : Add bounded, in-memory archive skill discovery for MCP sources and expose archive controls through FoundryToolbox ( #7121 ) agent-framework-core , agent-framework-foundry-hosting , agent-framework-hosting...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.13.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Models",
+        "Agents",
+        "Tools"
+      ]
+    },
+    {
+      "id": "579a168dd75106986ded",
+      "date": "2026-07-30",
+      "title": "dotnet-1.16.0",
+      "summary": "What's Changed .NET: fix InMemoryChatHistoryProvider persisting when service stores history by @westey-m in #7284 .NET: Add TodoProvider and AgentModeProvider samples by @westey-m in #7262 .NET: Graduate GitHub Copilot agent to stable by @giles17 in #7313 .NET: Create session for tool approval agent when none provided...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.16.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Agents",
+        "Observability"
+      ]
+    },
     {
       "id": "aff8b8a646f4bb6ab2fb",
       "date": "2026-07-23",
@@ -463,8 +504,8 @@
     }
   ],
   "schema_version": 2,
-  "last_checked": "2026-07-27T15:40:24Z",
-  "item_count": 35,
+  "last_checked": "2026-08-03T15:41:27Z",
+  "item_count": 38,
   "sources": [
     {
       "id": "azure-updates",
@@ -473,8 +514,8 @@
       "url": "https://azure.microsoft.com/updates/?products=ai-foundry",
       "authority": "Canonical availability",
       "status": "ok",
-      "checked_at": "2026-07-27T15:40:24Z",
-      "items_seen": 10
+      "checked_at": "2026-08-03T15:41:27Z",
+      "items_seen": 8
     },
     {
       "id": "foundry-docs",
@@ -483,7 +524,7 @@
       "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
       "authority": "Canonical product guidance",
       "status": "ok",
-      "checked_at": "2026-07-27T15:40:24Z",
+      "checked_at": "2026-08-03T15:41:27Z",
       "items_seen": 1
     },
     {
@@ -493,8 +534,8 @@
       "url": "https://devblogs.microsoft.com/foundry/",
       "authority": "Launch context",
       "status": "ok",
-      "checked_at": "2026-07-27T15:40:24Z",
-      "items_seen": 2
+      "checked_at": "2026-08-03T15:41:27Z",
+      "items_seen": 1
     },
     {
       "id": "agent-framework",
@@ -503,8 +544,8 @@
       "url": "https://github.com/microsoft/agent-framework/releases",
       "authority": "Canonical SDK releases",
       "status": "ok",
-      "checked_at": "2026-07-27T15:40:24Z",
-      "items_seen": 7
+      "checked_at": "2026-08-03T15:41:27Z",
+      "items_seen": 8
     },
     {
       "id": "foundry-local",
@@ -513,8 +554,8 @@
       "url": "https://github.com/microsoft/Foundry-Local/releases",
       "authority": "Canonical runtime releases",
       "status": "ok",
-      "checked_at": "2026-07-27T15:40:24Z",
-      "items_seen": 1
+      "checked_at": "2026-08-03T15:41:27Z",
+      "items_seen": 2
     }
   ]
 }
