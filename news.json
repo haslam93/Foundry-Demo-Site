@@ -1,6 +1,34 @@
 {
-  "last_updated": "2026-08-03",
+  "last_updated": "2026-08-10",
   "items": [
+    {
+      "id": "646f42b6b91a08c98e2b",
+      "date": "2026-08-07",
+      "title": "Foundry Local CLI 0.10.3 (Preview)",
+      "summary": "Public preview update for the Foundry Local CLI. Important Preview. This is an early CLI build. Expect rough edges, missing polish, and changes between releases. Please file issues with [cli] in the title and include foundry report output when possible. What's New Updated Foundry Local SDK This build updates the...",
+      "url": "https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.10.3",
+      "source": "foundry-local",
+      "source_label": "Foundry Local",
+      "tags": [
+        "Preview",
+        "Local",
+        "Models",
+        "Voice"
+      ]
+    },
+    {
+      "id": "0b1b3b6697c1d2d07c42",
+      "date": "2026-08-04",
+      "title": "dotnet-1.17.0",
+      "summary": "What's Changed .NET and Python: Extract Durable Task and Azure Functions integrations by Chris Gillum (@cgillum) in #7465 .NET: Fix Handoff orchestration sample not responding to user input by Peter Ibekwe (@peibekwe) in #7442 .NET: Fail declarative workflows when an agent returns an error by Peter Ibekwe (@peibekwe)...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.17.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Agents"
+      ]
+    },
     {
       "id": "93755f247d247961d010",
       "date": "2026-07-30",
@@ -504,8 +532,8 @@
     }
   ],
   "schema_version": 2,
-  "last_checked": "2026-08-03T15:41:27Z",
-  "item_count": 38,
+  "last_checked": "2026-08-10T14:18:28Z",
+  "item_count": 40,
   "sources": [
     {
       "id": "azure-updates",
@@ -514,8 +542,8 @@
       "url": "https://azure.microsoft.com/updates/?products=ai-foundry",
       "authority": "Canonical availability",
       "status": "ok",
-      "checked_at": "2026-08-03T15:41:27Z",
-      "items_seen": 8
+      "checked_at": "2026-08-10T14:18:28Z",
+      "items_seen": 1
     },
     {
       "id": "foundry-docs",
@@ -524,7 +552,7 @@
       "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
       "authority": "Canonical product guidance",
       "status": "ok",
-      "checked_at": "2026-08-03T15:41:27Z",
+      "checked_at": "2026-08-10T14:18:28Z",
       "items_seen": 1
     },
     {
@@ -534,7 +562,7 @@
       "url": "https://devblogs.microsoft.com/foundry/",
       "authority": "Launch context",
       "status": "ok",
-      "checked_at": "2026-08-03T15:41:27Z",
+      "checked_at": "2026-08-10T14:18:28Z",
       "items_seen": 1
     },
     {
@@ -544,8 +572,8 @@
       "url": "https://github.com/microsoft/agent-framework/releases",
       "authority": "Canonical SDK releases",
       "status": "ok",
-      "checked_at": "2026-08-03T15:41:27Z",
-      "items_seen": 8
+      "checked_at": "2026-08-10T14:18:28Z",
+      "items_seen": 9
     },
     {
       "id": "foundry-local",
@@ -554,7 +582,7 @@
       "url": "https://github.com/microsoft/Foundry-Local/releases",
       "authority": "Canonical runtime releases",
       "status": "ok",
-      "checked_at": "2026-08-03T15:41:27Z",
+      "checked_at": "2026-08-10T14:18:28Z",
       "items_seen": 2
     }
   ]
