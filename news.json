@@ -1,6 +1,64 @@
 {
-  "last_updated": "2026-08-10",
+  "last_updated": "2026-08-17",
   "items": [
+    {
+      "id": "aa7d5e104e4dfd9b3e28",
+      "date": "2026-08-14",
+      "title": "python-1.14.0",
+      "summary": "[1.14.0] - 2026-08-13 Added agent-framework-core , agent-framework-mistral : Add a Mistral chat client with native chat, streaming, tools, structured output, and embeddings support ( #7392 ) agent-framework-core : Add experimental AGENT-HOOKS-0.1 enforcement middleware behind the opt-in agent-hooks extra ( #7515 )...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.14.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Models",
+        "Agents",
+        "Tools"
+      ]
+    },
+    {
+      "id": "18c5d9247e88d10c0e9b",
+      "date": "2026-08-12",
+      "title": "Microsoft Foundry docs: What's new for July 2026 - Microsoft Foundry",
+      "summary": "Discover documentation and product updates in Microsoft Foundry for July 2026.",
+      "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
+      "source": "foundry-docs",
+      "source_label": "Microsoft Learn",
+      "tags": [
+        "Platform",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "90119e9aadcc5e42aa70",
+      "date": "2026-08-12",
+      "title": "From Sync APIs to support for the GPT-5 model series and agentic workflows: What’s new in Azure Content Understanding – August 2026",
+      "summary": "Enterprise content is no longer just something people read. AI apps and agents are only as useful as the information they can understand, yet much of the world’s enterprise knowledge is locked in documents, forms, tables, images, audio, and video. The latest Azure Content Understanding updates help developers turn that...",
+      "url": "https://devblogs.microsoft.com/foundry/azure-content-understanding-updates-august-2026",
+      "source": "foundry-blog",
+      "source_label": "Microsoft Foundry Blog",
+      "tags": [
+        "Models",
+        "Agents",
+        "Knowledge",
+        "Voice"
+      ]
+    },
+    {
+      "id": "7ab8a30d759dbcb815b0",
+      "date": "2026-08-12",
+      "title": "Azure Content Understanding GPT-5 Series Guide: Model Selection, Grounding Improvements, and Confidence Enhancements",
+      "summary": "Enterprise content is no longer just something people consume. As organizations increasingly rely on AI to extract and act on information from documents, images, audio, and video, Azure Content Understanding is expanding support for the GPT-5 series and improving grounding and confidence to deliver greater flexibility...",
+      "url": "https://devblogs.microsoft.com/foundry/azure-content-understanding-gpt-5-series-guide-model-selection-grounding-improvements-and-confidence-enhancements",
+      "source": "foundry-blog",
+      "source_label": "Microsoft Foundry Blog",
+      "tags": [
+        "Models",
+        "Agents",
+        "Evaluation",
+        "Voice"
+      ]
+    },
     {
       "id": "646f42b6b91a08c98e2b",
       "date": "2026-08-07",
@@ -532,8 +590,8 @@
     }
   ],
   "schema_version": 2,
-  "last_checked": "2026-08-10T14:18:28Z",
-  "item_count": 40,
+  "last_checked": "2026-08-17T13:36:35Z",
+  "item_count": 44,
   "sources": [
     {
       "id": "azure-updates",
@@ -542,8 +600,8 @@
       "url": "https://azure.microsoft.com/updates/?products=ai-foundry",
       "authority": "Canonical availability",
       "status": "ok",
-      "checked_at": "2026-08-10T14:18:28Z",
-      "items_seen": 1
+      "checked_at": "2026-08-17T13:36:35Z",
+      "items_seen": 0
     },
     {
       "id": "foundry-docs",
@@ -552,7 +610,7 @@
       "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
       "authority": "Canonical product guidance",
       "status": "ok",
-      "checked_at": "2026-08-10T14:18:28Z",
+      "checked_at": "2026-08-17T13:36:35Z",
       "items_seen": 1
     },
     {
@@ -562,8 +620,8 @@
       "url": "https://devblogs.microsoft.com/foundry/",
       "authority": "Launch context",
       "status": "ok",
-      "checked_at": "2026-08-10T14:18:28Z",
-      "items_seen": 1
+      "checked_at": "2026-08-17T13:36:35Z",
+      "items_seen": 2
     },
     {
       "id": "agent-framework",
@@ -572,8 +630,8 @@
       "url": "https://github.com/microsoft/agent-framework/releases",
       "authority": "Canonical SDK releases",
       "status": "ok",
-      "checked_at": "2026-08-10T14:18:28Z",
-      "items_seen": 9
+      "checked_at": "2026-08-17T13:36:35Z",
+      "items_seen": 4
     },
     {
       "id": "foundry-local",
@@ -582,7 +640,7 @@
       "url": "https://github.com/microsoft/Foundry-Local/releases",
       "authority": "Canonical runtime releases",
       "status": "ok",
-      "checked_at": "2026-08-10T14:18:28Z",
+      "checked_at": "2026-08-17T13:36:35Z",
       "items_seen": 2
     }
   ]
