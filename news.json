@@ -1,6 +1,66 @@
 {
-  "last_updated": "2026-08-17",
+  "last_updated": "2026-08-24",
   "items": [
+    {
+      "id": "92a936c47fda00f5a578",
+      "date": "2026-08-22",
+      "title": "dotnet-1.19.0",
+      "summary": "What's Changed .NET: Add session-persisted chat client routing by westey (@westey-m) in #7641 .NET: Fix snake_case argument names in Harness file tool descriptions by westey (@westey-m) with @Copilot in #7731 .NET: Pass IServiceProvider to ChatClientAgent in AddAIAgent overloads by westey (@westey-m) in #7737 .NET...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.19.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Agents",
+        "Tools",
+        "Knowledge"
+      ]
+    },
+    {
+      "id": "f8eb4a9bd68bbd7dcf1f",
+      "date": "2026-08-21",
+      "title": "python-1.15.0",
+      "summary": "[1.15.0] - 2026-08-21 Added agent-framework-ag-ui , agent-framework-openai : Add optional A2UI support for agent-generated interfaces and preserve streaming tool-call indices for A2UI consumers ( #7423 ) agent-framework-core : Add MiddlewareFailure as a first-class fatal signal for function middleware ( #7562 )...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.15.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Agents",
+        "Tools",
+        "Evaluation"
+      ]
+    },
+    {
+      "id": "e21dc9f5962d9038340b",
+      "date": "2026-08-19",
+      "title": "dotnet-1.18.0",
+      "summary": "What's Changed .NET: [Experimental] Extend A2A task store with isolation key scoping by SergeyMenshykh in #7504 .NET: Add CodeQL suppression for DevUI proxy validation by SergeyMenshykh in #7505 .NET: Bound the tool-approval auto-approval loop ( #7472 ) by Atharva Vichare (@atty57) in #7474 .NET: Harden file skill...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.18.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Agents",
+        "Knowledge",
+        "Evaluation"
+      ]
+    },
+    {
+      "id": "0e042fdff85a7042605f",
+      "date": "2026-08-17",
+      "title": "From single call to agents: five new Claude capabilities now available in Microsoft Foundry",
+      "summary": "Structured outputs, web search, web fetch, MCP connector, and tool search are now available for Claude models hosted on Azure in Microsoft Foundry, turning a model endpoint into a production agent platform. The post From single call to agents: five new Claude capabilities now available in Microsoft Foundry appeared...",
+      "url": "https://devblogs.microsoft.com/foundry/five-new-claude-capabilities-now-available-in-foundry",
+      "source": "foundry-blog",
+      "source_label": "Microsoft Foundry Blog",
+      "tags": [
+        "Models",
+        "Agents",
+        "Tools",
+        "Knowledge"
+      ]
+    },
     {
       "id": "aa7d5e104e4dfd9b3e28",
       "date": "2026-08-14",
@@ -590,8 +650,8 @@
     }
   ],
   "schema_version": 2,
-  "last_checked": "2026-08-17T13:36:35Z",
-  "item_count": 44,
+  "last_checked": "2026-08-24T13:48:34Z",
+  "item_count": 48,
   "sources": [
     {
       "id": "azure-updates",
@@ -600,7 +660,7 @@
       "url": "https://azure.microsoft.com/updates/?products=ai-foundry",
       "authority": "Canonical availability",
       "status": "ok",
-      "checked_at": "2026-08-17T13:36:35Z",
+      "checked_at": "2026-08-24T13:48:34Z",
       "items_seen": 0
     },
     {
@@ -610,7 +670,7 @@
       "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
       "authority": "Canonical product guidance",
       "status": "ok",
-      "checked_at": "2026-08-17T13:36:35Z",
+      "checked_at": "2026-08-24T13:48:34Z",
       "items_seen": 1
     },
     {
@@ -620,8 +680,8 @@
       "url": "https://devblogs.microsoft.com/foundry/",
       "authority": "Launch context",
       "status": "ok",
-      "checked_at": "2026-08-17T13:36:35Z",
-      "items_seen": 2
+      "checked_at": "2026-08-24T13:48:34Z",
+      "items_seen": 3
     },
     {
       "id": "agent-framework",
@@ -630,8 +690,8 @@
       "url": "https://github.com/microsoft/agent-framework/releases",
       "authority": "Canonical SDK releases",
       "status": "ok",
-      "checked_at": "2026-08-17T13:36:35Z",
-      "items_seen": 4
+      "checked_at": "2026-08-24T13:48:34Z",
+      "items_seen": 5
     },
     {
       "id": "foundry-local",
@@ -640,8 +700,8 @@
       "url": "https://github.com/microsoft/Foundry-Local/releases",
       "authority": "Canonical runtime releases",
       "status": "ok",
-      "checked_at": "2026-08-17T13:36:35Z",
-      "items_seen": 2
+      "checked_at": "2026-08-24T13:48:34Z",
+      "items_seen": 1
     }
   ]
 }
