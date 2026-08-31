@@ -1,6 +1,35 @@
 {
-  "last_updated": "2026-08-24",
+  "last_updated": "2026-08-31",
   "items": [
+    {
+      "id": "86edba1469bab6afb48c",
+      "date": "2026-08-31",
+      "title": "dotnet-1.20.0",
+      "summary": "What's Changed .NET: Bump AWSSDK.Extensions.Bedrock.MEAI from 4.0.6.10 to 4.0.101.8 by Dependabot (@dependabot) [bot] in #7829 .NET: Stabilize Foundry recovery tests by Roger Barreto (@rogerbarreto) in #7817 .NET: fix: preserve Responses logprobs field by Yufeng He (@he-yufeng) in #5860 .NET: Honor cancellation for...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.20.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Agents",
+        "Knowledge"
+      ]
+    },
+    {
+      "id": "b384ba601bfc4138605f",
+      "date": "2026-08-28",
+      "title": "python-1.16.0",
+      "summary": "[1.16.0] - 2026-08-27 Added agent-framework-core : Add configurable timeouts for waiting on the first background-agent task completion ( #7908 ) agent-framework-core : Allow programmatic OpenTelemetry service metadata, resource attributes, and OTLP exporter configuration ( #7703 ) Changed...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.16.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Agents",
+        "Tools",
+        "Knowledge"
+      ]
+    },
     {
       "id": "92a936c47fda00f5a578",
       "date": "2026-08-22",
@@ -650,8 +679,8 @@
     }
   ],
   "schema_version": 2,
-  "last_checked": "2026-08-24T13:48:34Z",
-  "item_count": 48,
+  "last_checked": "2026-08-31T19:22:20Z",
+  "item_count": 50,
   "sources": [
     {
       "id": "azure-updates",
@@ -660,7 +689,7 @@
       "url": "https://azure.microsoft.com/updates/?products=ai-foundry",
       "authority": "Canonical availability",
       "status": "ok",
-      "checked_at": "2026-08-24T13:48:34Z",
+      "checked_at": "2026-08-31T19:22:20Z",
       "items_seen": 0
     },
     {
@@ -670,7 +699,7 @@
       "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
       "authority": "Canonical product guidance",
       "status": "ok",
-      "checked_at": "2026-08-24T13:48:34Z",
+      "checked_at": "2026-08-31T19:22:20Z",
       "items_seen": 1
     },
     {
@@ -680,7 +709,7 @@
       "url": "https://devblogs.microsoft.com/foundry/",
       "authority": "Launch context",
       "status": "ok",
-      "checked_at": "2026-08-24T13:48:34Z",
+      "checked_at": "2026-08-31T19:22:20Z",
       "items_seen": 3
     },
     {
@@ -690,8 +719,8 @@
       "url": "https://github.com/microsoft/agent-framework/releases",
       "authority": "Canonical SDK releases",
       "status": "ok",
-      "checked_at": "2026-08-24T13:48:34Z",
-      "items_seen": 5
+      "checked_at": "2026-08-31T19:22:20Z",
+      "items_seen": 6
     },
     {
       "id": "foundry-local",
@@ -700,8 +729,8 @@
       "url": "https://github.com/microsoft/Foundry-Local/releases",
       "authority": "Canonical runtime releases",
       "status": "ok",
-      "checked_at": "2026-08-24T13:48:34Z",
-      "items_seen": 1
+      "checked_at": "2026-08-31T19:22:20Z",
+      "items_seen": 0
     }
   ]
 }
