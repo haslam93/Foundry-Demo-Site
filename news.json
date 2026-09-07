@@ -1,6 +1,49 @@
 {
-  "last_updated": "2026-08-31",
+  "last_updated": "2026-09-07",
   "items": [
+    {
+      "id": "eb238ff97f50479e5145",
+      "date": "2026-09-03",
+      "title": "python-1.17.0",
+      "summary": "[1.17.0] - 2026-09-03 Added samples : Add an end-to-end Foundry-hosted Telegram agent sample ( #7883 ) agent-framework-foundry-hosting : Add explicit Agent Server or agent-owned model history selection while preventing duplicated conversation replay ( #7997 ) Changed agent-framework-core , agent-framework-foundry...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.17.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Models",
+        "Agents",
+        "Tools"
+      ]
+    },
+    {
+      "id": "0a16117cbd6f2574aff3",
+      "date": "2026-09-01",
+      "title": "Microsoft Foundry docs: What's new for August 2026 - Microsoft Foundry",
+      "summary": "Discover documentation and product updates in Microsoft Foundry for August 2026.",
+      "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
+      "source": "foundry-docs",
+      "source_label": "Microsoft Learn",
+      "tags": [
+        "Platform",
+        "Documentation"
+      ]
+    },
+    {
+      "id": "12283c5d8337a80c6cc9",
+      "date": "2026-09-01",
+      "title": "Foundry Local v2.0.1",
+      "summary": "🚀 Foundry Local v2.0.1 Release Notes We're excited to announce Foundry Local v2.0.1. This release introduces a unified, cross-language inference API, a shared native runtime, and packaging and reliability improvements for Linux and ARM64. Important In-process OpenAI-style SDK clients are replaced by the Session API...",
+      "url": "https://github.com/microsoft/foundry-local/releases/tag/v2.0.1",
+      "source": "foundry-local",
+      "source_label": "Foundry Local",
+      "tags": [
+        "Local",
+        "Models",
+        "Agents",
+        "Knowledge"
+      ]
+    },
     {
       "id": "86edba1469bab6afb48c",
       "date": "2026-08-31",
@@ -679,8 +722,8 @@
     }
   ],
   "schema_version": 2,
-  "last_checked": "2026-08-31T19:22:20Z",
-  "item_count": 50,
+  "last_checked": "2026-09-07T18:04:56Z",
+  "item_count": 53,
   "sources": [
     {
       "id": "azure-updates",
@@ -689,7 +732,7 @@
       "url": "https://azure.microsoft.com/updates/?products=ai-foundry",
       "authority": "Canonical availability",
       "status": "ok",
-      "checked_at": "2026-08-31T19:22:20Z",
+      "checked_at": "2026-09-07T18:04:56Z",
       "items_seen": 0
     },
     {
@@ -699,7 +742,7 @@
       "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
       "authority": "Canonical product guidance",
       "status": "ok",
-      "checked_at": "2026-08-31T19:22:20Z",
+      "checked_at": "2026-09-07T18:04:56Z",
       "items_seen": 1
     },
     {
@@ -709,8 +752,8 @@
       "url": "https://devblogs.microsoft.com/foundry/",
       "authority": "Launch context",
       "status": "ok",
-      "checked_at": "2026-08-31T19:22:20Z",
-      "items_seen": 3
+      "checked_at": "2026-09-07T18:04:56Z",
+      "items_seen": 1
     },
     {
       "id": "agent-framework",
@@ -719,7 +762,7 @@
       "url": "https://github.com/microsoft/agent-framework/releases",
       "authority": "Canonical SDK releases",
       "status": "ok",
-      "checked_at": "2026-08-31T19:22:20Z",
+      "checked_at": "2026-09-07T18:04:56Z",
       "items_seen": 6
     },
     {
@@ -729,8 +772,8 @@
       "url": "https://github.com/microsoft/Foundry-Local/releases",
       "authority": "Canonical runtime releases",
       "status": "ok",
-      "checked_at": "2026-08-31T19:22:20Z",
-      "items_seen": 0
+      "checked_at": "2026-09-07T18:04:56Z",
+      "items_seen": 1
     }
   ]
 }
