@@ -4,7 +4,15 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Tue, 08 Sep 2026 01:00:20 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2026 01:58:18 GMT</lastBuildDate>
+    <item>
+      <title>Sample changed: Agent Framework Python samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/41e3c602570ea640b2c2de893eb39f56a15c02de</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Tue, 08 Sep 2026 01:29:21 GMT</pubDate>
+      <guid isPermaLink="false">cdeca8ee75b3fc0ebc41</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>azure-ai-projects 2.6.0</title>
       <link>https://pypi.org/project/azure-ai-projects/2.6.0</link>
@@ -475,14 +483,6 @@
       <description>Public preview update for the Foundry Local CLI. &gt; [!IMPORTANT] &gt; Preview. This is an early CLI build. Expect rough edges, missing polish, and changes between releases. Please file issues with [cli] in the title and include foundry report output when possible. What's New Updated Foundry Local SDK...</description>
       <pubDate>Mon, 22 Jun 2026 23:45:41 GMT</pubDate>
       <guid isPermaLink="false">4d94fb07dd8d0ad51518</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>python-1.9.0</title>
-      <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.9.0</link>
-      <description>[1.9.0] - 2026-06-18 Added - agent-framework-core: Add AgentLoopMiddleware for re-running agents in a loop (6174) - agent-framework-core: Integrate tool approval into the harness agent (6522) - agent-framework-core: Add tool approval middleware (6414) - agent-framework-core: Integrate the shell tool...</description>
-      <pubDate>Thu, 18 Jun 2026 09:03:33 GMT</pubDate>
-      <guid isPermaLink="false">79e52dba0f010fdd13ca</guid>
       <category>published</category>
     </item>
   </channel>
