@@ -1,0 +1,489 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>Hammad's Microsoft Foundry Field Guide</title>
+    <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
+    <description>Official Foundry releases, SDK versions and source changes.</description>
+    <lastBuildDate>Tue, 08 Sep 2026 01:00:20 GMT</lastBuildDate>
+    <item>
+      <title>azure-ai-projects 2.6.0</title>
+      <link>https://pypi.org/project/azure-ai-projects/2.6.0</link>
+      <description>Python package 2.6.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
+      <pubDate>Fri, 04 Sep 2026 19:18:13 GMT</pubDate>
+      <guid isPermaLink="false">e66e78fa5cd94ac00185</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>azure-ai-evaluation 1.18.5</title>
+      <link>https://pypi.org/project/azure-ai-evaluation/1.18.5</link>
+      <description>Python package 1.18.5 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
+      <pubDate>Fri, 04 Sep 2026 18:36:10 GMT</pubDate>
+      <guid isPermaLink="false">b7be8f1cf7a870b922b6</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>python-1.17.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.17.0</link>
+      <description>[1.17.0] - 2026-09-03 Added - samples: Add an end-to-end Foundry-hosted Telegram agent sample (7883) - agent-framework-foundry-hosting: Add explicit Agent Server or agent-owned model history selection while preventing duplicated conversation replay (7997) Changed - agent-framework-core...</description>
+      <pubDate>Thu, 03 Sep 2026 09:49:35 GMT</pubDate>
+      <guid isPermaLink="false">eb238ff97f50479e5145</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Microsoft Foundry docs: What's new for August 2026 - Microsoft Foundry</title>
+      <link>https://learn.microsoft.com/azure/foundry/whats-new-foundry</link>
+      <description>Discover documentation and product updates in Microsoft Foundry for August 2026.</description>
+      <pubDate>Tue, 01 Sep 2026 17:22:00 GMT</pubDate>
+      <guid isPermaLink="false">0a16117cbd6f2574aff3</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Foundry Local v2.0.1</title>
+      <link>https://github.com/microsoft/foundry-local/releases/tag/v2.0.1</link>
+      <description>🚀 Foundry Local v2.0.1 Release Notes We're excited to announce Foundry Local v2.0.1. This release introduces a unified, cross-language inference API, a shared native runtime, and packaging and reliability improvements for Linux and ARM64. &gt; [!IMPORTANT] &gt; &gt; In-process OpenAI-style SDK clients are...</description>
+      <pubDate>Tue, 01 Sep 2026 05:04:37 GMT</pubDate>
+      <guid isPermaLink="false">12283c5d8337a80c6cc9</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>dotnet-1.20.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.20.0</link>
+      <description>What's Changed .NET: Bump AWSSDK.Extensions.Bedrock.MEAI from 4.0.6.10 to 4.0.101.8 by @dependabot[bot] in https://github.com/microsoft/agent-framework/pull/7829 .NET: Stabilize Foundry recovery tests by @rogerbarreto in https://github.com/microsoft/agent-framework/pull/7817 .NET: fix: preserve...</description>
+      <pubDate>Mon, 31 Aug 2026 18:53:19 GMT</pubDate>
+      <guid isPermaLink="false">86edba1469bab6afb48c</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>python-1.16.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.16.0</link>
+      <description>[1.16.0] - 2026-08-27 Added - agent-framework-core: Add configurable timeouts for waiting on the first background-agent task completion (7908) - agent-framework-core: Allow programmatic OpenTelemetry service metadata, resource attributes, and OTLP exporter configuration (7703) Changed -...</description>
+      <pubDate>Fri, 28 Aug 2026 00:52:39 GMT</pubDate>
+      <guid isPermaLink="false">b384ba601bfc4138605f</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>dotnet-1.19.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.19.0</link>
+      <description>What's Changed .NET: Add session-persisted chat client routing by @westey-m in https://github.com/microsoft/agent-framework/pull/7641 .NET: Fix snake_case argument names in Harness file tool descriptions by @westey-m with @Copilot in https://github.com/microsoft/agent-framework/pull/7731 .NET: Pass...</description>
+      <pubDate>Sat, 22 Aug 2026 12:48:00 GMT</pubDate>
+      <guid isPermaLink="false">92a936c47fda00f5a578</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>python-1.15.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.15.0</link>
+      <description>[1.15.0] - 2026-08-21 Added - agent-framework-ag-ui, agent-framework-openai: Add optional A2UI support for agent-generated interfaces and preserve streaming tool-call indices for A2UI consumers (7423) - agent-framework-core: Add MiddlewareFailure as a first-class fatal signal for function middleware...</description>
+      <pubDate>Fri, 21 Aug 2026 23:08:41 GMT</pubDate>
+      <guid isPermaLink="false">f8eb4a9bd68bbd7dcf1f</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>azure-ai-projects 2.5.0</title>
+      <link>https://pypi.org/project/azure-ai-projects/2.5.0</link>
+      <description>Python package 2.5.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
+      <pubDate>Thu, 20 Aug 2026 21:56:58 GMT</pubDate>
+      <guid isPermaLink="false">16443b5fa8b92ce2233c</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>dotnet-1.18.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.18.0</link>
+      <description>What's Changed .NET: [Experimental] Extend A2A task store with isolation key scoping by SergeyMenshykh in #7504 .NET: Add CodeQL suppression for DevUI proxy validation by SergeyMenshykh in #7505 .NET: Bound the tool-approval auto-approval loop ( #7472 ) by Atharva Vichare (@atty57) in #7474 .NET: Harden file skill...</description>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">e21dc9f5962d9038340b</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>From single call to agents: five new Claude capabilities now available in Microsoft Foundry</title>
+      <link>https://devblogs.microsoft.com/foundry/five-new-claude-capabilities-now-available-in-foundry</link>
+      <description>Structured outputs, web search, web fetch, MCP connector, and tool search are now available for Claude models hosted on Azure in Microsoft Foundry, turning a model endpoint into a production agent platform.</description>
+      <pubDate>Mon, 17 Aug 2026 19:20:07 GMT</pubDate>
+      <guid isPermaLink="false">0e042fdff85a7042605f</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>python-1.14.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.14.0</link>
+      <description>[1.14.0] - 2026-08-13 Added - agent-framework-core, agent-framework-mistral: Add a Mistral chat client with native chat, streaming, tools, structured output, and embeddings support (7392) - agent-framework-core: Add experimental AGENT-HOOKS-0.1 enforcement middleware behind the opt-in agent-hooks...</description>
+      <pubDate>Fri, 14 Aug 2026 02:08:06 GMT</pubDate>
+      <guid isPermaLink="false">aa7d5e104e4dfd9b3e28</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>From Sync APIs to support for the GPT-5 model series and agentic workflows: What’s new in Azure Content Understanding – August 2026</title>
+      <link>https://devblogs.microsoft.com/foundry/azure-content-understanding-updates-august-2026</link>
+      <description>Enterprise content is no longer just something people read. AI apps and agents are only as useful as the information they can understand, yet much of the world’s enterprise knowledge is locked in documents, forms, tables, images, audio, and video. The latest Azure Content Understanding updates help...</description>
+      <pubDate>Wed, 12 Aug 2026 18:43:01 GMT</pubDate>
+      <guid isPermaLink="false">90119e9aadcc5e42aa70</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Azure Content Understanding GPT-5 Series Guide: Model Selection, Grounding Improvements, and Confidence Enhancements</title>
+      <link>https://devblogs.microsoft.com/foundry/azure-content-understanding-gpt-5-series-guide-model-selection-grounding-improvements-and-confidence-enhancements</link>
+      <description>Enterprise content is no longer just something people consume. As organizations increasingly rely on AI to extract and act on information from documents, images, audio, and video, Azure Content Understanding is expanding support for the GPT-5 series and improving grounding and confidence to deliver...</description>
+      <pubDate>Wed, 12 Aug 2026 18:42:25 GMT</pubDate>
+      <guid isPermaLink="false">7ab8a30d759dbcb815b0</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Foundry Local CLI 0.10.3 (Preview)</title>
+      <link>https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.10.3</link>
+      <description>Public preview update for the Foundry Local CLI. &gt; [!IMPORTANT] &gt; Preview. This is an early CLI build. Expect rough edges, missing polish, and changes between releases. Please file issues with [cli] in the title and include foundry report output when possible. What's New Updated Foundry Local SDK...</description>
+      <pubDate>Fri, 07 Aug 2026 21:46:47 GMT</pubDate>
+      <guid isPermaLink="false">646f42b6b91a08c98e2b</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>[Launched] Generally Available: Unity AI Gateway on Azure Databricks</title>
+      <link>https://azure.microsoft.com/updates?id=568910</link>
+      <description>Unity AI Gateway is now generally available on Azure Databricks. Unity AI Gateway provides centralized governance for AI models, agents, tools, and MCP services, helping organizations monitor usage, manage costs, apply guardrails, and enforce access contr</description>
+      <pubDate>Wed, 05 Aug 2026 22:32:45 GMT</pubDate>
+      <guid isPermaLink="false">081433b6ce6862a21cfa</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>dotnet-1.17.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.17.0</link>
+      <description>What's Changed .NET and Python: Extract Durable Task and Azure Functions integrations by @cgillum in https://github.com/microsoft/agent-framework/pull/7465 .NET: Fix Handoff orchestration sample not responding to user input by @peibekwe in https://github.com/microsoft/agent-framework/pull/7442 .NET...</description>
+      <pubDate>Tue, 04 Aug 2026 23:27:18 GMT</pubDate>
+      <guid isPermaLink="false">0b1b3b6697c1d2d07c42</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>v1.2.4 Foundry Local</title>
+      <link>https://github.com/microsoft/foundry-local/releases/tag/v1.2.4</link>
+      <description>- Resolves FL winml variant bug where webgpu execution provider was being discovered twice (through winml catalog eps in addition to FL eps) - Resolves race condition reported in https://github.com/microsoft/foundry-local/issues/867 CLI release will follow shortly.</description>
+      <pubDate>Thu, 30 Jul 2026 21:51:03 GMT</pubDate>
+      <guid isPermaLink="false">93755f247d247961d010</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>python-1.13.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.13.0</link>
+      <description>[1.13.0] - 2026-07-30 Added - agent-framework-core, agent-framework-foundry-hosting: Add bounded, in-memory archive skill discovery for MCP sources and expose archive controls through FoundryToolbox (7121) - agent-framework-core, agent-framework-foundry-hosting, agent-framework-hosting...</description>
+      <pubDate>Thu, 30 Jul 2026 23:22:33 GMT</pubDate>
+      <guid isPermaLink="false">a1d3e06e6f84ac229e30</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>dotnet-1.16.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.16.0</link>
+      <description>What's Changed .NET: fix InMemoryChatHistoryProvider persisting when service stores history by @westey-m in https://github.com/microsoft/agent-framework/pull/7284 .NET: Add TodoProvider and AgentModeProvider samples by @westey-m in https://github.com/microsoft/agent-framework/pull/7262 .NET...</description>
+      <pubDate>Thu, 30 Jul 2026 18:13:10 GMT</pubDate>
+      <guid isPermaLink="false">579a168dd75106986ded</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>azure-ai-evaluation 1.18.3</title>
+      <link>https://pypi.org/project/azure-ai-evaluation/1.18.3</link>
+      <description>Python package 1.18.3 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
+      <pubDate>Wed, 29 Jul 2026 19:16:09 GMT</pubDate>
+      <guid isPermaLink="false">144f41cd832a066ad080</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>azure-ai-projects 2.4.0</title>
+      <link>https://pypi.org/project/azure-ai-projects/2.4.0</link>
+      <description>Python package 2.4.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
+      <pubDate>Mon, 27 Jul 2026 21:53:02 GMT</pubDate>
+      <guid isPermaLink="false">35253eb85e72f1642f31</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>[In preview] Public Preview: AI Gateway in Azure API Management</title>
+      <link>https://azure.microsoft.com/updates?id=568184</link>
+      <description>The AI Gateway tier for Azure API Management is now available in public preview. Building on the AI gateway capabilities already available across API Management tiers, the new AI Gateway tier provides a dedicated experience optimized for AI workloads.As o</description>
+      <pubDate>Mon, 27 Jul 2026 16:44:29 GMT</pubDate>
+      <guid isPermaLink="false">6cb6c1129bcdf0bf35a5</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>python-hosting-a2a-1.0.0a260723</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/python-hosting-a2a-1.0.0a260723</link>
+      <description>Added - agent-framework-hosting-a2a: Add progressive agent and workflow A2A adapters with native card generation, skill discovery, typed conversion, and mode-aware validation (7258) Changed - samples: Update the app-owned A2A hosting sample to use the progressive adapter surface (7258)</description>
+      <pubDate>Thu, 23 Jul 2026 11:25:21 GMT</pubDate>
+      <guid isPermaLink="false">aff8b8a646f4bb6ab2fb</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>python-github-copilot-1.0.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/python-github-copilot-1.0.0</link>
+      <description>[github-copilot-1.0.0] - 2026-07-23 Added - agent-framework-github-copilot: Forward input attachments (images, documents, and other inline binary content) to GitHub Copilot as inline blobs (7300) Changed - agent-framework-github-copilot: Promote the package from release candidate to stable</description>
+      <pubDate>Thu, 23 Jul 2026 21:32:23 GMT</pubDate>
+      <guid isPermaLink="false">d7bc887273c35bece83d</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>python-1.12.1</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.12.1</link>
+      <description>[1.12.1] - 2026-07-22 Added - agent-framework-openai: Add explicit prompt cache breakpoints for GPT-5.6 models and a usage sample (7163) Changed - agent-framework-ag-ui: Promote the package from release candidate to stable - agent-framework-core: Add security guidance for custom MCP Streamable HTTP...</description>
+      <pubDate>Thu, 23 Jul 2026 04:36:41 GMT</pubDate>
+      <guid isPermaLink="false">676ea48abbcb7b8b18bc</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>dotnet-1.15.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.15.0</link>
+      <description>What's Changed Python: Add MCPStreamableHTTPTool security guidance for custom http client by @TaoChenOSU in https://github.com/microsoft/agent-framework/pull/7245 Harden workflow credential selection by @moonbox3 in https://github.com/microsoft/agent-framework/pull/7249 Python: preserve Gemini 3...</description>
+      <pubDate>Wed, 22 Jul 2026 23:58:13 GMT</pubDate>
+      <guid isPermaLink="false">a537f00b346f6c8b4f43</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>dotnet-1.14.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.14.0</link>
+      <description>The Microsoft Agent Framework has released .NET version 1.14.0, which includes several breaking changes such as the graduation of various components from experimental status, enhancements to message handling, and the restructuring of the AG-UI SDK into separate packages. These updates improve functionality and stability for developers, ensuring a more robust framework for building agent-based applications.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">84ff45872a857250044e</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>azure-ai-evaluation 1.18.2</title>
+      <link>https://pypi.org/project/azure-ai-evaluation/1.18.2</link>
+      <description>Python package 1.18.2 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
+      <pubDate>Wed, 22 Jul 2026 18:21:01 GMT</pubDate>
+      <guid isPermaLink="false">5d41eaf4afce3c49a900</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Building Agents that Act on Your Behalf with Toolboxes in Foundry</title>
+      <link>https://devblogs.microsoft.com/foundry/building-agents-that-act-on-your-behalf-with-toolboxes-in-foundry</link>
+      <description>How Toolboxes in Foundry simplify user delegation At some point, many agents move from answering questions to taking action. And when it does, the question becomes: whose identity is it acting with? Imagine you are building an internal employee agent. It needs to call a private, Entra-protected MCP...</description>
+      <pubDate>Wed, 22 Jul 2026 15:00:29 GMT</pubDate>
+      <guid isPermaLink="false">4526bf80c038076c4fb6</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>python-1.12.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.12.0</link>
+      <description>[1.12.0] - 2026-07-21 Added - agent-framework-azure-cosmos-memory: Add an alpha Azure Cosmos DB semantic-memory context provider with fact extraction, user profiles, samples, and integration coverage (6719) - agent-framework-azurefunctions, agent-framework-core, agent-framework-durabletask: Add HITL...</description>
+      <pubDate>Tue, 21 Jul 2026 19:40:32 GMT</pubDate>
+      <guid isPermaLink="false">5bdba8219c526e0e149d</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>[In preview] Public Preview: Protect sensitive generative AI telemetry in Application Insights and Microsoft Foundry</title>
+      <link>https://azure.microsoft.com/updates?id=567594</link>
+      <description>Azure Monitor Application Insights now stores generative AI content in a dedicated GenAIContent table (AppGenAIContent in Log Analytics), making it possible to apply newly available access controls to sensitive AI telemetry. Because Application Insights p</description>
+      <pubDate>Mon, 20 Jul 2026 15:09:43 GMT</pubDate>
+      <guid isPermaLink="false">10163d04d99a04383c77</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Announcing: Tracing for Microsoft Agent Framework (Python and .NET)</title>
+      <link>https://azure.microsoft.com/updates?id=564071</link>
+      <description>In public preview, Microsoft Foundry now offers tracing for the Microsoft Agent Framework in both Python and .NET, helping developers observe how agents reason, call tools, and interact with models during execution. This release is part of the broader hos</description>
+      <pubDate>Wed, 15 Jul 2026 18:51:45 GMT</pubDate>
+      <guid isPermaLink="false">ae818f49214139c82ea6</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Announcing: Multi-agent orchestration patterns including Magentic in Microsoft Agent Framework</title>
+      <link>https://azure.microsoft.com/updates?id=563571</link>
+      <description>Microsoft Agent Framework reaches general availability for multi-agent orchestration patterns, including the dynamic Magentic pattern that delivered 38 percent on GAIA and competitive results on AssistantBench and WebArena in published benchmarks. The GA</description>
+      <pubDate>Wed, 15 Jul 2026 18:57:24 GMT</pubDate>
+      <guid isPermaLink="false">4f4ce17b2d6a6acb3ea9</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Announcing: Multi-agent orchestration SDK with the Microsoft Foundry Agent Framework in C# and Python</title>
+      <link>https://azure.microsoft.com/updates?id=564312</link>
+      <description>Microsoft Foundry is now introducing Agent Framework, a unified multi-agent orchestration SDK for C and Python. This release consolidates patterns previously spread across AutoGen and Semantic Kernel, giving developers a consistent set of abstractions fo</description>
+      <pubDate>Wed, 15 Jul 2026 18:53:28 GMT</pubDate>
+      <guid isPermaLink="false">a6b66f23cb4b9afa8a55</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Announcing: GitHub Copilot and Claude Code connectors in Microsoft Agent Framework</title>
+      <link>https://azure.microsoft.com/updates?id=563701</link>
+      <description>Microsoft Agent Framework has introduced generally available connectors for GitHub Copilot and Claude Code, enabling developers to create .NET and Python agents that can delegate coding tasks seamlessly. This update simplifies the integration process, allowing for more efficient development workflows without the need for custom adapter code.</description>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">54fd634d4a37735016a8</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Announcing: Episodic procedural memory in Microsoft Agent Framework</title>
+      <link>https://azure.microsoft.com/updates?id=563561</link>
+      <description>Microsoft Agent Framework adds episodic procedural memory in public preview, a built-in store that lets agents remember successful task patterns and replay them on similar future requests. The framework records action sequences, tool selections, and inter</description>
+      <pubDate>Wed, 15 Jul 2026 18:48:54 GMT</pubDate>
+      <guid isPermaLink="false">4728e0d100b0fb03bbcc</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Announcing: DevUI Agent Inspector for Microsoft Agent Framework</title>
+      <link>https://azure.microsoft.com/updates?id=563551</link>
+      <description>Microsoft Agent Framework adds DevUI Agent Inspector in public preview, a local debugging surface that shows agent runs as a navigable tree of model calls, tool invocations, and intermediate state. Developers can pause, replay, and edit prompts mid-run, s</description>
+      <pubDate>Wed, 15 Jul 2026 15:15:25 GMT</pubDate>
+      <guid isPermaLink="false">408a0ae83a513b212238</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Announcing: CodeAct pattern and Hyperlight containers in Microsoft Agent Framework</title>
+      <link>https://azure.microsoft.com/updates?id=563566</link>
+      <description>Microsoft Agent Framework adds the CodeAct pattern in public preview, which lets agents collapse a multi-step plan into a single executable code block rather than chaining one tool call at a time. In representative workloads, CodeAct cut end-to-end latenc</description>
+      <pubDate>Wed, 15 Jul 2026 18:50:14 GMT</pubDate>
+      <guid isPermaLink="false">65c14f1675aa7d922040</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Announcing: Agent Harness in Microsoft Agent Framework</title>
+      <link>https://azure.microsoft.com/updates?id=563546</link>
+      <description>Microsoft Agent Framework reaches general availability for Agent Harness, the production runtime for agents built with the framework. Customers running pilots on the preview harness can now move the same agent code into production with backwards compatibi</description>
+      <pubDate>Wed, 15 Jul 2026 18:55:40 GMT</pubDate>
+      <guid isPermaLink="false">56d2153a4bc1c7b2dc15</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Announcing: Agent Channel for Microsoft Agent Framework multi-agent communication</title>
+      <link>https://azure.microsoft.com/updates?id=563556</link>
+      <description>Microsoft Agent Framework has introduced the Agent Channel in public preview, allowing agents to communicate through structured messages without the need for custom routing code. This feature supports both request-response and fire-and-forget messaging, streamlining multi-agent interactions and enhancing development efficiency.</description>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">d2c6f0edf7a67bf3dbf3</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Foundry Local CLI 0.10.2 (Preview)</title>
+      <link>https://github.com/microsoft/Foundry-Local/releases/tag/cli-preview-0.10.2</link>
+      <description>Foundry Local CLI 0.10.2 restores the original Microsoft.FoundryLocal MSIX package identity so Windows and winget perform in-place upgrades instead of installing a duplicate app. Users of earlier 0.10.x builds should uninstall the duplicate package before upgrading.</description>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">e2a1fd3590bb82539cbd</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Foundry Local CLI 0.10.2 (Preview)</title>
+      <link>https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.10.2</link>
+      <description>Restored the MSIX package identity to Microsoft.FoundryLocal. The previous release used a different identity (Microsoft.FoundryLocalCLI), which Windows treated as a separate app. Installing side-by-side instead of upgrading. With the identity restored, winget upgrade and in-place MSIX upgrades now...</description>
+      <pubDate>Tue, 14 Jul 2026 21:39:03 GMT</pubDate>
+      <guid isPermaLink="false">42d75a7600e91cc210e7</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>python-1.11.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.11.0</link>
+      <description>[1.11.0] - 2026-07-09 Added - agent-framework-core: Add message injection middleware so tools or host code can enqueue messages into an active run and drain them into the next model call within the same AgentSession (6998) - agent-framework-core: Integrate message injection into create_harness_agent...</description>
+      <pubDate>Fri, 10 Jul 2026 03:19:16 GMT</pubDate>
+      <guid isPermaLink="false">039e19d37d55bb9ad533</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>azure-ai-evaluation 1.18.1</title>
+      <link>https://pypi.org/project/azure-ai-evaluation/1.18.1</link>
+      <description>Python package 1.18.1 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
+      <pubDate>Thu, 09 Jul 2026 15:00:04 GMT</pubDate>
+      <guid isPermaLink="false">21f60634f201ab0cd18b</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>What’s New in Microsoft Foundry | June 2026</title>
+      <link>https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-june-2026</link>
+      <description>Claude is now generally available in Microsoft Foundry. Here's everything else that shipped between Build 2026 and the end of June — autopilot agents, expanded Toolboxes and Routines, Agent Optimizer's private preview, and more.</description>
+      <pubDate>Tue, 07 Jul 2026 07:10:25 GMT</pubDate>
+      <guid isPermaLink="false">125f6afae9dd99ed8694</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>azure-ai-evaluation 1.18.0</title>
+      <link>https://pypi.org/project/azure-ai-evaluation/1.18.0</link>
+      <description>Python package 1.18.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
+      <pubDate>Mon, 06 Jul 2026 18:51:18 GMT</pubDate>
+      <guid isPermaLink="false">8d417e38ee0025a3bc29</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>dotnet-1.13.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.13.0</link>
+      <description>What's Changed .NET: Harden dotnet-format workflow shell handling by @SergeyMenshykh in https://github.com/microsoft/agent-framework/pull/6796 .NET: Add AgentSkillsSourceContext to AgentSkillsSource.GetSkillsAsync by @SergeyMenshykh in https://github.com/microsoft/agent-framework/pull/6797 .NET...</description>
+      <pubDate>Fri, 03 Jul 2026 17:42:32 GMT</pubDate>
+      <guid isPermaLink="false">9618e0ed7a2c142b940c</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>dotnet-1.12.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.12.0</link>
+      <description>What's Changed .NET: Fix typo in XML doc comment for workflow outputs param by @marcominerva in https://github.com/microsoft/agent-framework/pull/6326 .NET: Add BackgroundTaskCompletionLoopEvaluator for harness background agents by @westey-m in https://github.com/microsoft/agent-framework/pull/6736...</description>
+      <pubDate>Thu, 02 Jul 2026 17:18:25 GMT</pubDate>
+      <guid isPermaLink="false">413ab0b86dbccc43b118</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Claude models generally available in Microsoft Foundry</title>
+      <link>https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/claude-models</link>
+      <description>Anthropic's Claude Opus, Sonnet, and Haiku families are now GA in Foundry with Azure-hosted and Anthropic-hosted deployment options, Entra ID auth, Marketplace billing (CCUs), MACC eligibility, and zero-data-retention options for regulated workloads.</description>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">e62c5d4ef6bf74144c09</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>azure-ai-projects 2.3.0</title>
+      <link>https://pypi.org/project/azure-ai-projects/2.3.0</link>
+      <description>Python package 2.3.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
+      <pubDate>Wed, 01 Jul 2026 21:09:00 GMT</pubDate>
+      <guid isPermaLink="false">b820e5bd591ae9d32929</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>[Launched] Public Preview: Document PII playground sample in Microsoft Foundry NextGen</title>
+      <link>https://azure.microsoft.com/updates?id=563331</link>
+      <description>Document-based PII detection in Azure AI Language now ships an initial playground experience in the Microsoft Foundry NextGen portal. The playground loads a prepared sample document, runs it through the document-based PII feature, and shows the redacted o</description>
+      <pubDate>Wed, 01 Jul 2026 17:04:40 GMT</pubDate>
+      <guid isPermaLink="false">c29ee8a9b6dbfb8e60ff</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>[Launched] Generally Available: Document PII NextGen Playground in Azure AI Language</title>
+      <link>https://azure.microsoft.com/updates?id=564382</link>
+      <description>Azure AI Language now offers a refreshed Document PII playground in general availability, giving customers a faster way to evaluate personally identifiable information detection on documents. The playground ships with curated sample inputs and outputs, so</description>
+      <pubDate>Wed, 01 Jul 2026 17:01:07 GMT</pubDate>
+      <guid isPermaLink="false">c293dc5d6cb568961757</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>python-1.10.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.10.0</link>
+      <description>[1.10.0] - 2026-06-30 Added - agent-framework-core: Explicitly emit available_resources and available_scripts in skill content (6694) - agent-framework-core: Autolabelling MCP servers based on hints and GitHub MCP server interface labels (6171) - agent-framework-core: create_harness_agent...</description>
+      <pubDate>Tue, 30 Jun 2026 20:52:06 GMT</pubDate>
+      <guid isPermaLink="false">9b6475ce243b81f89923</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>[Launched] Generally Available: Toolboxes in Microsoft Foundry</title>
+      <link>https://azure.microsoft.com/updates?id=563481</link>
+      <description>Microsoft Foundry brings Toolboxes to GA, providing a unified endpoint to invoke the most-used tools in prompt agents and callable outside of prompt agents. Today every agent team hand-assembles its own tool list to solve the same tasks, with no shared ar</description>
+      <pubDate>Tue, 30 Jun 2026 19:00:51 GMT</pubDate>
+      <guid isPermaLink="false">7bac9f0a00f7e7b36a54</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>dotnet-1.11.1</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.11.1</link>
+      <description>Changes: d9ec5eaab4918612ae0f7ddf11499576bdb510bf update package version (6752) e3b64fdc4749256fa2d559be18a41f1a008dd7f6 .NET: [BREAKING] Make all AgentSkillsProvider tools require approval by default (6729) [ 6727 ] 3a5bbb5f8e3991d06fc3fe67fe3b01f2441cab0a .NET: Add DeclarativeWorkflowJsonOptions...</description>
+      <pubDate>Thu, 25 Jun 2026 23:09:09 GMT</pubDate>
+      <guid isPermaLink="false">5f0fcd9cc68f45856126</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>dotnet-1.11.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.11.0</link>
+      <description>Changes: 1109d0bf64f3d1dd1e1f2bcaf3b38912ec7e833b Get date suffix up to date with release date (6690) e030fb53ded912d0ce71bd80fe4c0455bc9d5478 .NET: Replace the symlink index entries with regular file entries (6687) e6ebba1884238134628ad081249b451c0eb15df9 Add ADR 0029: Skills over MCP...</description>
+      <pubDate>Tue, 23 Jun 2026 21:18:26 GMT</pubDate>
+      <guid isPermaLink="false">d310888d40f3a2e5775c</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Foundry Local CLI 0.10.1 (Preview)</title>
+      <link>https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.10.1</link>
+      <description>Public preview update for the Foundry Local CLI. &gt; [!IMPORTANT] &gt; Preview. This is an early CLI build. Expect rough edges, missing polish, and changes between releases. Please file issues with [cli] in the title and include foundry report output when possible. What's New Updated Foundry Local SDK...</description>
+      <pubDate>Mon, 22 Jun 2026 23:45:41 GMT</pubDate>
+      <guid isPermaLink="false">4d94fb07dd8d0ad51518</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>python-1.9.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.9.0</link>
+      <description>[1.9.0] - 2026-06-18 Added - agent-framework-core: Add AgentLoopMiddleware for re-running agents in a loop (6174) - agent-framework-core: Integrate tool approval into the harness agent (6522) - agent-framework-core: Add tool approval middleware (6414) - agent-framework-core: Integrate the shell tool...</description>
+      <pubDate>Thu, 18 Jun 2026 09:03:33 GMT</pubDate>
+      <guid isPermaLink="false">79e52dba0f010fdd13ca</guid>
+      <category>published</category>
+    </item>
+  </channel>
+</rss>

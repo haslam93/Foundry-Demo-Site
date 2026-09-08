@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+node_modules/
+_site/
+test-results/
+.azure/
+.venv/
+.env
+.env.*
+*.tmp

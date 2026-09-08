@@ -1,0 +1,124 @@
+name: Deploy Azure demo prompt agent
+
+on:
+  workflow_dispatch:
+    inputs:
+      smoke:
+        description: Make one short, billable inference after deployment
+        type: boolean
+        required: true
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: azure-demo-${{ github.repository }}
+  cancel-in-progress: false
+
+jobs:
+  blocked-ref:
+    if: >-
+      github.repository != 'haslam93/Foundry-Demo-Site' ||
+      github.event_name != 'workflow_dispatch' ||
+      github.ref_type != 'branch' ||
+      github.ref != format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 2
+    steps:
+      - name: Report blocked deployment
+        run: |
+          echo '## Azure demo: blocked' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Dispatch from the default branch of haslam93/Foundry-Demo-Site. No Azure login or deployment was attempted.' >> "$GITHUB_STEP_SUMMARY"
+          exit 1
+
+  deploy:
+    if: >-
+      github.repository == 'haslam93/Foundry-Demo-Site' &&
+      github.event_name == 'workflow_dispatch' &&
+      github.ref_type == 'branch' &&
+      github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    environment: azure-demo
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      AZURE_CLIENT_ID: ${{ vars.AZURE_CLIENT_ID || secrets.AZURE_CLIENT_ID }}
+      AZURE_TENANT_ID: ${{ vars.AZURE_TENANT_ID || secrets.AZURE_TENANT_ID }}
+      AZURE_SUBSCRIPTION_ID: ${{ vars.AZURE_SUBSCRIPTION_ID || secrets.AZURE_SUBSCRIPTION_ID }}
+      AZURE_CORE_OUTPUT: none
+      AZURE_CORE_COLLECT_TELEMETRY: "false"
+      AZURE_CORE_LOGGING_ENABLE_LOG_FILE: "false"
+      PYTHONDONTWRITEBYTECODE: "1"
+      DEMO_ENVIRONMENT: azure-demo
+      DEMO_DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+      DEMO_SMOKE: ${{ inputs.smoke }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - name: Run offline deployment tests
+        run: python -m unittest discover -s tests -p 'test_deploy_demo.py'
+      - name: Validate contracts, branch and OIDC inputs before login
+        id: preflight
+        run: python scripts/deploy_demo.py --check --ci
+      - name: Install existing pinned Python requirements
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
+      - name: Sign in to Azure using federated identity
+        id: login
+        uses: azure/login@532459ea530d8321f2fb9bb10d1e0bcf23869a43 # v3.0.0
+        with:
+          client-id: ${{ env.AZURE_CLIENT_ID }}
+          tenant-id: ${{ env.AZURE_TENANT_ID }}
+          subscription-id: ${{ env.AZURE_SUBSCRIPTION_ID }}
+          audience: api://AzureADTokenExchange
+          auth-type: SERVICE_PRINCIPAL
+          enable-AzPSSession: false
+      - name: Deploy manifest and optionally invoke once
+        id: deployment
+        shell: bash
+        run: |
+          if [[ "$DEMO_SMOKE" == "true" ]]; then
+            python scripts/deploy_demo.py --deploy --ci --smoke
+          else
+            python scripts/deploy_demo.py --deploy --ci
+          fi
+      - name: Report configured, blocked or deployed state
+        if: always()
+        env:
+          CHECK_STATUS: ${{ steps.preflight.outputs.status }}
+          LOGIN_OUTCOME: ${{ steps.login.outcome }}
+          DEPLOY_OUTCOME: ${{ steps.deployment.outcome }}
+          DEPLOY_STATUS: ${{ steps.deployment.outputs.status }}
+          DEPLOY_CHANGE: ${{ steps.deployment.outputs.change }}
+          AGENT_VERSION: ${{ steps.deployment.outputs.agent_version }}
+          SMOKE_STATUS: ${{ steps.deployment.outputs.smoke_status }}
+        shell: bash
+        run: |
+          {
+            echo '## Azure demo'
+            if [[ "$DEPLOY_STATUS" == "deployed" ]]; then
+              printf '%s\n' "Deployed: field-guide-coach version $AGENT_VERSION ($DEPLOY_CHANGE), using existing gpt-5.4-mini in Sweden Central."
+              printf '%s\n' "Smoke: $SMOKE_STATUS. A failed smoke does not undo the registered version."
+            elif [[ "$CHECK_STATUS" == "configured" ]]; then
+              echo 'Configured: offline contracts and OIDC inputs passed. Blocked: a deployed version was not verified by this run.'
+              if [[ "$LOGIN_OUTCOME" == "failure" ]]; then
+                echo 'Azure login failed. Check the azure-demo federated subject, identity IDs and project role. No agent deployment was attempted.'
+              elif [[ "$DEPLOY_CHANGE" == "unverified" || "$DEPLOY_OUTCOME" == "failure" || "$DEPLOY_OUTCOME" == "cancelled" ]]; then
+                echo 'The deploy step may have reached Azure. Inspect the current agent version before rerunning; no POST is automatically retried.'
+              else
+                echo 'The deploy step did not complete. Inspect the preceding step result; do not infer deployment from configuration alone.'
+              fi
+            else
+              echo 'Blocked during checkout, offline tests or input validation. No Azure deployment was attempted.'
+              echo 'Set the three Azure identity variables and the environment protections documented in docs/azure-demo.md.'
+            fi
+            echo 'This workflow does not provision models, hosted compute, gateways, schedules or evaluation services.'
+          } >> "$GITHUB_STEP_SUMMARY"

@@ -1,24 +1,70 @@
 {
-  "last_updated": "2026-09-07",
+  "last_updated": "2026-09-04",
   "items": [
+    {
+      "id": "e66e78fa5cd94ac00185",
+      "date": "2026-09-04",
+      "published_at": "2026-09-04T19:18:13Z",
+      "date_kind": "published",
+      "title": "azure-ai-projects 2.6.0",
+      "summary": "Python package 2.6.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.",
+      "url": "https://pypi.org/project/azure-ai-projects/2.6.0",
+      "source": "projects-sdk",
+      "source_label": "Azure AI Projects SDK",
+      "tags": [
+        "SDK",
+        "Agents"
+      ],
+      "summary_kind": "package_metadata",
+      "release_channel": "stable",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "b7be8f1cf7a870b922b6",
+      "date": "2026-09-04",
+      "published_at": "2026-09-04T18:36:10Z",
+      "date_kind": "published",
+      "title": "azure-ai-evaluation 1.18.5",
+      "summary": "Python package 1.18.5 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.",
+      "url": "https://pypi.org/project/azure-ai-evaluation/1.18.5",
+      "source": "evaluation-sdk",
+      "source_label": "Azure AI Evaluation SDK",
+      "tags": [
+        "SDK",
+        "Evaluation"
+      ],
+      "summary_kind": "package_metadata",
+      "release_channel": "stable",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
     {
       "id": "eb238ff97f50479e5145",
       "date": "2026-09-03",
+      "published_at": "2026-09-03T09:49:35Z",
+      "date_kind": "published",
       "title": "python-1.17.0",
-      "summary": "[1.17.0] - 2026-09-03 Added samples : Add an end-to-end Foundry-hosted Telegram agent sample ( #7883 ) agent-framework-foundry-hosting : Add explicit Agent Server or agent-owned model history selection while preventing duplicated conversation replay ( #7997 ) Changed agent-framework-core , agent-framework-foundry...",
+      "summary": "[1.17.0] - 2026-09-03 Added - samples: Add an end-to-end Foundry-hosted Telegram agent sample (7883) - agent-framework-foundry-hosting: Add explicit Agent Server or agent-owned model history selection while preventing duplicated conversation replay (7997) Changed - agent-framework-core...",
       "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.17.0",
       "source": "agent-framework",
       "source_label": "Microsoft Agent Framework",
       "tags": [
         "SDK",
-        "Models",
+        "Hosted agents",
+        "Observability",
+        "Agent Framework",
         "Agents",
-        "Tools"
-      ]
+        "Tools & MCP"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / Python",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "0a16117cbd6f2574aff3",
       "date": "2026-09-01",
+      "published_at": "2026-09-01T17:22:00Z",
+      "date_kind": "updated",
       "title": "Microsoft Foundry docs: What's new for August 2026 - Microsoft Foundry",
       "summary": "Discover documentation and product updates in Microsoft Foundry for August 2026.",
       "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
@@ -27,81 +73,142 @@
       "tags": [
         "Platform",
         "Documentation"
-      ]
+      ],
+      "summary_kind": "source_description",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "12283c5d8337a80c6cc9",
       "date": "2026-09-01",
+      "published_at": "2026-09-01T05:04:37Z",
+      "date_kind": "published",
       "title": "Foundry Local v2.0.1",
-      "summary": "🚀 Foundry Local v2.0.1 Release Notes We're excited to announce Foundry Local v2.0.1. This release introduces a unified, cross-language inference API, a shared native runtime, and packaging and reliability improvements for Linux and ARM64. Important In-process OpenAI-style SDK clients are replaced by the Session API...",
+      "summary": "🚀 Foundry Local v2.0.1 Release Notes We're excited to announce Foundry Local v2.0.1. This release introduces a unified, cross-language inference API, a shared native runtime, and packaging and reliability improvements for Linux and ARM64. > [!IMPORTANT] > > In-process OpenAI-style SDK clients are...",
       "url": "https://github.com/microsoft/foundry-local/releases/tag/v2.0.1",
       "source": "foundry-local",
       "source_label": "Foundry Local",
       "tags": [
         "Local",
-        "Models",
+        "Hosted agents",
+        "Evaluation",
+        "Observability",
         "Agents",
         "Knowledge"
-      ]
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Foundry Local",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "86edba1469bab6afb48c",
       "date": "2026-08-31",
+      "published_at": "2026-08-31T18:53:19Z",
+      "date_kind": "published",
       "title": "dotnet-1.20.0",
-      "summary": "What's Changed .NET: Bump AWSSDK.Extensions.Bedrock.MEAI from 4.0.6.10 to 4.0.101.8 by Dependabot (@dependabot) [bot] in #7829 .NET: Stabilize Foundry recovery tests by Roger Barreto (@rogerbarreto) in #7817 .NET: fix: preserve Responses logprobs field by Yufeng He (@he-yufeng) in #5860 .NET: Honor cancellation for...",
+      "summary": "What's Changed .NET: Bump AWSSDK.Extensions.Bedrock.MEAI from 4.0.6.10 to 4.0.101.8 by @dependabot[bot] in https://github.com/microsoft/agent-framework/pull/7829 .NET: Stabilize Foundry recovery tests by @rogerbarreto in https://github.com/microsoft/agent-framework/pull/7817 .NET: fix: preserve...",
       "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.20.0",
       "source": "agent-framework",
       "source_label": "Microsoft Agent Framework",
       "tags": [
         "SDK",
+        "Hosted agents",
+        "Agent Framework",
         "Agents",
+        "Tools & MCP",
         "Knowledge"
-      ]
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / .NET",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "b384ba601bfc4138605f",
       "date": "2026-08-28",
+      "published_at": "2026-08-28T00:52:39Z",
+      "date_kind": "published",
       "title": "python-1.16.0",
-      "summary": "[1.16.0] - 2026-08-27 Added agent-framework-core : Add configurable timeouts for waiting on the first background-agent task completion ( #7908 ) agent-framework-core : Allow programmatic OpenTelemetry service metadata, resource attributes, and OTLP exporter configuration ( #7703 ) Changed...",
+      "summary": "[1.16.0] - 2026-08-27 Added - agent-framework-core: Add configurable timeouts for waiting on the first background-agent task completion (7908) - agent-framework-core: Allow programmatic OpenTelemetry service metadata, resource attributes, and OTLP exporter configuration (7703) Changed -...",
       "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.16.0",
       "source": "agent-framework",
       "source_label": "Microsoft Agent Framework",
       "tags": [
         "SDK",
+        "Hosted agents",
+        "Observability",
+        "Agent Framework",
         "Agents",
-        "Tools",
-        "Knowledge"
-      ]
+        "Tools & MCP"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / Python",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "92a936c47fda00f5a578",
       "date": "2026-08-22",
+      "published_at": "2026-08-22T12:48:00Z",
+      "date_kind": "published",
       "title": "dotnet-1.19.0",
-      "summary": "What's Changed .NET: Add session-persisted chat client routing by westey (@westey-m) in #7641 .NET: Fix snake_case argument names in Harness file tool descriptions by westey (@westey-m) with @Copilot in #7731 .NET: Pass IServiceProvider to ChatClientAgent in AddAIAgent overloads by westey (@westey-m) in #7737 .NET...",
+      "summary": "What's Changed .NET: Add session-persisted chat client routing by @westey-m in https://github.com/microsoft/agent-framework/pull/7641 .NET: Fix snake_case argument names in Harness file tool descriptions by @westey-m with @Copilot in https://github.com/microsoft/agent-framework/pull/7731 .NET: Pass...",
       "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.19.0",
       "source": "agent-framework",
       "source_label": "Microsoft Agent Framework",
       "tags": [
         "SDK",
-        "Agents",
-        "Tools",
-        "Knowledge"
-      ]
+        "Hosted agents",
+        "Deployment",
+        "Observability",
+        "Agent Framework",
+        "Agents"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / .NET",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "f8eb4a9bd68bbd7dcf1f",
       "date": "2026-08-21",
+      "published_at": "2026-08-21T23:08:41Z",
+      "date_kind": "published",
       "title": "python-1.15.0",
-      "summary": "[1.15.0] - 2026-08-21 Added agent-framework-ag-ui , agent-framework-openai : Add optional A2UI support for agent-generated interfaces and preserve streaming tool-call indices for A2UI consumers ( #7423 ) agent-framework-core : Add MiddlewareFailure as a first-class fatal signal for function middleware ( #7562 )...",
+      "summary": "[1.15.0] - 2026-08-21 Added - agent-framework-ag-ui, agent-framework-openai: Add optional A2UI support for agent-generated interfaces and preserve streaming tool-call indices for A2UI consumers (7423) - agent-framework-core: Add MiddlewareFailure as a first-class fatal signal for function middleware...",
       "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.15.0",
       "source": "agent-framework",
       "source_label": "Microsoft Agent Framework",
       "tags": [
         "SDK",
-        "Agents",
-        "Tools",
-        "Evaluation"
-      ]
+        "Hosted agents",
+        "Evaluation",
+        "Observability",
+        "Agent Framework",
+        "Agents"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / Python",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "16443b5fa8b92ce2233c",
+      "date": "2026-08-20",
+      "published_at": "2026-08-20T21:56:58Z",
+      "date_kind": "published",
+      "title": "azure-ai-projects 2.5.0",
+      "summary": "Python package 2.5.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.",
+      "url": "https://pypi.org/project/azure-ai-projects/2.5.0",
+      "source": "projects-sdk",
+      "source_label": "Azure AI Projects SDK",
+      "tags": [
+        "SDK",
+        "Agents"
+      ],
+      "summary_kind": "package_metadata",
+      "release_channel": "stable",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "e21dc9f5962d9038340b",
@@ -116,205 +223,357 @@
         "Agents",
         "Knowledge",
         "Evaluation"
-      ]
+      ],
+      "date_kind": "published",
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "0e042fdff85a7042605f",
       "date": "2026-08-17",
+      "published_at": "2026-08-17T19:20:07Z",
+      "date_kind": "published",
       "title": "From single call to agents: five new Claude capabilities now available in Microsoft Foundry",
-      "summary": "Structured outputs, web search, web fetch, MCP connector, and tool search are now available for Claude models hosted on Azure in Microsoft Foundry, turning a model endpoint into a production agent platform. The post From single call to agents: five new Claude capabilities now available in Microsoft Foundry appeared...",
+      "summary": "Structured outputs, web search, web fetch, MCP connector, and tool search are now available for Claude models hosted on Azure in Microsoft Foundry, turning a model endpoint into a production agent platform.",
       "url": "https://devblogs.microsoft.com/foundry/five-new-claude-capabilities-now-available-in-foundry",
       "source": "foundry-blog",
       "source_label": "Microsoft Foundry Blog",
       "tags": [
-        "Models",
         "Agents",
-        "Tools",
-        "Knowledge"
-      ]
+        "Tools & MCP",
+        "Knowledge",
+        "Models"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "aa7d5e104e4dfd9b3e28",
       "date": "2026-08-14",
+      "published_at": "2026-08-14T02:08:06Z",
+      "date_kind": "published",
       "title": "python-1.14.0",
-      "summary": "[1.14.0] - 2026-08-13 Added agent-framework-core , agent-framework-mistral : Add a Mistral chat client with native chat, streaming, tools, structured output, and embeddings support ( #7392 ) agent-framework-core : Add experimental AGENT-HOOKS-0.1 enforcement middleware behind the opt-in agent-hooks extra ( #7515 )...",
+      "summary": "[1.14.0] - 2026-08-13 Added - agent-framework-core, agent-framework-mistral: Add a Mistral chat client with native chat, streaming, tools, structured output, and embeddings support (7392) - agent-framework-core: Add experimental AGENT-HOOKS-0.1 enforcement middleware behind the opt-in agent-hooks...",
       "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.14.0",
       "source": "agent-framework",
       "source_label": "Microsoft Agent Framework",
       "tags": [
         "SDK",
-        "Models",
-        "Agents",
-        "Tools"
-      ]
-    },
-    {
-      "id": "18c5d9247e88d10c0e9b",
-      "date": "2026-08-12",
-      "title": "Microsoft Foundry docs: What's new for July 2026 - Microsoft Foundry",
-      "summary": "Discover documentation and product updates in Microsoft Foundry for July 2026.",
-      "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
-      "source": "foundry-docs",
-      "source_label": "Microsoft Learn",
-      "tags": [
-        "Platform",
-        "Documentation"
-      ]
+        "Hosted agents",
+        "Evaluation",
+        "Observability",
+        "Agent Framework",
+        "Agents"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / Python",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "90119e9aadcc5e42aa70",
       "date": "2026-08-12",
+      "published_at": "2026-08-12T18:43:01Z",
+      "date_kind": "published",
       "title": "From Sync APIs to support for the GPT-5 model series and agentic workflows: What’s new in Azure Content Understanding – August 2026",
-      "summary": "Enterprise content is no longer just something people read. AI apps and agents are only as useful as the information they can understand, yet much of the world’s enterprise knowledge is locked in documents, forms, tables, images, audio, and video. The latest Azure Content Understanding updates help developers turn that...",
+      "summary": "Enterprise content is no longer just something people read. AI apps and agents are only as useful as the information they can understand, yet much of the world’s enterprise knowledge is locked in documents, forms, tables, images, audio, and video. The latest Azure Content Understanding updates help...",
       "url": "https://devblogs.microsoft.com/foundry/azure-content-understanding-updates-august-2026",
       "source": "foundry-blog",
       "source_label": "Microsoft Foundry Blog",
       "tags": [
-        "Models",
         "Agents",
         "Knowledge",
-        "Voice"
-      ]
+        "Models"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "7ab8a30d759dbcb815b0",
       "date": "2026-08-12",
+      "published_at": "2026-08-12T18:42:25Z",
+      "date_kind": "published",
       "title": "Azure Content Understanding GPT-5 Series Guide: Model Selection, Grounding Improvements, and Confidence Enhancements",
-      "summary": "Enterprise content is no longer just something people consume. As organizations increasingly rely on AI to extract and act on information from documents, images, audio, and video, Azure Content Understanding is expanding support for the GPT-5 series and improving grounding and confidence to deliver greater flexibility...",
+      "summary": "Enterprise content is no longer just something people consume. As organizations increasingly rely on AI to extract and act on information from documents, images, audio, and video, Azure Content Understanding is expanding support for the GPT-5 series and improving grounding and confidence to deliver...",
       "url": "https://devblogs.microsoft.com/foundry/azure-content-understanding-gpt-5-series-guide-model-selection-grounding-improvements-and-confidence-enhancements",
       "source": "foundry-blog",
       "source_label": "Microsoft Foundry Blog",
       "tags": [
-        "Models",
+        "Observability",
         "Agents",
-        "Evaluation",
-        "Voice"
-      ]
+        "Models"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "646f42b6b91a08c98e2b",
       "date": "2026-08-07",
+      "published_at": "2026-08-07T21:46:47Z",
+      "date_kind": "published",
       "title": "Foundry Local CLI 0.10.3 (Preview)",
-      "summary": "Public preview update for the Foundry Local CLI. Important Preview. This is an early CLI build. Expect rough edges, missing polish, and changes between releases. Please file issues with [cli] in the title and include foundry report output when possible. What's New Updated Foundry Local SDK This build updates the...",
+      "summary": "Public preview update for the Foundry Local CLI. > [!IMPORTANT] > Preview. This is an early CLI build. Expect rough edges, missing polish, and changes between releases. Please file issues with [cli] in the title and include foundry report output when possible. What's New Updated Foundry Local SDK...",
       "url": "https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.10.3",
       "source": "foundry-local",
       "source_label": "Foundry Local",
       "tags": [
+        "Prerelease",
         "Preview",
         "Local",
-        "Models",
-        "Voice"
-      ]
+        "Models"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "prerelease",
+      "component": "Foundry Local / CLI",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "081433b6ce6862a21cfa",
+      "date": "2026-08-05",
+      "published_at": "2026-08-05T22:32:45Z",
+      "date_kind": "published",
+      "title": "[Launched] Generally Available: Unity AI Gateway on Azure Databricks",
+      "summary": "Unity AI Gateway is now generally available on Azure Databricks. Unity AI Gateway provides centralized governance for AI models, agents, tools, and MCP services, helping organizations monitor usage, manage costs, apply guardrails, and enforce access contr",
+      "url": "https://azure.microsoft.com/updates?id=568910",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "GA",
+        "API gateway",
+        "Observability",
+        "Agents",
+        "Tools & MCP",
+        "Security"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "0b1b3b6697c1d2d07c42",
       "date": "2026-08-04",
+      "published_at": "2026-08-04T23:27:18Z",
+      "date_kind": "published",
       "title": "dotnet-1.17.0",
-      "summary": "What's Changed .NET and Python: Extract Durable Task and Azure Functions integrations by Chris Gillum (@cgillum) in #7465 .NET: Fix Handoff orchestration sample not responding to user input by Peter Ibekwe (@peibekwe) in #7442 .NET: Fail declarative workflows when an agent returns an error by Peter Ibekwe (@peibekwe)...",
+      "summary": "What's Changed .NET and Python: Extract Durable Task and Azure Functions integrations by @cgillum in https://github.com/microsoft/agent-framework/pull/7465 .NET: Fix Handoff orchestration sample not responding to user input by @peibekwe in https://github.com/microsoft/agent-framework/pull/7442 .NET...",
       "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.17.0",
       "source": "agent-framework",
       "source_label": "Microsoft Agent Framework",
       "tags": [
         "SDK",
+        "Observability",
+        "Agent Framework",
         "Agents"
-      ]
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / .NET",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "93755f247d247961d010",
       "date": "2026-07-30",
+      "published_at": "2026-07-30T21:51:03Z",
+      "date_kind": "published",
       "title": "v1.2.4 Foundry Local",
-      "summary": "Resolves FL winml variant bug where webgpu execution provider was being discovered twice (through winml catalog eps in addition to FL eps) Resolves race condition reported in #867 CLI release will follow shortly.",
+      "summary": "- Resolves FL winml variant bug where webgpu execution provider was being discovered twice (through winml catalog eps in addition to FL eps) - Resolves race condition reported in https://github.com/microsoft/foundry-local/issues/867 CLI release will follow shortly.",
       "url": "https://github.com/microsoft/foundry-local/releases/tag/v1.2.4",
       "source": "foundry-local",
       "source_label": "Foundry Local",
       "tags": [
         "Local"
-      ]
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Foundry Local",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "a1d3e06e6f84ac229e30",
       "date": "2026-07-30",
+      "published_at": "2026-07-30T23:22:33Z",
+      "date_kind": "published",
       "title": "python-1.13.0",
-      "summary": "[1.13.0] - 2026-07-30 Added agent-framework-core , agent-framework-foundry-hosting : Add bounded, in-memory archive skill discovery for MCP sources and expose archive controls through FoundryToolbox ( #7121 ) agent-framework-core , agent-framework-foundry-hosting , agent-framework-hosting...",
+      "summary": "[1.13.0] - 2026-07-30 Added - agent-framework-core, agent-framework-foundry-hosting: Add bounded, in-memory archive skill discovery for MCP sources and expose archive controls through FoundryToolbox (7121) - agent-framework-core, agent-framework-foundry-hosting, agent-framework-hosting...",
       "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.13.0",
       "source": "agent-framework",
       "source_label": "Microsoft Agent Framework",
       "tags": [
         "SDK",
-        "Models",
+        "Hosted agents",
+        "Observability",
+        "Agent Framework",
         "Agents",
-        "Tools"
-      ]
+        "Tools & MCP"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / Python",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "579a168dd75106986ded",
       "date": "2026-07-30",
+      "published_at": "2026-07-30T18:13:10Z",
+      "date_kind": "published",
       "title": "dotnet-1.16.0",
-      "summary": "What's Changed .NET: fix InMemoryChatHistoryProvider persisting when service stores history by @westey-m in #7284 .NET: Add TodoProvider and AgentModeProvider samples by @westey-m in #7262 .NET: Graduate GitHub Copilot agent to stable by @giles17 in #7313 .NET: Create session for tool approval agent when none provided...",
+      "summary": "What's Changed .NET: fix InMemoryChatHistoryProvider persisting when service stores history by @westey-m in https://github.com/microsoft/agent-framework/pull/7284 .NET: Add TodoProvider and AgentModeProvider samples by @westey-m in https://github.com/microsoft/agent-framework/pull/7262 .NET...",
       "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.16.0",
       "source": "agent-framework",
       "source_label": "Microsoft Agent Framework",
       "tags": [
         "SDK",
+        "Hosted agents",
+        "Deployment",
+        "Agent Framework",
         "Agents",
-        "Observability"
-      ]
+        "Tools & MCP"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / .NET",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "144f41cd832a066ad080",
+      "date": "2026-07-29",
+      "published_at": "2026-07-29T19:16:09Z",
+      "date_kind": "published",
+      "title": "azure-ai-evaluation 1.18.3",
+      "summary": "Python package 1.18.3 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.",
+      "url": "https://pypi.org/project/azure-ai-evaluation/1.18.3",
+      "source": "evaluation-sdk",
+      "source_label": "Azure AI Evaluation SDK",
+      "tags": [
+        "SDK",
+        "Evaluation"
+      ],
+      "summary_kind": "package_metadata",
+      "release_channel": "stable",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "35253eb85e72f1642f31",
+      "date": "2026-07-27",
+      "published_at": "2026-07-27T21:53:02Z",
+      "date_kind": "published",
+      "title": "azure-ai-projects 2.4.0",
+      "summary": "Python package 2.4.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.",
+      "url": "https://pypi.org/project/azure-ai-projects/2.4.0",
+      "source": "projects-sdk",
+      "source_label": "Azure AI Projects SDK",
+      "tags": [
+        "SDK",
+        "Agents"
+      ],
+      "summary_kind": "package_metadata",
+      "release_channel": "stable",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "6cb6c1129bcdf0bf35a5",
+      "date": "2026-07-27",
+      "published_at": "2026-07-27T16:44:29Z",
+      "date_kind": "published",
+      "title": "[In preview] Public Preview: AI Gateway in Azure API Management",
+      "summary": "The AI Gateway tier for Azure API Management is now available in public preview. Building on the AI gateway capabilities already available across API Management tiers, the new AI Gateway tier provides a dedicated experience optimized for AI workloads.As o",
+      "url": "https://azure.microsoft.com/updates?id=568184",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview",
+        "API gateway"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "aff8b8a646f4bb6ab2fb",
       "date": "2026-07-23",
+      "published_at": "2026-07-23T11:25:21Z",
+      "date_kind": "published",
       "title": "python-hosting-a2a-1.0.0a260723",
-      "summary": "The Microsoft Agent Framework has introduced version 1.0.0a260723, which adds progressive agent and workflow A2A adapters featuring native card generation, skill discovery, typed conversion, and mode-aware validation. Additionally, the app-owned A2A hosting sample has been updated to utilize the new progressive adapter surface. These enhancements improve the integration and functionality of agents in applications, streamlining development processes for developers.",
+      "summary": "Added - agent-framework-hosting-a2a: Add progressive agent and workflow A2A adapters with native card generation, skill discovery, typed conversion, and mode-aware validation (7258) Changed - samples: Update the app-owned A2A hosting sample to use the progressive adapter surface (7258)",
       "url": "https://github.com/microsoft/agent-framework/releases/tag/python-hosting-a2a-1.0.0a260723",
       "source": "agent-framework",
       "source_label": "Microsoft Agent Framework",
       "tags": [
+        "Prerelease",
         "SDK",
-        "Agents"
-      ]
+        "Hosted agents",
+        "Agent Framework",
+        "Agents",
+        "Tools & MCP"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "prerelease",
+      "component": "Agent Framework integration",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "d7bc887273c35bece83d",
       "date": "2026-07-23",
+      "published_at": "2026-07-23T21:32:23Z",
+      "date_kind": "published",
       "title": "python-github-copilot-1.0.0",
-      "summary": "The Microsoft Agent Framework has promoted the agent-framework-github-copilot package from release candidate to stable, allowing developers to forward input attachments such as images and documents to GitHub Copilot as inline blobs. This update enhances the integration capabilities of GitHub Copilot, improving the development workflow for users.",
+      "summary": "[github-copilot-1.0.0] - 2026-07-23 Added - agent-framework-github-copilot: Forward input attachments (images, documents, and other inline binary content) to GitHub Copilot as inline blobs (7300) Changed - agent-framework-github-copilot: Promote the package from release candidate to stable",
       "url": "https://github.com/microsoft/agent-framework/releases/tag/python-github-copilot-1.0.0",
       "source": "agent-framework",
       "source_label": "Microsoft Agent Framework",
       "tags": [
         "SDK",
+        "Agent Framework",
         "Agents"
-      ]
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework integration",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "676ea48abbcb7b8b18bc",
       "date": "2026-07-23",
+      "published_at": "2026-07-23T04:36:41Z",
+      "date_kind": "published",
       "title": "python-1.12.1",
-      "summary": "The Microsoft Agent Framework has released version 1.12.1, promoting the agent-framework-ag-ui package to stable and adding explicit prompt cache breakpoints for GPT-5.6 models. Additionally, security guidance for custom MCP Streamable HTTP clients has been introduced, and several fixes have been made to improve the functionality and reliability of tool calls and Gemini 3 thought signatures. This update enhances developer capabilities and security in building AI-driven applications.",
+      "summary": "[1.12.1] - 2026-07-22 Added - agent-framework-openai: Add explicit prompt cache breakpoints for GPT-5.6 models and a usage sample (7163) Changed - agent-framework-ag-ui: Promote the package from release candidate to stable - agent-framework-core: Add security guidance for custom MCP Streamable HTTP...",
       "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.12.1",
       "source": "agent-framework",
       "source_label": "Microsoft Agent Framework",
       "tags": [
         "SDK",
-        "Models",
+        "Hosted agents",
+        "Agent Framework",
         "Agents",
-        "Tools"
-      ]
+        "Tools & MCP",
+        "Security"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / Python",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "a537f00b346f6c8b4f43",
       "date": "2026-07-22",
+      "published_at": "2026-07-22T23:58:13Z",
+      "date_kind": "published",
       "title": "dotnet-1.15.0",
-      "summary": "The Microsoft Agent Framework has released dotnet-1.15.0, which includes breaking changes to the Hosting OpenAI Responses protocol helpers, enhancements for security and logging, and new examples for Dapr as an agent provider. This update improves workflow credential management and supports advanced features for OpenAI clients, making it crucial for developers to adopt these changes to enhance application security and functionality.",
+      "summary": "What's Changed Python: Add MCPStreamableHTTPTool security guidance for custom http client by @TaoChenOSU in https://github.com/microsoft/agent-framework/pull/7245 Harden workflow credential selection by @moonbox3 in https://github.com/microsoft/agent-framework/pull/7249 Python: preserve Gemini 3...",
       "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.15.0",
       "source": "agent-framework",
       "source_label": "Microsoft Agent Framework",
       "tags": [
         "SDK",
-        "Models",
+        "Hosted agents",
+        "Agent Framework",
         "Agents",
-        "Tools"
-      ]
+        "Tools & MCP",
+        "Security"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / .NET",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "84ff45872a857250044e",
@@ -328,42 +587,77 @@
         "SDK",
         "Agents",
         "Tools"
-      ]
+      ],
+      "date_kind": "published",
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "5d41eaf4afce3c49a900",
+      "date": "2026-07-22",
+      "published_at": "2026-07-22T18:21:01Z",
+      "date_kind": "published",
+      "title": "azure-ai-evaluation 1.18.2",
+      "summary": "Python package 1.18.2 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.",
+      "url": "https://pypi.org/project/azure-ai-evaluation/1.18.2",
+      "source": "evaluation-sdk",
+      "source_label": "Azure AI Evaluation SDK",
+      "tags": [
+        "SDK",
+        "Evaluation"
+      ],
+      "summary_kind": "package_metadata",
+      "release_channel": "stable",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "4526bf80c038076c4fb6",
       "date": "2026-07-22",
+      "published_at": "2026-07-22T15:00:29Z",
+      "date_kind": "published",
       "title": "Building Agents that Act on Your Behalf with Toolboxes in Foundry",
-      "summary": "Microsoft Foundry has introduced Toolboxes, which enable agents to act on behalf of users by managing identity delegation for tasks such as accessing Entra-protected servers and Microsoft 365 resources. This update enhances the capability of internal employee agents, allowing for more efficient and secure interactions within organizational systems.",
+      "summary": "How Toolboxes in Foundry simplify user delegation At some point, many agents move from answering questions to taking action. And when it does, the question becomes: whose identity is it acting with? Imagine you are building an internal employee agent. It needs to call a private, Entra-protected MCP...",
       "url": "https://devblogs.microsoft.com/foundry/building-agents-that-act-on-your-behalf-with-toolboxes-in-foundry",
       "source": "foundry-blog",
       "source_label": "Microsoft Foundry Blog",
       "tags": [
         "Agents",
-        "Tools",
+        "Tools & MCP",
         "Security"
-      ]
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "5bdba8219c526e0e149d",
       "date": "2026-07-21",
+      "published_at": "2026-07-21T19:40:32Z",
+      "date_kind": "published",
       "title": "python-1.12.0",
-      "summary": "The release of Python 1.12.0 introduces several updates, including an alpha Azure Cosmos DB semantic-memory context provider, enhancements to workflow and hosting capabilities, and the promotion of various components to stable or beta status. Notably, the agent-framework-foundry-hosting package is now in beta and included in the main installation surface, which improves accessibility for developers. These changes enhance the framework's functionality and stability, facilitating more robust application development.",
+      "summary": "[1.12.0] - 2026-07-21 Added - agent-framework-azure-cosmos-memory: Add an alpha Azure Cosmos DB semantic-memory context provider with fact extraction, user profiles, samples, and integration coverage (6719) - agent-framework-azurefunctions, agent-framework-core, agent-framework-durabletask: Add HITL...",
       "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.12.0",
       "source": "agent-framework",
       "source_label": "Microsoft Agent Framework",
       "tags": [
         "SDK",
-        "Models",
+        "Hosted agents",
+        "Observability",
+        "Agent Framework",
         "Agents",
-        "Tools"
-      ]
+        "Tools & MCP"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / Python",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "10163d04d99a04383c77",
       "date": "2026-07-20",
+      "published_at": "2026-07-20T15:09:43Z",
+      "date_kind": "published",
       "title": "[In preview] Public Preview: Protect sensitive generative AI telemetry in Application Insights and Microsoft Foundry",
-      "summary": "Microsoft Foundry has introduced a public preview feature that allows Azure Monitor Application Insights to store generative AI content in a dedicated GenAIContent table, enabling enhanced access controls for sensitive AI telemetry. This update is significant as it improves data security and compliance for developers handling sensitive information in their applications.",
+      "summary": "Azure Monitor Application Insights now stores generative AI content in a dedicated GenAIContent table (AppGenAIContent in Log Analytics), making it possible to apply newly available access controls to sensitive AI telemetry. Because Application Insights p",
       "url": "https://azure.microsoft.com/updates?id=567594",
       "source": "azure-updates",
       "source_label": "Azure Updates",
@@ -371,45 +665,63 @@
         "Preview",
         "Observability",
         "Security"
-      ]
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "ae818f49214139c82ea6",
       "date": "2026-07-15",
+      "published_at": "2026-07-15T18:51:45Z",
+      "date_kind": "published",
       "title": "Announcing: Tracing for Microsoft Agent Framework (Python and .NET)",
-      "summary": "Microsoft Foundry has introduced tracing for the Microsoft Agent Framework in public preview for both Python and .NET, enabling developers to monitor agent behavior, tool interactions, and model engagements during execution. This enhancement is significant for improving debugging and performance analysis in agent-based applications.",
+      "summary": "In public preview, Microsoft Foundry now offers tracing for the Microsoft Agent Framework in both Python and .NET, helping developers observe how agents reason, call tools, and interact with models during execution. This release is part of the broader hos",
       "url": "https://azure.microsoft.com/updates?id=564071",
       "source": "azure-updates",
       "source_label": "Azure Updates",
       "tags": [
-        "Models",
-        "Agents"
-      ]
+        "Observability",
+        "Agent Framework",
+        "Agents",
+        "Models"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "4f4ce17b2d6a6acb3ea9",
       "date": "2026-07-15",
+      "published_at": "2026-07-15T18:57:24Z",
+      "date_kind": "published",
       "title": "Announcing: Multi-agent orchestration patterns including Magentic in Microsoft Agent Framework",
-      "summary": "Microsoft Agent Framework has reached general availability for multi-agent orchestration patterns, introducing the Magentic pattern, which achieved a 38 percent improvement on GAIA and competitive results on AssistantBench and WebArena benchmarks. This update enhances developers' capabilities in creating more efficient and effective multi-agent systems.",
+      "summary": "Microsoft Agent Framework reaches general availability for multi-agent orchestration patterns, including the dynamic Magentic pattern that delivered 38 percent on GAIA and competitive results on AssistantBench and WebArena in published benchmarks. The GA",
       "url": "https://azure.microsoft.com/updates?id=563571",
       "source": "azure-updates",
       "source_label": "Azure Updates",
       "tags": [
+        "Agent Framework",
         "Agents"
-      ]
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "a6b66f23cb4b9afa8a55",
       "date": "2026-07-15",
+      "published_at": "2026-07-15T18:53:28Z",
+      "date_kind": "published",
       "title": "Announcing: Multi-agent orchestration SDK with the Microsoft Foundry Agent Framework in C# and Python",
-      "summary": "Microsoft Foundry has launched the Agent Framework, a multi-agent orchestration SDK available in C# and Python. This update consolidates existing patterns from AutoGen and Semantic Kernel, providing developers with a unified set of abstractions, which simplifies the development process and enhances the efficiency of building multi-agent systems.",
+      "summary": "Microsoft Foundry is now introducing Agent Framework, a unified multi-agent orchestration SDK for C and Python. This release consolidates patterns previously spread across AutoGen and Semantic Kernel, giving developers a consistent set of abstractions fo",
       "url": "https://azure.microsoft.com/updates?id=564312",
       "source": "azure-updates",
       "source_label": "Azure Updates",
       "tags": [
-        "Agents",
-        "SDK"
-      ]
+        "Observability",
+        "Agent Framework",
+        "Agents"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "54fd634d4a37735016a8",
@@ -422,56 +734,80 @@
       "tags": [
         "Models",
         "Agents"
-      ]
+      ],
+      "date_kind": "published",
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "4728e0d100b0fb03bbcc",
       "date": "2026-07-15",
+      "published_at": "2026-07-15T18:48:54Z",
+      "date_kind": "published",
       "title": "Announcing: Episodic procedural memory in Microsoft Agent Framework",
-      "summary": "Microsoft Agent Framework has introduced episodic procedural memory in public preview, allowing agents to remember and replay successful task patterns for similar future requests. This enhancement improves the efficiency and effectiveness of agent interactions, making them more responsive to user needs.",
+      "summary": "Microsoft Agent Framework adds episodic procedural memory in public preview, a built-in store that lets agents remember successful task patterns and replay them on similar future requests. The framework records action sequences, tool selections, and inter",
       "url": "https://azure.microsoft.com/updates?id=563561",
       "source": "azure-updates",
       "source_label": "Azure Updates",
       "tags": [
+        "Agent Framework",
         "Agents"
-      ]
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "408a0ae83a513b212238",
       "date": "2026-07-15",
+      "published_at": "2026-07-15T15:15:25Z",
+      "date_kind": "published",
       "title": "Announcing: DevUI Agent Inspector for Microsoft Agent Framework",
-      "summary": "Microsoft Agent Framework has introduced the DevUI Agent Inspector in public preview, providing developers with a local debugging interface that displays agent runs as a navigable tree. This feature allows for pausing, replaying, and editing prompts during execution, enhancing the debugging process and improving development efficiency.",
+      "summary": "Microsoft Agent Framework adds DevUI Agent Inspector in public preview, a local debugging surface that shows agent runs as a navigable tree of model calls, tool invocations, and intermediate state. Developers can pause, replay, and edit prompts mid-run, s",
       "url": "https://azure.microsoft.com/updates?id=563551",
       "source": "azure-updates",
       "source_label": "Azure Updates",
       "tags": [
-        "Models",
-        "Agents"
-      ]
+        "Agent Framework",
+        "Agents",
+        "Models"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "65c14f1675aa7d922040",
       "date": "2026-07-15",
+      "published_at": "2026-07-15T18:50:14Z",
+      "date_kind": "published",
       "title": "Announcing: CodeAct pattern and Hyperlight containers in Microsoft Agent Framework",
-      "summary": "Microsoft Agent Framework has introduced the CodeAct pattern in public preview, allowing agents to consolidate multi-step plans into a single executable code block, significantly reducing end-to-end latency in representative workloads. This enhancement streamlines agent operations, improving efficiency for developers.",
+      "summary": "Microsoft Agent Framework adds the CodeAct pattern in public preview, which lets agents collapse a multi-step plan into a single executable code block rather than chaining one tool call at a time. In representative workloads, CodeAct cut end-to-end latenc",
       "url": "https://azure.microsoft.com/updates?id=563566",
       "source": "azure-updates",
       "source_label": "Azure Updates",
       "tags": [
+        "Hosted agents",
+        "Agent Framework",
         "Agents"
-      ]
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "56d2153a4bc1c7b2dc15",
       "date": "2026-07-15",
+      "published_at": "2026-07-15T18:55:40Z",
+      "date_kind": "published",
       "title": "Announcing: Agent Harness in Microsoft Agent Framework",
-      "summary": "Microsoft Agent Framework has reached general availability for Agent Harness, allowing customers to transition their pilot agents into production seamlessly while maintaining backward compatibility. This update is significant as it enables developers to deploy their agent solutions reliably in a production environment.",
+      "summary": "Microsoft Agent Framework reaches general availability for Agent Harness, the production runtime for agents built with the framework. Customers running pilots on the preview harness can now move the same agent code into production with backwards compatibi",
       "url": "https://azure.microsoft.com/updates?id=563546",
       "source": "azure-updates",
       "source_label": "Azure Updates",
       "tags": [
+        "Agent Framework",
         "Agents"
-      ]
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "d2c6f0edf7a67bf3dbf3",
@@ -483,7 +819,10 @@
       "source_label": "Azure Updates",
       "tags": [
         "Agents"
-      ]
+      ],
+      "date_kind": "published",
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "e2a1fd3590bb82539cbd",
@@ -496,84 +835,155 @@
       "tags": [
         "Preview",
         "Local"
-      ]
+      ],
+      "date_kind": "published",
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "42d75a7600e91cc210e7",
       "date": "2026-07-14",
+      "published_at": "2026-07-14T21:39:03Z",
+      "date_kind": "published",
       "title": "Foundry Local CLI 0.10.2 (Preview)",
-      "summary": "The Foundry Local CLI 0.10.2 (Preview) has restored the MSIX package identity to Microsoft.FoundryLocal, enabling proper winget upgrades and in-place MSIX upgrades for users. This change resolves issues from the previous version that treated the app as separate, ensuring a smoother upgrade process for developers. Users are advised to uninstall earlier 0.10.x builds to prevent duplicate installations.",
+      "summary": "Restored the MSIX package identity to Microsoft.FoundryLocal. The previous release used a different identity (Microsoft.FoundryLocalCLI), which Windows treated as a separate app. Installing side-by-side instead of upgrading. With the identity restored, winget upgrade and in-place MSIX upgrades now...",
       "url": "https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.10.2",
       "source": "foundry-local",
       "source_label": "Foundry Local",
       "tags": [
+        "Prerelease",
         "Preview",
         "Local"
-      ]
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "prerelease",
+      "component": "Foundry Local / CLI",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "039e19d37d55bb9ad533",
       "date": "2026-07-10",
+      "published_at": "2026-07-10T03:19:16Z",
+      "date_kind": "published",
       "title": "python-1.11.0",
-      "summary": "Agent Framework Python 1.11 adds mid-run message injection, progressive MCP tool disclosure, context-aware skill filtering, cache TTLs, hosting protocol helpers, and long-stream keepalives. The release also includes experimental breaking changes and multi-workflow Durable Task hosting updates.",
+      "summary": "[1.11.0] - 2026-07-09 Added - agent-framework-core: Add message injection middleware so tools or host code can enqueue messages into an active run and drain them into the next model call within the same AgentSession (6998) - agent-framework-core: Integrate message injection into create_harness_agent...",
       "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.11.0",
       "source": "agent-framework",
       "source_label": "Microsoft Agent Framework",
       "tags": [
         "SDK",
-        "Models",
-        "Agents",
-        "Tools"
-      ]
+        "Hosted agents",
+        "Deployment",
+        "Observability",
+        "Agent Framework",
+        "Agents"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / Python",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
-      "id": "8f4b9d4d69eb806a51c8",
-      "date": "2026-07-08",
-      "title": "Microsoft Foundry docs: What's new for June 2026 - Microsoft Foundry",
-      "summary": "Discover documentation and product updates in Microsoft Foundry for June 2026.",
-      "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
-      "source": "foundry-docs",
-      "source_label": "Microsoft Learn",
+      "id": "21f60634f201ab0cd18b",
+      "date": "2026-07-09",
+      "published_at": "2026-07-09T15:00:04Z",
+      "date_kind": "published",
+      "title": "azure-ai-evaluation 1.18.1",
+      "summary": "Python package 1.18.1 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.",
+      "url": "https://pypi.org/project/azure-ai-evaluation/1.18.1",
+      "source": "evaluation-sdk",
+      "source_label": "Azure AI Evaluation SDK",
       "tags": [
-        "Platform",
-        "Documentation"
-      ]
+        "SDK",
+        "Evaluation"
+      ],
+      "summary_kind": "package_metadata",
+      "release_channel": "stable",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
+      "id": "125f6afae9dd99ed8694",
       "date": "2026-07-07",
+      "published_at": "2026-07-07T07:10:25Z",
+      "date_kind": "published",
       "title": "What’s New in Microsoft Foundry | June 2026",
-      "summary": "The June roundup covers Claude GA, autopilot agents, Toolboxes and Routines, richer Memory, Foundry Local on Azure Local, Voice Live updates, and the Agent Optimizer private preview. Availability varies by capability, so this guide cross-checks individual status against Azure Updates and Microsoft Learn.",
+      "summary": "Claude is now generally available in Microsoft Foundry. Here's everything else that shipped between Build 2026 and the end of June — autopilot agents, expanded Toolboxes and Routines, Agent Optimizer's private preview, and more.",
       "url": "https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-june-2026",
       "source": "foundry-blog",
-      "tags": [
-        "Update"
-      ],
       "source_label": "Microsoft Foundry Blog",
-      "id": "125f6afae9dd99ed8694"
+      "tags": [
+        "Evaluation",
+        "Agents",
+        "Tools & MCP",
+        "Security",
+        "Models",
+        "Local"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
+      "id": "8d417e38ee0025a3bc29",
+      "date": "2026-07-06",
+      "published_at": "2026-07-06T18:51:18Z",
+      "date_kind": "published",
+      "title": "azure-ai-evaluation 1.18.0",
+      "summary": "Python package 1.18.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.",
+      "url": "https://pypi.org/project/azure-ai-evaluation/1.18.0",
+      "source": "evaluation-sdk",
+      "source_label": "Azure AI Evaluation SDK",
+      "tags": [
+        "SDK",
+        "Evaluation"
+      ],
+      "summary_kind": "package_metadata",
+      "release_channel": "stable",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "9618e0ed7a2c142b940c",
       "date": "2026-07-03",
+      "published_at": "2026-07-03T17:42:32Z",
+      "date_kind": "published",
       "title": "dotnet-1.13.0",
-      "summary": "The .NET 1.13.0 release introduces several enhancements, including improved shell handling for dotnet-format, added skill approval options, and per-user session isolation for Foundry Hosting. Notably, it also includes breaking changes to the FileAccess/FileMemory store API and refactors OpenAI Hosting options for better security and usability.",
+      "summary": "What's Changed .NET: Harden dotnet-format workflow shell handling by @SergeyMenshykh in https://github.com/microsoft/agent-framework/pull/6796 .NET: Add AgentSkillsSourceContext to AgentSkillsSource.GetSkillsAsync by @SergeyMenshykh in https://github.com/microsoft/agent-framework/pull/6797 .NET...",
       "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.13.0",
       "source": "agent-framework",
-      "tags": [
-        "SDK"
-      ],
       "source_label": "Microsoft Agent Framework",
-      "id": "9618e0ed7a2c142b940c"
+      "tags": [
+        "SDK",
+        "Hosted agents",
+        "Agent Framework",
+        "Agents",
+        "Tools & MCP"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / .NET",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
+      "id": "413ab0b86dbccc43b118",
       "date": "2026-07-02",
+      "published_at": "2026-07-02T17:18:25Z",
+      "date_kind": "published",
       "title": "dotnet-1.12.0",
-      "summary": "The .NET 1.12.0 release introduces several enhancements, including OAuth consent support for Foundry hosted-agent toolbox and a new BackgroundTaskCompletionLoopEvaluator for harness background agents. It also includes breaking changes, such as aligning Foundry.Hosting experimental flags with MAAI001 and extracting caching functionality into a new CachingAgentSkillsSource, improving overall framework stability and functionality.",
+      "summary": "What's Changed .NET: Fix typo in XML doc comment for workflow outputs param by @marcominerva in https://github.com/microsoft/agent-framework/pull/6326 .NET: Add BackgroundTaskCompletionLoopEvaluator for harness background agents by @westey-m in https://github.com/microsoft/agent-framework/pull/6736...",
       "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.12.0",
       "source": "agent-framework",
-      "tags": [
-        "SDK"
-      ],
       "source_label": "Microsoft Agent Framework",
-      "id": "413ab0b86dbccc43b118"
+      "tags": [
+        "SDK",
+        "Hosted agents",
+        "Evaluation",
+        "Observability",
+        "Agent Framework",
+        "Agents"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / .NET",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "date": "2026-07-02",
@@ -586,75 +996,1211 @@
         "Models"
       ],
       "source_label": "Microsoft Learn",
-      "id": "e62c5d4ef6bf74144c09"
+      "id": "e62c5d4ef6bf74144c09",
+      "date_kind": "updated",
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "b820e5bd591ae9d32929",
+      "date": "2026-07-01",
+      "published_at": "2026-07-01T21:09:00Z",
+      "date_kind": "published",
+      "title": "azure-ai-projects 2.3.0",
+      "summary": "Python package 2.3.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.",
+      "url": "https://pypi.org/project/azure-ai-projects/2.3.0",
+      "source": "projects-sdk",
+      "source_label": "Azure AI Projects SDK",
+      "tags": [
+        "SDK",
+        "Agents"
+      ],
+      "summary_kind": "package_metadata",
+      "release_channel": "stable",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "c29ee8a9b6dbfb8e60ff",
       "date": "2026-07-01",
+      "published_at": "2026-07-01T17:04:40Z",
+      "date_kind": "published",
       "title": "[Launched] Public Preview: Document PII playground sample in Microsoft Foundry NextGen",
-      "summary": "A public-preview sample playground in the Microsoft Foundry portal demonstrates document-based PII detection and redaction using a prepared document, making the feature easier to evaluate before integrating it into an application.",
+      "summary": "Document-based PII detection in Azure AI Language now ships an initial playground experience in the Microsoft Foundry NextGen portal. The playground loads a prepared sample document, runs it through the document-based PII feature, and shows the redacted o",
       "url": "https://azure.microsoft.com/updates?id=563331",
       "source": "azure-updates",
       "source_label": "Azure Updates",
       "tags": [
-        "Preview",
-        "Security"
-      ]
+        "Preview"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "c293dc5d6cb568961757",
       "date": "2026-07-01",
+      "published_at": "2026-07-01T17:01:07Z",
+      "date_kind": "published",
       "title": "[Launched] Generally Available: Document PII NextGen Playground in Azure AI Language",
-      "summary": "The refreshed Document PII playground is generally available in Azure AI Language, with curated sample inputs and outputs for evaluating document-level PII detection and redaction in the Microsoft Foundry experience.",
+      "summary": "Azure AI Language now offers a refreshed Document PII playground in general availability, giving customers a faster way to evaluate personally identifiable information detection on documents. The playground ships with curated sample inputs and outputs, so",
       "url": "https://azure.microsoft.com/updates?id=564382",
       "source": "azure-updates",
       "source_label": "Azure Updates",
       "tags": [
         "GA",
-        "Evaluation",
-        "Security"
-      ]
+        "Evaluation"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
+      "id": "9b6475ce243b81f89923",
       "date": "2026-06-30",
+      "published_at": "2026-06-30T20:52:06Z",
+      "date_kind": "published",
       "title": "python-1.10.0",
-      "summary": "The agent-framework version 1.10.0 introduces several enhancements, including explicit emission of available resources in skill content, improved error handling for skill scripts, and the addition of a FoundryAgent conversation session helper. Key changes include breaking updates to file access approvals and the Foundry Hosted Agent V2 protocol upgrade, which enhance security and functionality for developers.",
+      "summary": "[1.10.0] - 2026-06-30 Added - agent-framework-core: Explicitly emit available_resources and available_scripts in skill content (6694) - agent-framework-core: Autolabelling MCP servers based on hints and GitHub MCP server interface labels (6171) - agent-framework-core: create_harness_agent...",
       "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.10.0",
       "source": "agent-framework",
-      "tags": [
-        "SDK"
-      ],
       "source_label": "Microsoft Agent Framework",
-      "id": "9b6475ce243b81f89923"
+      "tags": [
+        "SDK",
+        "Hosted agents",
+        "Evaluation",
+        "Observability",
+        "Agent Framework",
+        "Agents"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / Python",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "7bac9f0a00f7e7b36a54",
       "date": "2026-06-30",
+      "published_at": "2026-06-30T19:00:51Z",
+      "date_kind": "published",
       "title": "[Launched] Generally Available: Toolboxes in Microsoft Foundry",
-      "summary": "Toolboxes are generally available in Microsoft Foundry, providing a reusable, governed endpoint for tools that can be invoked by prompt agents or external clients instead of rebuilding separate tool lists for every agent.",
+      "summary": "Microsoft Foundry brings Toolboxes to GA, providing a unified endpoint to invoke the most-used tools in prompt agents and callable outside of prompt agents. Today every agent team hand-assembles its own tool list to solve the same tasks, with no shared ar",
       "url": "https://azure.microsoft.com/updates?id=563481",
       "source": "azure-updates",
       "source_label": "Azure Updates",
       "tags": [
         "GA",
         "Agents",
-        "Tools"
-      ]
+        "Tools & MCP"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "id": "5f0fcd9cc68f45856126",
       "date": "2026-06-25",
+      "published_at": "2026-06-25T23:09:09Z",
+      "date_kind": "published",
       "title": "dotnet-1.11.1",
-      "summary": "Agent Framework .NET 1.11.1 makes AgentSkillsProvider tools require approval by default, adds AOT-safe declarative workflow checkpointing options, and fixes checkpoint-resume behavior. Review the release notes before upgrading because the approval default is a breaking change.",
+      "summary": "Changes: d9ec5eaab4918612ae0f7ddf11499576bdb510bf update package version (6752) e3b64fdc4749256fa2d559be18a41f1a008dd7f6 .NET: [BREAKING] Make all AgentSkillsProvider tools require approval by default (6729) [ 6727 ] 3a5bbb5f8e3991d06fc3fe67fe3b01f2441cab0a .NET: Add DeclarativeWorkflowJsonOptions...",
       "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.11.1",
       "source": "agent-framework",
       "source_label": "Microsoft Agent Framework",
       "tags": [
         "SDK",
+        "Hosted agents",
+        "Observability",
+        "Agent Framework",
         "Agents",
-        "Tools",
+        "Tools & MCP"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / .NET",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "d310888d40f3a2e5775c",
+      "date": "2026-06-23",
+      "published_at": "2026-06-23T21:18:26Z",
+      "date_kind": "published",
+      "title": "dotnet-1.11.0",
+      "summary": "Changes: 1109d0bf64f3d1dd1e1f2bcaf3b38912ec7e833b Get date suffix up to date with release date (6690) e030fb53ded912d0ce71bd80fe4c0455bc9d5478 .NET: Replace the symlink index entries with regular file entries (6687) e6ebba1884238134628ad081249b451c0eb15df9 Add ADR 0029: Skills over MCP...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.11.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Hosted agents",
+        "Evaluation",
+        "Observability",
+        "Agent Framework",
+        "Agents"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / .NET",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "4d94fb07dd8d0ad51518",
+      "date": "2026-06-22",
+      "published_at": "2026-06-22T23:45:41Z",
+      "date_kind": "published",
+      "title": "Foundry Local CLI 0.10.1 (Preview)",
+      "summary": "Public preview update for the Foundry Local CLI. > [!IMPORTANT] > Preview. This is an early CLI build. Expect rough edges, missing polish, and changes between releases. Please file issues with [cli] in the title and include foundry report output when possible. What's New Updated Foundry Local SDK...",
+      "url": "https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.10.1",
+      "source": "foundry-local",
+      "source_label": "Foundry Local",
+      "tags": [
+        "Prerelease",
+        "Preview",
+        "Local",
+        "Observability",
+        "Models"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "prerelease",
+      "component": "Foundry Local / CLI",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "79e52dba0f010fdd13ca",
+      "date": "2026-06-18",
+      "published_at": "2026-06-18T09:03:33Z",
+      "date_kind": "published",
+      "title": "python-1.9.0",
+      "summary": "[1.9.0] - 2026-06-18 Added - agent-framework-core: Add AgentLoopMiddleware for re-running agents in a loop (6174) - agent-framework-core: Integrate tool approval into the harness agent (6522) - agent-framework-core: Add tool approval middleware (6414) - agent-framework-core: Integrate the shell tool...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.9.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Hosted agents",
+        "Observability",
+        "Agent Framework",
+        "Agents",
+        "Tools & MCP"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / Python",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "a6a8a6323f7176490c4a",
+      "date": "2026-06-18",
+      "published_at": "2026-06-18T20:37:18Z",
+      "date_kind": "published",
+      "title": "Outcome-driven learning systems: Enterprise RL with OpenEnv and Foundry",
+      "summary": "We shipped a lot at Build 2026: hosted agents, Toolboxes, Foundry IQ, Memory, Managed Compute, fine‑tuning, Frontier Tuning, and a new evaluation and optimization stack. Read as a feature list, it is a lot to hold in your head. So here is a simpler way to see it: these are the parts you need to...",
+      "url": "https://devblogs.microsoft.com/foundry/outcome-driven-learning-systems-enterprise-rl-with-openenv-and-foundry",
+      "source": "foundry-blog",
+      "source_label": "Microsoft Foundry Blog",
+      "tags": [
+        "Hosted agents",
+        "Evaluation",
+        "Agents",
+        "Tools & MCP",
         "Knowledge"
-      ]
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "c7e53b8232c91114637a",
+      "date": "2026-06-10",
+      "published_at": "2026-06-10T17:50:17Z",
+      "date_kind": "published",
+      "title": "dotnet-1.10.0",
+      "summary": "Changes: dd29f9aa654257ad807ef7fdcd25fcc7ded109f6 .NET: Hosted Agent Sample - Toolbox with various Auth (5777) (6018) a5f4e0078e1c0d1d8fcd580a1bcccc8836093b98 .NET: Fix .NET Copilot integration tests for SDK v1.0.0 (6424) 3c0c12cd463601c451130884b5442dc42b12cf1e .NET: Update release version for...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.10.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Hosted agents",
+        "Deployment",
+        "Observability",
+        "Agent Framework",
+        "Agents"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / .NET",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "a531a8beec8ded15136b",
+      "date": "2026-06-09",
+      "published_at": "2026-06-09T21:39:05Z",
+      "date_kind": "published",
+      "title": "python-1.8.1",
+      "summary": "[1.8.1] - 2026-06-09 Added - agent-framework-core: Add MCP client OTel spans per GenAI semantic conventions (6349) - agent-framework-core: Add MCP long-running task support (6319) Changed - agent-framework-claude: Bump claude-agent-sdk to 0.2.87 (6248) - agent-framework-core: Document checkpoint...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.8.1",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Hosted agents",
+        "Evaluation",
+        "Agent Framework",
+        "Agents",
+        "Tools & MCP"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / Python",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "520fc0e63e63978e8555",
+      "date": "2026-06-08",
+      "published_at": "2026-06-08T17:15:43Z",
+      "date_kind": "published",
+      "title": "[In preview] Public Preview: Microsoft Foundry agent security capabilities in Microsoft Defender for Cloud are transitioning to a Microsoft Agent 365 license",
+      "summary": "Starting July 1, 2026, Microsoft Foundry agent security capabilities previously available through Microsoft Defender for Cloud will transition to a Microsoft Agent 365 license. Agent protection in Defender will be powered by Agent 365 observability logs a",
+      "url": "https://azure.microsoft.com/updates?id=565171",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview",
+        "Observability",
+        "Agents",
+        "Security"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "0eb6745aa654f5c5b519",
+      "date": "2026-06-05",
+      "published_at": "2026-06-05T03:12:50Z",
+      "date_kind": "published",
+      "title": "v1.2.1 Foundry Local",
+      "summary": "🛠️ Foundry Local v1.2.1 Release Notes We're excited to announce Foundry Local v1.2.1, a patch on top of v1.2.0 with bring-your-own-model (BYOM) cache discovery while running, more resilient Azure catalog/registry calls, broader multilingual ASR coverage, and a Windows DLL-load fix for non-ANSI...",
+      "url": "https://github.com/microsoft/foundry-local/releases/tag/v1.2.1",
+      "source": "foundry-local",
+      "source_label": "Foundry Local",
+      "tags": [
+        "Local",
+        "Observability",
+        "Knowledge",
+        "Security",
+        "Models"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Foundry Local",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "7b3acb53503eed86d131",
+      "date": "2026-06-04",
+      "published_at": "2026-06-04T23:40:33Z",
+      "date_kind": "published",
+      "title": "python-1.8.0",
+      "summary": "[1.8.0] - 2026-06-04 Added - agent-framework-core: Add MCP-based skills discovery (McpSkillsSource) (6169) - agent-framework-core: Progressive tool exposure via FunctionInvocationContext (6233) - agent-framework-core: Add background agent support to harness agent (6155) - agent-framework-core: Add...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.8.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Hosted agents",
+        "Evaluation",
+        "Observability",
+        "Agent Framework",
+        "Agents"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / Python",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "24ec192788bb18b6153a",
+      "date": "2026-06-04",
+      "published_at": "2026-06-04T01:58:55Z",
+      "date_kind": "published",
+      "title": "azure-ai-evaluation 1.17.0",
+      "summary": "Python package 1.17.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.",
+      "url": "https://pypi.org/project/azure-ai-evaluation/1.17.0",
+      "source": "evaluation-sdk",
+      "source_label": "Azure AI Evaluation SDK",
+      "tags": [
+        "SDK",
+        "Evaluation"
+      ],
+      "summary_kind": "package_metadata",
+      "release_channel": "stable",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "dd97eaab50601a431caf",
+      "date": "2026-06-04",
+      "published_at": "2026-06-04T19:15:11Z",
+      "date_kind": "published",
+      "title": "[Launched] Generally Available: Private Connectivity for Azure AI Search and Foundry Knowledge Bases",
+      "summary": "Azure AI Search and Foundry Knowledge Bases now support private, end-to-end network connectivity between search resources and Foundry services. Customers can route ingestion, enrichment, retrieval, and agent traffic over Shared Private Link or Network Sec",
+      "url": "https://azure.microsoft.com/updates?id=563516",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "GA",
+        "Evaluation",
+        "Agents",
+        "Knowledge",
+        "Security"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "b6a62c8cf84c5ef79d08",
+      "date": "2026-06-04",
+      "published_at": "2026-06-04T19:15:11Z",
+      "date_kind": "published",
+      "title": "[Launched] Generally Available: Microsoft Foundry IQ",
+      "summary": "Microsoft Foundry IQ reaches general availability, giving developers a managed knowledge layer that grounds agents in enterprise data without rebuilding retrieval pipelines for each project. Teams connect SharePoint, OneLake, Azure Blob, and other sources",
+      "url": "https://azure.microsoft.com/updates?id=563222",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "GA",
+        "Evaluation",
+        "Agents",
+        "Knowledge"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "3837d3811abee9cf8bac",
+      "date": "2026-06-04",
+      "published_at": "2026-06-04T22:15:50Z",
+      "date_kind": "published",
+      "title": "[In preview] Public Preview: Voice sync for avatar support in Voice Live API in Microsoft Foundry",
+      "summary": "In public preview, Microsoft Foundry now supports avatar voice sync with custom voices in the Voice Live API, allowing developers to pair branded or persona-specific text-to-speech voices with real-time avatar experiences. This update helps teams building",
+      "url": "https://azure.microsoft.com/updates?id=564176",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "db86d93241f3f3fae547",
+      "date": "2026-06-04",
+      "published_at": "2026-06-04T19:30:58Z",
+      "date_kind": "published",
+      "title": "[In preview] Public Preview: Tool search in Microsoft Foundry toolboxes",
+      "summary": "Microsoft Foundry adds tool search to Foundry toolboxes in public preview, giving developers and admins a fast way to find the right tool inside large, multi-team catalogs. As your toolbox grows, sending every tool definition on every turn gets expensive.",
+      "url": "https://azure.microsoft.com/updates?id=563506",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview",
+        "Tools & MCP",
+        "Knowledge"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "fe722e7fd9a61d26db61",
+      "date": "2026-06-04",
+      "published_at": "2026-06-04T19:15:11Z",
+      "date_kind": "published",
+      "title": "[In preview] Public Preview: Fabric IQ Ontology Knowledge Source in Microsoft Foundry IQ",
+      "summary": "Microsoft Foundry IQ now treats a Microsoft Fabric Ontology as a federated knowledge source in public preview, giving agents a way to query the semantic layer customers already curate in Fabric. Foundry IQ translates natural language questions into ontolo",
+      "url": "https://azure.microsoft.com/updates?id=563416",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview",
+        "Agents",
+        "Knowledge"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "3ceba6b29cff32a16ea6",
+      "date": "2026-06-04",
+      "published_at": "2026-06-04T19:00:34Z",
+      "date_kind": "published",
+      "title": "[In preview] Public Preview: Content Understanding chunking and image verbalization in Azure AI Search",
+      "summary": "Azure AI Search now supports Content Understanding chunking and image verbalization in public preview, expanding the built-in skill that parses rich documents during indexing. Indexers can split documents into semantically meaningful chunks and generate t",
+      "url": "https://azure.microsoft.com/updates?id=563661",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview",
+        "Knowledge"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "a0820d9dc0b8fe6cc8e7",
+      "date": "2026-06-04",
+      "published_at": "2026-06-04T19:30:58Z",
+      "date_kind": "published",
+      "title": "[In preview] Public Preview: Azure SQL as a knowledge source in Foundry IQ",
+      "summary": "Microsoft Foundry adds Azure SQL Database as a first-class Knowledge Source in Azure AI Search, available in public preview. Enterprise developers and solution architects building Copilot, RAG, and agentic experiences can now expose authoritative tables a",
+      "url": "https://azure.microsoft.com/updates?id=563446",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview",
+        "Agents",
+        "Knowledge"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "e76f3e866e91d3b669ea",
+      "date": "2026-06-04",
+      "published_at": "2026-06-04T19:30:58Z",
+      "date_kind": "published",
+      "title": "[In preview] Public Preview: APIM Support for Foundry Models in Azure AI Search",
+      "summary": "Microsoft Foundry brings Azure API Management support to all Foundry model integrations in Azure AI Search, now in public preview. Enterprise platform engineers and AI solution teams running large-scale RAG pipelines can place Foundry and Azure OpenAI mod",
+      "url": "https://azure.microsoft.com/updates?id=563451",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview",
+        "API gateway",
+        "Knowledge",
+        "Models"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "3da0f8eb872c3db86a66",
+      "date": "2026-06-04",
+      "published_at": "2026-06-04T20:35:47Z",
+      "date_kind": "published",
+      "title": "Foundry Local CLI 0.10.0 (Preview)",
+      "summary": "Public preview of the Foundry Local CLI — the first release of the new CLI built on the Foundry Local SDKs, replacing the earlier service-based CLI. > [!IMPORTANT] > Preview. This is an early build — expect rough edges, missing polish, and changes between releases. Please file issues (tag titles...",
+      "url": "https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.10.0",
+      "source": "foundry-local",
+      "source_label": "Foundry Local",
+      "tags": [
+        "Prerelease",
+        "Preview",
+        "Local",
+        "Models"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "prerelease",
+      "component": "Foundry Local / CLI",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "ae0e8d1e2f55f9c15648",
+      "date": "2026-06-04",
+      "published_at": "2026-06-04T13:00:24Z",
+      "date_kind": "published",
+      "title": "Accelerate Edge AI Development with Foundry Local",
+      "summary": "Why edge AI development is still hard AI is no longer confined to cloud experiments. Developers are increasingly expected to deliver AI inside apps, devices, and edge systems where responsiveness, privacy, resilience, and local control are essential. But building those experiences for production is...",
+      "url": "https://devblogs.microsoft.com/foundry/accelerate-edge-ai-development-with-foundry-local",
+      "source": "foundry-blog",
+      "source_label": "Microsoft Foundry Blog",
+      "tags": [
+        "Agents",
+        "Knowledge",
+        "Models",
+        "Local"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "0d83f7cc9cc5a5a0e1c1",
+      "date": "2026-06-03",
+      "published_at": "2026-06-03T22:01:45Z",
+      "date_kind": "published",
+      "title": "dotnet-1.9.0",
+      "summary": "Changes: afa7834e2ec8a93b2224fe7ab184b97fbcaa8c9a Updating dotnet package versions for 1.9 release (6314) c6951c21f69af4c9a5d5cbe107b36fca9f648907 Python: Add MCP-based skills discovery (McpSkillsSource) (6169) a9824289168c5af4acc5bfc7bd227206eb942fdc .NET: Bug fixes for AGUI hosting and workflows...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.9.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Hosted agents",
+        "Evaluation",
+        "Observability",
+        "Agent Framework",
+        "Agents"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / .NET",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "18ce23c707164e5eeb2c",
+      "date": "2026-06-03",
+      "published_at": "2026-06-03T19:00:25Z",
+      "date_kind": "published",
+      "title": "[Launched] Public Preview: TextPII NextGen Playground updates in Microsoft Foundry",
+      "summary": "In public preview, Microsoft Foundry now offers an updated TextPII NextGen Playground with a refreshed API Configuration Panel, including preview features introduced at Ignite 2025. This update lets developers test predefined PII categories, redaction mod",
+      "url": "https://azure.microsoft.com/updates?id=564241",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "45f7b70fd4198a7e8bdc",
+      "date": "2026-06-03",
+      "published_at": "2026-06-03T19:00:25Z",
+      "date_kind": "published",
+      "title": "[Launched] Public Preview: Conversational PII NextGen Playground in Microsoft Foundry",
+      "summary": "In public preview, Microsoft Foundry now offers a Conversational PII (ConvPII) NextGen Playground with transcript input and an API Configuration Panel, enabling developers to validate PII detection across multi-speaker dialogue before integrating the API.",
+      "url": "https://azure.microsoft.com/updates?id=564246",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "5641f201aecc64c2a78a",
+      "date": "2026-06-03",
+      "published_at": "2026-06-03T21:15:57Z",
+      "date_kind": "published",
+      "title": "[Launched] Generally Available: Text Analytics for Health NextGen Playground in Azure AI Language",
+      "summary": "Azure AI Language brings the next-generation Text Analytics for Health (TA4H) playground to general availability in the Microsoft Foundry portal. Clinical informatics teams and ISVs can paste discharge summaries, doctor's notes, or research abstracts and",
+      "url": "https://azure.microsoft.com/updates?id=563671",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "GA",
+        "Observability",
+        "Knowledge"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "ae1f65dd3e2245fbbb52",
+      "date": "2026-06-03",
+      "published_at": "2026-06-03T20:45:02Z",
+      "date_kind": "published",
+      "title": "[Launched] Generally Available: Self-serve custom photo avatar creation in Microsoft Foundry",
+      "summary": "Microsoft Foundry brings self-serve custom photo avatar creation to GA in the Foundry NextGen fine-tuning portal. Enterprise customers building voice agents with avatars or producing content with avatar and speech often need a branded avatar instead of a",
+      "url": "https://azure.microsoft.com/updates?id=563491",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "GA",
+        "Agents",
+        "Models"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "9a8335d022907dcf5236",
+      "date": "2026-06-03",
+      "published_at": "2026-06-03T19:00:25Z",
+      "date_kind": "published",
+      "title": "[Launched] Generally Available: Microsoft Foundry for Visual Studio Code (June Build 2026 refresh)",
+      "summary": "The Microsoft Foundry extension for Visual Studio Code reaches general availability with a Build 2026 refresh that brings the full model catalog, model playground, and Hosted agent deployment into the editor. Developers can sign in with their Azure accoun",
+      "url": "https://azure.microsoft.com/updates?id=563721",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "GA",
+        "Hosted agents",
+        "Deployment",
+        "Agents",
+        "Models"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "bc69703687d76d5c8c42",
+      "date": "2026-06-03",
+      "published_at": "2026-06-03T19:00:25Z",
+      "date_kind": "published",
+      "title": "[Launched] Generally Available: Custom Voice portal experience in Microsoft Foundry",
+      "summary": "Azure AI Speech moves the Custom Voice authoring experience into the Microsoft Foundry portal in general availability. Approved Custom Voice customers can now upload voice talent recordings and consent statements, run data quality checks, train neural voi",
+      "url": "https://azure.microsoft.com/updates?id=563691",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "GA"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "bec1c982d8ad4d711518",
+      "date": "2026-06-03",
+      "published_at": "2026-06-03T21:15:57Z",
+      "date_kind": "published",
+      "title": "[In preview] Public Preview: User feedback logging in Microsoft Foundry",
+      "summary": "This feature introduces end user feedback logging semantics that enables developers to capture structured feedback signals from real users interacting with AI agents—such as thumbs up/down, ratings, or custom annotations—and automatically associates that",
+      "url": "https://azure.microsoft.com/updates?id=563431",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview",
+        "Agents"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "17c3b38c8636e4e224e9",
+      "date": "2026-06-03",
+      "published_at": "2026-06-03T19:00:25Z",
+      "date_kind": "published",
+      "title": "[In preview] Public Preview: Rubric evaluator in Microsoft Foundry",
+      "summary": "Microsoft Foundry introduces rubric evaluators for measuring agent quality, now in public preview for single-turn and multi-turn agent flows. Rubric evaluators enable developers to define context-specific evaluation criteria using agent prompts, productio",
+      "url": "https://azure.microsoft.com/updates?id=563656",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview",
+        "Evaluation",
+        "Agents"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "59688da31f1bdf39b7ef",
+      "date": "2026-06-03",
+      "published_at": "2026-06-03T19:00:25Z",
+      "date_kind": "published",
+      "title": "[In preview] Public Preview: Observability developer experience in Azure Developer CLI (azd)",
+      "summary": "Use the Azure Developer CLI (azd) CLI evaluation experience to add a measured quality loop to an agent created with Microsoft Foundry. It empowers users on the hosted-agent lifecycle in azd, where you create, provision, deploy, initialize evaluation asset",
+      "url": "https://azure.microsoft.com/updates?id=563736",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview",
+        "Deployment",
+        "Evaluation",
+        "Observability",
+        "Agents"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "b94b6be7735c63112c69",
+      "date": "2026-06-03",
+      "published_at": "2026-06-03T23:00:57Z",
+      "date_kind": "published",
+      "title": "[In preview] Public Preview: MAI-Voice-2 in Microsoft Foundry",
+      "summary": "Microsoft Foundry now offers MAI-Voice-2 in public preview, a first-party voice model from the Microsoft AI team. MAI-Voice-2 generates natural speech across more than 10 languages and supports voice cloning from a short reference sample, plus voice promp",
+      "url": "https://azure.microsoft.com/updates?id=563217",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview",
+        "Models"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "3afd94c2f231ffcf1b04",
+      "date": "2026-06-03",
+      "published_at": "2026-06-03T19:00:25Z",
+      "date_kind": "published",
+      "title": "[In preview] Public Preview: Evaluations with Intelligent Trace Sampling",
+      "summary": "Microsoft Foundry observability introduces intelligent trace filtering and sampling for evaluations in public preview. Instead of running evaluations against all production traces, Foundry now select a representative subset of traces using a multi-stage M",
+      "url": "https://azure.microsoft.com/updates?id=563696",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview",
+        "Evaluation",
+        "Observability"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "bb71df321d3e2e4975f6",
+      "date": "2026-06-03",
+      "published_at": "2026-06-03T19:00:25Z",
+      "date_kind": "published",
+      "title": "[In preview] Public Preview: Domain filter for specialized model discovery in Foundry model catalog",
+      "summary": "Microsoft Foundry model catalog adds a domain filter in public preview, helping developers narrow the catalog of over 1,900 models to the ones trained for a specific industry or use case. Filters cover domains such as robotics, biomedical sciences, materi",
+      "url": "https://azure.microsoft.com/updates?id=563731",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview",
+        "Models"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "8e159d67f48f8d80f7e8",
+      "date": "2026-06-03",
+      "published_at": "2026-06-03T19:15:46Z",
+      "date_kind": "published",
+      "title": "[In preview] Public Preview: Agent-to-agent (A2A) support for Prompt agents and Hosted agents in Foundry",
+      "summary": "Microsoft Foundry Agent Service adds agent-to-agent (A2A) communication in public preview for Prompt agents and Hosted agents that use the responses protocol. Agents can call other agents by name through a managed endpoint, with identity, content safety,",
+      "url": "https://azure.microsoft.com/updates?id=563716",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview",
+        "Hosted agents",
+        "Agents",
+        "Tools & MCP",
+        "Security"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "5d0335cc7133871b5f05",
+      "date": "2026-06-03",
+      "published_at": "2026-06-03T17:00:00Z",
+      "date_kind": "published",
+      "title": "Expanding the Reach of Document Translation – New Capabilities Announced at Microsoft Build",
+      "summary": "Learn how new Document Translation capabilities in Azure Translator, available in Foundry Tools, help developers translate images, PDFs, Office files, DITA, XLIFF, and future LLM-powered document workflows.",
+      "url": "https://devblogs.microsoft.com/foundry/document-translation-build-2026",
+      "source": "foundry-blog",
+      "source_label": "Microsoft Foundry Blog",
+      "tags": [
+        "Platform"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "bc930babdffde11c66c2",
+      "date": "2026-06-03",
+      "published_at": "2026-06-03T22:44:01Z",
+      "date_kind": "published",
+      "title": "Build 2026: From observability to ROI for AI agents on any framework",
+      "summary": "9 min read · June 3, 2026 · Sebastian Kohlmeier Shipping an AI agent is the easy part. Keeping it accurate, safe, and accountable in production is where teams get stuck. Agents are non-deterministic. Their behavior shifts as models update, tools change, and traffic patterns evolve and most of that...",
+      "url": "https://devblogs.microsoft.com/foundry/build-2026-from-observability-to-roi-for-ai-agents-on-any-framework",
+      "source": "foundry-blog",
+      "source_label": "Microsoft Foundry Blog",
+      "tags": [
+        "Evaluation",
+        "Observability",
+        "Agents",
+        "Models"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "1f765d502297ce17222c",
+      "date": "2026-06-03",
+      "published_at": "2026-06-03T16:00:54Z",
+      "date_kind": "published",
+      "title": "Announcing Foundry Managed Compute: Run open models in Microsoft Foundry",
+      "summary": "Microsoft Foundry Managed Compute is a new GPU platform-as-a-service for hosting open-source and custom AI models behind the same endpoint, SDKs, and bill as frontier models.",
+      "url": "https://devblogs.microsoft.com/foundry/announcing-foundry-managed-compute",
+      "source": "foundry-blog",
+      "source_label": "Microsoft Foundry Blog",
+      "tags": [
+        "Hosted agents",
+        "Models"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "3782b58696b7788960e0",
+      "date": "2026-06-02",
+      "published_at": "2026-06-02T02:59:17Z",
+      "date_kind": "published",
+      "title": "dotnet-1.8.0",
+      "summary": "What's Changed .NET: Persist ForeachExecutor iteration state across checkpoints by @peibekwe in https://github.com/microsoft/agent-framework/pull/6051 .NET: Remove responses experimental flag from FoundryAgent et.al. by @westey-m in https://github.com/microsoft/agent-framework/pull/6121 .NET: Add...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.8.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Agent Framework",
+        "Agents",
+        "Tools & MCP",
+        "Security"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / .NET",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "c932341967edc2736ef2",
+      "date": "2026-06-02",
+      "published_at": "2026-06-02T02:57:42Z",
+      "date_kind": "published",
+      "title": "dotnet-1.7.0",
+      "summary": "What's Changed .NET: fix: populate MessageId from TaskStatusUpdateEvent in A2AAgent by @SergeyMenshykh in https://github.com/microsoft/agent-framework/pull/6043 .NET: Add Magentic Orchestration Sample by @Copilot in https://github.com/microsoft/agent-framework/pull/5823 .NET: Add MCP long-running...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.7.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Agent Framework",
+        "Agents",
+        "Tools & MCP"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / .NET",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "77b7f5a850acd6481afc",
+      "date": "2026-06-02",
+      "published_at": "2026-06-02T02:56:50Z",
+      "date_kind": "published",
+      "title": "dotnet-1.6.2",
+      "summary": "What's Changed .NET: Add Executor RouteBuilder Unit Tests by @Copilot in https://github.com/microsoft/agent-framework/pull/5824 .NET: Harness console refactoring by @westey-m in https://github.com/microsoft/agent-framework/pull/5811 .NET: Add sample for invoking Foundry Toolbox tools from...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.6.2",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Hosted agents",
+        "Observability",
+        "Agent Framework",
+        "Agents",
+        "Tools & MCP"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / .NET",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "f229894806eddda3214d",
+      "date": "2026-06-02",
+      "published_at": "2026-06-02T20:45:52Z",
+      "date_kind": "published",
+      "title": "[Launched] Global PTU Reservations Are Now Region-Agnostic",
+      "summary": "Global Provisioned Throughput (PTU) reservations are now region-agnostic, enabling a single reservation to cover Global PTU deployments across multiple regions. Why it matters:Optimize savings: One reservation can apply across regions, improving utilizati",
+      "url": "https://azure.microsoft.com/updates?id=562657",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Deployment"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "a3ac8aa4feb718d550ac",
+      "date": "2026-06-02",
+      "published_at": "2026-06-02T20:00:59Z",
+      "date_kind": "published",
+      "title": "[Launched] Generally Available: Voice Live integration with Microsoft Foundry Agent Service",
+      "summary": "Microsoft Foundry Agent Service is now generally available for Voice Live integration, allowing developers to connect real-time speech-to-text and text-to-speech to a Foundry Agent without writing their own audio pipeline. Existing agent capabilities — in",
+      "url": "https://azure.microsoft.com/updates?id=563601",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "GA",
+        "Agents"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "e9a45ad7233e48affda9",
+      "date": "2026-06-02",
+      "published_at": "2026-06-02T21:00:30Z",
+      "date_kind": "published",
+      "title": "[Launched] Generally Available: Unified Text Translation API in Azure AI Translator",
+      "summary": "Azure AI Translator's unified Text Translation API reaches general availability, giving developers a single endpoint that fronts neural machine translation, large language model translation, small language model translation, Adaptive custom translation, a",
+      "url": "https://azure.microsoft.com/updates?id=563631",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "GA",
+        "Models"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "f1b2443e08aedfa3636b",
+      "date": "2026-06-02",
+      "published_at": "2026-06-02T20:45:52Z",
+      "date_kind": "published",
+      "title": "[Launched] Generally Available: Azure API Management Premium v2 and Standard v2 now support wildcard custom hostnames.",
+      "summary": "As API estates grow, managing individual custom domains and certificates for every subdomain can quickly become operationally complex and difficult to scale. Without wildcard support, every new subdomain — whether payments.api.contoso.com, inventory.api.c",
+      "url": "https://azure.microsoft.com/updates?id=562894",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "GA",
+        "API gateway"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "bb79206670aa611f3832",
+      "date": "2026-06-02",
+      "published_at": "2026-06-02T23:15:29Z",
+      "date_kind": "published",
+      "title": "[In preview] Public Preview: Code-first observability for Foundry Agents in VS Code",
+      "summary": "Microsoft Foundry brings code-first observability to agent developers in public preview, delivered as an observe skill inside the Foundry Plugin for VS Code Copilot Chat. Developers run the full evaluation-driven optimization loop from the editor through",
+      "url": "https://azure.microsoft.com/updates?id=563197",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview",
+        "Evaluation",
+        "Observability",
+        "Agents"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "40ff9f3769aa2eb5022c",
+      "date": "2026-06-02",
+      "published_at": "2026-06-02T20:00:59Z",
+      "date_kind": "published",
+      "title": "[In preview] Public Preview: Azure Policy Coverage for Model Router in Foundry Models",
+      "summary": "Azure Policy now provides centralized governance for deployments using the model router. Organizations can define and enforce routing standards across their environment, helping ensure that model selection aligns with security, compliance, and operational",
+      "url": "https://azure.microsoft.com/updates?id=563636",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview",
+        "Deployment",
+        "Knowledge",
+        "Security",
+        "Models"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "17729998be1108ba8f80",
+      "date": "2026-06-02",
+      "published_at": "2026-06-02T21:00:30Z",
+      "date_kind": "published",
+      "title": "[In preview] Public Preview: Azure API Management introduces a Unified Model API for multi-model AI applications.",
+      "summary": "As organizations adopt multiple LLM providers, developers often need to handle different API formats, SDKs, and integration patterns for each model vendor. This increases application complexity and makes provider switching, failover, and governance more d",
+      "url": "https://azure.microsoft.com/updates?id=562853",
+      "source": "azure-updates",
+      "source_label": "Azure Updates",
+      "tags": [
+        "Preview",
+        "API gateway",
+        "Models"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "fef91d5745ce0ab85cb9",
+      "date": "2026-05-30",
+      "published_at": "2026-05-30T00:20:59Z",
+      "date_kind": "published",
+      "title": "azure-ai-projects 2.2.0",
+      "summary": "Python package 2.2.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.",
+      "url": "https://pypi.org/project/azure-ai-projects/2.2.0",
+      "source": "projects-sdk",
+      "source_label": "Azure AI Projects SDK",
+      "tags": [
+        "SDK",
+        "Agents"
+      ],
+      "summary_kind": "package_metadata",
+      "release_channel": "stable",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "6cf6e4311a28d36e72dd",
+      "date": "2026-05-28",
+      "published_at": "2026-05-28T23:20:01Z",
+      "date_kind": "published",
+      "title": "v1.2.0 Foundry Local",
+      "summary": "🚀 Foundry Local v1.2.0 Release Notes We're excited to announce Foundry Local v1.2.0. This release builds on v1.1 with improvements across SDK usability, runtime stability, platform support, and the EP download experience. --- 🆕 What's New 🛑 Cancellable model and EP downloads Long-running model...",
+      "url": "https://github.com/microsoft/foundry-local/releases/tag/v1.2.0",
+      "source": "foundry-local",
+      "source_label": "Foundry Local",
+      "tags": [
+        "Local",
+        "Observability",
+        "Security",
+        "Models"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Foundry Local",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "aa550f9b848449c4cd6f",
+      "date": "2026-05-28",
+      "published_at": "2026-05-28T10:46:31Z",
+      "date_kind": "published",
+      "title": "python-1.7.0",
+      "summary": "[1.7.0] - 2026-05-28 Added - agent-framework-core: Add HarnessAgent and background-agents harness provider (6041, 6069) - agent-framework-core, agent-framework-a2a: Add A2AAgentSession with referenced task IDs and input-required support (5980) - agent-framework-foundry: Add experimental prompt-agent...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.7.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Hosted agents",
+        "Deployment",
+        "Agent Framework",
+        "Agents",
+        "Tools & MCP"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / Python",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "9c14e4666698a2028820",
+      "date": "2026-05-26",
+      "published_at": "2026-05-26T17:30:39Z",
+      "date_kind": "published",
+      "title": "azure-ai-evaluation 1.16.9",
+      "summary": "Python package 1.16.9 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.",
+      "url": "https://pypi.org/project/azure-ai-evaluation/1.16.9",
+      "source": "evaluation-sdk",
+      "source_label": "Azure AI Evaluation SDK",
+      "tags": [
+        "SDK",
+        "Evaluation"
+      ],
+      "summary_kind": "package_metadata",
+      "release_channel": "stable",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "a26286b0ffba62a0ebe8",
+      "date": "2026-05-22",
+      "published_at": "2026-05-22T02:14:07Z",
+      "date_kind": "published",
+      "title": "python-1.6.0",
+      "summary": "[1.6.0] - 2026-05-21 Added - agent-framework-core: Shell tool with support for local and Docker execution (5664) - agent-framework-monty: New Monty-backed CodeAct provider package (5915) - agent-framework-foundry: Add experimental hosted tool factories on FoundryChatClient (5958) -...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.6.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Evaluation",
+        "Agent Framework",
+        "Agents",
+        "Tools & MCP"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / Python",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "91da9f48a67b4cc0e901",
+      "date": "2026-05-20",
+      "published_at": "2026-05-20T00:23:14Z",
+      "date_kind": "published",
+      "title": "python-1.5.0",
+      "summary": "[1.5.0] - 2026-05-19 Added - agent-framework-core, agent-framework-foundry, agent-framework-openai: Record actual served model from Azure OpenAI (5910) - samples: New Foundry Hosted Agents samples for RAG, Skills, and Memory (5822) Changed - agent-framework-core, agent-framework-azurefunctions...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.5.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Hosted agents",
+        "Agent Framework",
+        "Agents",
+        "Tools & MCP",
+        "Knowledge"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / Python",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "8846e324d91b865ae67e",
+      "date": "2026-05-20",
+      "published_at": "2026-05-20T03:02:25Z",
+      "date_kind": "published",
+      "title": "azure-ai-evaluation 1.16.8",
+      "summary": "Python package 1.16.8 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.",
+      "url": "https://pypi.org/project/azure-ai-evaluation/1.16.8",
+      "source": "evaluation-sdk",
+      "source_label": "Azure AI Evaluation SDK",
+      "tags": [
+        "SDK",
+        "Evaluation"
+      ],
+      "summary_kind": "package_metadata",
+      "release_channel": "stable",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "c51cdfac5f38f575c5aa",
+      "date": "2026-05-15",
+      "published_at": "2026-05-15T00:37:33Z",
+      "date_kind": "published",
+      "title": "python-1.4.0",
+      "summary": "[1.4.0] - 2026-05-14 Added - agent-framework-core: Forward MCP tool call metadata (5815) - agent-framework-core: Support list[str] arguments for file-based skill scripts (5850) - agent-framework-core: Strip server-issued response item IDs under storage (5690) - agent-framework-ag-ui: Add tool result...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.4.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Hosted agents",
+        "Observability",
+        "Agent Framework",
+        "Agents",
+        "Tools & MCP"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / Python",
+      "first_seen_at": "2026-09-08T00:48:03Z"
+    },
+    {
+      "id": "0d621a8102f01dc1aa39",
+      "date": "2026-05-14",
+      "published_at": "2026-05-14T13:47:44Z",
+      "date_kind": "published",
+      "title": "dotnet-1.6.1",
+      "summary": "What's Changed .NET: Add hyperlight to release slnf by @westey-m in https://github.com/microsoft/agent-framework/pull/5695 .NET: Update FoundryAgent to address HostedAgents strict URL routing by @rogerbarreto in https://github.com/microsoft/agent-framework/pull/5677 .NET: Add IChatMessageInjector...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.6.1",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Hosted agents",
+        "Evaluation",
+        "Observability",
+        "Agent Framework",
+        "Agents"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / .NET",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "date": "2026-04-15",
@@ -667,7 +2213,10 @@
         "GA"
       ],
       "source_label": "Microsoft Agent Framework",
-      "id": "0237577821c108387618"
+      "id": "0237577821c108387618",
+      "date_kind": "published",
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "date": "2025-11-18",
@@ -680,7 +2229,10 @@
         "GA"
       ],
       "source_label": "Microsoft Learn",
-      "id": "518441eb1a4969577582"
+      "id": "518441eb1a4969577582",
+      "date_kind": "updated",
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "date": "2025-11-18",
@@ -693,7 +2245,10 @@
         "Ignite"
       ],
       "source_label": "Microsoft Foundry Blog",
-      "id": "b9c11381ec2a223fa555"
+      "id": "b9c11381ec2a223fa555",
+      "date_kind": "published",
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "date": "2025-11-18",
@@ -706,7 +2261,10 @@
         "Agents"
       ],
       "source_label": "Microsoft Learn",
-      "id": "6fa48766c03d64e7c8db"
+      "id": "6fa48766c03d64e7c8db",
+      "date_kind": "updated",
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     },
     {
       "date": "2025-11-18",
@@ -718,32 +2276,39 @@
         "Day 2 Ops"
       ],
       "source_label": "Microsoft Learn",
-      "id": "e6c0a3b78f22e0ebe77f"
+      "id": "e6c0a3b78f22e0ebe77f",
+      "date_kind": "updated",
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-09-08T00:48:03Z"
     }
   ],
-  "schema_version": 2,
-  "last_checked": "2026-09-07T18:04:56Z",
-  "item_count": 53,
+  "schema_version": 3,
+  "last_checked": "2026-09-08T01:00:20Z",
+  "item_count": 118,
   "sources": [
     {
       "id": "azure-updates",
       "label": "Azure Updates",
       "kind": "Release status",
       "url": "https://azure.microsoft.com/updates/?products=ai-foundry",
-      "authority": "Canonical availability",
+      "authority": "Availability announcements",
+      "checked_at": "2026-09-08T01:00:20Z",
+      "last_success_at": "2026-09-08T01:00:20Z",
+      "items_seen": 42,
       "status": "ok",
-      "checked_at": "2026-09-07T18:04:56Z",
-      "items_seen": 0
+      "latest_published": "2026-08-05"
     },
     {
       "id": "foundry-docs",
       "label": "Microsoft Learn",
-      "kind": "Documentation",
+      "kind": "What's new",
       "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
-      "authority": "Canonical product guidance",
+      "authority": "Current product guidance, not a release feed",
+      "checked_at": "2026-09-08T01:00:20Z",
+      "last_success_at": "2026-09-08T01:00:20Z",
+      "items_seen": 1,
       "status": "ok",
-      "checked_at": "2026-09-07T18:04:56Z",
-      "items_seen": 1
+      "latest_published": "2026-09-01"
     },
     {
       "id": "foundry-blog",
@@ -751,29 +2316,147 @@
       "kind": "Announcements",
       "url": "https://devblogs.microsoft.com/foundry/",
       "authority": "Launch context",
+      "checked_at": "2026-09-08T01:00:20Z",
+      "last_success_at": "2026-09-08T01:00:20Z",
+      "items_seen": 10,
       "status": "ok",
-      "checked_at": "2026-09-07T18:04:56Z",
-      "items_seen": 1
+      "latest_published": "2026-08-17"
     },
     {
       "id": "agent-framework",
       "label": "Microsoft Agent Framework",
       "kind": "SDK releases",
       "url": "https://github.com/microsoft/agent-framework/releases",
-      "authority": "Canonical SDK releases",
+      "authority": "Repository release channel; not feature GA status",
+      "checked_at": "2026-09-08T01:00:20Z",
+      "last_success_at": "2026-09-08T01:00:20Z",
+      "items_seen": 35,
       "status": "ok",
-      "checked_at": "2026-09-07T18:04:56Z",
-      "items_seen": 6
+      "latest_published": "2026-09-03"
     },
     {
       "id": "foundry-local",
       "label": "Foundry Local",
       "kind": "Runtime releases",
       "url": "https://github.com/microsoft/Foundry-Local/releases",
-      "authority": "Canonical runtime releases",
+      "authority": "Repository release channel",
+      "checked_at": "2026-09-08T01:00:20Z",
+      "last_success_at": "2026-09-08T01:00:20Z",
+      "items_seen": 8,
       "status": "ok",
-      "checked_at": "2026-09-07T18:04:56Z",
-      "items_seen": 1
+      "latest_published": "2026-09-01"
+    },
+    {
+      "id": "projects-sdk",
+      "label": "Azure AI Projects SDK",
+      "kind": "Python package",
+      "url": "https://pypi.org/project/azure-ai-projects/",
+      "authority": "Published package versions; individual APIs may be preview",
+      "checked_at": "2026-09-08T01:00:20Z",
+      "last_success_at": "2026-09-08T01:00:20Z",
+      "items_seen": 5,
+      "status": "ok",
+      "latest_published": "2026-09-04"
+    },
+    {
+      "id": "evaluation-sdk",
+      "label": "Azure AI Evaluation SDK",
+      "kind": "Python package",
+      "url": "https://pypi.org/project/azure-ai-evaluation/",
+      "authority": "Published package versions; individual evaluators may be preview",
+      "checked_at": "2026-09-08T01:00:20Z",
+      "last_success_at": "2026-09-08T01:00:20Z",
+      "items_seen": 8,
+      "status": "ok",
+      "latest_published": "2026-09-04"
+    },
+    {
+      "id": "resource-watch",
+      "label": "Documentation & sample watch",
+      "kind": "Source changes",
+      "url": "https://learn.microsoft.com/azure/foundry/",
+      "authority": "Documentation edits and commits, not product launches",
+      "checked_at": "2026-09-08T01:00:20Z",
+      "last_success_at": "2026-09-08T01:00:20Z",
+      "items_seen": 0,
+      "status": "ok"
+    }
+  ],
+  "last_content_change_at": "2026-09-08T01:00:20Z",
+  "refresh_interval_hours": 24,
+  "stale_after_hours": 48,
+  "releases": [
+    {
+      "source": "agent-framework",
+      "component": "Agent Framework / .NET",
+      "version": "dotnet-1.20.0",
+      "channel": "stable",
+      "published_at": "2026-08-31T18:53:19Z",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.20.0"
+    },
+    {
+      "source": "agent-framework",
+      "component": "Agent Framework / Python",
+      "version": "python-1.17.0",
+      "channel": "stable",
+      "published_at": "2026-09-03T09:49:35Z",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.17.0"
+    },
+    {
+      "source": "foundry-local",
+      "component": "Foundry Local",
+      "version": "v2.0.1",
+      "channel": "stable",
+      "published_at": "2026-09-01T05:04:37Z",
+      "url": "https://github.com/microsoft/foundry-local/releases/tag/v2.0.1"
+    },
+    {
+      "source": "foundry-local",
+      "component": "Foundry Local / CLI",
+      "version": "cli-preview-0.10.3",
+      "channel": "prerelease",
+      "published_at": "2026-08-07T21:46:47Z",
+      "url": "https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.10.3"
+    },
+    {
+      "source": "foundry-local",
+      "component": "Foundry Local",
+      "version": "v0.8.119",
+      "channel": "prerelease",
+      "published_at": "2026-01-22T01:26:01Z",
+      "url": "https://github.com/microsoft/foundry-local/releases/tag/v0.8.119"
+    },
+    {
+      "source": "projects-sdk",
+      "component": "azure-ai-projects",
+      "version": "2.6.0",
+      "channel": "stable",
+      "published_at": "2026-09-04T19:18:13Z",
+      "url": "https://pypi.org/project/azure-ai-projects/2.6.0"
+    },
+    {
+      "source": "projects-sdk",
+      "component": "azure-ai-projects",
+      "version": "2.0.0b4",
+      "channel": "prerelease",
+      "published_at": "2026-02-24T17:57:52Z",
+      "url": "https://pypi.org/project/azure-ai-projects/2.0.0b4"
+    },
+    {
+      "source": "evaluation-sdk",
+      "component": "azure-ai-evaluation",
+      "version": "1.18.5",
+      "channel": "stable",
+      "published_at": "2026-09-04T18:36:10Z",
+      "url": "https://pypi.org/project/azure-ai-evaluation/1.18.5"
+    },
+    {
+      "source": "evaluation-sdk",
+      "component": "azure-ai-evaluation",
+      "version": "1.0.0b5",
+      "channel": "prerelease",
+      "published_at": "2024-10-29T01:18:39Z",
+      "url": "https://pypi.org/project/azure-ai-evaluation/1.0.0b5"
     }
   ]
 }

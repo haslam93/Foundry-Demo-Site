@@ -1,0 +1,564 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-07",
+  "resources": [
+    {
+      "id": "whats-new",
+      "title": "Microsoft Foundry: what's new",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/whats-new-foundry",
+      "type": "Reference", "level": "Starter", "topics": ["Platform", "Models", "Agents"],
+      "summary": "The rolling Microsoft Learn index of product and documentation changes, including new agent, evaluation, and developer-tool guidance.",
+      "outcome": "Start here for the current month, then follow the feature-specific documentation.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "capabilities",
+      "title": "Foundry capability map",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/capabilities",
+      "type": "Reference", "level": "Starter", "topics": ["Platform", "Models", "Agents"],
+      "summary": "A product-level map for understanding how model access, agent development, tools, and operations fit together.",
+      "outcome": "Translate a customer requirement into the right Foundry capability.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "agent-service",
+      "title": "Foundry Agent Service overview",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/overview",
+      "type": "Guide", "level": "Starter", "topics": ["Agents", "Hosted agents", "Deployment"],
+      "summary": "Understand the managed agent service, the distinction between agent types, and the surrounding development lifecycle.",
+      "outcome": "Choose a prompt agent or a code-first hosted agent before choosing tooling.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "hosted-quickstart",
+      "title": "Create and deploy your first hosted agent",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/quickstart-hosted-agent",
+      "type": "Guide", "level": "Starter", "topics": ["Hosted agents", "Deployment"],
+      "languages": ["Python", ".NET", "azd"],
+      "summary": "The supported starting point for a hosted agent, with current prerequisites and multiple development-tool paths.",
+      "outcome": "Move from a supported scaffold to an agent in the intended Foundry project.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "hosted-code",
+      "title": "Hosted agents: direct-code deployment",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/deploy-hosted-agent-code",
+      "type": "Guide", "level": "Intermediate", "topics": ["Hosted agents", "Deployment", "Agent Framework"],
+      "languages": ["Python", ".NET", "azd"],
+      "summary": "Deploy supported source code without building your own Docker image. Check the current runtime, entry point, dependency, and endpoint contract.",
+      "outcome": "Use code deployment when a custom container is unnecessary.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "azure-yaml",
+      "title": "The current azure.yaml agent contract",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/azure-yaml-reference",
+      "type": "Reference", "level": "Intermediate", "topics": ["Hosted agents", "Deployment", "Tools & MCP"],
+      "summary": "The unified azd configuration reference: code or image packaging, protocols, endpoints, tools, identity, and networking settings.",
+      "outcome": "Replace obsolete two-file manifests with the documented configuration shape.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "hosted-cicd",
+      "title": "Hosted-agent GitHub Actions CI/CD",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/set-up-cicd-hosted-agent?pivots=azd",
+      "type": "Guide", "level": "Intermediate", "topics": ["Hosted agents", "Deployment", "Security"],
+      "summary": "An official azd deployment pipeline with GitHub OIDC, explicit project configuration, deployment, and a smoke invocation.",
+      "outcome": "Build a reproducible deployment workflow without a long-lived Azure client secret.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "hosted-migration",
+      "title": "Migrate older hosted-agent preview deployments",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-hosted-agent-preview",
+      "type": "Guide", "level": "Advanced", "topics": ["Hosted agents", "Deployment", "Security"],
+      "summary": "Migration guidance for earlier hosted-agent packages, endpoint shapes, and identity assumptions. Do not apply hosted migration rules blindly to prompt agents.",
+      "outcome": "Identify the old deployment contract before changing a working application's API calls.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "framework-overview",
+      "title": "Microsoft Agent Framework documentation",
+      "url": "https://learn.microsoft.com/en-us/agent-framework/overview/",
+      "type": "Guide", "level": "Starter", "topics": ["Agent Framework", "Agents", "Tools & MCP"],
+      "languages": ["Python", ".NET"],
+      "summary": "Start with the framework's current agent and workflow concepts, language guides, and migration references.",
+      "outcome": "Choose an autonomous agent or explicit orchestration without copying an obsolete client example.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "framework-repo",
+      "title": "Agent Framework: source and release notes",
+      "url": "https://github.com/microsoft/agent-framework",
+      "repo": "microsoft/agent-framework",
+      "type": "Reference", "level": "Intermediate", "topics": ["Agent Framework", "SDK", "Agents"],
+      "languages": ["Python", ".NET"],
+      "summary": "Official code, changelogs, issues, and samples. Python, .NET, and optional integrations do not necessarily share one release channel.",
+      "outcome": "Check the actual change set before upgrading your project's package pins.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "framework-python",
+      "title": "Agent Framework Python samples",
+      "url": "https://github.com/microsoft/agent-framework/tree/main/python/samples",
+      "repo": "microsoft/agent-framework", "repo_path": "python/samples",
+      "type": "Sample", "level": "Intermediate", "topics": ["Agent Framework", "Agents", "Tools & MCP"],
+      "languages": ["Python"],
+      "summary": "Runnable examples for Python agent clients, tools, orchestration, and integrations from the framework maintainers.",
+      "outcome": "Find a small working pattern, then pin the matching dependencies in your own app.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "framework-dotnet",
+      "title": "Agent Framework .NET samples",
+      "url": "https://github.com/microsoft/agent-framework/tree/main/dotnet/samples",
+      "repo": "microsoft/agent-framework", "repo_path": "dotnet/samples",
+      "type": "Sample", "level": "Intermediate", "topics": ["Agent Framework", "Agents", "Tools & MCP"],
+      "languages": [".NET", "C#"],
+      "summary": "Official .NET examples for agent construction, hosting, tools, and workflow patterns.",
+      "outcome": "Start from the current .NET API instead of translating an old Python snippet.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "foundry-samples",
+      "title": "The official Foundry sample collection",
+      "url": "https://github.com/microsoft-foundry/foundry-samples",
+      "repo": "microsoft-foundry/foundry-samples",
+      "type": "Sample", "level": "Starter", "topics": ["Platform", "Models", "Agents", "Deployment"],
+      "languages": ["Python", ".NET", "JavaScript", "TypeScript", "Java", "REST"],
+      "summary": "A broad collection of maintained model, agent, local-runtime, infrastructure, and migration examples.",
+      "outcome": "Find a real implementation and its prerequisites, not just a feature description.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "hosted-samples",
+      "title": "Foundry hosted-agent examples",
+      "url": "https://github.com/microsoft-foundry/foundry-samples/tree/main/samples/python/hosted-agents",
+      "repo": "microsoft-foundry/foundry-samples", "repo_path": "samples/python/hosted-agents",
+      "type": "Sample", "level": "Intermediate", "topics": ["Hosted agents", "Agent Framework", "Deployment"],
+      "languages": ["Python"],
+      "summary": "Concrete code-first agents illustrating the maintained Foundry hosting patterns and runtime integrations.",
+      "outcome": "Use a supported agent as the starting point for your next hosted demo.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "prompt-samples",
+      "title": "Foundry prompt-agent examples",
+      "url": "https://github.com/microsoft-foundry/foundry-samples/tree/main/samples/python/prompt-agents",
+      "repo": "microsoft-foundry/foundry-samples", "repo_path": "samples/python/prompt-agents",
+      "type": "Sample", "level": "Starter", "topics": ["Agents", "Deployment", "Tools & MCP"],
+      "languages": ["Python"],
+      "summary": "Examples of managed prompt-agent definitions and supported service interactions.",
+      "outcome": "Understand the lighter-weight agent type used by this site's existing live demo.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "gateway-matrix",
+      "title": "API Management AI gateway capabilities",
+      "url": "https://learn.microsoft.com/en-us/azure/api-management/genai-gateway-capabilities",
+      "type": "Reference", "level": "Starter", "topics": ["API gateway", "Security", "Models"],
+      "summary": "Map supported AI gateway features and policies to the API Management tiers and backend types that implement them.",
+      "outcome": "Check protocol and tier support before designing your gateway.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "gateway-tier",
+      "title": "The dedicated AI gateway tier",
+      "url": "https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-overview",
+      "type": "Guide", "level": "Intermediate", "topics": ["API gateway", "Deployment"],
+      "summary": "Learn about the dedicated AI gateway offering and its current access, region, and preview restrictions. It is distinct from AI features in existing APIM tiers.",
+      "outcome": "Avoid confusing a new preview tier with the availability of all AI gateway capabilities.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "gateway-governance",
+      "title": "Govern and secure AI gateway assets",
+      "url": "https://learn.microsoft.com/en-us/azure/api-management/ai-gateway-govern-secure-assets",
+      "type": "Guide", "level": "Intermediate", "topics": ["API gateway", "Security", "Tools & MCP"],
+      "summary": "Configure the documented policy and governance controls for supported AI assets behind the gateway.",
+      "outcome": "Connect access control, backend authentication, budgets, and operations into one design.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "gateway-mcp",
+      "title": "MCP servers in API Management",
+      "url": "https://learn.microsoft.com/en-us/azure/api-management/mcp-server-overview",
+      "type": "Guide", "level": "Intermediate", "topics": ["API gateway", "Tools & MCP", "Security"],
+      "summary": "Understand how APIM exposes or governs supported MCP servers and the limitations of each integration path.",
+      "outcome": "Put deliberate authentication and policy around agent-to-tool traffic.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "gateway-token-policy",
+      "title": "LLM token-limit policy reference",
+      "url": "https://learn.microsoft.com/en-us/azure/api-management/llm-token-limit-policy",
+      "type": "Reference", "level": "Advanced", "topics": ["API gateway", "Models", "Security"],
+      "summary": "The actual policy syntax, scope, counters, and supported behaviors for controlling token usage.",
+      "outcome": "Design per-consumer limits against the documented policy rather than an invented quota model.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "gateway-labs",
+      "title": "AI Gateway hands-on labs",
+      "url": "https://github.com/Azure-Samples/AI-Gateway",
+      "repo": "Azure-Samples/AI-Gateway",
+      "type": "Sample", "level": "Intermediate", "topics": ["API gateway", "Deployment", "Tools & MCP", "Observability"],
+      "summary": "Official hands-on examples for AI gateway policies, backend patterns, and operational scenarios.",
+      "outcome": "Try routing, resilience, and governance in an isolated lab before changing a production gateway.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "cloud-evaluation",
+      "title": "Cloud evaluation with the Foundry SDK",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/cloud-evaluation",
+      "type": "Guide", "level": "Intermediate", "topics": ["Evaluation", "SDK", "Agents"],
+      "languages": ["Python"],
+      "summary": "The current cloud evaluation workflow and SDK prerequisites, with links to the supported dataset and target evaluation modes.",
+      "outcome": "Build an evaluation flow aligned with the current Projects SDK and service API.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "evaluate-agent",
+      "title": "Evaluate a Foundry agent",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/evaluate-agent",
+      "type": "Guide", "level": "Intermediate", "topics": ["Evaluation", "Agents"],
+      "summary": "Evaluate agent behavior with the supported inputs, evaluators, and service workflow.",
+      "outcome": "Move from a successful smoke response to evidence of quality on a dataset.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "evaluators",
+      "title": "Built-in evaluator catalog",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/built-in-evaluators",
+      "type": "Reference", "level": "Intermediate", "topics": ["Evaluation", "Knowledge", "Security"],
+      "summary": "Compare quality, retrieval, agentic, and safety evaluators along with the inputs and models they require.",
+      "outcome": "Choose a rubric that actually measures your scenario and record its version and limitations.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "tracing",
+      "title": "Set up agent tracing",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/trace-agent-setup",
+      "type": "Guide", "level": "Intermediate", "topics": ["Observability", "Agents", "Agent Framework"],
+      "summary": "Connect agent instrumentation with the supported tracing and Application Insights setup.",
+      "outcome": "Inspect model, tool, and orchestration behavior with a deliberate sensitive-data capture policy.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "traces-to-dataset",
+      "title": "Turn traces into evaluation datasets",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/traces-to-dataset",
+      "type": "Guide", "level": "Advanced", "topics": ["Observability", "Evaluation"],
+      "summary": "Curate production interactions into reusable evaluation material with the current supported workflow.",
+      "outcome": "Add representative failures to regression coverage while preserving privacy and lineage.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "continuous-evaluation",
+      "title": "Monitor agents and enable continuous evaluation",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard",
+      "type": "Guide", "level": "Advanced", "topics": ["Observability", "Evaluation", "Agents"],
+      "summary": "Use the operational dashboard and supported continuous-evaluation controls for deployed agent traffic.",
+      "outcome": "Connect sampled quality signals, latency, errors, and operational follow-up.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "guardrails",
+      "title": "Configure Foundry guardrails and controls",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/guardrails/how-to-create-guardrails",
+      "type": "Guide", "level": "Intermediate", "topics": ["Security", "Evaluation", "Agents"],
+      "summary": "Create and attach supported safeguards to the intended model, agent, and tool boundaries.",
+      "outcome": "Test what is actually enforced instead of assuming safety settings apply everywhere.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "red-teaming",
+      "title": "Run AI red-teaming scans in the cloud",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/run-ai-red-teaming-cloud",
+      "type": "Guide", "level": "Advanced", "topics": ["Security", "Evaluation"],
+      "summary": "The supported workflow for adversarial testing of your authorized AI application, including scan setup and results.",
+      "outcome": "Measure safety regressions before rollout using scoped, authorized test scenarios.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "foundry-iq",
+      "title": "What is Foundry IQ?",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/what-is-foundry-iq",
+      "type": "Guide", "level": "Starter", "topics": ["Knowledge", "Agents"],
+      "summary": "Understand the shared knowledge layer and its relationship with Azure AI Search and agentic retrieval.",
+      "outcome": "Separate knowledge-source design from an agent's reasoning and tools.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "iq-connect",
+      "title": "Connect a knowledge base to an agent",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/foundry-iq-connect",
+      "type": "Guide", "level": "Intermediate", "topics": ["Knowledge", "Agents", "Tools & MCP"],
+      "summary": "Wire a supported knowledge base into an agent using the current connection and authentication flow.",
+      "outcome": "Produce grounded responses with source references, then evaluate retrieval quality.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "networking-deep-dive",
+      "title": "Agent networking architecture deep dive",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agents-networking-deep-dive",
+      "type": "Reference", "level": "Advanced", "topics": ["Security", "Hosted agents", "Deployment"],
+      "summary": "Understand Microsoft-managed and customer-network boundaries, private endpoints, agent subnets, and dependent services.",
+      "outcome": "Design the actual traffic paths rather than assuming a project inherits private networking.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "private-networking",
+      "title": "Configure private networking for Agent Service",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/virtual-networks",
+      "type": "Guide", "level": "Advanced", "topics": ["Security", "Deployment", "Hosted agents"],
+      "summary": "Follow current networking prerequisites and configuration for a private agent deployment.",
+      "outcome": "Plan DNS, subnets, identity, and deployment-runner connectivity before restricting data-plane access.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "toolbox-networking",
+      "title": "Network isolation for toolboxes",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/toolbox-network-isolation",
+      "type": "Guide", "level": "Advanced", "topics": ["Security", "Tools & MCP", "Deployment"],
+      "summary": "The tool connectivity and isolation requirements around governed agent toolboxes.",
+      "outcome": "Avoid an agent that deploys successfully but cannot reach its authorized tools.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "a2a",
+      "title": "Agent-to-agent integration with A2A",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/agent-to-agent",
+      "type": "Guide", "level": "Intermediate", "topics": ["Tools & MCP", "Agents", "Agent Framework"],
+      "summary": "The current Foundry integration for delegating work to another agent through the A2A protocol.",
+      "outcome": "Distinguish agent-to-agent delegation from MCP's agent-to-tool interaction.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "foundry-mcp",
+      "title": "Foundry MCP server tool catalog",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/mcp/available-tools",
+      "type": "Reference", "level": "Intermediate", "topics": ["Tools & MCP", "Deployment", "Evaluation"],
+      "summary": "Discover the supported management and development tools exposed by the Foundry MCP server and their current access requirements.",
+      "outcome": "Understand management-plane tooling without confusing it with tools exposed to your deployed agent.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "long-running",
+      "title": "Long-running agent reference",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/long-running-agent-reference",
+      "type": "Reference", "level": "Advanced", "topics": ["Hosted agents", "Agents", "Observability"],
+      "summary": "Current lifecycle guidance for long-running and resilient agent workloads, including capability-specific preview restrictions.",
+      "outcome": "Plan state, interruption, recovery, and human involvement for work that outlives a single request.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "vscode",
+      "title": "Foundry development in VS Code",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/get-started-projects-visual-studio-code",
+      "type": "Guide", "level": "Starter", "topics": ["Deployment", "SDK", "Agents"],
+      "summary": "Use the current Foundry developer tooling to navigate projects and supported local-to-cloud workflows from VS Code.",
+      "outcome": "Set up a practical development environment with the right project and identity context.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "sdk-overview",
+      "title": "Foundry SDKs and endpoints",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/sdk-overview",
+      "type": "Reference", "level": "Starter", "topics": ["SDK", "Agents", "Models", "Deployment"],
+      "summary": "Choose the appropriate SDK and endpoint for the operation you are implementing.",
+      "outcome": "Avoid mixing project management, model inference, prompt-agent, and hosted-agent API contracts.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "claude-models",
+      "title": "Claude models: current availability and limits",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/claude-models",
+      "type": "Reference", "level": "Intermediate", "topics": ["Models", "Security"],
+      "summary": "The current model table, context limits, hosting options, access conditions, and provider-specific integration details.",
+      "outcome": "Replace stale model comparison slides with the exact version's documented contract.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "foundry-local",
+      "title": "Foundry Local runtime and Session API",
+      "url": "https://github.com/microsoft/Foundry-Local",
+      "repo": "microsoft/Foundry-Local",
+      "type": "Sample", "level": "Intermediate", "topics": ["Local", "Models", "SDK"],
+      "languages": ["Python", ".NET", "JavaScript"],
+      "summary": "Official runtime, SDK, samples, and release notes for on-device inference. Distinguish the HTTP API from the v2 in-process Session API.",
+      "outcome": "Select a supported local model and migrate the right client surface without unnecessary REST changes.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "baseline-sample",
+      "title": "Microsoft Foundry baseline implementation",
+      "url": "https://github.com/Azure-Samples/microsoft-foundry-baseline",
+      "repo": "Azure-Samples/microsoft-foundry-baseline",
+      "type": "Sample", "level": "Advanced", "topics": ["Deployment", "Security", "Knowledge", "Observability"],
+      "summary": "An official baseline implementation for studying production-oriented Foundry infrastructure and application decisions.",
+      "outcome": "Inspect a concrete reference before adopting its components, costs, and operational assumptions.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "baseline-architecture",
+      "title": "Baseline Foundry chat architecture",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/baseline-microsoft-foundry-chat",
+      "type": "Reference", "level": "Advanced", "topics": ["Deployment", "Security", "Knowledge", "Observability"],
+      "summary": "Architecture guidance explaining the reliability, security, networking, and operations decisions behind a baseline AI application.",
+      "outcome": "Have a grounded production-readiness conversation rather than treating a demo as a reference architecture.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "toolboxes",
+      "title": "Configure and use agent toolboxes",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/toolbox",
+      "type": "Guide", "level": "Intermediate", "topics": ["Tools & MCP", "Agents", "Security"],
+      "summary": "Define supported tool collections and their associated connections and safeguards.",
+      "outcome": "Reuse governed tools while keeping permissions and approvals explicit.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "model-catalog",
+      "title": "Models sold directly by Azure",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "type": "Reference", "level": "Starter", "topics": ["Models", "Deployment"],
+      "summary": "Current model families and links to their supported deployment options and specifications.",
+      "outcome": "Check the exact model and region instead of assuming every model shares one feature set.",
+      "reviewed_at": "2026-09-07"
+    },
+    {
+      "id": "rbac",
+      "title": "Foundry role-based access control",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry",
+      "type": "Reference", "level": "Intermediate", "topics": ["Security", "Deployment", "Agents"],
+      "summary": "Current Foundry role names, scopes, and the distinction between resource management and data-plane permissions.",
+      "outcome": "Assign the minimum role at the correct scope and diagnose an actual permission failure.",
+      "reviewed_at": "2026-09-07"
+    }
+  ],
+  "playbooks": [
+    {
+      "id": "first-agent", "title": "Build your first useful agent", "level": "Starter",
+      "duration": "Start small", "topics": ["Agents", "Deployment"],
+      "goal": "Turn one narrow task into a versioned prompt agent, then inspect its behavior in the live lab before adding tools or orchestration.",
+      "scenario_id": "choose-agent",
+      "steps": [
+        {"title": "Choose the smallest useful task", "description": "Define the user, expected output, what the agent must not do, and whether a managed prompt loop is enough.", "resource_ids": ["agent-service", "capabilities"]},
+        {"title": "Choose the correct SDK and endpoint", "description": "Identify project management, model inference, and agent invocation boundaries. Match the example to the current service and package version.", "resource_ids": ["sdk-overview", "prompt-samples"]},
+        {"title": "Bind an existing model and explicit identity", "description": "Use a model deployment you actually have, confirm project RBAC, and keep tokens and keys out of code and browser storage.", "resource_ids": ["model-catalog", "rbac"]},
+        {"title": "Create a version and run a bounded smoke", "description": "Use a small non-sensitive prompt. Record the selected agent version, completion state, and token usage; preserve the previous version.", "resource_ids": ["prompt-samples", "foundry-samples"]},
+        {"title": "Create quality evidence before expanding scope", "description": "Define representative cases and a rubric. A successful response proves connectivity, not accuracy or production readiness.", "resource_ids": ["evaluate-agent", "evaluators"]}
+      ],
+      "pitfalls": ["Do not assume a demo agent can browse or inspect your subscription without explicit tools.", "Add each tool only with a documented permission and approval boundary.", "The live lab is a user-triggered, billable demo, not an anonymous public API."]
+    },
+    {
+      "id": "hosted", "title": "Deploy a hosted agent", "level": "Intermediate",
+      "duration": "Code to cloud", "topics": ["Hosted agents", "Deployment"],
+      "goal": "Use a supported direct-code or container deployment path, bind the intended Foundry project, and make deployment reproducible.",
+      "scenario_id": "hosted-plan",
+      "steps": [
+        {"title": "Identify the current hosting contract", "description": "Start with the current quickstart and supported runtime/protocol. If lifting an old preview app, read the migration guide first.", "resource_ids": ["hosted-quickstart", "hosted-migration"]},
+        {"title": "Prefer direct code when it fits", "description": "Use codeConfiguration for supported source deployment. Choose a Dockerfile or prebuilt image only for actual container-specific requirements.", "resource_ids": ["hosted-code", "azure-yaml", "hosted-samples"]},
+        {"title": "Resolve identity, project, and network dependencies", "description": "Bind the existing project and model. Decide public versus private access explicitly, including DNS, tool access, and where the deployment runner executes.", "resource_ids": ["rbac", "networking-deep-dive", "private-networking"]},
+        {"title": "Deploy a version through OIDC", "description": "Use the documented azd workflow and a repository/environment-scoped federated identity. Keep project IDs as configuration, never bake bearer tokens into the app.", "resource_ids": ["hosted-cicd", "azure-yaml"]},
+        {"title": "Invoke, evaluate, and retain rollback", "description": "Invoke the actual deployed protocol endpoint, inspect traces, and compare a versioned evaluation dataset before promotion.", "resource_ids": ["tracing", "evaluate-agent", "cloud-evaluation"]}
+      ],
+      "pitfalls": ["Old agent.yaml and old hosted endpoint examples may no longer match the current service.", "Creating an agent does not automatically configure private networking or tool permissions.", "Code deployment and container deployment have different dependencies and costs; do not provision ACR unnecessarily."]
+    },
+    {
+      "id": "framework", "title": "Build an Agent Framework workflow", "level": "Intermediate",
+      "duration": "Python or .NET", "topics": ["Agent Framework", "Agents", "Tools & MCP"],
+      "goal": "Build a small, explicit orchestration with measurable tool and handoff behavior instead of starting with an uncontrolled agent swarm.",
+      "scenario_id": "framework-plan",
+      "steps": [
+        {"title": "Pin the right language and channel", "description": "Read the separate Python or .NET release notes and current migration guidance. Optional integrations may remain prerelease even when the core is stable.", "resource_ids": ["framework-overview", "framework-repo"]},
+        {"title": "Run the smallest language-specific sample", "description": "Start with a supported provider client and one tool. Resolve identity and async/runtime setup before layering on workflow logic.", "resource_ids": ["framework-python", "framework-dotnet", "sdk-overview"]},
+        {"title": "Choose deterministic versus agentic routing", "description": "Use explicit workflow edges when the business process is known. Use a model-driven handoff only when the task needs that flexibility.", "resource_ids": ["framework-overview", "framework-python"]},
+        {"title": "Add tool boundaries and human approval", "description": "Choose MCP for tools and A2A for agent delegation. Design timeout, cancellation, identity, and approval behavior at each boundary.", "resource_ids": ["toolboxes", "a2a", "gateway-mcp"]},
+        {"title": "Observe and prove the workflow", "description": "Trace tool selection and handoffs, test failures and cancellation, then measure task success on held-out scenarios before hosting it.", "resource_ids": ["tracing", "evaluators", "hosted-code"]}
+      ],
+      "pitfalls": ["Agent Framework is not the hosted runtime; the deployment contract is a separate choice.", "Do not assume the Python and .NET APIs or release tags move in lockstep.", "More agents introduce more failure, latency, state, and cost boundaries."]
+    },
+    {
+      "id": "gateway", "title": "Put an AI gateway in front", "level": "Advanced",
+      "duration": "Govern the front door", "topics": ["API gateway", "Security", "Deployment"],
+      "goal": "Choose the right API Management offering and put documented identity, policy, routing, and observability around AI traffic.",
+      "scenario_id": "gateway-plan",
+      "steps": [
+        {"title": "Select a tier and supported protocol", "description": "Compare existing APIM AI capabilities with the dedicated AI gateway tier. Check preview restrictions, regions, and the backend protocol you actually use.", "resource_ids": ["gateway-matrix", "gateway-tier"]},
+        {"title": "Authenticate both sides", "description": "Design caller-to-gateway validation and gateway-to-Foundry authentication separately. Confirm issuer, audience, allowed callers, and backend RBAC.", "resource_ids": ["gateway-governance", "rbac", "gateway-labs"]},
+        {"title": "Apply explicit usage budgets", "description": "Choose supported token and rate policies per consumer. Decide how to handle quota errors and avoid unbounded retries or duplicated stateful agent work.", "resource_ids": ["gateway-token-policy", "gateway-matrix", "gateway-labs"]},
+        {"title": "Govern tools and failure paths", "description": "If MCP is involved, validate its supported authentication and publishing path. Test streaming, backend pool behavior, failover, and rejection cases in a lab.", "resource_ids": ["gateway-mcp", "gateway-labs", "toolbox-networking"]},
+        {"title": "Observe without leaking prompts", "description": "Correlate gateway and agent requests, inspect latency and usage, and deliberately configure content logging, sampling, retention, and alerts.", "resource_ids": ["gateway-governance", "tracing", "continuous-evaluation"]}
+      ],
+      "pitfalls": ["CORS controls browser access, not authorization.", "AI gateway tier preview status is not the status of every APIM AI feature.", "The live lab currently calls Foundry directly; this runbook does not mean APIM has been provisioned."]
+    },
+    {
+      "id": "evaluate", "title": "Evaluate, trace, and improve", "level": "Intermediate",
+      "duration": "Build a quality loop", "topics": ["Evaluation", "Observability", "Security"],
+      "goal": "Turn a demo that responds into an application whose quality, safety, and regressions can be measured.",
+      "scenario_id": "evaluation-plan",
+      "steps": [
+        {"title": "Define the dataset and acceptance criteria", "description": "Collect representative success, edge, refusal, and failure cases. Separate development and holdout sets, and preserve dataset versions.", "resource_ids": ["cloud-evaluation", "evaluate-agent"]},
+        {"title": "Choose evaluators that fit the evidence", "description": "Match groundedness, tool accuracy, task adherence, safety, and custom rubrics to available inputs. Record evaluator and judge-model versions.", "resource_ids": ["evaluators", "cloud-evaluation"]},
+        {"title": "Establish a baseline and a release gate", "description": "Compare the candidate to a known-good agent/model/prompt version. Set workload-specific thresholds; do not substitute a nonempty smoke response for quality.", "resource_ids": ["evaluate-agent", "hosted-cicd"]},
+        {"title": "Instrument and sample production behavior", "description": "Configure tracing and continuous evaluation with an explicit privacy and cost policy. Investigate failures, latency, and expensive tool loops.", "resource_ids": ["tracing", "continuous-evaluation"]},
+        {"title": "Feed failures back into the next candidate", "description": "Curate traces into regression cases, run scoped safety scans, and keep the holdout set separate before promoting an improvement.", "resource_ids": ["traces-to-dataset", "red-teaming", "guardrails"]}
+      ],
+      "pitfalls": ["An evaluator score is meaningful only with its rubric, inputs, version, and dataset.", "Evaluation and tracing can add cost and expose sensitive data if configured carelessly.", "Keep functional smoke checks, offline quality gates, and continuous evaluation clearly separate."]
+    },
+    {
+      "id": "knowledge", "title": "Ground answers with Foundry IQ", "level": "Intermediate",
+      "duration": "Knowledge to citations", "topics": ["Knowledge", "Agents", "Security"],
+      "goal": "Connect a supported knowledge source, preserve access boundaries, and evaluate whether the agent retrieves and cites the right evidence.",
+      "scenario_id": "knowledge-plan",
+      "steps": [
+        {"title": "Map the source and access model", "description": "Identify data owners, supported connectors, freshness requirements, and how the user's permissions reach retrieval.", "resource_ids": ["foundry-iq", "baseline-architecture"]},
+        {"title": "Connect the knowledge base", "description": "Follow the current connection contract and inspect indexing, grounding, and tool authentication instead of assuming the agent can reach every source.", "resource_ids": ["iq-connect", "toolboxes"]},
+        {"title": "Validate the network boundary", "description": "For a private deployment, verify DNS, private endpoints, tool connectivity, and where ingestion and evaluation execute.", "resource_ids": ["private-networking", "toolbox-networking", "baseline-sample"]},
+        {"title": "Measure retrieval and answer quality", "description": "Test citations, groundedness, relevance, missing evidence, and permission-sensitive questions against a representative dataset.", "resource_ids": ["evaluators", "evaluate-agent"]},
+        {"title": "Operate the knowledge lifecycle", "description": "Track source changes and stale documents, inspect traces, and turn real retrieval failures into updated regression cases.", "resource_ids": ["tracing", "traces-to-dataset", "continuous-evaluation"]}
+      ],
+      "pitfalls": ["A valid citation does not by itself prove that the answer is supported.", "Do not assume all connectors implement identical permission trimming or freshness.", "Treat source text as untrusted reference material, not instructions to the agent."]
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "choose-agent", "title": "Choose: prompt agent or hosted agent?",
+      "prompt": "I want a small Foundry assistant that answers from approved reference material. Compare a managed prompt agent with a hosted Agent Framework application. Recommend the smallest sensible starting point, list prerequisites, and cite the supplied official sources. Do not claim you inspected my Azure project.",
+      "expected": "A clear agent-type decision, explicit assumptions, official references, and no invented deployment or availability claims.",
+      "resource_ids": ["agent-service", "sdk-overview", "hosted-quickstart", "prompt-samples"]
+    },
+    {
+      "id": "hosted-plan", "title": "Plan a hosted-agent deployment",
+      "prompt": "Plan a hosted-agent deployment for a standard Python Agent Framework app into an existing Foundry project. Compare direct code with container deployment, describe the current configuration and identity/network decisions, then propose OIDC CI/CD, a smoke check, an evaluation gate, and rollback. Cite supplied sources; verify missing runtime or region details rather than inventing them.",
+      "expected": "A code-first deployment plan that distinguishes application packaging, infrastructure, identity, invocation, and quality evidence.",
+      "resource_ids": ["hosted-code", "azure-yaml", "hosted-cicd", "networking-deep-dive", "evaluate-agent"]
+    },
+    {
+      "id": "framework-plan", "title": "Design an Agent Framework workflow",
+      "prompt": "Design a small Microsoft Agent Framework workflow that triages a request, retrieves approved knowledge, and asks a human before taking an external action. Explain explicit routing versus model-driven handoffs, state, cancellation, tool permissions, and how to test the workflow. Do not invent current class names or package versions; point to the supplied language-specific samples.",
+      "expected": "A bounded workflow with an approval boundary and testable failure behavior, not an uncontrolled agent swarm.",
+      "resource_ids": ["framework-overview", "framework-python", "framework-dotnet", "a2a", "tracing"]
+    },
+    {
+      "id": "gateway-plan", "title": "Design an APIM AI gateway",
+      "prompt": "Design an API Management AI gateway for a Foundry demo that will later serve multiple authorized teams. Separate caller and backend authentication, token/rate budgets, Responses and streaming compatibility, MCP governance, and telemetry. Distinguish existing APIM AI capabilities from the dedicated AI gateway tier. Cite supplied sources and flag region or preview constraints that need checking.",
+      "expected": "Two explicit trust boundaries, protocol-aware policies, bounded retries, and no assumption that CORS is authentication.",
+      "resource_ids": ["gateway-matrix", "gateway-tier", "gateway-governance", "gateway-token-policy", "gateway-labs"]
+    },
+    {
+      "id": "evaluation-plan", "title": "Build a quality and observability plan",
+      "prompt": "Propose an evaluation and observability plan for this source-grounded Foundry guide assistant. Give representative dataset categories, useful evaluators, example workload-specific acceptance criteria, a holdout strategy, and a trace-to-regression loop. Distinguish functional smoke, offline evaluation, and continuous evaluation. Do not claim an evaluation was run.",
+      "expected": "A versioned, privacy-aware evaluation plan that treats a successful API response as connectivity evidence only.",
+      "resource_ids": ["cloud-evaluation", "evaluate-agent", "evaluators", "traces-to-dataset", "continuous-evaluation"]
+    },
+    {
+      "id": "knowledge-plan", "title": "Plan a grounded Foundry IQ assistant",
+      "prompt": "Plan a Foundry IQ assistant grounded in approved enterprise documents. Explain supported-source selection, freshness, caller permissions, private tool connectivity, citations, and retrieval evaluation. Treat source text as untrusted data and say which connector-specific details must be verified in current documentation.",
+      "expected": "A retrieval design with explicit freshness and access boundaries, plus a measurable grounding rubric.",
+      "resource_ids": ["foundry-iq", "iq-connect", "toolbox-networking", "evaluators", "baseline-architecture"]
+    }
+  ]
+}

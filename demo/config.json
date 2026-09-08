@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "project_endpoint": "https://swedenfoundry93.services.ai.azure.com/api/projects/foundry-showcase",
+  "agents_api_version": "2025-11-15-preview",
+  "resource_name": "swedenfoundry93",
+  "project_name": "foundry-showcase",
+  "region": "swedencentral",
+  "portal_url": "https://ai.azure.com/nextgen/r/ZRNZKZ1NSMK-pIaiQHDqTA,fy26aifoundry,,swedenfoundry93,foundry-showcase/build/agents",
+  "preferred_agent": "field-guide-coach",
+  "authentication_scope": "https://ai.azure.com/.default",
+  "gateway_endpoint": null,
+  "snapshot": {
+    "kind": "point_in_time",
+    "last_verified": "2026-09-08T01:17:54Z",
+    "agents": [
+      {
+        "name": "deep-research-analyst",
+        "model": "gpt-5.4",
+        "version": "1"
+      },
+      {
+        "name": "field-guide-coach",
+        "model": "gpt-5.4-mini",
+        "version": "2"
+      },
+      {
+        "name": "foundry-concierge",
+        "model": "gpt-5.4-mini",
+        "version": "1"
+      },
+      {
+        "name": "triage-bot",
+        "model": "gpt-5.4-nano",
+        "version": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "foundry-field-guide",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Dependency-free public Foundry hub; Playwright is development-only.",
+  "scripts": {
+    "test": "node --test tests/core.test.js",
+    "test:browser": "node --test tests/browser.test.js"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}
