@@ -4,13 +4,37 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Tue, 08 Sep 2026 01:58:18 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2026 11:29:27 GMT</lastBuildDate>
+    <item>
+      <title>Sample changed: Foundry Local runtime and Session API</title>
+      <link>https://github.com/microsoft/foundry-local/commit/afdb275c0b79f77dbbd1c901de235bfea124441d</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Tue, 08 Sep 2026 03:41:26 GMT</pubDate>
+      <guid isPermaLink="false">fde036293267afa81883</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework: source and release notes</title>
+      <link>https://github.com/microsoft/agent-framework/commit/25959b71c137c95262d63f64817d513dce6c250e</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Tue, 08 Sep 2026 10:31:09 GMT</pubDate>
+      <guid isPermaLink="false">0f90853aa612211a3e7f</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>Sample changed: Agent Framework Python samples</title>
       <link>https://github.com/microsoft/agent-framework/commit/41e3c602570ea640b2c2de893eb39f56a15c02de</link>
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Tue, 08 Sep 2026 01:29:21 GMT</pubDate>
       <guid isPermaLink="false">cdeca8ee75b3fc0ebc41</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework Python samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/114492aff3b03c81ee0423d09029c08f0cfcdf75</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Tue, 08 Sep 2026 07:09:01 GMT</pubDate>
+      <guid isPermaLink="false">f99285faa740c45a00ce</guid>
       <category>updated</category>
     </item>
     <item>
@@ -459,30 +483,6 @@
       <description>Microsoft Foundry brings Toolboxes to GA, providing a unified endpoint to invoke the most-used tools in prompt agents and callable outside of prompt agents. Today every agent team hand-assembles its own tool list to solve the same tasks, with no shared ar</description>
       <pubDate>Tue, 30 Jun 2026 19:00:51 GMT</pubDate>
       <guid isPermaLink="false">7bac9f0a00f7e7b36a54</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>dotnet-1.11.1</title>
-      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.11.1</link>
-      <description>Changes: d9ec5eaab4918612ae0f7ddf11499576bdb510bf update package version (6752) e3b64fdc4749256fa2d559be18a41f1a008dd7f6 .NET: [BREAKING] Make all AgentSkillsProvider tools require approval by default (6729) [ 6727 ] 3a5bbb5f8e3991d06fc3fe67fe3b01f2441cab0a .NET: Add DeclarativeWorkflowJsonOptions...</description>
-      <pubDate>Thu, 25 Jun 2026 23:09:09 GMT</pubDate>
-      <guid isPermaLink="false">5f0fcd9cc68f45856126</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>dotnet-1.11.0</title>
-      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.11.0</link>
-      <description>Changes: 1109d0bf64f3d1dd1e1f2bcaf3b38912ec7e833b Get date suffix up to date with release date (6690) e030fb53ded912d0ce71bd80fe4c0455bc9d5478 .NET: Replace the symlink index entries with regular file entries (6687) e6ebba1884238134628ad081249b451c0eb15df9 Add ADR 0029: Skills over MCP...</description>
-      <pubDate>Tue, 23 Jun 2026 21:18:26 GMT</pubDate>
-      <guid isPermaLink="false">d310888d40f3a2e5775c</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Foundry Local CLI 0.10.1 (Preview)</title>
-      <link>https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.10.1</link>
-      <description>Public preview update for the Foundry Local CLI. &gt; [!IMPORTANT] &gt; Preview. This is an early CLI build. Expect rough edges, missing polish, and changes between releases. Please file issues with [cli] in the title and include foundry report output when possible. What's New Updated Foundry Local SDK...</description>
-      <pubDate>Mon, 22 Jun 2026 23:45:41 GMT</pubDate>
-      <guid isPermaLink="false">4d94fb07dd8d0ad51518</guid>
       <category>published</category>
     </item>
   </channel>
