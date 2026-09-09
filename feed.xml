@@ -4,7 +4,23 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Tue, 08 Sep 2026 11:29:27 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 11:35:13 GMT</lastBuildDate>
+    <item>
+      <title>Sample changed: Agent Framework Python samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/91ca7fdb65e3b959d1d25a20c81b14070f30da52</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Wed, 09 Sep 2026 09:13:27 GMT</pubDate>
+      <guid isPermaLink="false">6417083a14864817ba3d</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>[Launched] Generally Available: Azure Developer CLI (azd) Extension Framework</title>
+      <link>https://azure.microsoft.com/updates?id=570881</link>
+      <description>The Azure Developer CLI (azd) Extension Framework is now generally available. The framework enables developers, teams, and partners to extend Azure Developer CLI with custom capabilities that support their preferred application development workflows.With</description>
+      <pubDate>Tue, 08 Sep 2026 17:18:38 GMT</pubDate>
+      <guid isPermaLink="false">4977a08308369dc98592</guid>
+      <category>published</category>
+    </item>
     <item>
       <title>Sample changed: Foundry Local runtime and Session API</title>
       <link>https://github.com/microsoft/foundry-local/commit/afdb275c0b79f77dbbd1c901de235bfea124441d</link>
@@ -35,6 +51,22 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Tue, 08 Sep 2026 07:09:01 GMT</pubDate>
       <guid isPermaLink="false">f99285faa740c45a00ce</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework .NET samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/a903a4ee9e51d8ff892fb84e12a67f1e862ca69a</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Tue, 08 Sep 2026 16:45:29 GMT</pubDate>
+      <guid isPermaLink="false">fc651b95d2a69bcb88ff</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Documentation changed: Agent networking architecture deep dive</title>
+      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agents-networking-deep-dive</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Tue, 08 Sep 2026 17:20:00 GMT</pubDate>
+      <guid isPermaLink="false">9b7edd964daed382cfd9</guid>
       <category>updated</category>
     </item>
     <item>
@@ -451,38 +483,6 @@
       <description>Python package 2.3.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
       <pubDate>Wed, 01 Jul 2026 21:09:00 GMT</pubDate>
       <guid isPermaLink="false">b820e5bd591ae9d32929</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>[Launched] Public Preview: Document PII playground sample in Microsoft Foundry NextGen</title>
-      <link>https://azure.microsoft.com/updates?id=563331</link>
-      <description>Document-based PII detection in Azure AI Language now ships an initial playground experience in the Microsoft Foundry NextGen portal. The playground loads a prepared sample document, runs it through the document-based PII feature, and shows the redacted o</description>
-      <pubDate>Wed, 01 Jul 2026 17:04:40 GMT</pubDate>
-      <guid isPermaLink="false">c29ee8a9b6dbfb8e60ff</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>[Launched] Generally Available: Document PII NextGen Playground in Azure AI Language</title>
-      <link>https://azure.microsoft.com/updates?id=564382</link>
-      <description>Azure AI Language now offers a refreshed Document PII playground in general availability, giving customers a faster way to evaluate personally identifiable information detection on documents. The playground ships with curated sample inputs and outputs, so</description>
-      <pubDate>Wed, 01 Jul 2026 17:01:07 GMT</pubDate>
-      <guid isPermaLink="false">c293dc5d6cb568961757</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>python-1.10.0</title>
-      <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.10.0</link>
-      <description>[1.10.0] - 2026-06-30 Added - agent-framework-core: Explicitly emit available_resources and available_scripts in skill content (6694) - agent-framework-core: Autolabelling MCP servers based on hints and GitHub MCP server interface labels (6171) - agent-framework-core: create_harness_agent...</description>
-      <pubDate>Tue, 30 Jun 2026 20:52:06 GMT</pubDate>
-      <guid isPermaLink="false">9b6475ce243b81f89923</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>[Launched] Generally Available: Toolboxes in Microsoft Foundry</title>
-      <link>https://azure.microsoft.com/updates?id=563481</link>
-      <description>Microsoft Foundry brings Toolboxes to GA, providing a unified endpoint to invoke the most-used tools in prompt agents and callable outside of prompt agents. Today every agent team hand-assembles its own tool list to solve the same tasks, with no shared ar</description>
-      <pubDate>Tue, 30 Jun 2026 19:00:51 GMT</pubDate>
-      <guid isPermaLink="false">7bac9f0a00f7e7b36a54</guid>
       <category>published</category>
     </item>
   </channel>
