@@ -4,13 +4,85 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Wed, 09 Sep 2026 11:35:13 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 10 Sep 2026 11:32:30 GMT</lastBuildDate>
+    <item>
+      <title>python-1.18.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.18.0</link>
+      <description>[1.18.0] - 2026-09-10 Added - samples: Add Magentic custom-manager prompts and MLflow observability examples (7876, 8085) - agent-framework-core: Add shared vector-store abstractions, portable filters, and an in-memory vector store (8014, 8115) - agent-framework-core: Add a maximum-duration bound...</description>
+      <pubDate>Thu, 10 Sep 2026 09:23:52 GMT</pubDate>
+      <guid isPermaLink="false">8b199f5808e23250a2c2</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Sample changed: Foundry Local runtime and Session API</title>
+      <link>https://github.com/microsoft/foundry-local/commit/9fc2022ce47052b59c5fd8e72a2a8c7f799fd6ff</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Thu, 10 Sep 2026 05:42:40 GMT</pubDate>
+      <guid isPermaLink="false">8c9aa5f3341ba30d5722</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework: source and release notes</title>
+      <link>https://github.com/microsoft/agent-framework/commit/b7deabb8bcf098ac4d22f137bc03a050545b2c38</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Thu, 10 Sep 2026 11:20:00 GMT</pubDate>
+      <guid isPermaLink="false">39625a7e1ca2cd9df756</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework Python samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/5331810ba4727790f0c63a1893421882597da196</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Thu, 10 Sep 2026 08:18:14 GMT</pubDate>
+      <guid isPermaLink="false">1da6a4b60c612b522f4c</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>What’s new in Microsoft Foundry: July and August 2026</title>
+      <link>https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-july-august-2026</link>
+      <description>Catch up on July and August in Microsoft Foundry: stable Hosted Agent and Toolbox SDK paths, Claude tools on Azure-hosted deployments, Model Router updates, local inference improvements, and the SDK migrations worth checking before you upgrade.</description>
+      <pubDate>Wed, 09 Sep 2026 23:00:39 GMT</pubDate>
+      <guid isPermaLink="false">8cf411d18aa8d6ad4974</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Sample changed: The official Foundry sample collection</title>
+      <link>https://github.com/microsoft-foundry/foundry-samples/commit/ec446dba0865530f8feb573f23893bc134b97d86</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Wed, 09 Sep 2026 23:16:45 GMT</pubDate>
+      <guid isPermaLink="false">605ef63dfa242625d181</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>Sample changed: Agent Framework Python samples</title>
       <link>https://github.com/microsoft/agent-framework/commit/91ca7fdb65e3b959d1d25a20c81b14070f30da52</link>
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Wed, 09 Sep 2026 09:13:27 GMT</pubDate>
       <guid isPermaLink="false">6417083a14864817ba3d</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework .NET samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/992d445c2bd36f50495ebeddb6911d951593048e</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Wed, 09 Sep 2026 16:28:49 GMT</pubDate>
+      <guid isPermaLink="false">e6c7589134a17af33101</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Microsoft Foundry docs: What's new for August 2026 - Microsoft Foundry</title>
+      <link>https://learn.microsoft.com/azure/foundry/whats-new-foundry</link>
+      <description>Discover documentation and product updates in Microsoft Foundry for August 2026.</description>
+      <pubDate>Wed, 09 Sep 2026 22:15:00 GMT</pubDate>
+      <guid isPermaLink="false">038a0c6874703cfb87d6</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Documentation changed: Microsoft Foundry: what's new</title>
+      <link>https://learn.microsoft.com/en-us/azure/foundry/whats-new-foundry</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Wed, 09 Sep 2026 22:15:00 GMT</pubDate>
+      <guid isPermaLink="false">5eb7b2c492b76e55c8de</guid>
       <category>updated</category>
     </item>
     <item>
@@ -92,14 +164,6 @@
       <pubDate>Thu, 03 Sep 2026 09:49:35 GMT</pubDate>
       <guid isPermaLink="false">eb238ff97f50479e5145</guid>
       <category>published</category>
-    </item>
-    <item>
-      <title>Microsoft Foundry docs: What's new for August 2026 - Microsoft Foundry</title>
-      <link>https://learn.microsoft.com/azure/foundry/whats-new-foundry</link>
-      <description>Discover documentation and product updates in Microsoft Foundry for August 2026.</description>
-      <pubDate>Tue, 01 Sep 2026 17:22:00 GMT</pubDate>
-      <guid isPermaLink="false">0a16117cbd6f2574aff3</guid>
-      <category>updated</category>
     </item>
     <item>
       <title>Foundry Local v2.0.1</title>
@@ -419,70 +483,6 @@
       <description>Restored the MSIX package identity to Microsoft.FoundryLocal. The previous release used a different identity (Microsoft.FoundryLocalCLI), which Windows treated as a separate app. Installing side-by-side instead of upgrading. With the identity restored, winget upgrade and in-place MSIX upgrades now...</description>
       <pubDate>Tue, 14 Jul 2026 21:39:03 GMT</pubDate>
       <guid isPermaLink="false">42d75a7600e91cc210e7</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>python-1.11.0</title>
-      <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.11.0</link>
-      <description>[1.11.0] - 2026-07-09 Added - agent-framework-core: Add message injection middleware so tools or host code can enqueue messages into an active run and drain them into the next model call within the same AgentSession (6998) - agent-framework-core: Integrate message injection into create_harness_agent...</description>
-      <pubDate>Fri, 10 Jul 2026 03:19:16 GMT</pubDate>
-      <guid isPermaLink="false">039e19d37d55bb9ad533</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>azure-ai-evaluation 1.18.1</title>
-      <link>https://pypi.org/project/azure-ai-evaluation/1.18.1</link>
-      <description>Python package 1.18.1 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
-      <pubDate>Thu, 09 Jul 2026 15:00:04 GMT</pubDate>
-      <guid isPermaLink="false">21f60634f201ab0cd18b</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>What’s New in Microsoft Foundry | June 2026</title>
-      <link>https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-june-2026</link>
-      <description>Claude is now generally available in Microsoft Foundry. Here's everything else that shipped between Build 2026 and the end of June — autopilot agents, expanded Toolboxes and Routines, Agent Optimizer's private preview, and more.</description>
-      <pubDate>Tue, 07 Jul 2026 07:10:25 GMT</pubDate>
-      <guid isPermaLink="false">125f6afae9dd99ed8694</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>azure-ai-evaluation 1.18.0</title>
-      <link>https://pypi.org/project/azure-ai-evaluation/1.18.0</link>
-      <description>Python package 1.18.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
-      <pubDate>Mon, 06 Jul 2026 18:51:18 GMT</pubDate>
-      <guid isPermaLink="false">8d417e38ee0025a3bc29</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>dotnet-1.13.0</title>
-      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.13.0</link>
-      <description>What's Changed .NET: Harden dotnet-format workflow shell handling by @SergeyMenshykh in https://github.com/microsoft/agent-framework/pull/6796 .NET: Add AgentSkillsSourceContext to AgentSkillsSource.GetSkillsAsync by @SergeyMenshykh in https://github.com/microsoft/agent-framework/pull/6797 .NET...</description>
-      <pubDate>Fri, 03 Jul 2026 17:42:32 GMT</pubDate>
-      <guid isPermaLink="false">9618e0ed7a2c142b940c</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>dotnet-1.12.0</title>
-      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.12.0</link>
-      <description>What's Changed .NET: Fix typo in XML doc comment for workflow outputs param by @marcominerva in https://github.com/microsoft/agent-framework/pull/6326 .NET: Add BackgroundTaskCompletionLoopEvaluator for harness background agents by @westey-m in https://github.com/microsoft/agent-framework/pull/6736...</description>
-      <pubDate>Thu, 02 Jul 2026 17:18:25 GMT</pubDate>
-      <guid isPermaLink="false">413ab0b86dbccc43b118</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Claude models generally available in Microsoft Foundry</title>
-      <link>https://learn.microsoft.com/azure/ai-foundry/foundry-models/concepts/claude-models</link>
-      <description>Anthropic's Claude Opus, Sonnet, and Haiku families are now GA in Foundry with Azure-hosted and Anthropic-hosted deployment options, Entra ID auth, Marketplace billing (CCUs), MACC eligibility, and zero-data-retention options for regulated workloads.</description>
-      <pubDate>Thu, 02 Jul 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">e62c5d4ef6bf74144c09</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>azure-ai-projects 2.3.0</title>
-      <link>https://pypi.org/project/azure-ai-projects/2.3.0</link>
-      <description>Python package 2.3.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
-      <pubDate>Wed, 01 Jul 2026 21:09:00 GMT</pubDate>
-      <guid isPermaLink="false">b820e5bd591ae9d32929</guid>
       <category>published</category>
     </item>
   </channel>
