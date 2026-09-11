@@ -4,7 +4,47 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Thu, 10 Sep 2026 11:32:30 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 11:33:46 GMT</lastBuildDate>
+    <item>
+      <title>Sample changed: Foundry Local runtime and Session API</title>
+      <link>https://github.com/microsoft/foundry-local/commit/70f2303bc8f2447cd1604be40e4fdd02eee17b3d</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 11 Sep 2026 09:08:49 GMT</pubDate>
+      <guid isPermaLink="false">36c412695beeb2699dc4</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework Python samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/a6eb2991ddcccffe4738b324d6f6bd0bfb43073a</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 11 Sep 2026 08:32:30 GMT</pubDate>
+      <guid isPermaLink="false">7185caeb313983948a74</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework .NET samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/e4309e5456c42ce391b982b6c61e60c8197b345c</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 11 Sep 2026 10:54:48 GMT</pubDate>
+      <guid isPermaLink="false">5c314c4d36dc850ffe13</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Documentation changed: Run AI red-teaming scans in the cloud</title>
+      <link>https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/run-ai-red-teaming-cloud</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 11 Sep 2026 06:06:00 GMT</pubDate>
+      <guid isPermaLink="false">ebe161d234e8e63956c2</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Documentation changed: Monitor agents and enable continuous evaluation</title>
+      <link>https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 11 Sep 2026 06:06:00 GMT</pubDate>
+      <guid isPermaLink="false">3f463da64ceadaeb73c9</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>python-1.18.0</title>
       <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.18.0</link>
@@ -12,6 +52,14 @@
       <pubDate>Thu, 10 Sep 2026 09:23:52 GMT</pubDate>
       <guid isPermaLink="false">8b199f5808e23250a2c2</guid>
       <category>published</category>
+    </item>
+    <item>
+      <title>Sample changed: The official Foundry sample collection</title>
+      <link>https://github.com/microsoft-foundry/foundry-samples/commit/d11a12a9a1857943d4da58e05965441c52247827</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Thu, 10 Sep 2026 20:13:54 GMT</pubDate>
+      <guid isPermaLink="false">928024e444d5c814e97a</guid>
+      <category>updated</category>
     </item>
     <item>
       <title>Sample changed: Foundry Local runtime and Session API</title>
@@ -36,6 +84,38 @@
       <pubDate>Thu, 10 Sep 2026 08:18:14 GMT</pubDate>
       <guid isPermaLink="false">1da6a4b60c612b522f4c</guid>
       <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: AI Gateway hands-on labs</title>
+      <link>https://github.com/Azure-Samples/AI-Gateway/commit/76549a3a118741deee2c89595fd7ca78a36aa3d2</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Thu, 10 Sep 2026 11:47:10 GMT</pubDate>
+      <guid isPermaLink="false">a2e1bc9d7fece336ebc7</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Documentation changed: Long-running agent reference</title>
+      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/long-running-agent-reference</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Thu, 10 Sep 2026 22:09:00 GMT</pubDate>
+      <guid isPermaLink="false">57bf1f99a5bb836f64fa</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Documentation changed: Foundry role-based access control</title>
+      <link>https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Thu, 10 Sep 2026 22:09:00 GMT</pubDate>
+      <guid isPermaLink="false">a83f9975830a69adf222</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Announcing Azure AI Speech LLM 2607: Better Multilingual Accuracy, Easier Customization</title>
+      <link>https://devblogs.microsoft.com/foundry/announcing-azure-ai-speech-llm-2607</link>
+      <description>Learn how Azure AI Speech LLM 2607 improves multilingual and mixed-language recognition, lowers latency, and simplifies domain-specific customization with enhanced phrase lists.</description>
+      <pubDate>Thu, 10 Sep 2026 18:08:42 GMT</pubDate>
+      <guid isPermaLink="false">b7ebe4c776bf83cbc289</guid>
+      <category>published</category>
     </item>
     <item>
       <title>What’s new in Microsoft Foundry: July and August 2026</title>
@@ -403,86 +483,6 @@
       <description>In public preview, Microsoft Foundry now offers tracing for the Microsoft Agent Framework in both Python and .NET, helping developers observe how agents reason, call tools, and interact with models during execution. This release is part of the broader hos</description>
       <pubDate>Wed, 15 Jul 2026 18:51:45 GMT</pubDate>
       <guid isPermaLink="false">ae818f49214139c82ea6</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Announcing: Multi-agent orchestration patterns including Magentic in Microsoft Agent Framework</title>
-      <link>https://azure.microsoft.com/updates?id=563571</link>
-      <description>Microsoft Agent Framework reaches general availability for multi-agent orchestration patterns, including the dynamic Magentic pattern that delivered 38 percent on GAIA and competitive results on AssistantBench and WebArena in published benchmarks. The GA</description>
-      <pubDate>Wed, 15 Jul 2026 18:57:24 GMT</pubDate>
-      <guid isPermaLink="false">4f4ce17b2d6a6acb3ea9</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Announcing: Multi-agent orchestration SDK with the Microsoft Foundry Agent Framework in C# and Python</title>
-      <link>https://azure.microsoft.com/updates?id=564312</link>
-      <description>Microsoft Foundry is now introducing Agent Framework, a unified multi-agent orchestration SDK for C and Python. This release consolidates patterns previously spread across AutoGen and Semantic Kernel, giving developers a consistent set of abstractions fo</description>
-      <pubDate>Wed, 15 Jul 2026 18:53:28 GMT</pubDate>
-      <guid isPermaLink="false">a6b66f23cb4b9afa8a55</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Announcing: GitHub Copilot and Claude Code connectors in Microsoft Agent Framework</title>
-      <link>https://azure.microsoft.com/updates?id=563701</link>
-      <description>Microsoft Agent Framework has introduced generally available connectors for GitHub Copilot and Claude Code, enabling developers to create .NET and Python agents that can delegate coding tasks seamlessly. This update simplifies the integration process, allowing for more efficient development workflows without the need for custom adapter code.</description>
-      <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">54fd634d4a37735016a8</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Announcing: Episodic procedural memory in Microsoft Agent Framework</title>
-      <link>https://azure.microsoft.com/updates?id=563561</link>
-      <description>Microsoft Agent Framework adds episodic procedural memory in public preview, a built-in store that lets agents remember successful task patterns and replay them on similar future requests. The framework records action sequences, tool selections, and inter</description>
-      <pubDate>Wed, 15 Jul 2026 18:48:54 GMT</pubDate>
-      <guid isPermaLink="false">4728e0d100b0fb03bbcc</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Announcing: DevUI Agent Inspector for Microsoft Agent Framework</title>
-      <link>https://azure.microsoft.com/updates?id=563551</link>
-      <description>Microsoft Agent Framework adds DevUI Agent Inspector in public preview, a local debugging surface that shows agent runs as a navigable tree of model calls, tool invocations, and intermediate state. Developers can pause, replay, and edit prompts mid-run, s</description>
-      <pubDate>Wed, 15 Jul 2026 15:15:25 GMT</pubDate>
-      <guid isPermaLink="false">408a0ae83a513b212238</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Announcing: CodeAct pattern and Hyperlight containers in Microsoft Agent Framework</title>
-      <link>https://azure.microsoft.com/updates?id=563566</link>
-      <description>Microsoft Agent Framework adds the CodeAct pattern in public preview, which lets agents collapse a multi-step plan into a single executable code block rather than chaining one tool call at a time. In representative workloads, CodeAct cut end-to-end latenc</description>
-      <pubDate>Wed, 15 Jul 2026 18:50:14 GMT</pubDate>
-      <guid isPermaLink="false">65c14f1675aa7d922040</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Announcing: Agent Harness in Microsoft Agent Framework</title>
-      <link>https://azure.microsoft.com/updates?id=563546</link>
-      <description>Microsoft Agent Framework reaches general availability for Agent Harness, the production runtime for agents built with the framework. Customers running pilots on the preview harness can now move the same agent code into production with backwards compatibi</description>
-      <pubDate>Wed, 15 Jul 2026 18:55:40 GMT</pubDate>
-      <guid isPermaLink="false">56d2153a4bc1c7b2dc15</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Announcing: Agent Channel for Microsoft Agent Framework multi-agent communication</title>
-      <link>https://azure.microsoft.com/updates?id=563556</link>
-      <description>Microsoft Agent Framework has introduced the Agent Channel in public preview, allowing agents to communicate through structured messages without the need for custom routing code. This feature supports both request-response and fire-and-forget messaging, streamlining multi-agent interactions and enhancing development efficiency.</description>
-      <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">d2c6f0edf7a67bf3dbf3</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Foundry Local CLI 0.10.2 (Preview)</title>
-      <link>https://github.com/microsoft/Foundry-Local/releases/tag/cli-preview-0.10.2</link>
-      <description>Foundry Local CLI 0.10.2 restores the original Microsoft.FoundryLocal MSIX package identity so Windows and winget perform in-place upgrades instead of installing a duplicate app. Users of earlier 0.10.x builds should uninstall the duplicate package before upgrading.</description>
-      <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">e2a1fd3590bb82539cbd</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Foundry Local CLI 0.10.2 (Preview)</title>
-      <link>https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.10.2</link>
-      <description>Restored the MSIX package identity to Microsoft.FoundryLocal. The previous release used a different identity (Microsoft.FoundryLocalCLI), which Windows treated as a separate app. Installing side-by-side instead of upgrading. With the identity restored, winget upgrade and in-place MSIX upgrades now...</description>
-      <pubDate>Tue, 14 Jul 2026 21:39:03 GMT</pubDate>
-      <guid isPermaLink="false">42d75a7600e91cc210e7</guid>
       <category>published</category>
     </item>
   </channel>
