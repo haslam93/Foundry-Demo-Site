@@ -4,13 +4,45 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Fri, 11 Sep 2026 11:33:46 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 10:58:02 GMT</lastBuildDate>
+    <item>
+      <title>dotnet-1.21.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.21.0</link>
+      <description>What's Changed .NET: Replace deprecated AWSSDK.Extensions.Bedrock.MEAI with AWS.Bedrock.MEAI by @BenGearset in https://github.com/microsoft/agent-framework/pull/7983 .NET: Remove Azure.AI.OpenAI dependency by @rogerbarreto in https://github.com/microsoft/agent-framework/pull/7986 .NET: Track and...</description>
+      <pubDate>Fri, 11 Sep 2026 17:31:35 GMT</pubDate>
+      <guid isPermaLink="false">1b4b625de70fa9632f39</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Sample changed: The official Foundry sample collection</title>
+      <link>https://github.com/microsoft-foundry/foundry-samples/commit/8599c85e2928906b752ec25807dfbbb45c1a1077</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 11 Sep 2026 20:02:08 GMT</pubDate>
+      <guid isPermaLink="false">9efdd2d915e366901cb2</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>Sample changed: Foundry Local runtime and Session API</title>
       <link>https://github.com/microsoft/foundry-local/commit/70f2303bc8f2447cd1604be40e4fdd02eee17b3d</link>
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Fri, 11 Sep 2026 09:08:49 GMT</pubDate>
       <guid isPermaLink="false">36c412695beeb2699dc4</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Foundry Local runtime and Session API</title>
+      <link>https://github.com/microsoft/foundry-local/commit/798e9f8d15acfd3242aa08052df32b417c99f627</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 11 Sep 2026 22:57:41 GMT</pubDate>
+      <guid isPermaLink="false">80d8f7d86b7bd421f7d8</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework: source and release notes</title>
+      <link>https://github.com/microsoft/agent-framework/commit/3c670707766a8455da6491a9049cc9d575e019f0</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 11 Sep 2026 23:53:32 GMT</pubDate>
+      <guid isPermaLink="false">f33e585ff9ad56a6564e</guid>
       <category>updated</category>
     </item>
     <item>
@@ -22,11 +54,27 @@
       <category>updated</category>
     </item>
     <item>
+      <title>Sample changed: Agent Framework Python samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/119c795cceef4498a19819a9727962885aa690ce</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 11 Sep 2026 14:37:43 GMT</pubDate>
+      <guid isPermaLink="false">d356b4a0e46dc2f3d86d</guid>
+      <category>updated</category>
+    </item>
+    <item>
       <title>Sample changed: Agent Framework .NET samples</title>
       <link>https://github.com/microsoft/agent-framework/commit/e4309e5456c42ce391b982b6c61e60c8197b345c</link>
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Fri, 11 Sep 2026 10:54:48 GMT</pubDate>
       <guid isPermaLink="false">5c314c4d36dc850ffe13</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework .NET samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/a096549746f22fe0a3e7cdb8ad359adca61cf89c</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 11 Sep 2026 18:33:03 GMT</pubDate>
+      <guid isPermaLink="false">5d6099a1e3f413a87d39</guid>
       <category>updated</category>
     </item>
     <item>
@@ -43,6 +91,30 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Fri, 11 Sep 2026 06:06:00 GMT</pubDate>
       <guid isPermaLink="false">3f463da64ceadaeb73c9</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Documentation changed: MCP servers in API Management</title>
+      <link>https://learn.microsoft.com/en-us/azure/api-management/mcp-server-overview</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 11 Sep 2026 22:13:00 GMT</pubDate>
+      <guid isPermaLink="false">02bbbcef5be5c432b257</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Documentation changed: Connect a knowledge base to an agent</title>
+      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/foundry-iq-connect</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 11 Sep 2026 22:11:00 GMT</pubDate>
+      <guid isPermaLink="false">fb322b7b200982010cc4</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Documentation changed: Claude models: current availability and limits</title>
+      <link>https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/claude-models</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 11 Sep 2026 22:11:00 GMT</pubDate>
+      <guid isPermaLink="false">5f306a1e3fe88e2b43d0</guid>
       <category>updated</category>
     </item>
     <item>
@@ -411,78 +483,6 @@
       <description>Added - agent-framework-hosting-a2a: Add progressive agent and workflow A2A adapters with native card generation, skill discovery, typed conversion, and mode-aware validation (7258) Changed - samples: Update the app-owned A2A hosting sample to use the progressive adapter surface (7258)</description>
       <pubDate>Thu, 23 Jul 2026 11:25:21 GMT</pubDate>
       <guid isPermaLink="false">aff8b8a646f4bb6ab2fb</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>python-github-copilot-1.0.0</title>
-      <link>https://github.com/microsoft/agent-framework/releases/tag/python-github-copilot-1.0.0</link>
-      <description>[github-copilot-1.0.0] - 2026-07-23 Added - agent-framework-github-copilot: Forward input attachments (images, documents, and other inline binary content) to GitHub Copilot as inline blobs (7300) Changed - agent-framework-github-copilot: Promote the package from release candidate to stable</description>
-      <pubDate>Thu, 23 Jul 2026 21:32:23 GMT</pubDate>
-      <guid isPermaLink="false">d7bc887273c35bece83d</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>python-1.12.1</title>
-      <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.12.1</link>
-      <description>[1.12.1] - 2026-07-22 Added - agent-framework-openai: Add explicit prompt cache breakpoints for GPT-5.6 models and a usage sample (7163) Changed - agent-framework-ag-ui: Promote the package from release candidate to stable - agent-framework-core: Add security guidance for custom MCP Streamable HTTP...</description>
-      <pubDate>Thu, 23 Jul 2026 04:36:41 GMT</pubDate>
-      <guid isPermaLink="false">676ea48abbcb7b8b18bc</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>dotnet-1.15.0</title>
-      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.15.0</link>
-      <description>What's Changed Python: Add MCPStreamableHTTPTool security guidance for custom http client by @TaoChenOSU in https://github.com/microsoft/agent-framework/pull/7245 Harden workflow credential selection by @moonbox3 in https://github.com/microsoft/agent-framework/pull/7249 Python: preserve Gemini 3...</description>
-      <pubDate>Wed, 22 Jul 2026 23:58:13 GMT</pubDate>
-      <guid isPermaLink="false">a537f00b346f6c8b4f43</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>dotnet-1.14.0</title>
-      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.14.0</link>
-      <description>The Microsoft Agent Framework has released .NET version 1.14.0, which includes several breaking changes such as the graduation of various components from experimental status, enhancements to message handling, and the restructuring of the AG-UI SDK into separate packages. These updates improve functionality and stability for developers, ensuring a more robust framework for building agent-based applications.</description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="false">84ff45872a857250044e</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>azure-ai-evaluation 1.18.2</title>
-      <link>https://pypi.org/project/azure-ai-evaluation/1.18.2</link>
-      <description>Python package 1.18.2 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
-      <pubDate>Wed, 22 Jul 2026 18:21:01 GMT</pubDate>
-      <guid isPermaLink="false">5d41eaf4afce3c49a900</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Building Agents that Act on Your Behalf with Toolboxes in Foundry</title>
-      <link>https://devblogs.microsoft.com/foundry/building-agents-that-act-on-your-behalf-with-toolboxes-in-foundry</link>
-      <description>How Toolboxes in Foundry simplify user delegation At some point, many agents move from answering questions to taking action. And when it does, the question becomes: whose identity is it acting with? Imagine you are building an internal employee agent. It needs to call a private, Entra-protected MCP...</description>
-      <pubDate>Wed, 22 Jul 2026 15:00:29 GMT</pubDate>
-      <guid isPermaLink="false">4526bf80c038076c4fb6</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>python-1.12.0</title>
-      <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.12.0</link>
-      <description>[1.12.0] - 2026-07-21 Added - agent-framework-azure-cosmos-memory: Add an alpha Azure Cosmos DB semantic-memory context provider with fact extraction, user profiles, samples, and integration coverage (6719) - agent-framework-azurefunctions, agent-framework-core, agent-framework-durabletask: Add HITL...</description>
-      <pubDate>Tue, 21 Jul 2026 19:40:32 GMT</pubDate>
-      <guid isPermaLink="false">5bdba8219c526e0e149d</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>[In preview] Public Preview: Protect sensitive generative AI telemetry in Application Insights and Microsoft Foundry</title>
-      <link>https://azure.microsoft.com/updates?id=567594</link>
-      <description>Azure Monitor Application Insights now stores generative AI content in a dedicated GenAIContent table (AppGenAIContent in Log Analytics), making it possible to apply newly available access controls to sensitive AI telemetry. Because Application Insights p</description>
-      <pubDate>Mon, 20 Jul 2026 15:09:43 GMT</pubDate>
-      <guid isPermaLink="false">10163d04d99a04383c77</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Announcing: Tracing for Microsoft Agent Framework (Python and .NET)</title>
-      <link>https://azure.microsoft.com/updates?id=564071</link>
-      <description>In public preview, Microsoft Foundry now offers tracing for the Microsoft Agent Framework in both Python and .NET, helping developers observe how agents reason, call tools, and interact with models during execution. This release is part of the broader hos</description>
-      <pubDate>Wed, 15 Jul 2026 18:51:45 GMT</pubDate>
-      <guid isPermaLink="false">ae818f49214139c82ea6</guid>
       <category>published</category>
     </item>
   </channel>
