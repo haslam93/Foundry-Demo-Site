@@ -2988,7 +2988,7 @@
     }
   ],
   "schema_version": 3,
-  "last_checked": "2026-09-12T10:58:02Z",
+  "last_checked": "2026-09-13T12:06:35Z",
   "item_count": 153,
   "sources": [
     {
@@ -2997,8 +2997,8 @@
       "kind": "Release status",
       "url": "https://azure.microsoft.com/updates/?products=ai-foundry",
       "authority": "Availability announcements",
-      "checked_at": "2026-09-12T10:58:02Z",
-      "last_success_at": "2026-09-12T10:58:02Z",
+      "checked_at": "2026-09-13T12:06:35Z",
+      "last_success_at": "2026-09-13T12:06:35Z",
       "items_seen": 37,
       "status": "ok",
       "latest_published": "2026-09-08"
@@ -3009,8 +3009,8 @@
       "kind": "What's new",
       "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
       "authority": "Current product guidance, not a release feed",
-      "checked_at": "2026-09-12T10:58:02Z",
-      "last_success_at": "2026-09-12T10:58:02Z",
+      "checked_at": "2026-09-13T12:06:35Z",
+      "last_success_at": "2026-09-13T12:06:35Z",
       "items_seen": 1,
       "status": "ok",
       "latest_published": "2026-09-09"
@@ -3021,8 +3021,8 @@
       "kind": "Announcements",
       "url": "https://devblogs.microsoft.com/foundry/",
       "authority": "Launch context",
-      "checked_at": "2026-09-12T10:58:02Z",
-      "last_success_at": "2026-09-12T10:58:02Z",
+      "checked_at": "2026-09-13T12:06:35Z",
+      "last_success_at": "2026-09-13T12:06:35Z",
       "items_seen": 10,
       "status": "ok",
       "latest_published": "2026-09-10"
@@ -3033,8 +3033,8 @@
       "kind": "SDK releases",
       "url": "https://github.com/microsoft/agent-framework/releases",
       "authority": "Repository release channel; not feature GA status",
-      "checked_at": "2026-09-12T10:58:02Z",
-      "last_success_at": "2026-09-12T10:58:02Z",
+      "checked_at": "2026-09-13T12:06:35Z",
+      "last_success_at": "2026-09-13T12:06:35Z",
       "items_seen": 35,
       "status": "ok",
       "latest_published": "2026-09-11"
@@ -3045,8 +3045,8 @@
       "kind": "Runtime releases",
       "url": "https://github.com/microsoft/Foundry-Local/releases",
       "authority": "Repository release channel",
-      "checked_at": "2026-09-12T10:58:02Z",
-      "last_success_at": "2026-09-12T10:58:02Z",
+      "checked_at": "2026-09-13T12:06:35Z",
+      "last_success_at": "2026-09-13T12:06:35Z",
       "items_seen": 8,
       "status": "ok",
       "latest_published": "2026-09-01"
@@ -3057,8 +3057,8 @@
       "kind": "Python package",
       "url": "https://pypi.org/project/azure-ai-projects/",
       "authority": "Published package versions; individual APIs may be preview",
-      "checked_at": "2026-09-12T10:58:02Z",
-      "last_success_at": "2026-09-12T10:58:02Z",
+      "checked_at": "2026-09-13T12:06:35Z",
+      "last_success_at": "2026-09-13T12:06:35Z",
       "items_seen": 5,
       "status": "ok",
       "latest_published": "2026-09-04"
@@ -3069,8 +3069,8 @@
       "kind": "Python package",
       "url": "https://pypi.org/project/azure-ai-evaluation/",
       "authority": "Published package versions; individual evaluators may be preview",
-      "checked_at": "2026-09-12T10:58:02Z",
-      "last_success_at": "2026-09-12T10:58:02Z",
+      "checked_at": "2026-09-13T12:06:35Z",
+      "last_success_at": "2026-09-13T12:06:35Z",
       "items_seen": 8,
       "status": "ok",
       "latest_published": "2026-09-04"
@@ -3081,11 +3081,10 @@
       "kind": "Source changes",
       "url": "https://learn.microsoft.com/azure/foundry/",
       "authority": "Documentation edits and commits, not product launches",
-      "checked_at": "2026-09-12T10:58:02Z",
-      "last_success_at": "2026-09-12T10:58:02Z",
-      "items_seen": 8,
-      "status": "ok",
-      "latest_published": "2026-09-11"
+      "checked_at": "2026-09-13T12:06:35Z",
+      "last_success_at": "2026-09-13T12:06:35Z",
+      "items_seen": 0,
+      "status": "ok"
     }
   ],
   "last_content_change_at": "2026-09-12T10:58:02Z",
