@@ -4,7 +4,31 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Sun, 13 Sep 2026 12:06:35 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 14 Sep 2026 13:03:42 GMT</lastBuildDate>
+    <item>
+      <title>Sample changed: Agent Framework: source and release notes</title>
+      <link>https://github.com/microsoft/agent-framework/commit/4b4d849602d31471a0fa4721b7d34d40b6e42114</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 14 Sep 2026 09:28:43 GMT</pubDate>
+      <guid isPermaLink="false">560a07ffb641401abcb0</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework Python samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/216e7616c8846143364dbdcaee66d9853277231c</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 14 Sep 2026 08:28:05 GMT</pubDate>
+      <guid isPermaLink="false">727ddc03bc3be11ac248</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: The official Foundry sample collection</title>
+      <link>https://github.com/microsoft-foundry/foundry-samples/commit/1abe346cbb2428fce504970498bafecf3803f29c</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Sun, 13 Sep 2026 20:17:31 GMT</pubDate>
+      <guid isPermaLink="false">227b161bd4a774b26fd1</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>dotnet-1.21.0</title>
       <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.21.0</link>
@@ -459,30 +483,6 @@
       <description>Python package 1.18.3 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
       <pubDate>Wed, 29 Jul 2026 19:16:09 GMT</pubDate>
       <guid isPermaLink="false">144f41cd832a066ad080</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>azure-ai-projects 2.4.0</title>
-      <link>https://pypi.org/project/azure-ai-projects/2.4.0</link>
-      <description>Python package 2.4.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
-      <pubDate>Mon, 27 Jul 2026 21:53:02 GMT</pubDate>
-      <guid isPermaLink="false">35253eb85e72f1642f31</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>[In preview] Public Preview: AI Gateway in Azure API Management</title>
-      <link>https://azure.microsoft.com/updates?id=568184</link>
-      <description>The AI Gateway tier for Azure API Management is now available in public preview. Building on the AI gateway capabilities already available across API Management tiers, the new AI Gateway tier provides a dedicated experience optimized for AI workloads.As o</description>
-      <pubDate>Mon, 27 Jul 2026 16:44:29 GMT</pubDate>
-      <guid isPermaLink="false">6cb6c1129bcdf0bf35a5</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>python-hosting-a2a-1.0.0a260723</title>
-      <link>https://github.com/microsoft/agent-framework/releases/tag/python-hosting-a2a-1.0.0a260723</link>
-      <description>Added - agent-framework-hosting-a2a: Add progressive agent and workflow A2A adapters with native card generation, skill discovery, typed conversion, and mode-aware validation (7258) Changed - samples: Update the app-owned A2A hosting sample to use the progressive adapter surface (7258)</description>
-      <pubDate>Thu, 23 Jul 2026 11:25:21 GMT</pubDate>
-      <guid isPermaLink="false">aff8b8a646f4bb6ab2fb</guid>
       <category>published</category>
     </item>
   </channel>
