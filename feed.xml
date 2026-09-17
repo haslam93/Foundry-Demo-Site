@@ -4,7 +4,39 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Wed, 16 Sep 2026 11:49:57 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 11:53:09 GMT</lastBuildDate>
+    <item>
+      <title>Sample changed: The official Foundry sample collection</title>
+      <link>https://github.com/microsoft-foundry/foundry-samples/commit/53a79ec8f08bdc4dd7d417342f02033070a06350</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Thu, 17 Sep 2026 00:06:51 GMT</pubDate>
+      <guid isPermaLink="false">c501bc23fd608fae98cc</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Foundry Local runtime and Session API</title>
+      <link>https://github.com/microsoft/foundry-local/commit/e06e92c6376737151c6eda36ad63a2e751f40213</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Thu, 17 Sep 2026 08:33:25 GMT</pubDate>
+      <guid isPermaLink="false">4f5e506f38af1d12d558</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework Python samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/63aacbb5c2157c6d6ecc5fe335c4dc7bd9d84b90</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Thu, 17 Sep 2026 11:39:06 GMT</pubDate>
+      <guid isPermaLink="false">04bd92107bc1207806ac</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Documentation changed: Foundry development in VS Code</title>
+      <link>https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/get-started-projects-visual-studio-code</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Thu, 17 Sep 2026 06:07:00 GMT</pubDate>
+      <guid isPermaLink="false">a8e36b57ab230f557ef7</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>Sample changed: Foundry Local runtime and Session API</title>
       <link>https://github.com/microsoft/foundry-local/commit/43f4076da7947bc678005f453ed8f5024fe05864</link>
@@ -452,38 +484,6 @@
       <pubDate>Tue, 08 Sep 2026 17:20:00 GMT</pubDate>
       <guid isPermaLink="false">9b7edd964daed382cfd9</guid>
       <category>updated</category>
-    </item>
-    <item>
-      <title>azure-ai-projects 2.6.0</title>
-      <link>https://pypi.org/project/azure-ai-projects/2.6.0</link>
-      <description>Python package 2.6.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
-      <pubDate>Fri, 04 Sep 2026 19:18:13 GMT</pubDate>
-      <guid isPermaLink="false">e66e78fa5cd94ac00185</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>azure-ai-evaluation 1.18.5</title>
-      <link>https://pypi.org/project/azure-ai-evaluation/1.18.5</link>
-      <description>Python package 1.18.5 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
-      <pubDate>Fri, 04 Sep 2026 18:36:10 GMT</pubDate>
-      <guid isPermaLink="false">b7be8f1cf7a870b922b6</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>python-1.17.0</title>
-      <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.17.0</link>
-      <description>[1.17.0] - 2026-09-03 Added - samples: Add an end-to-end Foundry-hosted Telegram agent sample (7883) - agent-framework-foundry-hosting: Add explicit Agent Server or agent-owned model history selection while preventing duplicated conversation replay (7997) Changed - agent-framework-core...</description>
-      <pubDate>Thu, 03 Sep 2026 09:49:35 GMT</pubDate>
-      <guid isPermaLink="false">eb238ff97f50479e5145</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Foundry Local v2.0.1</title>
-      <link>https://github.com/microsoft/foundry-local/releases/tag/v2.0.1</link>
-      <description>🚀 Foundry Local v2.0.1 Release Notes We're excited to announce Foundry Local v2.0.1. This release introduces a unified, cross-language inference API, a shared native runtime, and packaging and reliability improvements for Linux and ARM64. &gt; [!IMPORTANT] &gt; &gt; In-process OpenAI-style SDK clients are...</description>
-      <pubDate>Tue, 01 Sep 2026 05:04:37 GMT</pubDate>
-      <guid isPermaLink="false">12283c5d8337a80c6cc9</guid>
-      <category>published</category>
     </item>
   </channel>
 </rss>
