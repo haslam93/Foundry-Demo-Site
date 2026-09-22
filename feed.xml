@@ -4,7 +4,23 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Mon, 21 Sep 2026 13:02:15 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 11:52:16 GMT</lastBuildDate>
+    <item>
+      <title>Sample changed: Foundry hosted-agent examples</title>
+      <link>https://github.com/microsoft-foundry/foundry-samples/commit/acfa965b000cbc53d77e312993247ef25365181f</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Tue, 22 Sep 2026 06:16:19 GMT</pubDate>
+      <guid isPermaLink="false">d6a603d37e967ff9acca</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework: source and release notes</title>
+      <link>https://github.com/microsoft/agent-framework/commit/c9d63b56554e415d6dbad7bf31d546a7cb4c55a7</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Tue, 22 Sep 2026 11:32:38 GMT</pubDate>
+      <guid isPermaLink="false">ae381e79e6a7a443391f</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>Sample changed: Foundry prompt-agent examples</title>
       <link>https://github.com/microsoft-foundry/foundry-samples/commit/681c763ddaee6c9ece35673d3c2f064a0ea9f4dc</link>
@@ -19,6 +35,14 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Mon, 21 Sep 2026 08:52:00 GMT</pubDate>
       <guid isPermaLink="false">9180257f8393a243773d</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Foundry Local runtime and Session API</title>
+      <link>https://github.com/microsoft/foundry-local/commit/085978cea02ab15aa197756a20c8b0a11daceb0a</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 21 Sep 2026 20:03:31 GMT</pubDate>
+      <guid isPermaLink="false">cc4c618ffa50562f0532</guid>
       <category>updated</category>
     </item>
     <item>
@@ -459,30 +483,6 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Fri, 11 Sep 2026 18:33:03 GMT</pubDate>
       <guid isPermaLink="false">5d6099a1e3f413a87d39</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Run AI red-teaming scans in the cloud</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/run-ai-red-teaming-cloud</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Fri, 11 Sep 2026 06:06:00 GMT</pubDate>
-      <guid isPermaLink="false">ebe161d234e8e63956c2</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Monitor agents and enable continuous evaluation</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Fri, 11 Sep 2026 06:06:00 GMT</pubDate>
-      <guid isPermaLink="false">3f463da64ceadaeb73c9</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: MCP servers in API Management</title>
-      <link>https://learn.microsoft.com/en-us/azure/api-management/mcp-server-overview</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Fri, 11 Sep 2026 22:13:00 GMT</pubDate>
-      <guid isPermaLink="false">02bbbcef5be5c432b257</guid>
       <category>updated</category>
     </item>
   </channel>
