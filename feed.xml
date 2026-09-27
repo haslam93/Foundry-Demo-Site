@@ -4,7 +4,7 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Sat, 26 Sep 2026 11:34:58 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 27 Sep 2026 12:13:46 GMT</lastBuildDate>
     <item>
       <title>Sample changed: Foundry Local runtime and Session API</title>
       <link>https://github.com/microsoft/foundry-local/commit/16da3e7a7971690c06957548410dc57bfe647906</link>
