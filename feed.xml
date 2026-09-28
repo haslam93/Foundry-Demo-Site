@@ -4,7 +4,47 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Sun, 27 Sep 2026 12:13:46 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 14:12:24 GMT</lastBuildDate>
+    <item>
+      <title>Sample changed: Foundry hosted-agent examples</title>
+      <link>https://github.com/microsoft-foundry/foundry-samples/commit/8d96022d01a9c11570c9cb087c6e45e73a4b3337</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 28 Sep 2026 08:41:01 GMT</pubDate>
+      <guid isPermaLink="false">2fd32b4b211809f92ca5</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Foundry Local runtime and Session API</title>
+      <link>https://github.com/microsoft/foundry-local/commit/51320c82023f2b547214900126f342e4737c78ae</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 28 Sep 2026 07:00:50 GMT</pubDate>
+      <guid isPermaLink="false">9a4ce91979f76f97401c</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework: source and release notes</title>
+      <link>https://github.com/microsoft/agent-framework/commit/2024d4df4c4dd01b904fb9daaf56f5759801654a</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 28 Sep 2026 13:36:46 GMT</pubDate>
+      <guid isPermaLink="false">d97a113a412ce5ebf749</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework Python samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/c91cf323410156516f386f04bd8217c07f552da5</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 28 Sep 2026 11:42:15 GMT</pubDate>
+      <guid isPermaLink="false">a675f625114b3061c65a</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework .NET samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/c804f32c983df56bacc9a8698fde9d50edc2df3e</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 28 Sep 2026 12:27:59 GMT</pubDate>
+      <guid isPermaLink="false">1eee924027a4eab4bba7</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>Sample changed: Foundry Local runtime and Session API</title>
       <link>https://github.com/microsoft/foundry-local/commit/16da3e7a7971690c06957548410dc57bfe647906</link>
@@ -443,46 +483,6 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Thu, 17 Sep 2026 11:39:06 GMT</pubDate>
       <guid isPermaLink="false">04bd92107bc1207806ac</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework .NET samples</title>
-      <link>https://github.com/microsoft/agent-framework/commit/d188e8e6334881ce591b84b255ae9fb344e4663e</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 17 Sep 2026 16:53:15 GMT</pubDate>
-      <guid isPermaLink="false">c6e2b2be6ccd7681d2f2</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Foundry development in VS Code</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/get-started-projects-visual-studio-code</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 17 Sep 2026 06:07:00 GMT</pubDate>
-      <guid isPermaLink="false">a8e36b57ab230f557ef7</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Connect a knowledge base to an agent</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/foundry-iq-connect</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 17 Sep 2026 22:12:00 GMT</pubDate>
-      <guid isPermaLink="false">b0dfdef3a850b50c4c2b</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Foundry Local runtime and Session API</title>
-      <link>https://github.com/microsoft/foundry-local/commit/43f4076da7947bc678005f453ed8f5024fe05864</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Wed, 16 Sep 2026 00:33:40 GMT</pubDate>
-      <guid isPermaLink="false">de350cb4207964b9652a</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework: source and release notes</title>
-      <link>https://github.com/microsoft/agent-framework/commit/ee8e5f58273f7ebd102fdefca0a1fd38a357cace</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Wed, 16 Sep 2026 11:26:06 GMT</pubDate>
-      <guid isPermaLink="false">ea6a0a239b2a55fc8c59</guid>
       <category>updated</category>
     </item>
   </channel>
