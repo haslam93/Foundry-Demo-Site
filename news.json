@@ -1,6 +1,90 @@
 {
-  "last_updated": "2026-09-30",
+  "last_updated": "2026-10-01",
   "items": [
+    {
+      "id": "8d0f006e062b9dc5172a",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T10:54:51Z",
+      "date_kind": "published",
+      "title": "dotnet-1.23.0",
+      "summary": "Changes: be01deccaf3dd7b85e03620145bc1a757c857827 .NET: Add origin pinning to Foundry toolbox MCP client (8721) 0d6d2bb6b0b58f3aabdf170320ab90fc300d4c99 .NET: fix: declarative workflow http variables (8797) 2024d4df4c4dd01b904fb9daaf56f5759801654a .NET: Fix workflow topology edge multiplicity...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.23.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Hosted agents",
+        "Agent Framework",
+        "Agents",
+        "Tools & MCP",
+        "Knowledge"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / .NET",
+      "first_seen_at": "2026-10-01T13:33:38Z"
+    },
+    {
+      "id": "b929ecd790b6b1506773",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T09:31:51Z",
+      "date_kind": "updated",
+      "title": "Sample changed: Agent Framework: source and release notes",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://github.com/microsoft/agent-framework/commit/f1fb145c4d80191aa86b3480d12112d828233763",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Agent Framework",
+        "SDK",
+        "Agents"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "framework-repo",
+      "first_seen_at": "2026-10-01T13:33:38Z"
+    },
+    {
+      "id": "6632c930bd78bb57cd71",
+      "date": "2026-10-01",
+      "published_at": "2026-10-01T09:22:54Z",
+      "date_kind": "updated",
+      "title": "Sample changed: Agent Framework Python samples",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://github.com/microsoft/agent-framework/commit/a850ee6c221ab29e56fc75b7fe8ca5d200c1e2e1",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Agent Framework",
+        "Agents",
+        "Tools & MCP"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "framework-python",
+      "first_seen_at": "2026-10-01T13:33:38Z"
+    },
+    {
+      "id": "1bc99e0d5e6c12265aa7",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T23:41:46Z",
+      "date_kind": "updated",
+      "title": "Sample changed: The official Foundry sample collection",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://github.com/microsoft-foundry/foundry-samples/commit/7fa192447da62af6792f501ff3b571ba39f6b807",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Platform",
+        "Models",
+        "Agents",
+        "Deployment"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "foundry-samples",
+      "first_seen_at": "2026-10-01T13:33:38Z"
+    },
     {
       "id": "ccd616d84a1f103877a6",
       "date": "2026-09-30",
@@ -100,6 +184,26 @@
       "summary_kind": "change_detection",
       "resource_id": "continuous-evaluation",
       "first_seen_at": "2026-09-30T12:47:57Z"
+    },
+    {
+      "id": "a90064cf8cd56bc04c26",
+      "date": "2026-09-30",
+      "published_at": "2026-09-30T22:10:00Z",
+      "date_kind": "updated",
+      "title": "Documentation changed: Hosted-agent GitHub Actions CI/CD",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/set-up-cicd-hosted-agent?pivots=azd",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Hosted agents",
+        "Deployment",
+        "Security"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "hosted-cicd",
+      "first_seen_at": "2026-10-01T13:33:38Z"
     },
     {
       "id": "46229d5592bcf1eb7079",
@@ -4622,119 +4726,10 @@
       "summary_kind": "package_metadata",
       "release_channel": "stable",
       "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "a26286b0ffba62a0ebe8",
-      "date": "2026-05-22",
-      "published_at": "2026-05-22T02:14:07Z",
-      "date_kind": "published",
-      "title": "python-1.6.0",
-      "summary": "[1.6.0] - 2026-05-21 Added - agent-framework-core: Shell tool with support for local and Docker execution (5664) - agent-framework-monty: New Monty-backed CodeAct provider package (5915) - agent-framework-foundry: Add experimental hosted tool factories on FoundryChatClient (5958) -...",
-      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.6.0",
-      "source": "agent-framework",
-      "source_label": "Microsoft Agent Framework",
-      "tags": [
-        "SDK",
-        "Evaluation",
-        "Agent Framework",
-        "Agents",
-        "Tools & MCP"
-      ],
-      "summary_kind": "release_excerpt",
-      "release_channel": "stable",
-      "component": "Agent Framework / Python",
-      "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "91da9f48a67b4cc0e901",
-      "date": "2026-05-20",
-      "published_at": "2026-05-20T00:23:14Z",
-      "date_kind": "published",
-      "title": "python-1.5.0",
-      "summary": "[1.5.0] - 2026-05-19 Added - agent-framework-core, agent-framework-foundry, agent-framework-openai: Record actual served model from Azure OpenAI (5910) - samples: New Foundry Hosted Agents samples for RAG, Skills, and Memory (5822) Changed - agent-framework-core, agent-framework-azurefunctions...",
-      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.5.0",
-      "source": "agent-framework",
-      "source_label": "Microsoft Agent Framework",
-      "tags": [
-        "SDK",
-        "Hosted agents",
-        "Agent Framework",
-        "Agents",
-        "Tools & MCP",
-        "Knowledge"
-      ],
-      "summary_kind": "release_excerpt",
-      "release_channel": "stable",
-      "component": "Agent Framework / Python",
-      "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "8846e324d91b865ae67e",
-      "date": "2026-05-20",
-      "published_at": "2026-05-20T03:02:25Z",
-      "date_kind": "published",
-      "title": "azure-ai-evaluation 1.16.8",
-      "summary": "Python package 1.16.8 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.",
-      "url": "https://pypi.org/project/azure-ai-evaluation/1.16.8",
-      "source": "evaluation-sdk",
-      "source_label": "Azure AI Evaluation SDK",
-      "tags": [
-        "SDK",
-        "Evaluation"
-      ],
-      "summary_kind": "package_metadata",
-      "release_channel": "stable",
-      "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "c51cdfac5f38f575c5aa",
-      "date": "2026-05-15",
-      "published_at": "2026-05-15T00:37:33Z",
-      "date_kind": "published",
-      "title": "python-1.4.0",
-      "summary": "[1.4.0] - 2026-05-14 Added - agent-framework-core: Forward MCP tool call metadata (5815) - agent-framework-core: Support list[str] arguments for file-based skill scripts (5850) - agent-framework-core: Strip server-issued response item IDs under storage (5690) - agent-framework-ag-ui: Add tool result...",
-      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.4.0",
-      "source": "agent-framework",
-      "source_label": "Microsoft Agent Framework",
-      "tags": [
-        "SDK",
-        "Hosted agents",
-        "Observability",
-        "Agent Framework",
-        "Agents",
-        "Tools & MCP"
-      ],
-      "summary_kind": "release_excerpt",
-      "release_channel": "stable",
-      "component": "Agent Framework / Python",
-      "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "0d621a8102f01dc1aa39",
-      "date": "2026-05-14",
-      "published_at": "2026-05-14T13:47:44Z",
-      "date_kind": "published",
-      "title": "dotnet-1.6.1",
-      "summary": "What's Changed .NET: Add hyperlight to release slnf by @westey-m in https://github.com/microsoft/agent-framework/pull/5695 .NET: Update FoundryAgent to address HostedAgents strict URL routing by @rogerbarreto in https://github.com/microsoft/agent-framework/pull/5677 .NET: Add IChatMessageInjector...",
-      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.6.1",
-      "source": "agent-framework",
-      "source_label": "Microsoft Agent Framework",
-      "tags": [
-        "SDK",
-        "Hosted agents",
-        "Evaluation",
-        "Observability",
-        "Agent Framework",
-        "Agents"
-      ],
-      "summary_kind": "release_excerpt",
-      "release_channel": "stable",
-      "component": "Agent Framework / .NET",
-      "first_seen_at": "2026-09-08T00:48:03Z"
     }
   ],
   "schema_version": 3,
-  "last_checked": "2026-09-30T12:47:57Z",
+  "last_checked": "2026-10-01T13:33:38Z",
   "item_count": 240,
   "sources": [
     {
@@ -4743,8 +4738,8 @@
       "kind": "Release status",
       "url": "https://azure.microsoft.com/updates/?products=ai-foundry",
       "authority": "Availability announcements",
-      "checked_at": "2026-09-30T12:47:57Z",
-      "last_success_at": "2026-09-30T12:47:57Z",
+      "checked_at": "2026-10-01T13:33:38Z",
+      "last_success_at": "2026-10-01T13:33:38Z",
       "items_seen": 18,
       "status": "ok",
       "latest_published": "2026-09-18"
@@ -4755,8 +4750,8 @@
       "kind": "What's new",
       "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
       "authority": "Current product guidance, not a release feed",
-      "checked_at": "2026-09-30T12:47:57Z",
-      "last_success_at": "2026-09-30T12:47:57Z",
+      "checked_at": "2026-10-01T13:33:38Z",
+      "last_success_at": "2026-10-01T13:33:38Z",
       "items_seen": 1,
       "status": "ok",
       "latest_published": "2026-09-09"
@@ -4767,8 +4762,8 @@
       "kind": "Announcements",
       "url": "https://devblogs.microsoft.com/foundry/",
       "authority": "Launch context",
-      "checked_at": "2026-09-30T12:47:57Z",
-      "last_success_at": "2026-09-30T12:47:57Z",
+      "checked_at": "2026-10-01T13:33:38Z",
+      "last_success_at": "2026-10-01T13:33:38Z",
       "items_seen": 10,
       "status": "ok",
       "latest_published": "2026-09-29"
@@ -4779,11 +4774,11 @@
       "kind": "SDK releases",
       "url": "https://github.com/microsoft/agent-framework/releases",
       "authority": "Repository release channel; not feature GA status",
-      "checked_at": "2026-09-30T12:47:57Z",
-      "last_success_at": "2026-09-30T12:47:57Z",
-      "items_seen": 31,
+      "checked_at": "2026-10-01T13:33:38Z",
+      "last_success_at": "2026-10-01T13:33:38Z",
+      "items_seen": 32,
       "status": "ok",
-      "latest_published": "2026-09-18"
+      "latest_published": "2026-10-01"
     },
     {
       "id": "foundry-local",
@@ -4791,8 +4786,8 @@
       "kind": "Runtime releases",
       "url": "https://github.com/microsoft/Foundry-Local/releases",
       "authority": "Repository release channel",
-      "checked_at": "2026-09-30T12:47:57Z",
-      "last_success_at": "2026-09-30T12:47:57Z",
+      "checked_at": "2026-10-01T13:33:38Z",
+      "last_success_at": "2026-10-01T13:33:38Z",
       "items_seen": 8,
       "status": "ok",
       "latest_published": "2026-09-30"
@@ -4803,8 +4798,8 @@
       "kind": "Python package",
       "url": "https://pypi.org/project/azure-ai-projects/",
       "authority": "Published package versions; individual APIs may be preview",
-      "checked_at": "2026-09-30T12:47:57Z",
-      "last_success_at": "2026-09-30T12:47:57Z",
+      "checked_at": "2026-10-01T13:33:38Z",
+      "last_success_at": "2026-10-01T13:33:38Z",
       "items_seen": 6,
       "status": "ok",
       "latest_published": "2026-09-18"
@@ -4815,8 +4810,8 @@
       "kind": "Python package",
       "url": "https://pypi.org/project/azure-ai-evaluation/",
       "authority": "Published package versions; individual evaluators may be preview",
-      "checked_at": "2026-09-30T12:47:57Z",
-      "last_success_at": "2026-09-30T12:47:57Z",
+      "checked_at": "2026-10-01T13:33:38Z",
+      "last_success_at": "2026-10-01T13:33:38Z",
       "items_seen": 8,
       "status": "ok",
       "latest_published": "2026-09-25"
@@ -4827,24 +4822,24 @@
       "kind": "Source changes",
       "url": "https://learn.microsoft.com/azure/foundry/",
       "authority": "Documentation edits and commits, not product launches",
-      "checked_at": "2026-09-30T12:47:57Z",
-      "last_success_at": "2026-09-30T12:47:57Z",
-      "items_seen": 11,
+      "checked_at": "2026-10-01T13:33:38Z",
+      "last_success_at": "2026-10-01T13:33:38Z",
+      "items_seen": 4,
       "status": "ok",
-      "latest_published": "2026-09-30"
+      "latest_published": "2026-10-01"
     }
   ],
-  "last_content_change_at": "2026-09-30T12:47:57Z",
+  "last_content_change_at": "2026-10-01T13:33:38Z",
   "refresh_interval_hours": 24,
   "stale_after_hours": 48,
   "releases": [
     {
       "source": "agent-framework",
       "component": "Agent Framework / .NET",
-      "version": "dotnet-1.22.0",
+      "version": "dotnet-1.23.0",
       "channel": "stable",
-      "published_at": "2026-09-18T18:12:17Z",
-      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.22.0"
+      "published_at": "2026-10-01T10:54:51Z",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.23.0"
     },
     {
       "source": "agent-framework",

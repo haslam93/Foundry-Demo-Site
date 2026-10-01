@@ -4,7 +4,39 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Wed, 30 Sep 2026 12:47:57 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 13:33:38 GMT</lastBuildDate>
+    <item>
+      <title>dotnet-1.23.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.23.0</link>
+      <description>Changes: be01deccaf3dd7b85e03620145bc1a757c857827 .NET: Add origin pinning to Foundry toolbox MCP client (8721) 0d6d2bb6b0b58f3aabdf170320ab90fc300d4c99 .NET: fix: declarative workflow http variables (8797) 2024d4df4c4dd01b904fb9daaf56f5759801654a .NET: Fix workflow topology edge multiplicity...</description>
+      <pubDate>Thu, 01 Oct 2026 10:54:51 GMT</pubDate>
+      <guid isPermaLink="false">8d0f006e062b9dc5172a</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework: source and release notes</title>
+      <link>https://github.com/microsoft/agent-framework/commit/f1fb145c4d80191aa86b3480d12112d828233763</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Thu, 01 Oct 2026 09:31:51 GMT</pubDate>
+      <guid isPermaLink="false">b929ecd790b6b1506773</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework Python samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/a850ee6c221ab29e56fc75b7fe8ca5d200c1e2e1</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Thu, 01 Oct 2026 09:22:54 GMT</pubDate>
+      <guid isPermaLink="false">6632c930bd78bb57cd71</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: The official Foundry sample collection</title>
+      <link>https://github.com/microsoft-foundry/foundry-samples/commit/7fa192447da62af6792f501ff3b571ba39f6b807</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Wed, 30 Sep 2026 23:41:46 GMT</pubDate>
+      <guid isPermaLink="false">1bc99e0d5e6c12265aa7</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>Sample changed: Agent Framework: source and release notes</title>
       <link>https://github.com/microsoft/agent-framework/commit/2f5713f60e6e3036e2c21bf01068602ca1fa3a2e</link>
@@ -43,6 +75,14 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Wed, 30 Sep 2026 06:04:00 GMT</pubDate>
       <guid isPermaLink="false">434ff1d1170fab904aa8</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Documentation changed: Hosted-agent GitHub Actions CI/CD</title>
+      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/set-up-cicd-hosted-agent?pivots=azd</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Wed, 30 Sep 2026 22:10:00 GMT</pubDate>
+      <guid isPermaLink="false">a90064cf8cd56bc04c26</guid>
       <category>updated</category>
     </item>
     <item>
@@ -444,46 +484,6 @@
       <pubDate>Mon, 21 Sep 2026 08:52:00 GMT</pubDate>
       <guid isPermaLink="false">9180257f8393a243773d</guid>
       <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Foundry Local runtime and Session API</title>
-      <link>https://github.com/microsoft/foundry-local/commit/085978cea02ab15aa197756a20c8b0a11daceb0a</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Mon, 21 Sep 2026 20:03:31 GMT</pubDate>
-      <guid isPermaLink="false">cc4c618ffa50562f0532</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework: source and release notes</title>
-      <link>https://github.com/microsoft/agent-framework/commit/34865294dfc57ef310b5e2d4fd95bff6c445a910</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Mon, 21 Sep 2026 12:58:26 GMT</pubDate>
-      <guid isPermaLink="false">13dd3db6b5a2f339a552</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework Python samples</title>
-      <link>https://github.com/microsoft/agent-framework/commit/04efdbfa2675ba04b4d190a8a32d29c0bba91d22</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Mon, 21 Sep 2026 08:12:44 GMT</pubDate>
-      <guid isPermaLink="false">cb415bbb93a91780d318</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>python-1.19.0</title>
-      <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.19.0</link>
-      <description>[1.19.0] - 2026-09-18 Added - agent-framework, agent-framework-core: Add generic vector-store provider protocols, instrumentation message-event controls, and per-tool AgentModeProvider exposure controls (8421, 8451, 8450) - agent-framework-mongodb: Add the alpha MongoDB vector-store connector (8184)...</description>
-      <pubDate>Fri, 18 Sep 2026 09:14:28 GMT</pubDate>
-      <guid isPermaLink="false">6e97e5c99321cf96cc77</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>dotnet-1.22.0</title>
-      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.22.0</link>
-      <description>What's Changed .NET: fix: race concdition in workflow formula state by @baywet in https://github.com/microsoft/agent-framework/pull/8252 .NET: update remaining dependencies by @baywet in https://github.com/microsoft/agent-framework/pull/8307 .NET: fix: inspect for delemiter value before adding...</description>
-      <pubDate>Fri, 18 Sep 2026 18:12:17 GMT</pubDate>
-      <guid isPermaLink="false">ff2ea4a9aecb6f968482</guid>
-      <category>published</category>
     </item>
   </channel>
 </rss>
