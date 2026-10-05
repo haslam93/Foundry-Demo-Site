@@ -4,7 +4,23 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Sun, 04 Oct 2026 12:34:04 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 14:59:51 GMT</lastBuildDate>
+    <item>
+      <title>Sample changed: Agent Framework: source and release notes</title>
+      <link>https://github.com/microsoft/agent-framework/commit/2df61296bb563a95552b18491ad29b1e1a509f81</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 05 Oct 2026 14:22:00 GMT</pubDate>
+      <guid isPermaLink="false">66e3a9f793c32d4eb00e</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework Python samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/4dfb7565b67e57ac90642a588f10a9af636b0eba</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 05 Oct 2026 09:23:47 GMT</pubDate>
+      <guid isPermaLink="false">ad32a8cd56a66e8342bf</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>python-1.20.0</title>
       <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.20.0</link>
@@ -467,22 +483,6 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Wed, 23 Sep 2026 17:11:00 GMT</pubDate>
       <guid isPermaLink="false">62f616ae79a6a8aaee2f</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Long-running agent reference</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/long-running-agent-reference</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Wed, 23 Sep 2026 22:08:00 GMT</pubDate>
-      <guid isPermaLink="false">98059b8fbed97c40a413</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Foundry hosted-agent examples</title>
-      <link>https://github.com/microsoft-foundry/foundry-samples/commit/acfa965b000cbc53d77e312993247ef25365181f</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Tue, 22 Sep 2026 06:16:19 GMT</pubDate>
-      <guid isPermaLink="false">d6a603d37e967ff9acca</guid>
       <category>updated</category>
     </item>
   </channel>
