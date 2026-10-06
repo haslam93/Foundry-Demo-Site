@@ -4,7 +4,39 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Mon, 05 Oct 2026 14:59:51 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 13:26:52 GMT</lastBuildDate>
+    <item>
+      <title>Sample changed: Agent Framework: source and release notes</title>
+      <link>https://github.com/microsoft/agent-framework/commit/b306dde15cd1d6a6625a86a141fdda612d2eae0d</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Tue, 06 Oct 2026 13:11:08 GMT</pubDate>
+      <guid isPermaLink="false">e6381094f54724a8b6ae</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework .NET samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/1aca61d51bb931ce27962a479c3d76b51d15791e</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Tue, 06 Oct 2026 10:07:23 GMT</pubDate>
+      <guid isPermaLink="false">31ab3d2831326731da6e</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>azure-ai-projects 2.8.0</title>
+      <link>https://pypi.org/project/azure-ai-projects/2.8.0</link>
+      <description>Python package 2.8.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
+      <pubDate>Mon, 05 Oct 2026 22:45:24 GMT</pubDate>
+      <guid isPermaLink="false">4cb1e698b3804d239f67</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Sample changed: Foundry Local runtime and Session API</title>
+      <link>https://github.com/microsoft/foundry-local/commit/bdc0abdba46d77fbc42bacc74816373ba894c0a7</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 05 Oct 2026 23:52:42 GMT</pubDate>
+      <guid isPermaLink="false">25df6163c74649cb7a4c</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>Sample changed: Agent Framework: source and release notes</title>
       <link>https://github.com/microsoft/agent-framework/commit/2df61296bb563a95552b18491ad29b1e1a509f81</link>
@@ -451,38 +483,6 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Wed, 23 Sep 2026 04:08:36 GMT</pubDate>
       <guid isPermaLink="false">8993f5b673f5ff0453f1</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Foundry Local runtime and Session API</title>
-      <link>https://github.com/microsoft/foundry-local/commit/e7ed2328ced2be6deead81bff59588aabdcbc67b</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Wed, 23 Sep 2026 00:22:14 GMT</pubDate>
-      <guid isPermaLink="false">8ed0c9bb33a139b4b668</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework: source and release notes</title>
-      <link>https://github.com/microsoft/agent-framework/commit/f42ff0147d03a6b7ed5d9e2731fc54aca89c20e5</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Wed, 23 Sep 2026 08:19:54 GMT</pubDate>
-      <guid isPermaLink="false">b71126de9d20a82cebc4</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework .NET samples</title>
-      <link>https://github.com/microsoft/agent-framework/commit/0bbb7245d408b6b7209eca58609ca53a52a66cec</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Wed, 23 Sep 2026 13:37:45 GMT</pubDate>
-      <guid isPermaLink="false">dd3f6e78c4c8263aebc1</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Models sold directly by Azure</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Wed, 23 Sep 2026 17:11:00 GMT</pubDate>
-      <guid isPermaLink="false">62f616ae79a6a8aaee2f</guid>
       <category>updated</category>
     </item>
   </channel>
