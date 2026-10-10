@@ -4,7 +4,15 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Fri, 09 Oct 2026 13:30:09 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 12:44:47 GMT</lastBuildDate>
+    <item>
+      <title>azure-ai-evaluation 1.18.8</title>
+      <link>https://pypi.org/project/azure-ai-evaluation/1.18.8</link>
+      <description>Python package 1.18.8 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
+      <pubDate>Fri, 09 Oct 2026 16:40:15 GMT</pubDate>
+      <guid isPermaLink="false">9e4c1a7b4c47076055bc</guid>
+      <category>published</category>
+    </item>
     <item>
       <title>Sample changed: The official Foundry sample collection</title>
       <link>https://github.com/microsoft-foundry/foundry-samples/commit/5715b660c8a6d365914af6d2b6f0444740168a08</link>
@@ -22,6 +30,14 @@
       <category>updated</category>
     </item>
     <item>
+      <title>Sample changed: Foundry hosted-agent examples</title>
+      <link>https://github.com/microsoft-foundry/foundry-samples/commit/d3171cb69ac2fb73f2be216b509a0b4a14e394b9</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 09 Oct 2026 21:17:38 GMT</pubDate>
+      <guid isPermaLink="false">353ce4e1e9430ae876ff</guid>
+      <category>updated</category>
+    </item>
+    <item>
       <title>Sample changed: Agent Framework: source and release notes</title>
       <link>https://github.com/microsoft/agent-framework/commit/65a12f9bc82626c3e52899d566de44c62de28a6e</link>
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
@@ -30,11 +46,27 @@
       <category>updated</category>
     </item>
     <item>
+      <title>Sample changed: Agent Framework: source and release notes</title>
+      <link>https://github.com/microsoft/agent-framework/commit/fd52de71579162a888fb2dd7510c57c6014dcdfc</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 09 Oct 2026 17:30:10 GMT</pubDate>
+      <guid isPermaLink="false">bae2ee1f8387fc2cc8eb</guid>
+      <category>updated</category>
+    </item>
+    <item>
       <title>Sample changed: Agent Framework .NET samples</title>
       <link>https://github.com/microsoft/agent-framework/commit/3e6db916fb8fcea78ff8676b0ffce12d0a7e9b36</link>
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Fri, 09 Oct 2026 09:56:44 GMT</pubDate>
       <guid isPermaLink="false">683be649413fd9427153</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Documentation changed: Turn traces into evaluation datasets</title>
+      <link>https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/traces-to-dataset</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 09 Oct 2026 22:04:00 GMT</pubDate>
+      <guid isPermaLink="false">a4d19d49a9ec702f2490</guid>
       <category>updated</category>
     </item>
     <item>
@@ -67,14 +99,6 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Thu, 08 Oct 2026 10:18:15 GMT</pubDate>
       <guid isPermaLink="false">dd9478fb7c976a675de3</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Turn traces into evaluation datasets</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/traces-to-dataset</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 08 Oct 2026 11:04:00 GMT</pubDate>
-      <guid isPermaLink="false">7509c678ca4ef5432bee</guid>
       <category>updated</category>
     </item>
     <item>
@@ -459,30 +483,6 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Tue, 29 Sep 2026 13:02:54 GMT</pubDate>
       <guid isPermaLink="false">7424f915bdc947f6173c</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework Python samples</title>
-      <link>https://github.com/microsoft/agent-framework/commit/01cf5b547c5f227518a00d8cbfadca6f364398a0</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Tue, 29 Sep 2026 09:37:43 GMT</pubDate>
-      <guid isPermaLink="false">ee134801c79949aaaea4</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Configure and use agent toolboxes</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/toolbox</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Tue, 29 Sep 2026 22:16:00 GMT</pubDate>
-      <guid isPermaLink="false">00c3f6e92aef404cae6f</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Foundry hosted-agent examples</title>
-      <link>https://github.com/microsoft-foundry/foundry-samples/commit/8d96022d01a9c11570c9cb087c6e45e73a4b3337</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Mon, 28 Sep 2026 08:41:01 GMT</pubDate>
-      <guid isPermaLink="false">2fd32b4b211809f92ca5</guid>
       <category>updated</category>
     </item>
   </channel>

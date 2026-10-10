@@ -2,6 +2,24 @@
   "last_updated": "2026-10-09",
   "items": [
     {
+      "id": "9e4c1a7b4c47076055bc",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T16:40:15Z",
+      "date_kind": "published",
+      "title": "azure-ai-evaluation 1.18.8",
+      "summary": "Python package 1.18.8 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.",
+      "url": "https://pypi.org/project/azure-ai-evaluation/1.18.8",
+      "source": "evaluation-sdk",
+      "source_label": "Azure AI Evaluation SDK",
+      "tags": [
+        "SDK",
+        "Evaluation"
+      ],
+      "summary_kind": "package_metadata",
+      "release_channel": "stable",
+      "first_seen_at": "2026-10-10T12:44:47Z"
+    },
+    {
       "id": "e06460382b04f0402cc4",
       "date": "2026-10-09",
       "published_at": "2026-10-09T10:51:53Z",
@@ -43,6 +61,26 @@
       "first_seen_at": "2026-10-09T13:30:09Z"
     },
     {
+      "id": "353ce4e1e9430ae876ff",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T21:17:38Z",
+      "date_kind": "updated",
+      "title": "Sample changed: Foundry hosted-agent examples",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://github.com/microsoft-foundry/foundry-samples/commit/d3171cb69ac2fb73f2be216b509a0b4a14e394b9",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Hosted agents",
+        "Agent Framework",
+        "Deployment"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "hosted-samples",
+      "first_seen_at": "2026-10-10T12:44:47Z"
+    },
+    {
       "id": "34002ed7982b1ed5edee",
       "date": "2026-10-09",
       "published_at": "2026-10-09T12:04:52Z",
@@ -63,6 +101,26 @@
       "first_seen_at": "2026-10-09T13:30:09Z"
     },
     {
+      "id": "bae2ee1f8387fc2cc8eb",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T17:30:10Z",
+      "date_kind": "updated",
+      "title": "Sample changed: Agent Framework: source and release notes",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://github.com/microsoft/agent-framework/commit/fd52de71579162a888fb2dd7510c57c6014dcdfc",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Agent Framework",
+        "SDK",
+        "Agents"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "framework-repo",
+      "first_seen_at": "2026-10-10T12:44:47Z"
+    },
+    {
       "id": "683be649413fd9427153",
       "date": "2026-10-09",
       "published_at": "2026-10-09T09:56:44Z",
@@ -81,6 +139,25 @@
       "summary_kind": "change_detection",
       "resource_id": "framework-dotnet",
       "first_seen_at": "2026-10-09T13:30:09Z"
+    },
+    {
+      "id": "a4d19d49a9ec702f2490",
+      "date": "2026-10-09",
+      "published_at": "2026-10-09T22:04:00Z",
+      "date_kind": "updated",
+      "title": "Documentation changed: Turn traces into evaluation datasets",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/traces-to-dataset",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Observability",
+        "Evaluation"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "traces-to-dataset",
+      "first_seen_at": "2026-10-10T12:44:47Z"
     },
     {
       "id": "8f8f93dd5facf4b3d285",
@@ -163,25 +240,6 @@
       ],
       "summary_kind": "change_detection",
       "resource_id": "framework-python",
-      "first_seen_at": "2026-10-08T13:44:46Z"
-    },
-    {
-      "id": "7509c678ca4ef5432bee",
-      "date": "2026-10-08",
-      "published_at": "2026-10-08T11:04:00Z",
-      "date_kind": "updated",
-      "title": "Documentation changed: Turn traces into evaluation datasets",
-      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
-      "url": "https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/traces-to-dataset",
-      "source": "resource-watch",
-      "source_label": "Documentation & sample watch",
-      "tags": [
-        "Source change",
-        "Observability",
-        "Evaluation"
-      ],
-      "summary_kind": "change_detection",
-      "resource_id": "traces-to-dataset",
       "first_seen_at": "2026-10-08T13:44:46Z"
     },
     {
@@ -4726,64 +4784,10 @@
       ],
       "summary_kind": "source_excerpt",
       "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "3ceba6b29cff32a16ea6",
-      "date": "2026-06-04",
-      "published_at": "2026-06-04T19:00:34Z",
-      "date_kind": "published",
-      "title": "[In preview] Public Preview: Content Understanding chunking and image verbalization in Azure AI Search",
-      "summary": "Azure AI Search now supports Content Understanding chunking and image verbalization in public preview, expanding the built-in skill that parses rich documents during indexing. Indexers can split documents into semantically meaningful chunks and generate t",
-      "url": "https://azure.microsoft.com/updates?id=563661",
-      "source": "azure-updates",
-      "source_label": "Azure Updates",
-      "tags": [
-        "Preview",
-        "Knowledge"
-      ],
-      "summary_kind": "source_excerpt",
-      "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "a0820d9dc0b8fe6cc8e7",
-      "date": "2026-06-04",
-      "published_at": "2026-06-04T19:30:58Z",
-      "date_kind": "published",
-      "title": "[In preview] Public Preview: Azure SQL as a knowledge source in Foundry IQ",
-      "summary": "Microsoft Foundry adds Azure SQL Database as a first-class Knowledge Source in Azure AI Search, available in public preview. Enterprise developers and solution architects building Copilot, RAG, and agentic experiences can now expose authoritative tables a",
-      "url": "https://azure.microsoft.com/updates?id=563446",
-      "source": "azure-updates",
-      "source_label": "Azure Updates",
-      "tags": [
-        "Preview",
-        "Agents",
-        "Knowledge"
-      ],
-      "summary_kind": "source_excerpt",
-      "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "e76f3e866e91d3b669ea",
-      "date": "2026-06-04",
-      "published_at": "2026-06-04T19:30:58Z",
-      "date_kind": "published",
-      "title": "[In preview] Public Preview: APIM Support for Foundry Models in Azure AI Search",
-      "summary": "Microsoft Foundry brings Azure API Management support to all Foundry model integrations in Azure AI Search, now in public preview. Enterprise platform engineers and AI solution teams running large-scale RAG pipelines can place Foundry and Azure OpenAI mod",
-      "url": "https://azure.microsoft.com/updates?id=563451",
-      "source": "azure-updates",
-      "source_label": "Azure Updates",
-      "tags": [
-        "Preview",
-        "API gateway",
-        "Knowledge",
-        "Models"
-      ],
-      "summary_kind": "source_excerpt",
-      "first_seen_at": "2026-09-08T00:48:03Z"
     }
   ],
   "schema_version": 3,
-  "last_checked": "2026-10-09T13:30:09Z",
+  "last_checked": "2026-10-10T12:44:47Z",
   "item_count": 240,
   "sources": [
     {
@@ -4792,9 +4796,9 @@
       "kind": "Release status",
       "url": "https://azure.microsoft.com/updates/?products=ai-foundry",
       "authority": "Availability announcements",
-      "checked_at": "2026-10-09T13:30:09Z",
-      "last_success_at": "2026-10-09T13:30:09Z",
-      "items_seen": 16,
+      "checked_at": "2026-10-10T12:44:47Z",
+      "last_success_at": "2026-10-10T12:44:47Z",
+      "items_seen": 15,
       "status": "ok",
       "latest_published": "2026-10-08"
     },
@@ -4804,8 +4808,8 @@
       "kind": "What's new",
       "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
       "authority": "Current product guidance, not a release feed",
-      "checked_at": "2026-10-09T13:30:09Z",
-      "last_success_at": "2026-10-09T13:30:09Z",
+      "checked_at": "2026-10-10T12:44:47Z",
+      "last_success_at": "2026-10-10T12:44:47Z",
       "items_seen": 1,
       "status": "ok",
       "latest_published": "2026-09-09"
@@ -4816,8 +4820,8 @@
       "kind": "Announcements",
       "url": "https://devblogs.microsoft.com/foundry/",
       "authority": "Launch context",
-      "checked_at": "2026-10-09T13:30:09Z",
-      "last_success_at": "2026-10-09T13:30:09Z",
+      "checked_at": "2026-10-10T12:44:47Z",
+      "last_success_at": "2026-10-10T12:44:47Z",
       "items_seen": 10,
       "status": "ok",
       "latest_published": "2026-10-07"
@@ -4828,8 +4832,8 @@
       "kind": "SDK releases",
       "url": "https://github.com/microsoft/agent-framework/releases",
       "authority": "Repository release channel; not feature GA status",
-      "checked_at": "2026-10-09T13:30:09Z",
-      "last_success_at": "2026-10-09T13:30:09Z",
+      "checked_at": "2026-10-10T12:44:47Z",
+      "last_success_at": "2026-10-10T12:44:47Z",
       "items_seen": 31,
       "status": "ok",
       "latest_published": "2026-10-08"
@@ -4840,8 +4844,8 @@
       "kind": "Runtime releases",
       "url": "https://github.com/microsoft/Foundry-Local/releases",
       "authority": "Repository release channel",
-      "checked_at": "2026-10-09T13:30:09Z",
-      "last_success_at": "2026-10-09T13:30:09Z",
+      "checked_at": "2026-10-10T12:44:47Z",
+      "last_success_at": "2026-10-10T12:44:47Z",
       "items_seen": 7,
       "status": "ok",
       "latest_published": "2026-10-07"
@@ -4852,8 +4856,8 @@
       "kind": "Python package",
       "url": "https://pypi.org/project/azure-ai-projects/",
       "authority": "Published package versions; individual APIs may be preview",
-      "checked_at": "2026-10-09T13:30:09Z",
-      "last_success_at": "2026-10-09T13:30:09Z",
+      "checked_at": "2026-10-10T12:44:47Z",
+      "last_success_at": "2026-10-10T12:44:47Z",
       "items_seen": 7,
       "status": "ok",
       "latest_published": "2026-10-05"
@@ -4864,11 +4868,11 @@
       "kind": "Python package",
       "url": "https://pypi.org/project/azure-ai-evaluation/",
       "authority": "Published package versions; individual evaluators may be preview",
-      "checked_at": "2026-10-09T13:30:09Z",
-      "last_success_at": "2026-10-09T13:30:09Z",
-      "items_seen": 7,
+      "checked_at": "2026-10-10T12:44:47Z",
+      "last_success_at": "2026-10-10T12:44:47Z",
+      "items_seen": 8,
       "status": "ok",
-      "latest_published": "2026-09-25"
+      "latest_published": "2026-10-09"
     },
     {
       "id": "resource-watch",
@@ -4876,14 +4880,14 @@
       "kind": "Source changes",
       "url": "https://learn.microsoft.com/azure/foundry/",
       "authority": "Documentation edits and commits, not product launches",
-      "checked_at": "2026-10-09T13:30:09Z",
-      "last_success_at": "2026-10-09T13:30:09Z",
-      "items_seen": 10,
+      "checked_at": "2026-10-10T12:44:47Z",
+      "last_success_at": "2026-10-10T12:44:47Z",
+      "items_seen": 4,
       "status": "ok",
       "latest_published": "2026-10-09"
     }
   ],
-  "last_content_change_at": "2026-10-09T13:30:09Z",
+  "last_content_change_at": "2026-10-10T12:44:47Z",
   "refresh_interval_hours": 24,
   "stale_after_hours": 48,
   "releases": [
@@ -4954,10 +4958,10 @@
     {
       "source": "evaluation-sdk",
       "component": "azure-ai-evaluation",
-      "version": "1.18.7",
+      "version": "1.18.8",
       "channel": "stable",
-      "published_at": "2026-09-25T17:11:29Z",
-      "url": "https://pypi.org/project/azure-ai-evaluation/1.18.7"
+      "published_at": "2026-10-09T16:40:15Z",
+      "url": "https://pypi.org/project/azure-ai-evaluation/1.18.8"
     },
     {
       "source": "evaluation-sdk",
