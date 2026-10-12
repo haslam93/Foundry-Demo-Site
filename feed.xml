@@ -4,7 +4,23 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Sun, 11 Oct 2026 13:07:31 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 15:46:11 GMT</lastBuildDate>
+    <item>
+      <title>Sample changed: Foundry hosted-agent examples</title>
+      <link>https://github.com/microsoft-foundry/foundry-samples/commit/b09cf167e25a7160737eed1be4f8462ee69cc3e8</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 12 Oct 2026 11:06:33 GMT</pubDate>
+      <guid isPermaLink="false">729911ee05d7f571c2ee</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework .NET samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/726dcff81e93f02fc18f7ebf0f477d6cbe2186fd</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 12 Oct 2026 12:13:49 GMT</pubDate>
+      <guid isPermaLink="false">85c4864cdc273c00d1d9</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>azure-ai-evaluation 1.18.8</title>
       <link>https://pypi.org/project/azure-ai-evaluation/1.18.8</link>
@@ -467,22 +483,6 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Tue, 29 Sep 2026 06:46:06 GMT</pubDate>
       <guid isPermaLink="false">776ef66c2f82938bddb6</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Foundry Local runtime and Session API</title>
-      <link>https://github.com/microsoft/foundry-local/commit/f6cb91dfb833a064756f3370cfabfae1f342f551</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Tue, 29 Sep 2026 17:23:06 GMT</pubDate>
-      <guid isPermaLink="false">028ac49c0a1d7f21f606</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework: source and release notes</title>
-      <link>https://github.com/microsoft/agent-framework/commit/f160d050937b9c2f8fc0bc86c079fa731f6557a9</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Tue, 29 Sep 2026 13:02:54 GMT</pubDate>
-      <guid isPermaLink="false">7424f915bdc947f6173c</guid>
       <category>updated</category>
     </item>
   </channel>
