@@ -4,7 +4,15 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Fri, 16 Oct 2026 11:39:03 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 10:58:10 GMT</lastBuildDate>
+    <item>
+      <title>azure-ai-projects 2.9.0</title>
+      <link>https://pypi.org/project/azure-ai-projects/2.9.0</link>
+      <description>Python package 2.9.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
+      <pubDate>Sat, 17 Oct 2026 03:57:23 GMT</pubDate>
+      <guid isPermaLink="false">d94755925cc079e65d27</guid>
+      <category>published</category>
+    </item>
     <item>
       <title>What’s new in Microsoft Foundry | September 2026</title>
       <link>https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-september-2026</link>
@@ -14,11 +22,27 @@
       <category>published</category>
     </item>
     <item>
+      <title>Sample changed: The official Foundry sample collection</title>
+      <link>https://github.com/microsoft-foundry/foundry-samples/commit/74bac0bce01168134757ba2f3d418ac9c4bf25bc</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 16 Oct 2026 14:17:31 GMT</pubDate>
+      <guid isPermaLink="false">73d50112a056d6a95cac</guid>
+      <category>updated</category>
+    </item>
+    <item>
       <title>Sample changed: Foundry Local runtime and Session API</title>
       <link>https://github.com/microsoft/foundry-local/commit/b3d8efb7a47ee9710e228c07fbf5172b525c7c0b</link>
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Fri, 16 Oct 2026 04:46:12 GMT</pubDate>
       <guid isPermaLink="false">52536018b4c967425d13</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Foundry Local runtime and Session API</title>
+      <link>https://github.com/microsoft/foundry-local/commit/b1d44de5c863ebbcbe202f73b20f0bd8eaaf4e55</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 16 Oct 2026 22:19:30 GMT</pubDate>
+      <guid isPermaLink="false">fdf55ccd0df5e72e0819</guid>
       <category>updated</category>
     </item>
     <item>
@@ -35,6 +59,22 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Fri, 16 Oct 2026 09:19:46 GMT</pubDate>
       <guid isPermaLink="false">5da5ec6de98951ef1cd6</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework Python samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/9127b89781a10f78a2748320cc26dfb9327eb487</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 16 Oct 2026 14:41:30 GMT</pubDate>
+      <guid isPermaLink="false">2233f0d4289d747f0c7e</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework .NET samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/44fe223da7ea6853eefb7053e25c2c213a2e5c15</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 16 Oct 2026 19:29:27 GMT</pubDate>
+      <guid isPermaLink="false">c2e7000f84ce4e4c4ca6</guid>
       <category>updated</category>
     </item>
     <item>
@@ -443,46 +483,6 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Wed, 07 Oct 2026 14:19:53 GMT</pubDate>
       <guid isPermaLink="false">d061dca8df1f27c34f4e</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Foundry Local CLI 0.11.0 (Preview)</title>
-      <link>https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.11.0</link>
-      <description>Public preview update for the Foundry Local CLI. &gt; [!IMPORTANT] &gt; Preview. This is an early CLI build. Expect rough edges, missing polish, and changes between releases. Please file issues with [cli] in the title and include foundry report output when possible. What's New Updated Foundry Local SDK...</description>
-      <pubDate>Wed, 07 Oct 2026 22:59:06 GMT</pubDate>
-      <guid isPermaLink="false">2f9631a4667ab7447bcf</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Documentation changed: Foundry SDKs and endpoints</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/sdk-overview</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Wed, 07 Oct 2026 06:03:00 GMT</pubDate>
-      <guid isPermaLink="false">f80a9d2c4415d30dd1b2</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Azure Document Intelligence and Azure Content Understanding: a practical guide</title>
-      <link>https://devblogs.microsoft.com/foundry/choosing-azure-document-intelligence-and-content-understanding</link>
-      <description>Compare Azure Document Intelligence and Azure Content Understanding across extraction architectures, workload fit, Layout capabilities, deployment options, and practical evaluation criteria.</description>
-      <pubDate>Wed, 07 Oct 2026 18:45:01 GMT</pubDate>
-      <guid isPermaLink="false">3c6413b9aa2635c7aeff</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework: source and release notes</title>
-      <link>https://github.com/microsoft/agent-framework/commit/b306dde15cd1d6a6625a86a141fdda612d2eae0d</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Tue, 06 Oct 2026 13:11:08 GMT</pubDate>
-      <guid isPermaLink="false">e6381094f54724a8b6ae</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework .NET samples</title>
-      <link>https://github.com/microsoft/agent-framework/commit/1aca61d51bb931ce27962a479c3d76b51d15791e</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Tue, 06 Oct 2026 10:07:23 GMT</pubDate>
-      <guid isPermaLink="false">31ab3d2831326731da6e</guid>
       <category>updated</category>
     </item>
   </channel>
