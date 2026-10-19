@@ -4,7 +4,23 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Sun, 18 Oct 2026 11:24:43 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 13:39:37 GMT</lastBuildDate>
+    <item>
+      <title>Sample changed: Agent Framework: source and release notes</title>
+      <link>https://github.com/microsoft/agent-framework/commit/f7a5fcbb8657b8d4f96e5c608b33679c401fa29b</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 19 Oct 2026 09:54:41 GMT</pubDate>
+      <guid isPermaLink="false">8a0a832a067e2964d717</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Browser automation tool in Microsoft Foundry is now GA</title>
+      <link>https://devblogs.microsoft.com/foundry/browser-automation-tool-ga</link>
+      <description>Build agents that automate tasks across public and private websites with managed browsers, native toolbox integration, Live View, and human control.</description>
+      <pubDate>Mon, 19 Oct 2026 10:32:13 GMT</pubDate>
+      <guid isPermaLink="false">e81d1038caf25fecb04a</guid>
+      <category>published</category>
+    </item>
     <item>
       <title>azure-ai-projects 2.9.0</title>
       <link>https://pypi.org/project/azure-ai-projects/2.9.0</link>
@@ -467,22 +483,6 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Wed, 07 Oct 2026 12:01:42 GMT</pubDate>
       <guid isPermaLink="false">48732857e703854238b5</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework .NET samples</title>
-      <link>https://github.com/microsoft/agent-framework/commit/8254704d57dcc42b8542a0eeef79a25145a89e4d</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Wed, 07 Oct 2026 13:04:12 GMT</pubDate>
-      <guid isPermaLink="false">ebc859359646723c02ce</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework .NET samples</title>
-      <link>https://github.com/microsoft/agent-framework/commit/1e722004da32080df18f66eae3558600333d4c92</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Wed, 07 Oct 2026 14:19:53 GMT</pubDate>
-      <guid isPermaLink="false">d061dca8df1f27c34f4e</guid>
       <category>updated</category>
     </item>
   </channel>

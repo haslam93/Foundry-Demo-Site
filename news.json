@@ -1,6 +1,45 @@
 {
-  "last_updated": "2026-10-17",
+  "last_updated": "2026-10-19",
   "items": [
+    {
+      "id": "8a0a832a067e2964d717",
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T09:54:41Z",
+      "date_kind": "updated",
+      "title": "Sample changed: Agent Framework: source and release notes",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://github.com/microsoft/agent-framework/commit/f7a5fcbb8657b8d4f96e5c608b33679c401fa29b",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Agent Framework",
+        "SDK",
+        "Agents"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "framework-repo",
+      "first_seen_at": "2026-10-19T13:39:37Z"
+    },
+    {
+      "id": "e81d1038caf25fecb04a",
+      "date": "2026-10-19",
+      "published_at": "2026-10-19T10:32:13Z",
+      "date_kind": "published",
+      "title": "Browser automation tool in Microsoft Foundry is now GA",
+      "summary": "Build agents that automate tasks across public and private websites with managed browsers, native toolbox integration, Live View, and human control.",
+      "url": "https://devblogs.microsoft.com/foundry/browser-automation-tool-ga",
+      "source": "foundry-blog",
+      "source_label": "Microsoft Foundry Blog",
+      "tags": [
+        "GA",
+        "Agents",
+        "Tools & MCP",
+        "Security"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-10-19T13:39:37Z"
+    },
     {
       "id": "d94755925cc079e65d27",
       "date": "2026-10-17",
@@ -4755,46 +4794,10 @@
       ],
       "summary_kind": "source_excerpt",
       "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "408a0ae83a513b212238",
-      "date": "2026-07-15",
-      "published_at": "2026-07-15T15:15:25Z",
-      "date_kind": "published",
-      "title": "Announcing: DevUI Agent Inspector for Microsoft Agent Framework",
-      "summary": "Microsoft Agent Framework adds DevUI Agent Inspector in public preview, a local debugging surface that shows agent runs as a navigable tree of model calls, tool invocations, and intermediate state. Developers can pause, replay, and edit prompts mid-run, s",
-      "url": "https://azure.microsoft.com/updates?id=563551",
-      "source": "azure-updates",
-      "source_label": "Azure Updates",
-      "tags": [
-        "Agent Framework",
-        "Agents",
-        "Models"
-      ],
-      "summary_kind": "source_excerpt",
-      "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "65c14f1675aa7d922040",
-      "date": "2026-07-15",
-      "published_at": "2026-07-15T18:50:14Z",
-      "date_kind": "published",
-      "title": "Announcing: CodeAct pattern and Hyperlight containers in Microsoft Agent Framework",
-      "summary": "Microsoft Agent Framework adds the CodeAct pattern in public preview, which lets agents collapse a multi-step plan into a single executable code block rather than chaining one tool call at a time. In representative workloads, CodeAct cut end-to-end latenc",
-      "url": "https://azure.microsoft.com/updates?id=563566",
-      "source": "azure-updates",
-      "source_label": "Azure Updates",
-      "tags": [
-        "Hosted agents",
-        "Agent Framework",
-        "Agents"
-      ],
-      "summary_kind": "source_excerpt",
-      "first_seen_at": "2026-09-08T00:48:03Z"
     }
   ],
   "schema_version": 3,
-  "last_checked": "2026-10-18T11:24:43Z",
+  "last_checked": "2026-10-19T13:39:37Z",
   "item_count": 240,
   "sources": [
     {
@@ -4803,8 +4806,8 @@
       "kind": "Release status",
       "url": "https://azure.microsoft.com/updates/?products=ai-foundry",
       "authority": "Availability announcements",
-      "checked_at": "2026-10-18T11:24:43Z",
-      "last_success_at": "2026-10-18T11:24:43Z",
+      "checked_at": "2026-10-19T13:39:37Z",
+      "last_success_at": "2026-10-19T13:39:37Z",
       "items_seen": 11,
       "status": "ok",
       "latest_published": "2026-10-08"
@@ -4815,8 +4818,8 @@
       "kind": "What's new",
       "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
       "authority": "Current product guidance, not a release feed",
-      "checked_at": "2026-10-18T11:24:43Z",
-      "last_success_at": "2026-10-18T11:24:43Z",
+      "checked_at": "2026-10-19T13:39:37Z",
+      "last_success_at": "2026-10-19T13:39:37Z",
       "items_seen": 1,
       "status": "ok",
       "latest_published": "2026-09-09"
@@ -4827,11 +4830,11 @@
       "kind": "Announcements",
       "url": "https://devblogs.microsoft.com/foundry/",
       "authority": "Launch context",
-      "checked_at": "2026-10-18T11:24:43Z",
-      "last_success_at": "2026-10-18T11:24:43Z",
+      "checked_at": "2026-10-19T13:39:37Z",
+      "last_success_at": "2026-10-19T13:39:37Z",
       "items_seen": 10,
       "status": "ok",
-      "latest_published": "2026-10-16"
+      "latest_published": "2026-10-19"
     },
     {
       "id": "agent-framework",
@@ -4839,8 +4842,8 @@
       "kind": "SDK releases",
       "url": "https://github.com/microsoft/agent-framework/releases",
       "authority": "Repository release channel; not feature GA status",
-      "checked_at": "2026-10-18T11:24:43Z",
-      "last_success_at": "2026-10-18T11:24:43Z",
+      "checked_at": "2026-10-19T13:39:37Z",
+      "last_success_at": "2026-10-19T13:39:37Z",
       "items_seen": 32,
       "status": "ok",
       "latest_published": "2026-10-15"
@@ -4851,8 +4854,8 @@
       "kind": "Runtime releases",
       "url": "https://github.com/microsoft/Foundry-Local/releases",
       "authority": "Repository release channel",
-      "checked_at": "2026-10-18T11:24:43Z",
-      "last_success_at": "2026-10-18T11:24:43Z",
+      "checked_at": "2026-10-19T13:39:37Z",
+      "last_success_at": "2026-10-19T13:39:37Z",
       "items_seen": 7,
       "status": "ok",
       "latest_published": "2026-10-07"
@@ -4863,8 +4866,8 @@
       "kind": "Python package",
       "url": "https://pypi.org/project/azure-ai-projects/",
       "authority": "Published package versions; individual APIs may be preview",
-      "checked_at": "2026-10-18T11:24:43Z",
-      "last_success_at": "2026-10-18T11:24:43Z",
+      "checked_at": "2026-10-19T13:39:37Z",
+      "last_success_at": "2026-10-19T13:39:37Z",
       "items_seen": 8,
       "status": "ok",
       "latest_published": "2026-10-17"
@@ -4875,8 +4878,8 @@
       "kind": "Python package",
       "url": "https://pypi.org/project/azure-ai-evaluation/",
       "authority": "Published package versions; individual evaluators may be preview",
-      "checked_at": "2026-10-18T11:24:43Z",
-      "last_success_at": "2026-10-18T11:24:43Z",
+      "checked_at": "2026-10-19T13:39:37Z",
+      "last_success_at": "2026-10-19T13:39:37Z",
       "items_seen": 9,
       "status": "ok",
       "latest_published": "2026-10-14"
@@ -4887,13 +4890,14 @@
       "kind": "Source changes",
       "url": "https://learn.microsoft.com/azure/foundry/",
       "authority": "Documentation edits and commits, not product launches",
-      "checked_at": "2026-10-18T11:24:43Z",
-      "last_success_at": "2026-10-18T11:24:43Z",
-      "items_seen": 0,
-      "status": "ok"
+      "checked_at": "2026-10-19T13:39:37Z",
+      "last_success_at": "2026-10-19T13:39:37Z",
+      "items_seen": 1,
+      "status": "ok",
+      "latest_published": "2026-10-19"
     }
   ],
-  "last_content_change_at": "2026-10-17T10:58:10Z",
+  "last_content_change_at": "2026-10-19T13:39:37Z",
   "refresh_interval_hours": 24,
   "stale_after_hours": 48,
   "releases": [
