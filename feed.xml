@@ -4,13 +4,69 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Thu, 22 Oct 2026 12:06:59 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 11:50:54 GMT</lastBuildDate>
+    <item>
+      <title>Sample changed: Agent Framework Python samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/9c53b5f44658cc7839d0f1aefe580152edaba970</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 23 Oct 2026 11:15:53 GMT</pubDate>
+      <guid isPermaLink="false">4ac43674a0fffe586f18</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework .NET samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/9581926deec6a0473a68797153e98d44da74d09a</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 23 Oct 2026 11:28:13 GMT</pubDate>
+      <guid isPermaLink="false">7ec90d170214b57e0354</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Foundry Local v2.2.1</title>
+      <link>https://github.com/microsoft/foundry-local/releases/tag/v2.2.1</link>
+      <description>🚀 Foundry Local v2.2.1 We're excited to announce Foundry Local v2.2.1. This release makes it easier to bring your own models to local applications, expands tool calling for agentic workflows, and delivers important security, reliability, and inference improvements across the SDKs. 🆕 What's New 🔄...</description>
+      <pubDate>Fri, 23 Oct 2026 09:17:33 GMT</pubDate>
+      <guid isPermaLink="false">521f2d2d30ff58825308</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Foundry Local CLI 0.12.1 (Preview)</title>
+      <link>https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.12.1</link>
+      <description>Public preview update for the Foundry Local CLI. &gt; [!IMPORTANT] &gt; Preview. This is an early CLI build. Expect rough edges, missing polish, and changes between releases. Please file issues with [cli] in the title and include foundry report output when possible. What's New Updated Foundry Local SDK...</description>
+      <pubDate>Fri, 23 Oct 2026 08:33:03 GMT</pubDate>
+      <guid isPermaLink="false">b90c03100e3df5bc2107</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Documentation changed: Network isolation for toolboxes</title>
+      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/toolbox-network-isolation</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 23 Oct 2026 00:46:00 GMT</pubDate>
+      <guid isPermaLink="false">29fb08fec01be8aaa918</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>python-1.23.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.23.0</link>
+      <description>[1.23.0] - 2026-10-22 Added - agent-framework-a2a: Add allowlisted forwarding of function-invocation and client arguments from A2A request metadata (9193) - agent-framework-core, agent-framework-orchestrations: Add an opt-in synthetic trailing user turn for providers that return empty text after...</description>
+      <pubDate>Thu, 22 Oct 2026 17:05:37 GMT</pubDate>
+      <guid isPermaLink="false">9c6b3d91fe8b1e180cbe</guid>
+      <category>published</category>
+    </item>
     <item>
       <title>Sample changed: Foundry hosted-agent examples</title>
       <link>https://github.com/microsoft-foundry/foundry-samples/commit/7365f48656d4ff99ef2f48a41c56ad09e1d85f9e</link>
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Thu, 22 Oct 2026 08:36:27 GMT</pubDate>
       <guid isPermaLink="false">1d04333afc37576d5abf</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Foundry hosted-agent examples</title>
+      <link>https://github.com/microsoft-foundry/foundry-samples/commit/86a5adfa0b61bb80c8fe5009c56cf2f6fa17518e</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Thu, 22 Oct 2026 21:09:49 GMT</pubDate>
+      <guid isPermaLink="false">73a874b2bb0cf36e75f7</guid>
       <category>updated</category>
     </item>
     <item>
@@ -36,6 +92,14 @@
       <pubDate>Thu, 22 Oct 2026 09:34:14 GMT</pubDate>
       <guid isPermaLink="false">ff2dab2676113aa05cf4</guid>
       <category>updated</category>
+    </item>
+    <item>
+      <title>Foundry Local CLI 0.12.0 (Preview)</title>
+      <link>https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.12.0</link>
+      <description>Public preview update for the Foundry Local CLI. &gt; [!IMPORTANT] &gt; Preview. This is an early CLI build. Expect rough edges, missing polish, and changes between releases. Please file issues with [cli] in the title and include foundry report output when possible. What's New Updated Foundry Local SDK...</description>
+      <pubDate>Thu, 22 Oct 2026 20:55:40 GMT</pubDate>
+      <guid isPermaLink="false">8c83ccac3e3f4a6d81f9</guid>
+      <category>published</category>
     </item>
     <item>
       <title>Sample changed: The official Foundry sample collection</title>
@@ -420,70 +484,6 @@
       <pubDate>Tue, 13 Oct 2026 06:16:21 GMT</pubDate>
       <guid isPermaLink="false">db9069000e48b00bd06d</guid>
       <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Foundry hosted-agent examples</title>
-      <link>https://github.com/microsoft-foundry/foundry-samples/commit/dd8ed7fe05bc69f4448a1759b56c3ee1d91a1f45</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Tue, 13 Oct 2026 16:14:25 GMT</pubDate>
-      <guid isPermaLink="false">283eb77e4fdc451ef18a</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework Python samples</title>
-      <link>https://github.com/microsoft/agent-framework/commit/2b074fa8ddae152038e68394477fa8ae9b8fb64b</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Tue, 13 Oct 2026 11:43:53 GMT</pubDate>
-      <guid isPermaLink="false">1285b346d3d871dea639</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework .NET samples</title>
-      <link>https://github.com/microsoft/agent-framework/commit/dcbbf7967afe877913275f1a445166a7ac301ab0</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Tue, 13 Oct 2026 13:23:36 GMT</pubDate>
-      <guid isPermaLink="false">05dc84b3fd895fb3602b</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Azure Content Understanding Prebuilt Analyzers: packaging domain knowledge for document AI</title>
-      <link>https://devblogs.microsoft.com/foundry/more-than-a-schema-content-understanding-prebuilt-analyzers</link>
-      <description>Learn how Azure Content Understanding prebuilt analyzers combine domain knowledge with grounding and confidence, and what Advanced Contextualization preview benchmarks show about quality, modeled cost, and latency.</description>
-      <pubDate>Tue, 13 Oct 2026 14:20:35 GMT</pubDate>
-      <guid isPermaLink="false">783acf3297de6ca68baa</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Sample changed: Foundry hosted-agent examples</title>
-      <link>https://github.com/microsoft-foundry/foundry-samples/commit/b09cf167e25a7160737eed1be4f8462ee69cc3e8</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Mon, 12 Oct 2026 11:06:33 GMT</pubDate>
-      <guid isPermaLink="false">729911ee05d7f571c2ee</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Foundry Local runtime and Session API</title>
-      <link>https://github.com/microsoft/foundry-local/commit/993196b31877260bbdd679a9e7324f74a5fb67a1</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Mon, 12 Oct 2026 18:00:02 GMT</pubDate>
-      <guid isPermaLink="false">7e7ffedc3d49884e8294</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework .NET samples</title>
-      <link>https://github.com/microsoft/agent-framework/commit/726dcff81e93f02fc18f7ebf0f477d6cbe2186fd</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Mon, 12 Oct 2026 12:13:49 GMT</pubDate>
-      <guid isPermaLink="false">85c4864cdc273c00d1d9</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>azure-ai-evaluation 1.18.8</title>
-      <link>https://pypi.org/project/azure-ai-evaluation/1.18.8</link>
-      <description>Python package 1.18.8 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
-      <pubDate>Fri, 09 Oct 2026 16:40:15 GMT</pubDate>
-      <guid isPermaLink="false">9e4c1a7b4c47076055bc</guid>
-      <category>published</category>
     </item>
   </channel>
 </rss>

@@ -1,6 +1,135 @@
 {
-  "last_updated": "2026-10-22",
+  "last_updated": "2026-10-23",
   "items": [
+    {
+      "id": "4ac43674a0fffe586f18",
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T11:15:53Z",
+      "date_kind": "updated",
+      "title": "Sample changed: Agent Framework Python samples",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://github.com/microsoft/agent-framework/commit/9c53b5f44658cc7839d0f1aefe580152edaba970",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Agent Framework",
+        "Agents",
+        "Tools & MCP"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "framework-python",
+      "first_seen_at": "2026-10-23T11:50:54Z"
+    },
+    {
+      "id": "7ec90d170214b57e0354",
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T11:28:13Z",
+      "date_kind": "updated",
+      "title": "Sample changed: Agent Framework .NET samples",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://github.com/microsoft/agent-framework/commit/9581926deec6a0473a68797153e98d44da74d09a",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Agent Framework",
+        "Agents",
+        "Tools & MCP"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "framework-dotnet",
+      "first_seen_at": "2026-10-23T11:50:54Z"
+    },
+    {
+      "id": "521f2d2d30ff58825308",
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T09:17:33Z",
+      "date_kind": "published",
+      "title": "Foundry Local v2.2.1",
+      "summary": "🚀 Foundry Local v2.2.1 We're excited to announce Foundry Local v2.2.1. This release makes it easier to bring your own models to local applications, expands tool calling for agentic workflows, and delivers important security, reliability, and inference improvements across the SDKs. 🆕 What's New 🔄...",
+      "url": "https://github.com/microsoft/foundry-local/releases/tag/v2.2.1",
+      "source": "foundry-local",
+      "source_label": "Foundry Local",
+      "tags": [
+        "Local",
+        "Observability",
+        "Agents",
+        "Knowledge",
+        "Security",
+        "Models"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Foundry Local",
+      "first_seen_at": "2026-10-23T11:50:54Z"
+    },
+    {
+      "id": "b90c03100e3df5bc2107",
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T08:33:03Z",
+      "date_kind": "published",
+      "title": "Foundry Local CLI 0.12.1 (Preview)",
+      "summary": "Public preview update for the Foundry Local CLI. > [!IMPORTANT] > Preview. This is an early CLI build. Expect rough edges, missing polish, and changes between releases. Please file issues with [cli] in the title and include foundry report output when possible. What's New Updated Foundry Local SDK...",
+      "url": "https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.12.1",
+      "source": "foundry-local",
+      "source_label": "Foundry Local",
+      "tags": [
+        "Prerelease",
+        "Preview",
+        "Local",
+        "Agents",
+        "Knowledge",
+        "Models"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "prerelease",
+      "component": "Foundry Local / CLI",
+      "first_seen_at": "2026-10-23T11:50:54Z"
+    },
+    {
+      "id": "29fb08fec01be8aaa918",
+      "date": "2026-10-23",
+      "published_at": "2026-10-23T00:46:00Z",
+      "date_kind": "updated",
+      "title": "Documentation changed: Network isolation for toolboxes",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/toolbox-network-isolation",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Security",
+        "Tools & MCP",
+        "Deployment"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "toolbox-networking",
+      "first_seen_at": "2026-10-23T11:50:54Z"
+    },
+    {
+      "id": "9c6b3d91fe8b1e180cbe",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T17:05:37Z",
+      "date_kind": "published",
+      "title": "python-1.23.0",
+      "summary": "[1.23.0] - 2026-10-22 Added - agent-framework-a2a: Add allowlisted forwarding of function-invocation and client arguments from A2A request metadata (9193) - agent-framework-core, agent-framework-orchestrations: Add an opt-in synthetic trailing user turn for providers that return empty text after...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.23.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Hosted agents",
+        "Evaluation",
+        "Observability",
+        "Agent Framework",
+        "Agents"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / Python",
+      "first_seen_at": "2026-10-23T11:50:54Z"
+    },
     {
       "id": "1d04333afc37576d5abf",
       "date": "2026-10-22",
@@ -20,6 +149,26 @@
       "summary_kind": "change_detection",
       "resource_id": "hosted-samples",
       "first_seen_at": "2026-10-22T12:06:59Z"
+    },
+    {
+      "id": "73a874b2bb0cf36e75f7",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T21:09:49Z",
+      "date_kind": "updated",
+      "title": "Sample changed: Foundry hosted-agent examples",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://github.com/microsoft-foundry/foundry-samples/commit/86a5adfa0b61bb80c8fe5009c56cf2f6fa17518e",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Hosted agents",
+        "Agent Framework",
+        "Deployment"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "hosted-samples",
+      "first_seen_at": "2026-10-23T11:50:54Z"
     },
     {
       "id": "78f5cf31186b49fffa17",
@@ -80,6 +229,27 @@
       "summary_kind": "change_detection",
       "resource_id": "framework-dotnet",
       "first_seen_at": "2026-10-22T12:06:59Z"
+    },
+    {
+      "id": "8c83ccac3e3f4a6d81f9",
+      "date": "2026-10-22",
+      "published_at": "2026-10-22T20:55:40Z",
+      "date_kind": "published",
+      "title": "Foundry Local CLI 0.12.0 (Preview)",
+      "summary": "Public preview update for the Foundry Local CLI. > [!IMPORTANT] > Preview. This is an early CLI build. Expect rough edges, missing polish, and changes between releases. Please file issues with [cli] in the title and include foundry report output when possible. What's New Updated Foundry Local SDK...",
+      "url": "https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.12.0",
+      "source": "foundry-local",
+      "source_label": "Foundry Local",
+      "tags": [
+        "Prerelease",
+        "Preview",
+        "Local",
+        "Models"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "prerelease",
+      "component": "Foundry Local / CLI",
+      "first_seen_at": "2026-10-23T11:50:54Z"
     },
     {
       "id": "82142c148e5ca252d926",
@@ -4647,169 +4817,10 @@
       "release_channel": "prerelease",
       "component": "Foundry Local / CLI",
       "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "081433b6ce6862a21cfa",
-      "date": "2026-08-05",
-      "published_at": "2026-08-05T22:32:45Z",
-      "date_kind": "published",
-      "title": "[Launched] Generally Available: Unity AI Gateway on Azure Databricks",
-      "summary": "Unity AI Gateway is now generally available on Azure Databricks. Unity AI Gateway provides centralized governance for AI models, agents, tools, and MCP services, helping organizations monitor usage, manage costs, apply guardrails, and enforce access contr",
-      "url": "https://azure.microsoft.com/updates?id=568910",
-      "source": "azure-updates",
-      "source_label": "Azure Updates",
-      "tags": [
-        "GA",
-        "API gateway",
-        "Observability",
-        "Agents",
-        "Tools & MCP",
-        "Security"
-      ],
-      "summary_kind": "source_excerpt",
-      "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "0b1b3b6697c1d2d07c42",
-      "date": "2026-08-04",
-      "published_at": "2026-08-04T23:27:18Z",
-      "date_kind": "published",
-      "title": "dotnet-1.17.0",
-      "summary": "What's Changed .NET and Python: Extract Durable Task and Azure Functions integrations by @cgillum in https://github.com/microsoft/agent-framework/pull/7465 .NET: Fix Handoff orchestration sample not responding to user input by @peibekwe in https://github.com/microsoft/agent-framework/pull/7442 .NET...",
-      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.17.0",
-      "source": "agent-framework",
-      "source_label": "Microsoft Agent Framework",
-      "tags": [
-        "SDK",
-        "Observability",
-        "Agent Framework",
-        "Agents"
-      ],
-      "summary_kind": "release_excerpt",
-      "release_channel": "stable",
-      "component": "Agent Framework / .NET",
-      "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "93755f247d247961d010",
-      "date": "2026-07-30",
-      "published_at": "2026-07-30T21:51:03Z",
-      "date_kind": "published",
-      "title": "v1.2.4 Foundry Local",
-      "summary": "- Resolves FL winml variant bug where webgpu execution provider was being discovered twice (through winml catalog eps in addition to FL eps) - Resolves race condition reported in https://github.com/microsoft/foundry-local/issues/867 CLI release will follow shortly.",
-      "url": "https://github.com/microsoft/foundry-local/releases/tag/v1.2.4",
-      "source": "foundry-local",
-      "source_label": "Foundry Local",
-      "tags": [
-        "Local"
-      ],
-      "summary_kind": "release_excerpt",
-      "release_channel": "stable",
-      "component": "Foundry Local",
-      "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "a1d3e06e6f84ac229e30",
-      "date": "2026-07-30",
-      "published_at": "2026-07-30T23:22:33Z",
-      "date_kind": "published",
-      "title": "python-1.13.0",
-      "summary": "[1.13.0] - 2026-07-30 Added - agent-framework-core, agent-framework-foundry-hosting: Add bounded, in-memory archive skill discovery for MCP sources and expose archive controls through FoundryToolbox (7121) - agent-framework-core, agent-framework-foundry-hosting, agent-framework-hosting...",
-      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.13.0",
-      "source": "agent-framework",
-      "source_label": "Microsoft Agent Framework",
-      "tags": [
-        "SDK",
-        "Hosted agents",
-        "Observability",
-        "Agent Framework",
-        "Agents",
-        "Tools & MCP"
-      ],
-      "summary_kind": "release_excerpt",
-      "release_channel": "stable",
-      "component": "Agent Framework / Python",
-      "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "579a168dd75106986ded",
-      "date": "2026-07-30",
-      "published_at": "2026-07-30T18:13:10Z",
-      "date_kind": "published",
-      "title": "dotnet-1.16.0",
-      "summary": "What's Changed .NET: fix InMemoryChatHistoryProvider persisting when service stores history by @westey-m in https://github.com/microsoft/agent-framework/pull/7284 .NET: Add TodoProvider and AgentModeProvider samples by @westey-m in https://github.com/microsoft/agent-framework/pull/7262 .NET...",
-      "url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.16.0",
-      "source": "agent-framework",
-      "source_label": "Microsoft Agent Framework",
-      "tags": [
-        "SDK",
-        "Hosted agents",
-        "Deployment",
-        "Agent Framework",
-        "Agents",
-        "Tools & MCP"
-      ],
-      "summary_kind": "release_excerpt",
-      "release_channel": "stable",
-      "component": "Agent Framework / .NET",
-      "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "144f41cd832a066ad080",
-      "date": "2026-07-29",
-      "published_at": "2026-07-29T19:16:09Z",
-      "date_kind": "published",
-      "title": "azure-ai-evaluation 1.18.3",
-      "summary": "Python package 1.18.3 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.",
-      "url": "https://pypi.org/project/azure-ai-evaluation/1.18.3",
-      "source": "evaluation-sdk",
-      "source_label": "Azure AI Evaluation SDK",
-      "tags": [
-        "SDK",
-        "Evaluation"
-      ],
-      "summary_kind": "package_metadata",
-      "release_channel": "stable",
-      "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "35253eb85e72f1642f31",
-      "date": "2026-07-27",
-      "published_at": "2026-07-27T21:53:02Z",
-      "date_kind": "published",
-      "title": "azure-ai-projects 2.4.0",
-      "summary": "Python package 2.4.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.",
-      "url": "https://pypi.org/project/azure-ai-projects/2.4.0",
-      "source": "projects-sdk",
-      "source_label": "Azure AI Projects SDK",
-      "tags": [
-        "SDK",
-        "Agents"
-      ],
-      "summary_kind": "package_metadata",
-      "release_channel": "stable",
-      "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "6cb6c1129bcdf0bf35a5",
-      "date": "2026-07-27",
-      "published_at": "2026-07-27T16:44:29Z",
-      "date_kind": "published",
-      "title": "[In preview] Public Preview: AI Gateway in Azure API Management",
-      "summary": "The AI Gateway tier for Azure API Management is now available in public preview. Building on the AI gateway capabilities already available across API Management tiers, the new AI Gateway tier provides a dedicated experience optimized for AI workloads.As o",
-      "url": "https://azure.microsoft.com/updates?id=568184",
-      "source": "azure-updates",
-      "source_label": "Azure Updates",
-      "tags": [
-        "Preview",
-        "API gateway"
-      ],
-      "summary_kind": "source_excerpt",
-      "first_seen_at": "2026-09-08T00:48:03Z"
     }
   ],
   "schema_version": 3,
-  "last_checked": "2026-10-22T12:06:59Z",
+  "last_checked": "2026-10-23T11:50:54Z",
   "item_count": 240,
   "sources": [
     {
@@ -4818,8 +4829,8 @@
       "kind": "Release status",
       "url": "https://azure.microsoft.com/updates/?products=ai-foundry",
       "authority": "Availability announcements",
-      "checked_at": "2026-10-22T12:06:59Z",
-      "last_success_at": "2026-10-22T12:06:59Z",
+      "checked_at": "2026-10-23T11:50:54Z",
+      "last_success_at": "2026-10-23T11:50:54Z",
       "items_seen": 8,
       "status": "ok",
       "latest_published": "2026-10-08"
@@ -4830,8 +4841,8 @@
       "kind": "What's new",
       "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
       "authority": "Current product guidance, not a release feed",
-      "checked_at": "2026-10-22T12:06:59Z",
-      "last_success_at": "2026-10-22T12:06:59Z",
+      "checked_at": "2026-10-23T11:50:54Z",
+      "last_success_at": "2026-10-23T11:50:54Z",
       "items_seen": 1,
       "status": "ok",
       "latest_published": "2026-09-09"
@@ -4842,8 +4853,8 @@
       "kind": "Announcements",
       "url": "https://devblogs.microsoft.com/foundry/",
       "authority": "Launch context",
-      "checked_at": "2026-10-22T12:06:59Z",
-      "last_success_at": "2026-10-22T12:06:59Z",
+      "checked_at": "2026-10-23T11:50:54Z",
+      "last_success_at": "2026-10-23T11:50:54Z",
       "items_seen": 10,
       "status": "ok",
       "latest_published": "2026-10-19"
@@ -4854,11 +4865,11 @@
       "kind": "SDK releases",
       "url": "https://github.com/microsoft/agent-framework/releases",
       "authority": "Repository release channel; not feature GA status",
-      "checked_at": "2026-10-22T12:06:59Z",
-      "last_success_at": "2026-10-22T12:06:59Z",
-      "items_seen": 31,
+      "checked_at": "2026-10-23T11:50:54Z",
+      "last_success_at": "2026-10-23T11:50:54Z",
+      "items_seen": 32,
       "status": "ok",
-      "latest_published": "2026-10-15"
+      "latest_published": "2026-10-22"
     },
     {
       "id": "foundry-local",
@@ -4866,11 +4877,11 @@
       "kind": "Runtime releases",
       "url": "https://github.com/microsoft/Foundry-Local/releases",
       "authority": "Repository release channel",
-      "checked_at": "2026-10-22T12:06:59Z",
-      "last_success_at": "2026-10-22T12:06:59Z",
-      "items_seen": 6,
+      "checked_at": "2026-10-23T11:50:54Z",
+      "last_success_at": "2026-10-23T11:50:54Z",
+      "items_seen": 9,
       "status": "ok",
-      "latest_published": "2026-10-07"
+      "latest_published": "2026-10-23"
     },
     {
       "id": "projects-sdk",
@@ -4878,8 +4889,8 @@
       "kind": "Python package",
       "url": "https://pypi.org/project/azure-ai-projects/",
       "authority": "Published package versions; individual APIs may be preview",
-      "checked_at": "2026-10-22T12:06:59Z",
-      "last_success_at": "2026-10-22T12:06:59Z",
+      "checked_at": "2026-10-23T11:50:54Z",
+      "last_success_at": "2026-10-23T11:50:54Z",
       "items_seen": 8,
       "status": "ok",
       "latest_published": "2026-10-17"
@@ -4890,8 +4901,8 @@
       "kind": "Python package",
       "url": "https://pypi.org/project/azure-ai-evaluation/",
       "authority": "Published package versions; individual evaluators may be preview",
-      "checked_at": "2026-10-22T12:06:59Z",
-      "last_success_at": "2026-10-22T12:06:59Z",
+      "checked_at": "2026-10-23T11:50:54Z",
+      "last_success_at": "2026-10-23T11:50:54Z",
       "items_seen": 9,
       "status": "ok",
       "latest_published": "2026-10-14"
@@ -4902,14 +4913,14 @@
       "kind": "Source changes",
       "url": "https://learn.microsoft.com/azure/foundry/",
       "authority": "Documentation edits and commits, not product launches",
-      "checked_at": "2026-10-22T12:06:59Z",
-      "last_success_at": "2026-10-22T12:06:59Z",
-      "items_seen": 13,
+      "checked_at": "2026-10-23T11:50:54Z",
+      "last_success_at": "2026-10-23T11:50:54Z",
+      "items_seen": 6,
       "status": "ok",
-      "latest_published": "2026-10-22"
+      "latest_published": "2026-10-23"
     }
   ],
-  "last_content_change_at": "2026-10-22T12:06:59Z",
+  "last_content_change_at": "2026-10-23T11:50:54Z",
   "refresh_interval_hours": 24,
   "stale_after_hours": 48,
   "releases": [
@@ -4924,10 +4935,10 @@
     {
       "source": "agent-framework",
       "component": "Agent Framework / Python",
-      "version": "python-1.22.0",
+      "version": "python-1.23.0",
       "channel": "stable",
-      "published_at": "2026-10-15T09:53:40Z",
-      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.22.0"
+      "published_at": "2026-10-22T17:05:37Z",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.23.0"
     },
     {
       "source": "agent-framework",
@@ -4940,18 +4951,18 @@
     {
       "source": "foundry-local",
       "component": "Foundry Local",
-      "version": "v2.1.0",
+      "version": "v2.2.1",
       "channel": "stable",
-      "published_at": "2026-09-30T00:43:42Z",
-      "url": "https://github.com/microsoft/foundry-local/releases/tag/v2.1.0"
+      "published_at": "2026-10-23T09:17:33Z",
+      "url": "https://github.com/microsoft/foundry-local/releases/tag/v2.2.1"
     },
     {
       "source": "foundry-local",
       "component": "Foundry Local / CLI",
-      "version": "cli-preview-0.11.0",
+      "version": "cli-preview-0.12.1",
       "channel": "prerelease",
-      "published_at": "2026-10-07T22:59:06Z",
-      "url": "https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.11.0"
+      "published_at": "2026-10-23T08:33:03Z",
+      "url": "https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.12.1"
     },
     {
       "source": "foundry-local",
