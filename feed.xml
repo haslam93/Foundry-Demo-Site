@@ -4,7 +4,47 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Sun, 25 Oct 2026 11:47:44 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 13:20:07 GMT</lastBuildDate>
+    <item>
+      <title>Sample changed: The official Foundry sample collection</title>
+      <link>https://github.com/microsoft-foundry/foundry-samples/commit/6a7a868919b1c4458c0cda6cc06246cbce51ab5b</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 26 Oct 2026 10:30:12 GMT</pubDate>
+      <guid isPermaLink="false">905f113e844b809ffd21</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework: source and release notes</title>
+      <link>https://github.com/microsoft/agent-framework/commit/0fd5002871ab7c05ba6839d57a6a56a7bf665d4b</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 26 Oct 2026 13:03:53 GMT</pubDate>
+      <guid isPermaLink="false">de994a4a3c0ba7b72194</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework Python samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/eceab14b40c9d1dbe705761a31b78f55d70dcf18</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 26 Oct 2026 12:45:11 GMT</pubDate>
+      <guid isPermaLink="false">bac2b6642f13cf44e30e</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework .NET samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/d8dcc1ae926edb4611cfd1001eb273cc5da97405</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 26 Oct 2026 11:15:32 GMT</pubDate>
+      <guid isPermaLink="false">16d7b1991509dfb5e628</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Documentation changed: Microsoft Agent Framework documentation</title>
+      <link>https://learn.microsoft.com/en-us/agent-framework/overview</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 26 Oct 2026 13:05:00 GMT</pubDate>
+      <guid isPermaLink="false">4dcfe8a0512233c8aa45</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>Sample changed: Agent Framework Python samples</title>
       <link>https://github.com/microsoft/agent-framework/commit/67ba500ec1fd312606a5d585a42335cd8631e851</link>
@@ -444,46 +484,6 @@
       <pubDate>Thu, 15 Oct 2026 11:35:46 GMT</pubDate>
       <guid isPermaLink="false">8d24c30fd9e218ca23c5</guid>
       <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework .NET samples</title>
-      <link>https://github.com/microsoft/agent-framework/commit/440398f8f742f8d9fd03c2c2f9e7a65c5954c613</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 15 Oct 2026 11:16:29 GMT</pubDate>
-      <guid isPermaLink="false">4c3330587c85f369aec0</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework .NET samples</title>
-      <link>https://github.com/microsoft/agent-framework/commit/596669a1f7562443d72cfade7ba7dc03deb19fa6</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 15 Oct 2026 12:39:11 GMT</pubDate>
-      <guid isPermaLink="false">1474259cc26b55158652</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Foundry Agent Service overview</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/overview</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 15 Oct 2026 06:04:00 GMT</pubDate>
-      <guid isPermaLink="false">c7e9ce473504ca3e7292</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>dotnet-1.25.0</title>
-      <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.25.0</link>
-      <description>Changes: 1ab3430a4b6c8add9f08854c77544b0211a3f13c .NET: Dotnet: Add approval reuse considerations (9389) 563eb3a9965f7c144ad697223320411c02fa349a .NET: terminate chat completions SSE stream with data: [DONE] (8532) [ 8526 ] 4964bdd1b2d55b8137cbc1bc85840181af05bda0 .NET: Update version for 1.25.0...</description>
-      <pubDate>Wed, 14 Oct 2026 19:10:54 GMT</pubDate>
-      <guid isPermaLink="false">1a4ca322ed12a41e1631</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>azure-ai-evaluation 1.18.9</title>
-      <link>https://pypi.org/project/azure-ai-evaluation/1.18.9</link>
-      <description>Python package 1.18.9 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.</description>
-      <pubDate>Wed, 14 Oct 2026 18:22:43 GMT</pubDate>
-      <guid isPermaLink="false">a86c2e78d0db910e5b68</guid>
-      <category>published</category>
     </item>
   </channel>
 </rss>
