@@ -1,6 +1,145 @@
 {
-  "last_updated": "2026-10-26",
+  "last_updated": "2026-10-27",
   "items": [
+    {
+      "id": "aab5c8fc5be828d6d052",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T09:35:27Z",
+      "date_kind": "updated",
+      "title": "Sample changed: Foundry hosted-agent examples",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://github.com/microsoft-foundry/foundry-samples/commit/7998371f35c08bb0146ec9368b0fd46d3bd228fb",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Hosted agents",
+        "Agent Framework",
+        "Deployment"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "hosted-samples",
+      "first_seen_at": "2026-10-27T12:28:03Z"
+    },
+    {
+      "id": "dd4b0dbe8e641b7052e0",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T10:26:33Z",
+      "date_kind": "updated",
+      "title": "Sample changed: Agent Framework: source and release notes",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://github.com/microsoft/agent-framework/commit/c4de86d41e34aafa95f0b5f72416a6e1d0c30bc0",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Agent Framework",
+        "SDK",
+        "Agents"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "framework-repo",
+      "first_seen_at": "2026-10-27T12:28:03Z"
+    },
+    {
+      "id": "75bb100f029f26f46396",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T10:25:40Z",
+      "date_kind": "updated",
+      "title": "Sample changed: Agent Framework Python samples",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://github.com/microsoft/agent-framework/commit/7de7026a32a5a9219a3fba6de03e143b2e8dfc40",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Agent Framework",
+        "Agents",
+        "Tools & MCP"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "framework-python",
+      "first_seen_at": "2026-10-27T12:28:03Z"
+    },
+    {
+      "id": "6f33aed0187e69fc1ae7",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T11:04:00Z",
+      "date_kind": "updated",
+      "title": "Documentation changed: The current azure.yaml agent contract",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/azure-yaml-reference",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Hosted agents",
+        "Deployment",
+        "Tools & MCP"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "azure-yaml",
+      "first_seen_at": "2026-10-27T12:28:03Z"
+    },
+    {
+      "id": "689e1679d86a9a5abedc",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T11:04:00Z",
+      "date_kind": "updated",
+      "title": "Documentation changed: Hosted agents: direct-code deployment",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/deploy-hosted-agent-code",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Hosted agents",
+        "Deployment",
+        "Agent Framework"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "hosted-code",
+      "first_seen_at": "2026-10-27T12:28:03Z"
+    },
+    {
+      "id": "701edfbd1399a02fde6a",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T11:04:00Z",
+      "date_kind": "updated",
+      "title": "Documentation changed: Create and deploy your first hosted agent",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/quickstart-hosted-agent",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Hosted agents",
+        "Deployment"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "hosted-quickstart",
+      "first_seen_at": "2026-10-27T12:28:03Z"
+    },
+    {
+      "id": "4fa0494ded975f50e806",
+      "date": "2026-10-27",
+      "published_at": "2026-10-27T11:04:00Z",
+      "date_kind": "updated",
+      "title": "Documentation changed: Configure and use agent toolboxes",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/toolbox",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Tools & MCP",
+        "Agents",
+        "Security"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "toolboxes",
+      "first_seen_at": "2026-10-27T12:28:03Z"
+    },
     {
       "id": "905f113e844b809ffd21",
       "date": "2026-10-26",
@@ -21,6 +160,26 @@
       "summary_kind": "change_detection",
       "resource_id": "foundry-samples",
       "first_seen_at": "2026-10-26T13:20:07Z"
+    },
+    {
+      "id": "6dc774bc89335a632deb",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T23:45:41Z",
+      "date_kind": "updated",
+      "title": "Sample changed: Foundry Local runtime and Session API",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://github.com/microsoft/foundry-local/commit/747db5c77526b18c3ac694e67bb84e0348ff372c",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Local",
+        "Models",
+        "SDK"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "foundry-local",
+      "first_seen_at": "2026-10-27T12:28:03Z"
     },
     {
       "id": "de994a4a3c0ba7b72194",
@@ -83,6 +242,26 @@
       "first_seen_at": "2026-10-26T13:20:07Z"
     },
     {
+      "id": "5dccf28c3dd071d8c950",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T22:12:00Z",
+      "date_kind": "updated",
+      "title": "Documentation changed: Network isolation for toolboxes",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/toolbox-network-isolation",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Security",
+        "Tools & MCP",
+        "Deployment"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "toolbox-networking",
+      "first_seen_at": "2026-10-27T12:28:03Z"
+    },
+    {
       "id": "4dcfe8a0512233c8aa45",
       "date": "2026-10-26",
       "published_at": "2026-10-26T13:05:00Z",
@@ -101,6 +280,42 @@
       "summary_kind": "change_detection",
       "resource_id": "framework-overview",
       "first_seen_at": "2026-10-26T13:20:07Z"
+    },
+    {
+      "id": "a90b76b530d4144b0841",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T22:12:00Z",
+      "date_kind": "updated",
+      "title": "Documentation changed: Configure private networking for Agent Service",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/virtual-networks",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Security",
+        "Deployment",
+        "Hosted agents"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "private-networking",
+      "first_seen_at": "2026-10-27T12:28:03Z"
+    },
+    {
+      "id": "40343d7ba5d9b962a166",
+      "date": "2026-10-26",
+      "published_at": "2026-10-26T17:10:00Z",
+      "date_kind": "published",
+      "title": "Announcing Azure AI Speech LLM 09-2026: Broader locale support",
+      "summary": "Learn how Azure AI Speech LLM 09-2026 improves multilingual language and locale support with improved quality and latency.",
+      "url": "https://devblogs.microsoft.com/foundry/announcing-azure-ai-speech-llm-09-2026",
+      "source": "foundry-blog",
+      "source_label": "Microsoft Foundry Blog",
+      "tags": [
+        "Platform"
+      ],
+      "summary_kind": "source_excerpt",
+      "first_seen_at": "2026-10-27T12:28:03Z"
     },
     {
       "id": "ff359dd70b71a47550bc",
@@ -310,46 +525,6 @@
       "first_seen_at": "2026-10-23T11:50:54Z"
     },
     {
-      "id": "66c668e7f6d66ed6a458",
-      "date": "2026-10-23",
-      "published_at": "2026-10-23T22:13:00Z",
-      "date_kind": "updated",
-      "title": "Documentation changed: The current azure.yaml agent contract",
-      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
-      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/azure-yaml-reference",
-      "source": "resource-watch",
-      "source_label": "Documentation & sample watch",
-      "tags": [
-        "Source change",
-        "Hosted agents",
-        "Deployment",
-        "Tools & MCP"
-      ],
-      "summary_kind": "change_detection",
-      "resource_id": "azure-yaml",
-      "first_seen_at": "2026-10-24T11:18:12Z"
-    },
-    {
-      "id": "29fb08fec01be8aaa918",
-      "date": "2026-10-23",
-      "published_at": "2026-10-23T00:46:00Z",
-      "date_kind": "updated",
-      "title": "Documentation changed: Network isolation for toolboxes",
-      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
-      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/toolbox-network-isolation",
-      "source": "resource-watch",
-      "source_label": "Documentation & sample watch",
-      "tags": [
-        "Source change",
-        "Security",
-        "Tools & MCP",
-        "Deployment"
-      ],
-      "summary_kind": "change_detection",
-      "resource_id": "toolbox-networking",
-      "first_seen_at": "2026-10-23T11:50:54Z"
-    },
-    {
       "id": "646941aaf3ddb0cc4850",
       "date": "2026-10-23",
       "published_at": "2026-10-23T22:13:00Z",
@@ -367,26 +542,6 @@
       ],
       "summary_kind": "change_detection",
       "resource_id": "iq-connect",
-      "first_seen_at": "2026-10-24T11:18:12Z"
-    },
-    {
-      "id": "f06dd227a7dd08788d6a",
-      "date": "2026-10-23",
-      "published_at": "2026-10-23T22:13:00Z",
-      "date_kind": "updated",
-      "title": "Documentation changed: Configure and use agent toolboxes",
-      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
-      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/toolbox",
-      "source": "resource-watch",
-      "source_label": "Documentation & sample watch",
-      "tags": [
-        "Source change",
-        "Tools & MCP",
-        "Agents",
-        "Security"
-      ],
-      "summary_kind": "change_detection",
-      "resource_id": "toolboxes",
       "first_seen_at": "2026-10-24T11:18:12Z"
     },
     {
@@ -674,26 +829,6 @@
       "first_seen_at": "2026-10-22T12:06:59Z"
     },
     {
-      "id": "5bfa009b0f45660b0d37",
-      "date": "2026-10-21",
-      "published_at": "2026-10-21T17:17:00Z",
-      "date_kind": "updated",
-      "title": "Documentation changed: Hosted agents: direct-code deployment",
-      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
-      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/deploy-hosted-agent-code",
-      "source": "resource-watch",
-      "source_label": "Documentation & sample watch",
-      "tags": [
-        "Source change",
-        "Hosted agents",
-        "Deployment",
-        "Agent Framework"
-      ],
-      "summary_kind": "change_detection",
-      "resource_id": "hosted-code",
-      "first_seen_at": "2026-10-22T12:06:59Z"
-    },
-    {
       "id": "cc9c07ee05acb3aaa2df",
       "date": "2026-10-21",
       "published_at": "2026-10-21T17:17:00Z",
@@ -710,25 +845,6 @@
       ],
       "summary_kind": "change_detection",
       "resource_id": "evaluate-agent",
-      "first_seen_at": "2026-10-22T12:06:59Z"
-    },
-    {
-      "id": "1e31a283744629829789",
-      "date": "2026-10-21",
-      "published_at": "2026-10-21T17:17:00Z",
-      "date_kind": "updated",
-      "title": "Documentation changed: Create and deploy your first hosted agent",
-      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
-      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/quickstart-hosted-agent",
-      "source": "resource-watch",
-      "source_label": "Documentation & sample watch",
-      "tags": [
-        "Source change",
-        "Hosted agents",
-        "Deployment"
-      ],
-      "summary_kind": "change_detection",
-      "resource_id": "hosted-quickstart",
       "first_seen_at": "2026-10-22T12:06:59Z"
     },
     {
@@ -4690,132 +4806,10 @@
       "summary_kind": "change_detection",
       "resource_id": "framework-python",
       "first_seen_at": "2026-09-08T11:29:27Z"
-    },
-    {
-      "id": "fc651b95d2a69bcb88ff",
-      "date": "2026-09-08",
-      "published_at": "2026-09-08T16:45:29Z",
-      "date_kind": "updated",
-      "title": "Sample changed: Agent Framework .NET samples",
-      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
-      "url": "https://github.com/microsoft/agent-framework/commit/a903a4ee9e51d8ff892fb84e12a67f1e862ca69a",
-      "source": "resource-watch",
-      "source_label": "Documentation & sample watch",
-      "tags": [
-        "Source change",
-        "Agent Framework",
-        "Agents",
-        "Tools & MCP"
-      ],
-      "summary_kind": "change_detection",
-      "resource_id": "framework-dotnet",
-      "first_seen_at": "2026-09-09T11:35:13Z"
-    },
-    {
-      "id": "9b7edd964daed382cfd9",
-      "date": "2026-09-08",
-      "published_at": "2026-09-08T17:20:00Z",
-      "date_kind": "updated",
-      "title": "Documentation changed: Agent networking architecture deep dive",
-      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
-      "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agents-networking-deep-dive",
-      "source": "resource-watch",
-      "source_label": "Documentation & sample watch",
-      "tags": [
-        "Source change",
-        "Security",
-        "Hosted agents",
-        "Deployment"
-      ],
-      "summary_kind": "change_detection",
-      "resource_id": "networking-deep-dive",
-      "first_seen_at": "2026-09-09T11:35:13Z"
-    },
-    {
-      "id": "e66e78fa5cd94ac00185",
-      "date": "2026-09-04",
-      "published_at": "2026-09-04T19:18:13Z",
-      "date_kind": "published",
-      "title": "azure-ai-projects 2.6.0",
-      "summary": "Python package 2.6.0 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.",
-      "url": "https://pypi.org/project/azure-ai-projects/2.6.0",
-      "source": "projects-sdk",
-      "source_label": "Azure AI Projects SDK",
-      "tags": [
-        "SDK",
-        "Agents"
-      ],
-      "summary_kind": "package_metadata",
-      "release_channel": "stable",
-      "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "b7be8f1cf7a870b922b6",
-      "date": "2026-09-04",
-      "published_at": "2026-09-04T18:36:10Z",
-      "date_kind": "published",
-      "title": "azure-ai-evaluation 1.18.5",
-      "summary": "Python package 1.18.5 was published to PyPI (stable channel). Review the package's changelog and migration guidance before upgrading; package stability does not establish feature availability.",
-      "url": "https://pypi.org/project/azure-ai-evaluation/1.18.5",
-      "source": "evaluation-sdk",
-      "source_label": "Azure AI Evaluation SDK",
-      "tags": [
-        "SDK",
-        "Evaluation"
-      ],
-      "summary_kind": "package_metadata",
-      "release_channel": "stable",
-      "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "eb238ff97f50479e5145",
-      "date": "2026-09-03",
-      "published_at": "2026-09-03T09:49:35Z",
-      "date_kind": "published",
-      "title": "python-1.17.0",
-      "summary": "[1.17.0] - 2026-09-03 Added - samples: Add an end-to-end Foundry-hosted Telegram agent sample (7883) - agent-framework-foundry-hosting: Add explicit Agent Server or agent-owned model history selection while preventing duplicated conversation replay (7997) Changed - agent-framework-core...",
-      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.17.0",
-      "source": "agent-framework",
-      "source_label": "Microsoft Agent Framework",
-      "tags": [
-        "SDK",
-        "Hosted agents",
-        "Observability",
-        "Agent Framework",
-        "Agents",
-        "Tools & MCP"
-      ],
-      "summary_kind": "release_excerpt",
-      "release_channel": "stable",
-      "component": "Agent Framework / Python",
-      "first_seen_at": "2026-09-08T00:48:03Z"
-    },
-    {
-      "id": "12283c5d8337a80c6cc9",
-      "date": "2026-09-01",
-      "published_at": "2026-09-01T05:04:37Z",
-      "date_kind": "published",
-      "title": "Foundry Local v2.0.1",
-      "summary": "🚀 Foundry Local v2.0.1 Release Notes We're excited to announce Foundry Local v2.0.1. This release introduces a unified, cross-language inference API, a shared native runtime, and packaging and reliability improvements for Linux and ARM64. > [!IMPORTANT] > > In-process OpenAI-style SDK clients are...",
-      "url": "https://github.com/microsoft/foundry-local/releases/tag/v2.0.1",
-      "source": "foundry-local",
-      "source_label": "Foundry Local",
-      "tags": [
-        "Local",
-        "Hosted agents",
-        "Evaluation",
-        "Observability",
-        "Agents",
-        "Knowledge"
-      ],
-      "summary_kind": "release_excerpt",
-      "release_channel": "stable",
-      "component": "Foundry Local",
-      "first_seen_at": "2026-09-08T00:48:03Z"
     }
   ],
   "schema_version": 3,
-  "last_checked": "2026-10-26T13:20:07Z",
+  "last_checked": "2026-10-27T12:28:03Z",
   "item_count": 240,
   "sources": [
     {
@@ -4824,9 +4818,9 @@
       "kind": "Release status",
       "url": "https://azure.microsoft.com/updates/?products=ai-foundry",
       "authority": "Availability announcements",
-      "checked_at": "2026-10-26T13:20:07Z",
-      "last_success_at": "2026-10-26T13:20:07Z",
-      "items_seen": 8,
+      "checked_at": "2026-10-27T12:28:03Z",
+      "last_success_at": "2026-10-27T12:28:03Z",
+      "items_seen": 7,
       "status": "ok",
       "latest_published": "2026-10-08"
     },
@@ -4836,8 +4830,8 @@
       "kind": "What's new",
       "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
       "authority": "Current product guidance, not a release feed",
-      "checked_at": "2026-10-26T13:20:07Z",
-      "last_success_at": "2026-10-26T13:20:07Z",
+      "checked_at": "2026-10-27T12:28:03Z",
+      "last_success_at": "2026-10-27T12:28:03Z",
       "items_seen": 1,
       "status": "ok",
       "latest_published": "2026-09-09"
@@ -4848,11 +4842,11 @@
       "kind": "Announcements",
       "url": "https://devblogs.microsoft.com/foundry/",
       "authority": "Launch context",
-      "checked_at": "2026-10-26T13:20:07Z",
-      "last_success_at": "2026-10-26T13:20:07Z",
+      "checked_at": "2026-10-27T12:28:03Z",
+      "last_success_at": "2026-10-27T12:28:03Z",
       "items_seen": 10,
       "status": "ok",
-      "latest_published": "2026-10-19"
+      "latest_published": "2026-10-26"
     },
     {
       "id": "agent-framework",
@@ -4860,8 +4854,8 @@
       "kind": "SDK releases",
       "url": "https://github.com/microsoft/agent-framework/releases",
       "authority": "Repository release channel; not feature GA status",
-      "checked_at": "2026-10-26T13:20:07Z",
-      "last_success_at": "2026-10-26T13:20:07Z",
+      "checked_at": "2026-10-27T12:28:03Z",
+      "last_success_at": "2026-10-27T12:28:03Z",
       "items_seen": 32,
       "status": "ok",
       "latest_published": "2026-10-23"
@@ -4872,8 +4866,8 @@
       "kind": "Runtime releases",
       "url": "https://github.com/microsoft/Foundry-Local/releases",
       "authority": "Repository release channel",
-      "checked_at": "2026-10-26T13:20:07Z",
-      "last_success_at": "2026-10-26T13:20:07Z",
+      "checked_at": "2026-10-27T12:28:03Z",
+      "last_success_at": "2026-10-27T12:28:03Z",
       "items_seen": 9,
       "status": "ok",
       "latest_published": "2026-10-23"
@@ -4884,8 +4878,8 @@
       "kind": "Python package",
       "url": "https://pypi.org/project/azure-ai-projects/",
       "authority": "Published package versions; individual APIs may be preview",
-      "checked_at": "2026-10-26T13:20:07Z",
-      "last_success_at": "2026-10-26T13:20:07Z",
+      "checked_at": "2026-10-27T12:28:03Z",
+      "last_success_at": "2026-10-27T12:28:03Z",
       "items_seen": 8,
       "status": "ok",
       "latest_published": "2026-10-17"
@@ -4896,8 +4890,8 @@
       "kind": "Python package",
       "url": "https://pypi.org/project/azure-ai-evaluation/",
       "authority": "Published package versions; individual evaluators may be preview",
-      "checked_at": "2026-10-26T13:20:07Z",
-      "last_success_at": "2026-10-26T13:20:07Z",
+      "checked_at": "2026-10-27T12:28:03Z",
+      "last_success_at": "2026-10-27T12:28:03Z",
       "items_seen": 10,
       "status": "ok",
       "latest_published": "2026-10-23"
@@ -4908,14 +4902,14 @@
       "kind": "Source changes",
       "url": "https://learn.microsoft.com/azure/foundry/",
       "authority": "Documentation edits and commits, not product launches",
-      "checked_at": "2026-10-26T13:20:07Z",
-      "last_success_at": "2026-10-26T13:20:07Z",
-      "items_seen": 5,
+      "checked_at": "2026-10-27T12:28:03Z",
+      "last_success_at": "2026-10-27T12:28:03Z",
+      "items_seen": 11,
       "status": "ok",
-      "latest_published": "2026-10-26"
+      "latest_published": "2026-10-27"
     }
   ],
-  "last_content_change_at": "2026-10-26T13:20:07Z",
+  "last_content_change_at": "2026-10-27T12:28:03Z",
   "refresh_interval_hours": 24,
   "stale_after_hours": 48,
   "releases": [
