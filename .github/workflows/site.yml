@@ -30,7 +30,7 @@ jobs:
           # Never execute a workflow_run artifact or an untrusted upstream ref.
           ref: ${{ github.event_name == 'workflow_run' && 'main' || github.ref }}
           persist-credentials: false
-      - uses: actions/setup-python@v7.0.0
+      - uses: actions/setup-python@v7.1.0
         with:
           python-version: "3.12"
           cache: pip
