@@ -4,7 +4,23 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Sat, 07 Nov 2026 13:19:20 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 13:39:57 GMT</lastBuildDate>
+    <item>
+      <title>Sample changed: Foundry Local runtime and Session API</title>
+      <link>https://github.com/microsoft/foundry-local/commit/a4cd842e65b7130829e2271cc73c7bae78c59c12</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Sun, 08 Nov 2026 08:12:24 GMT</pubDate>
+      <guid isPermaLink="false">fcb0c7155b7c0f6d31b4</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>python-1.25.0</title>
+      <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.25.0</link>
+      <description>Added - agent-framework-core, agent-framework-foundry-hosting: Support callable MCP discovery approval policies and honor Foundry Toolbox approval metadata, including tool-name and read-only filters, explicit caller overrides, and policy refresh for retained tools (10136) Changed - agent-framework...</description>
+      <pubDate>Sat, 07 Nov 2026 15:52:42 GMT</pubDate>
+      <guid isPermaLink="false">f662a5ccc8fabef6df59</guid>
+      <category>published</category>
+    </item>
     <item>
       <title>Sample changed: The official Foundry sample collection</title>
       <link>https://github.com/microsoft-foundry/foundry-samples/commit/6d3999d309be6c06eee6a0426a4af6969d5dc05a</link>
@@ -467,22 +483,6 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Thu, 29 Oct 2026 22:16:00 GMT</pubDate>
       <guid isPermaLink="false">843107cbd68e5bfc80f8</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Configure and use agent toolboxes</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/toolbox</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 29 Oct 2026 22:16:00 GMT</pubDate>
-      <guid isPermaLink="false">c86ca9c814605110f496</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Agent-to-agent integration with A2A</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/agent-to-agent</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 29 Oct 2026 22:16:00 GMT</pubDate>
-      <guid isPermaLink="false">5405b71b0a822bb41200</guid>
       <category>updated</category>
     </item>
   </channel>

@@ -1,6 +1,49 @@
 {
-  "last_updated": "2026-11-07",
+  "last_updated": "2026-11-08",
   "items": [
+    {
+      "id": "fcb0c7155b7c0f6d31b4",
+      "date": "2026-11-08",
+      "published_at": "2026-11-08T08:12:24Z",
+      "date_kind": "updated",
+      "title": "Sample changed: Foundry Local runtime and Session API",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://github.com/microsoft/foundry-local/commit/a4cd842e65b7130829e2271cc73c7bae78c59c12",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Local",
+        "Models",
+        "SDK"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "foundry-local",
+      "first_seen_at": "2026-11-08T13:39:57Z"
+    },
+    {
+      "id": "f662a5ccc8fabef6df59",
+      "date": "2026-11-07",
+      "published_at": "2026-11-07T15:52:42Z",
+      "date_kind": "published",
+      "title": "python-1.25.0",
+      "summary": "Added - agent-framework-core, agent-framework-foundry-hosting: Support callable MCP discovery approval policies and honor Foundry Toolbox approval metadata, including tool-name and read-only filters, explicit caller overrides, and policy refresh for retained tools (10136) Changed - agent-framework...",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.25.0",
+      "source": "agent-framework",
+      "source_label": "Microsoft Agent Framework",
+      "tags": [
+        "SDK",
+        "Hosted agents",
+        "Deployment",
+        "Evaluation",
+        "Observability",
+        "Agent Framework"
+      ],
+      "summary_kind": "release_excerpt",
+      "release_channel": "stable",
+      "component": "Agent Framework / Python",
+      "first_seen_at": "2026-11-08T13:39:57Z"
+    },
     {
       "id": "9840f91aa01c8fad1266",
       "date": "2026-11-07",
@@ -4771,44 +4814,10 @@
       "summary_kind": "package_metadata",
       "release_channel": "stable",
       "first_seen_at": "2026-09-19T11:13:12Z"
-    },
-    {
-      "id": "cc0e6651c9ce59512228",
-      "date": "2026-09-18",
-      "published_at": "2026-09-18T17:21:06Z",
-      "date_kind": "published",
-      "title": "[Launched] Generally Available: Publishing Microsoft Foundry agents to Microsoft 365 Copilot and Teams",
-      "summary": "Publishing Microsoft Foundry agents to Microsoft 365 Copilot and Teams is now generally available. An agent only delivers value once it reaches the people who need it, and Foundry developers previously had no native path to make their agents operational a",
-      "url": "https://azure.microsoft.com/updates?id=571816",
-      "source": "azure-updates",
-      "source_label": "Azure Updates",
-      "tags": [
-        "GA",
-        "Agents"
-      ],
-      "summary_kind": "source_excerpt",
-      "first_seen_at": "2026-09-19T11:13:12Z"
-    },
-    {
-      "id": "e9dc33d351ebb6ba10bb",
-      "date": "2026-09-18",
-      "published_at": "2026-09-18T17:24:02Z",
-      "date_kind": "published",
-      "title": "[Launched] Generally Available: Enable and disable controls for Microsoft Foundry agents in Agent 365",
-      "summary": "Microsoft Foundry now exposes enable and disable actions for Foundry agent objects within the Agent 365 governance surface in Microsoft Admin Center, generally available. Administrators can control whether a Foundry agent is available for use across their",
-      "url": "https://azure.microsoft.com/updates?id=571826",
-      "source": "azure-updates",
-      "source_label": "Azure Updates",
-      "tags": [
-        "GA",
-        "Agents"
-      ],
-      "summary_kind": "source_excerpt",
-      "first_seen_at": "2026-09-19T11:13:12Z"
     }
   ],
   "schema_version": 3,
-  "last_checked": "2026-11-07T13:19:20Z",
+  "last_checked": "2026-11-08T13:39:57Z",
   "item_count": 240,
   "sources": [
     {
@@ -4817,8 +4826,8 @@
       "kind": "Release status",
       "url": "https://azure.microsoft.com/updates/?products=ai-foundry",
       "authority": "Availability announcements",
-      "checked_at": "2026-11-07T13:19:20Z",
-      "last_success_at": "2026-11-07T13:19:20Z",
+      "checked_at": "2026-11-08T13:39:57Z",
+      "last_success_at": "2026-11-08T13:39:57Z",
       "items_seen": 7,
       "status": "ok",
       "latest_published": "2026-10-27"
@@ -4829,8 +4838,8 @@
       "kind": "What's new",
       "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
       "authority": "Current product guidance, not a release feed",
-      "checked_at": "2026-11-07T13:19:20Z",
-      "last_success_at": "2026-11-07T13:19:20Z",
+      "checked_at": "2026-11-08T13:39:57Z",
+      "last_success_at": "2026-11-08T13:39:57Z",
       "items_seen": 1,
       "status": "ok",
       "latest_published": "2026-11-05"
@@ -4841,8 +4850,8 @@
       "kind": "Announcements",
       "url": "https://devblogs.microsoft.com/foundry/",
       "authority": "Launch context",
-      "checked_at": "2026-11-07T13:19:20Z",
-      "last_success_at": "2026-11-07T13:19:20Z",
+      "checked_at": "2026-11-08T13:39:57Z",
+      "last_success_at": "2026-11-08T13:39:57Z",
       "items_seen": 10,
       "status": "ok",
       "latest_published": "2026-11-05"
@@ -4853,11 +4862,11 @@
       "kind": "SDK releases",
       "url": "https://github.com/microsoft/agent-framework/releases",
       "authority": "Repository release channel; not feature GA status",
-      "checked_at": "2026-11-07T13:19:20Z",
-      "last_success_at": "2026-11-07T13:19:20Z",
-      "items_seen": 31,
+      "checked_at": "2026-11-08T13:39:57Z",
+      "last_success_at": "2026-11-08T13:39:57Z",
+      "items_seen": 32,
       "status": "ok",
-      "latest_published": "2026-11-06"
+      "latest_published": "2026-11-07"
     },
     {
       "id": "foundry-local",
@@ -4865,8 +4874,8 @@
       "kind": "Runtime releases",
       "url": "https://github.com/microsoft/Foundry-Local/releases",
       "authority": "Repository release channel",
-      "checked_at": "2026-11-07T13:19:20Z",
-      "last_success_at": "2026-11-07T13:19:20Z",
+      "checked_at": "2026-11-08T13:39:57Z",
+      "last_success_at": "2026-11-08T13:39:57Z",
       "items_seen": 12,
       "status": "ok",
       "latest_published": "2026-11-03"
@@ -4877,8 +4886,8 @@
       "kind": "Python package",
       "url": "https://pypi.org/project/azure-ai-projects/",
       "authority": "Published package versions; individual APIs may be preview",
-      "checked_at": "2026-11-07T13:19:20Z",
-      "last_success_at": "2026-11-07T13:19:20Z",
+      "checked_at": "2026-11-08T13:39:57Z",
+      "last_success_at": "2026-11-08T13:39:57Z",
       "items_seen": 8,
       "status": "ok",
       "latest_published": "2026-10-30"
@@ -4889,8 +4898,8 @@
       "kind": "Python package",
       "url": "https://pypi.org/project/azure-ai-evaluation/",
       "authority": "Published package versions; individual evaluators may be preview",
-      "checked_at": "2026-11-07T13:19:20Z",
-      "last_success_at": "2026-11-07T13:19:20Z",
+      "checked_at": "2026-11-08T13:39:57Z",
+      "last_success_at": "2026-11-08T13:39:57Z",
       "items_seen": 9,
       "status": "ok",
       "latest_published": "2026-11-05"
@@ -4901,14 +4910,14 @@
       "kind": "Source changes",
       "url": "https://learn.microsoft.com/azure/foundry/",
       "authority": "Documentation edits and commits, not product launches",
-      "checked_at": "2026-11-07T13:19:20Z",
-      "last_success_at": "2026-11-07T13:19:20Z",
-      "items_seen": 5,
+      "checked_at": "2026-11-08T13:39:57Z",
+      "last_success_at": "2026-11-08T13:39:57Z",
+      "items_seen": 1,
       "status": "ok",
-      "latest_published": "2026-11-07"
+      "latest_published": "2026-11-08"
     }
   ],
-  "last_content_change_at": "2026-11-07T13:19:20Z",
+  "last_content_change_at": "2026-11-08T13:39:57Z",
   "refresh_interval_hours": 24,
   "stale_after_hours": 48,
   "releases": [
@@ -4923,10 +4932,10 @@
     {
       "source": "agent-framework",
       "component": "Agent Framework / Python",
-      "version": "python-1.24.0",
+      "version": "python-1.25.0",
       "channel": "stable",
-      "published_at": "2026-10-30T21:52:13Z",
-      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.24.0"
+      "published_at": "2026-11-07T15:52:42Z",
+      "url": "https://github.com/microsoft/agent-framework/releases/tag/python-1.25.0"
     },
     {
       "source": "agent-framework",
