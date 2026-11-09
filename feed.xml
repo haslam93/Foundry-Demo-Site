@@ -4,7 +4,47 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Sun, 08 Nov 2026 13:39:57 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 16:39:45 GMT</lastBuildDate>
+    <item>
+      <title>Sample changed: The official Foundry sample collection</title>
+      <link>https://github.com/microsoft-foundry/foundry-samples/commit/4482f06461dff6377f8013a8eccd71c056c85743</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 09 Nov 2026 11:02:49 GMT</pubDate>
+      <guid isPermaLink="false">13b832283633aa89e592</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Foundry Local runtime and Session API</title>
+      <link>https://github.com/microsoft/foundry-local/commit/3901b303a3e29bec3d79ee339eb763b26e8a0fbc</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 09 Nov 2026 16:16:53 GMT</pubDate>
+      <guid isPermaLink="false">3efde9fa623594369ab5</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework: source and release notes</title>
+      <link>https://github.com/microsoft/agent-framework/commit/13956ad8c0c52538dc8fb5abae549019fbf2dc83</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 09 Nov 2026 12:35:07 GMT</pubDate>
+      <guid isPermaLink="false">91fa5c594782f21aa39b</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework Python samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/6693bd1a9356ad56aff13adade0bb67e29c25cfd</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 09 Nov 2026 12:14:03 GMT</pubDate>
+      <guid isPermaLink="false">aaa7363b4d0f35953311</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework .NET samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/7c2b31fe38f763cce8690eafadddb457cdc587c9</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 09 Nov 2026 11:01:37 GMT</pubDate>
+      <guid isPermaLink="false">eb12edda4b1dceb96b3c</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>Sample changed: Foundry Local runtime and Session API</title>
       <link>https://github.com/microsoft/foundry-local/commit/a4cd842e65b7130829e2271cc73c7bae78c59c12</link>
@@ -40,7 +80,7 @@
     <item>
       <title>dotnet-1.28.0</title>
       <link>https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.28.0</link>
-      <description>Changes: 924a6e50ec0336f3c965ee8b1151c54085888b6e .NET: chore: bumps release version for dotnet (10157) c79d6eef1cbfb83d623da76c37b6f609e4a1295c Fix spelling in WorkflowBuilder XML comment (10154) 07d07c80715f090b2a99715aa7e281ab6eb12931 Fix initializer spelling in Cosmos test comment (10153)...</description>
+      <description>[1.28.0] - 2026-11-06 Added Foundry: Add the GA computer tool through FoundryAITool.CreateComputerTool() and carry computer calls and results through Foundry hosting, including batched actions. Add an Azure OpenAI computer-use sample; the Foundry project endpoint still requires the existing preview...</description>
       <pubDate>Fri, 06 Nov 2026 22:00:01 GMT</pubDate>
       <guid isPermaLink="false">66c8be3bcc4affc739eb</guid>
       <category>published</category>
@@ -443,46 +483,6 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Thu, 29 Oct 2026 22:16:00 GMT</pubDate>
       <guid isPermaLink="false">e428d0f8c8382d19738b</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Models sold directly by Azure</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 29 Oct 2026 22:16:00 GMT</pubDate>
-      <guid isPermaLink="false">ecde0f3f0a69f752c4c9</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Migrate older hosted-agent preview deployments</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/migrate-hosted-agent-preview</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 29 Oct 2026 22:16:00 GMT</pubDate>
-      <guid isPermaLink="false">b19a53712a310ba611d0</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Hosted agents: direct-code deployment</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/deploy-hosted-agent-code</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 29 Oct 2026 22:16:00 GMT</pubDate>
-      <guid isPermaLink="false">c3e47a2b3c823b73a6b4</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Create and deploy your first hosted agent</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/quickstart-hosted-agent</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 29 Oct 2026 22:16:00 GMT</pubDate>
-      <guid isPermaLink="false">577643157b0cb8c843c0</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Configure private networking for Agent Service</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/virtual-networks</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 29 Oct 2026 22:16:00 GMT</pubDate>
-      <guid isPermaLink="false">843107cbd68e5bfc80f8</guid>
       <category>updated</category>
     </item>
   </channel>
