@@ -4,7 +4,47 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Mon, 09 Nov 2026 16:39:45 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 15:03:43 GMT</lastBuildDate>
+    <item>
+      <title>Sample changed: Foundry hosted-agent examples</title>
+      <link>https://github.com/microsoft-foundry/foundry-samples/commit/dd8d6b97bc8a6845a271dc5c5b5c444e43ac0d21</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Tue, 10 Nov 2026 08:18:36 GMT</pubDate>
+      <guid isPermaLink="false">27f60c46782db27334a8</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Foundry Local runtime and Session API</title>
+      <link>https://github.com/microsoft/foundry-local/commit/cd4b0ce9dbafc03efd0fa5246db13ee5f078658a</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Tue, 10 Nov 2026 09:13:25 GMT</pubDate>
+      <guid isPermaLink="false">21199d7d1b57db673a8f</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework: source and release notes</title>
+      <link>https://github.com/microsoft/agent-framework/commit/5dd25856b6ccef8d2b0d8345fe08831b1055f4ab</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Tue, 10 Nov 2026 14:42:20 GMT</pubDate>
+      <guid isPermaLink="false">cae3339f86c9b8707e71</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework .NET samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/098214127152b3bf26159c3e17ac0a019aa025b6</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Tue, 10 Nov 2026 00:31:58 GMT</pubDate>
+      <guid isPermaLink="false">017a2bd91e8ce4652fa3</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>When one pass isn’t enough: agentic mode in Azure Content Understanding</title>
+      <link>https://devblogs.microsoft.com/foundry/when-one-pass-isnt-enough-agentic-mode-in-azure-content-understanding</link>
+      <description>Most document analysis takes one efficient pass. Learn how agentic mode gives AI a document-native harness for the hardest tasks, and when to choose it over standard mode. “Some books are to be tasted, others to be swallowed, and some few to be chewed and digested.” Francis Bacon, “Of Studies”, 1625...</description>
+      <pubDate>Mon, 09 Nov 2026 20:04:00 GMT</pubDate>
+      <guid isPermaLink="false">88604d316fbfdf4219d1</guid>
+      <category>published</category>
+    </item>
     <item>
       <title>Sample changed: The official Foundry sample collection</title>
       <link>https://github.com/microsoft-foundry/foundry-samples/commit/4482f06461dff6377f8013a8eccd71c056c85743</link>
@@ -43,6 +83,14 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Mon, 09 Nov 2026 11:01:37 GMT</pubDate>
       <guid isPermaLink="false">eb12edda4b1dceb96b3c</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Documentation changed: Monitor agents and enable continuous evaluation</title>
+      <link>https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 09 Nov 2026 19:52:00 GMT</pubDate>
+      <guid isPermaLink="false">f228ff30615bf4f5f601</guid>
       <category>updated</category>
     </item>
     <item>
@@ -435,54 +483,6 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Fri, 30 Oct 2026 11:52:32 GMT</pubDate>
       <guid isPermaLink="false">0841b7df3ce64ad52c19</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework .NET samples</title>
-      <link>https://github.com/microsoft/agent-framework/commit/b7884ad88eb85c27b2a7bf40c0e15948e7ccc28d</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Fri, 30 Oct 2026 18:51:42 GMT</pubDate>
-      <guid isPermaLink="false">0502328dba76cad5ea36</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Foundry role-based access control</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Fri, 30 Oct 2026 22:11:00 GMT</pubDate>
-      <guid isPermaLink="false">e030e80216223bf31b91</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Foundry hosted-agent examples</title>
-      <link>https://github.com/microsoft-foundry/foundry-samples/commit/0e5a249c0ab0d9a2c572219e9d9c21b9a1d7d84e</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 29 Oct 2026 11:30:08 GMT</pubDate>
-      <guid isPermaLink="false">f05de769ea99acfc7a26</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Foundry Local runtime and Session API</title>
-      <link>https://github.com/microsoft/foundry-local/commit/2a951eb2f74d9f0c7d4616aae851e8477c25af02</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 29 Oct 2026 10:14:58 GMT</pubDate>
-      <guid isPermaLink="false">a10c153f89b68a7f99cb</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework: source and release notes</title>
-      <link>https://github.com/microsoft/agent-framework/commit/268461487a0299baf615f7ce75d23320a109c5d5</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 29 Oct 2026 12:39:43 GMT</pubDate>
-      <guid isPermaLink="false">741ed2606170eb85195e</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: The current azure.yaml agent contract</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/azure-yaml-reference</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 29 Oct 2026 22:16:00 GMT</pubDate>
-      <guid isPermaLink="false">e428d0f8c8382d19738b</guid>
       <category>updated</category>
     </item>
   </channel>
