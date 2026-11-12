@@ -4,13 +4,53 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Wed, 11 Nov 2026 14:34:56 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 15:26:41 GMT</lastBuildDate>
+    <item>
+      <title>Sample changed: Agent Framework: source and release notes</title>
+      <link>https://github.com/microsoft/agent-framework/commit/6811ef8c7d83cf2949679f733aa15ac1bf290fe6</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Thu, 12 Nov 2026 14:26:42 GMT</pubDate>
+      <guid isPermaLink="false">37f7894037f4ace36b43</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework Python samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/30285709c1d60736a9b8b8ad87cd4f94a3719f6a</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Thu, 12 Nov 2026 13:35:49 GMT</pubDate>
+      <guid isPermaLink="false">4e0e504659508caa236c</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Foundry Local CLI 0.14.0 (Preview)</title>
+      <link>https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.14.0</link>
+      <description>🚀 Foundry Local CLI 0.14.0 (Preview) Public preview update for the Foundry Local CLI, adding embeddings, local document indexing and semantic search, and ranking and typed-decision models. &gt; [!IMPORTANT] &gt; Preview. This is an early CLI build. Expect rough edges, missing polish, and changes between...</description>
+      <pubDate>Thu, 12 Nov 2026 00:51:59 GMT</pubDate>
+      <guid isPermaLink="false">51d155466386d223531c</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Sample changed: The official Foundry sample collection</title>
+      <link>https://github.com/microsoft-foundry/foundry-samples/commit/f960ccb05b003fa274e9b5903f9d39ac1228eb65</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Wed, 11 Nov 2026 22:46:14 GMT</pubDate>
+      <guid isPermaLink="false">036a5cdc347b795e0054</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>Sample changed: Foundry hosted-agent examples</title>
       <link>https://github.com/microsoft-foundry/foundry-samples/commit/a411aa5b6e908f4681a0be226b15bebab1f36386</link>
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Wed, 11 Nov 2026 09:42:06 GMT</pubDate>
       <guid isPermaLink="false">479e641b07100e60167b</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Foundry Local runtime and Session API</title>
+      <link>https://github.com/microsoft/foundry-local/commit/d2dfda6815bd18fd28ac1d0bc4be152f65ed956f</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Wed, 11 Nov 2026 23:29:10 GMT</pubDate>
+      <guid isPermaLink="false">1b906cb5139a84af4fb5</guid>
       <category>updated</category>
     </item>
     <item>
@@ -43,6 +83,30 @@
       <description>🚀 Foundry Local v2.4.1 Foundry Local v2.4.1 is a small patch release on top of v2.4.0. 🐛 Fixed - C RankingSession and DecisionSession now work in Native AOT apps. - The C SDK now rejects ranking results that are missing prob, instead of treating the value as 0. - macOS/iOS: fixed an Objective-C...</description>
       <pubDate>Wed, 11 Nov 2026 04:42:04 GMT</pubDate>
       <guid isPermaLink="false">0d7297a5f80dd0532808</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Documentation changed: Foundry Agent Service overview</title>
+      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/overview</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Wed, 11 Nov 2026 15:04:00 GMT</pubDate>
+      <guid isPermaLink="false">17c86a2bae712ff3b285</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Documentation changed: Create and deploy your first hosted agent</title>
+      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/quickstart-hosted-agent</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Wed, 11 Nov 2026 15:04:00 GMT</pubDate>
+      <guid isPermaLink="false">3c27b899e08ed18148eb</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Content Understanding adds GPT-5.6, GPT-6, and GPT-6.1: Choose the right model for your workload</title>
+      <link>https://devblogs.microsoft.com/foundry/content-understanding-adds-gpt-5-6-gpt-6-and-gpt-6-1-choose-the-right-model-for-your-workload</link>
+      <description>Azure Content Understanding now supports the GPT-5.6, GPT-6, and GPT-6.1 model families, giving you more choices for document, text, speech, and video workflows. This adds to the existing set of supported models like the GPT-5 series. To help customers understand how to use this expanded set of...</description>
+      <pubDate>Wed, 11 Nov 2026 18:24:28 GMT</pubDate>
+      <guid isPermaLink="false">5f350745c01107eb6dd2</guid>
       <category>published</category>
     </item>
     <item>
@@ -420,70 +484,6 @@
       <pubDate>Tue, 03 Nov 2026 11:53:03 GMT</pubDate>
       <guid isPermaLink="false">c5c745967ba20fd4d63a</guid>
       <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework .NET samples</title>
-      <link>https://github.com/microsoft/agent-framework/commit/88371929a016f1e822ea2a553e80d00e2ec48df9</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Tue, 03 Nov 2026 06:24:03 GMT</pubDate>
-      <guid isPermaLink="false">6216d8cc95931ca9ff52</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Foundry Local v2.3.1</title>
-      <link>https://github.com/microsoft/foundry-local/releases/tag/v2.3.1</link>
-      <description>🚀 Foundry Local v2.3.1 We're excited to announce Foundry Local v2.3.1. 🆕 What's New - Upgrade Rust SDK ZIP dependency to 9.0.5+ &gt; [!NOTE] &gt; CUDA and cuDNN runtimes must be installed separately; Foundry Local does not download them. &gt; - Windows/Linux x64: CUDA 12 and compatible cuDNN 9 runtimes. &gt; -...</description>
-      <pubDate>Tue, 03 Nov 2026 00:07:20 GMT</pubDate>
-      <guid isPermaLink="false">7b26ff63ba4b4b3c7fda</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Sample changed: Foundry Local runtime and Session API</title>
-      <link>https://github.com/microsoft/foundry-local/commit/d8c3405e50b28b44c1f6a1b4ecba29fc59661ca3</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Mon, 02 Nov 2026 22:54:47 GMT</pubDate>
-      <guid isPermaLink="false">c90e2a530adbbcdcad3c</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework: source and release notes</title>
-      <link>https://github.com/microsoft/agent-framework/commit/03341b15e6cfee3bfe558fe470a8d90441b71dd6</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Mon, 02 Nov 2026 14:59:24 GMT</pubDate>
-      <guid isPermaLink="false">3f93c7c5dea87f9eecd7</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework Python samples</title>
-      <link>https://github.com/microsoft/agent-framework/commit/9f52e715526f65c8e974f8f0249ae41b5b57d62f</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Mon, 02 Nov 2026 11:16:36 GMT</pubDate>
-      <guid isPermaLink="false">fd385cb040d5d371f8d6</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework Python samples</title>
-      <link>https://github.com/microsoft/agent-framework/commit/6fdeb2d22994aa573492fc3402038dfdb07f3389</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Mon, 02 Nov 2026 15:45:30 GMT</pubDate>
-      <guid isPermaLink="false">300cb910588a35aa13c0</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Foundry Local v2.3.0</title>
-      <link>https://github.com/microsoft/foundry-local/releases/tag/v2.3.0</link>
-      <description>🚀 Foundry Local v2.3.0 We're excited to announce Foundry Local v2.3.0. This release improves reliability and inference across SDKs and EPs. 🆕 What's New ⚡Improvements - Better support for coding models - Better inference performance across EPs - Add language support to Java PCM and WAV transcription...</description>
-      <pubDate>Mon, 02 Nov 2026 23:43:51 GMT</pubDate>
-      <guid isPermaLink="false">7f4acf0e0785d23e422a</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Foundry Local CLI 0.13.0 (Preview)</title>
-      <link>https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.13.0</link>
-      <description>Public preview update for the Foundry Local CLI. &gt; [!IMPORTANT] &gt; Preview. This is an early CLI build. Expect rough edges, missing polish, and changes between releases. Please file issues with [cli] in the title and include foundry report output when possible. What's New Updated Foundry Local SDK...</description>
-      <pubDate>Mon, 02 Nov 2026 22:18:37 GMT</pubDate>
-      <guid isPermaLink="false">17c8cb876311fb8949f2</guid>
-      <category>published</category>
     </item>
   </channel>
 </rss>
