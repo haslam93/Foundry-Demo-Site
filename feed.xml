@@ -4,7 +4,15 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Fri, 13 Nov 2026 14:44:10 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 13:40:40 GMT</lastBuildDate>
+    <item>
+      <title>Sample changed: Foundry Local runtime and Session API</title>
+      <link>https://github.com/microsoft/foundry-local/commit/5c351213118b8fcfe735c985273250c5ddee01e3</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Sat, 14 Nov 2026 07:59:04 GMT</pubDate>
+      <guid isPermaLink="false">38c9ae3890c711d60e8a</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>python-1.26.0</title>
       <link>https://github.com/microsoft/agent-framework/releases/tag/python-1.26.0</link>
@@ -38,11 +46,35 @@
       <category>updated</category>
     </item>
     <item>
+      <title>Sample changed: Agent Framework: source and release notes</title>
+      <link>https://github.com/microsoft/agent-framework/commit/92838b60498395142cb8b74693353163e95a0faf</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 13 Nov 2026 19:56:50 GMT</pubDate>
+      <guid isPermaLink="false">fc09902310d63250aa14</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework Python samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/3ed51591a9646c47822003546e7d618495e74a27</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 13 Nov 2026 16:33:37 GMT</pubDate>
+      <guid isPermaLink="false">8fa183428e240d2e910a</guid>
+      <category>updated</category>
+    </item>
+    <item>
       <title>Sample changed: Agent Framework .NET samples</title>
       <link>https://github.com/microsoft/agent-framework/commit/824cc4f8ef92a464bebd3c5f38f1faffb43c7c88</link>
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Fri, 13 Nov 2026 14:17:46 GMT</pubDate>
       <guid isPermaLink="false">e67549a9253b17fcc743</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Documentation changed: Agent networking architecture deep dive</title>
+      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agents-networking-deep-dive</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Fri, 13 Nov 2026 18:59:00 GMT</pubDate>
+      <guid isPermaLink="false">1674c49dec05f87580e3</guid>
       <category>updated</category>
     </item>
     <item>
@@ -219,14 +251,6 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Tue, 10 Nov 2026 15:04:00 GMT</pubDate>
       <guid isPermaLink="false">dc28af80067152838aaa</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Agent networking architecture deep dive</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agents-networking-deep-dive</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Tue, 10 Nov 2026 15:04:00 GMT</pubDate>
-      <guid isPermaLink="false">e7c5d56fe2d471f2f739</guid>
       <category>updated</category>
     </item>
     <item>
@@ -459,30 +483,6 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Thu, 05 Nov 2026 04:03:00 GMT</pubDate>
       <guid isPermaLink="false">38e8edc56a0f9bdd11ad</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Cloud evaluation with the Foundry SDK</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/cloud-evaluation</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 05 Nov 2026 04:03:00 GMT</pubDate>
-      <guid isPermaLink="false">574596262e8f3f893fbf</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Bring Agentic Coding On-Device with Foundry Local</title>
-      <link>https://devblogs.microsoft.com/foundry/foundry-local-agentic-coding-qwen3-8-27b</link>
-      <description>Foundry Local brings agentic coding directly to developer hardware.</description>
-      <pubDate>Thu, 05 Nov 2026 14:00:38 GMT</pubDate>
-      <guid isPermaLink="false">838a8d754f84fbf9d536</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Sample changed: The official Foundry sample collection</title>
-      <link>https://github.com/microsoft-foundry/foundry-samples/commit/d88d0d97133a1e37a0ac289135645bb243020a8a</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Wed, 04 Nov 2026 13:26:44 GMT</pubDate>
-      <guid isPermaLink="false">b7a3cdbb4935351cca63</guid>
       <category>updated</category>
     </item>
   </channel>
