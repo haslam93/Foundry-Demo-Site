@@ -22,6 +22,26 @@
       "first_seen_at": "2026-11-14T13:40:40Z"
     },
     {
+      "id": "ec1fd5b963a6479a32cf",
+      "date": "2026-11-14",
+      "published_at": "2026-11-14T17:28:56Z",
+      "date_kind": "updated",
+      "title": "Sample changed: Foundry Local runtime and Session API",
+      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
+      "url": "https://github.com/microsoft/foundry-local/commit/8a2ee4db8fd796a917fb3bf256b7f18b631dc327",
+      "source": "resource-watch",
+      "source_label": "Documentation & sample watch",
+      "tags": [
+        "Source change",
+        "Local",
+        "Models",
+        "SDK"
+      ],
+      "summary_kind": "change_detection",
+      "resource_id": "foundry-local",
+      "first_seen_at": "2026-11-15T14:07:47Z"
+    },
+    {
       "id": "463c0c0cf7fd27006f16",
       "date": "2026-11-13",
       "published_at": "2026-11-13T08:28:16Z",
@@ -4796,30 +4816,10 @@
       "summary_kind": "change_detection",
       "resource_id": "foundry-local",
       "first_seen_at": "2026-09-29T13:07:48Z"
-    },
-    {
-      "id": "d97a113a412ce5ebf749",
-      "date": "2026-09-28",
-      "published_at": "2026-09-28T13:36:46Z",
-      "date_kind": "updated",
-      "title": "Sample changed: Agent Framework: source and release notes",
-      "summary": "The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.",
-      "url": "https://github.com/microsoft/agent-framework/commit/2024d4df4c4dd01b904fb9daaf56f5759801654a",
-      "source": "resource-watch",
-      "source_label": "Documentation & sample watch",
-      "tags": [
-        "Source change",
-        "Agent Framework",
-        "SDK",
-        "Agents"
-      ],
-      "summary_kind": "change_detection",
-      "resource_id": "framework-repo",
-      "first_seen_at": "2026-09-28T14:12:24Z"
     }
   ],
   "schema_version": 3,
-  "last_checked": "2026-11-14T13:40:40Z",
+  "last_checked": "2026-11-15T14:07:47Z",
   "item_count": 240,
   "sources": [
     {
@@ -4828,8 +4828,8 @@
       "kind": "Release status",
       "url": "https://azure.microsoft.com/updates/?products=ai-foundry",
       "authority": "Availability announcements",
-      "checked_at": "2026-11-14T13:40:40Z",
-      "last_success_at": "2026-11-14T13:40:40Z",
+      "checked_at": "2026-11-15T14:07:47Z",
+      "last_success_at": "2026-11-15T14:07:47Z",
       "items_seen": 7,
       "status": "ok",
       "latest_published": "2026-10-27"
@@ -4840,8 +4840,8 @@
       "kind": "What's new",
       "url": "https://learn.microsoft.com/azure/foundry/whats-new-foundry",
       "authority": "Current product guidance, not a release feed",
-      "checked_at": "2026-11-14T13:40:40Z",
-      "last_success_at": "2026-11-14T13:40:40Z",
+      "checked_at": "2026-11-15T14:07:47Z",
+      "last_success_at": "2026-11-15T14:07:47Z",
       "items_seen": 1,
       "status": "ok",
       "latest_published": "2026-11-05"
@@ -4852,8 +4852,8 @@
       "kind": "Announcements",
       "url": "https://devblogs.microsoft.com/foundry/",
       "authority": "Launch context",
-      "checked_at": "2026-11-14T13:40:40Z",
-      "last_success_at": "2026-11-14T13:40:40Z",
+      "checked_at": "2026-11-15T14:07:47Z",
+      "last_success_at": "2026-11-15T14:07:47Z",
       "items_seen": 10,
       "status": "ok",
       "latest_published": "2026-11-11"
@@ -4864,8 +4864,8 @@
       "kind": "SDK releases",
       "url": "https://github.com/microsoft/agent-framework/releases",
       "authority": "Repository release channel; not feature GA status",
-      "checked_at": "2026-11-14T13:40:40Z",
-      "last_success_at": "2026-11-14T13:40:40Z",
+      "checked_at": "2026-11-15T14:07:47Z",
+      "last_success_at": "2026-11-15T14:07:47Z",
       "items_seen": 33,
       "status": "ok",
       "latest_published": "2026-11-13"
@@ -4876,8 +4876,8 @@
       "kind": "Runtime releases",
       "url": "https://github.com/microsoft/Foundry-Local/releases",
       "authority": "Repository release channel",
-      "checked_at": "2026-11-14T13:40:40Z",
-      "last_success_at": "2026-11-14T13:40:40Z",
+      "checked_at": "2026-11-15T14:07:47Z",
+      "last_success_at": "2026-11-15T14:07:47Z",
       "items_seen": 14,
       "status": "ok",
       "latest_published": "2026-11-12"
@@ -4888,8 +4888,8 @@
       "kind": "Python package",
       "url": "https://pypi.org/project/azure-ai-projects/",
       "authority": "Published package versions; individual APIs may be preview",
-      "checked_at": "2026-11-14T13:40:40Z",
-      "last_success_at": "2026-11-14T13:40:40Z",
+      "checked_at": "2026-11-15T14:07:47Z",
+      "last_success_at": "2026-11-15T14:07:47Z",
       "items_seen": 9,
       "status": "ok",
       "latest_published": "2026-11-13"
@@ -4900,8 +4900,8 @@
       "kind": "Python package",
       "url": "https://pypi.org/project/azure-ai-evaluation/",
       "authority": "Published package versions; individual evaluators may be preview",
-      "checked_at": "2026-11-14T13:40:40Z",
-      "last_success_at": "2026-11-14T13:40:40Z",
+      "checked_at": "2026-11-15T14:07:47Z",
+      "last_success_at": "2026-11-15T14:07:47Z",
       "items_seen": 10,
       "status": "ok",
       "latest_published": "2026-11-12"
@@ -4912,14 +4912,14 @@
       "kind": "Source changes",
       "url": "https://learn.microsoft.com/azure/foundry/",
       "authority": "Documentation edits and commits, not product launches",
-      "checked_at": "2026-11-14T13:40:40Z",
-      "last_success_at": "2026-11-14T13:40:40Z",
-      "items_seen": 4,
+      "checked_at": "2026-11-15T14:07:47Z",
+      "last_success_at": "2026-11-15T14:07:47Z",
+      "items_seen": 1,
       "status": "ok",
       "latest_published": "2026-11-14"
     }
   ],
-  "last_content_change_at": "2026-11-14T13:40:40Z",
+  "last_content_change_at": "2026-11-15T14:07:47Z",
   "refresh_interval_hours": 24,
   "stale_after_hours": 48,
   "releases": [

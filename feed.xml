@@ -4,13 +4,21 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Sat, 14 Nov 2026 13:40:40 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 14:07:47 GMT</lastBuildDate>
     <item>
       <title>Sample changed: Foundry Local runtime and Session API</title>
       <link>https://github.com/microsoft/foundry-local/commit/5c351213118b8fcfe735c985273250c5ddee01e3</link>
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Sat, 14 Nov 2026 07:59:04 GMT</pubDate>
       <guid isPermaLink="false">38c9ae3890c711d60e8a</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Foundry Local runtime and Session API</title>
+      <link>https://github.com/microsoft/foundry-local/commit/8a2ee4db8fd796a917fb3bf256b7f18b631dc327</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Sat, 14 Nov 2026 17:28:56 GMT</pubDate>
+      <guid isPermaLink="false">ec1fd5b963a6479a32cf</guid>
       <category>updated</category>
     </item>
     <item>
@@ -475,14 +483,6 @@
       <description>Discover documentation and product updates in Microsoft Foundry for August 2026.</description>
       <pubDate>Thu, 05 Nov 2026 04:03:00 GMT</pubDate>
       <guid isPermaLink="false">4869f16658a70b81aa46</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Microsoft Foundry: what's new</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/whats-new-foundry</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 05 Nov 2026 04:03:00 GMT</pubDate>
-      <guid isPermaLink="false">38e8edc56a0f9bdd11ad</guid>
       <category>updated</category>
     </item>
   </channel>
