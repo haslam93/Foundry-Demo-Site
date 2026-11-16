@@ -4,7 +4,39 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Sun, 15 Nov 2026 14:07:47 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 16:08:34 GMT</lastBuildDate>
+    <item>
+      <title>Sample changed: Foundry hosted-agent examples</title>
+      <link>https://github.com/microsoft-foundry/foundry-samples/commit/28731fe678455c0cf2b440765e4fb097ab634211</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 16 Nov 2026 06:56:21 GMT</pubDate>
+      <guid isPermaLink="false">9e33aa2b0a21b2c074be</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework: source and release notes</title>
+      <link>https://github.com/microsoft/agent-framework/commit/10801303c1bdf08811ba2c1066b55722b86b3fc2</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 16 Nov 2026 12:50:01 GMT</pubDate>
+      <guid isPermaLink="false">6745b0f13f9265d9a488</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Agent Framework .NET samples</title>
+      <link>https://github.com/microsoft/agent-framework/commit/4906db5daa046d421de47154bcb35839054af353</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 16 Nov 2026 12:46:33 GMT</pubDate>
+      <guid isPermaLink="false">c903f69545c58251f242</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Sample changed: Foundry Local runtime and Session API</title>
+      <link>https://github.com/microsoft/foundry-local/commit/fdeb84c9f1acc51a0ec663573e7e27b6697a5ecf</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Sun, 15 Nov 2026 19:40:23 GMT</pubDate>
+      <guid isPermaLink="false">259f60a695ed0309aece</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>Sample changed: Foundry Local runtime and Session API</title>
       <link>https://github.com/microsoft/foundry-local/commit/5c351213118b8fcfe735c985273250c5ddee01e3</link>
@@ -451,38 +483,6 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Thu, 05 Nov 2026 14:03:20 GMT</pubDate>
       <guid isPermaLink="false">d80588a0a6ff0d5fd910</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework .NET samples</title>
-      <link>https://github.com/microsoft/agent-framework/commit/89cb64cc3b5c0eb2add8231f07a880f6ae939661</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 05 Nov 2026 12:54:37 GMT</pubDate>
-      <guid isPermaLink="false">d1853beb324f91957804</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: AI Gateway hands-on labs</title>
-      <link>https://github.com/Azure-Samples/AI-Gateway/commit/98c242510ba53f4e83e5f4f19595907c8e0b36bc</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 05 Nov 2026 10:37:28 GMT</pubDate>
-      <guid isPermaLink="false">9955bb486be9e7167f63</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Microsoft Foundry extension for Azure Developer CLI is generally available</title>
-      <link>https://devblogs.microsoft.com/foundry/microsoft-foundry-azure-developer-cli-ga</link>
-      <description>Set up, test, evaluate, and deploy hosted agents with the generally available Microsoft Foundry extension for Azure Developer CLI, keeping agent and deployment configuration alongside your code.</description>
-      <pubDate>Thu, 05 Nov 2026 20:55:45 GMT</pubDate>
-      <guid isPermaLink="false">11d8ed113eed12b9a4bc</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>Microsoft Foundry docs: What's new for August 2026 - Microsoft Foundry</title>
-      <link>https://learn.microsoft.com/azure/foundry/whats-new-foundry</link>
-      <description>Discover documentation and product updates in Microsoft Foundry for August 2026.</description>
-      <pubDate>Thu, 05 Nov 2026 04:03:00 GMT</pubDate>
-      <guid isPermaLink="false">4869f16658a70b81aa46</guid>
       <category>updated</category>
     </item>
   </channel>
