@@ -4,7 +4,39 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Fri, 20 Nov 2026 15:38:07 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 14:48:15 GMT</lastBuildDate>
+    <item>
+      <title>[Launched] Generally Available: Governance policy guidance in Foundry Canvas and VS Code</title>
+      <link>https://azure.microsoft.com/updates?id=581463</link>
+      <description>Microsoft Foundry governance guidance is now available in Foundry Canvas and the Foundry Toolkit for Visual Studio Code. As developers build agents, both experiences surface relevant policies for agent types, models, toolboxes, and guardrails, with warnin</description>
+      <pubDate>Sat, 21 Nov 2026 00:45:13 GMT</pubDate>
+      <guid isPermaLink="false">eea2ae26942e5be5b0bd</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>[In preview] Public Preview: Microsoft Copilot harness support in Foundry Toolkit for VS Code</title>
+      <link>https://azure.microsoft.com/updates?id=581468</link>
+      <description>Agent Builder in Microsoft Foundry Toolkit for Visual Studio Code supports prompt agents that use the Microsoft Copilot harness in public preview. Developers can configure tools and skills, edit local YAML definitions, deploy changes to Foundry, and run d</description>
+      <pubDate>Sat, 21 Nov 2026 00:43:13 GMT</pubDate>
+      <guid isPermaLink="false">88bb0cbaf80c2ca37f05</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>[In preview] Public Preview: Programmed Training in Microsoft Foundry</title>
+      <link>https://azure.microsoft.com/updates?id=581713</link>
+      <description>Programmed Training, an API for building your own post-training loop over open-weight models, is available in public preview in Microsoft Foundry. Access is available by request through the preview sign-up form.Managed training jobs work well when you onl</description>
+      <pubDate>Fri, 20 Nov 2026 22:58:28 GMT</pubDate>
+      <guid isPermaLink="false">d8a39e0366b05511b979</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>[In preview] Public Preview: Multi-turn evaluation in Microsoft Foundry</title>
+      <link>https://azure.microsoft.com/updates?id=581746</link>
+      <description>Multi-turn evaluation is now in public preview in Microsoft Foundry. You can assess complete agent conversations against your quality standards, not only individual responses.A response can look correct on its own and still be part of a conversation that</description>
+      <pubDate>Fri, 20 Nov 2026 22:56:51 GMT</pubDate>
+      <guid isPermaLink="false">14566b54f240d87f3987</guid>
+      <category>published</category>
+    </item>
     <item>
       <title>Serve open models in production with Foundry Managed Compute</title>
       <link>https://devblogs.microsoft.com/foundry/managed-compute-ga</link>
@@ -25,7 +57,7 @@
       <title>Documentation changed: Configure and use agent toolboxes</title>
       <link>https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/toolbox</link>
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Fri, 20 Nov 2026 15:12:00 GMT</pubDate>
+      <pubDate>Fri, 20 Nov 2026 23:12:00 GMT</pubDate>
       <guid isPermaLink="false">d94f297ae7fa15321fdc</guid>
       <category>updated</category>
     </item>
@@ -52,6 +84,14 @@
       <pubDate>Thu, 19 Nov 2026 23:13:00 GMT</pubDate>
       <guid isPermaLink="false">572e8d57c7fdcf298edd</guid>
       <category>updated</category>
+    </item>
+    <item>
+      <title>Build trusted autonomous agents for your team with Microsoft Foundry</title>
+      <link>https://devblogs.microsoft.com/foundry/build-trusted-autonomous-agents-for-your-team-with-microsoft-foundry</link>
+      <description>Enterprises are all-in on AI agents, but the ROI hasn’t followed. What’s holding those agents back isn’t capability. Today’s agents can do remarkable work on their own. They can solve math problems that stumped mathematicians for decades, build functional operating systems from scratch, and teach...</description>
+      <pubDate>Thu, 19 Nov 2026 19:53:30 GMT</pubDate>
+      <guid isPermaLink="false">b49fecb469fdcea06c8d</guid>
+      <category>published</category>
     </item>
     <item>
       <title>What’s new in Foundry Agent Service at Ignite 2026</title>
@@ -444,46 +484,6 @@
       <pubDate>Thu, 12 Nov 2026 00:51:59 GMT</pubDate>
       <guid isPermaLink="false">51d155466386d223531c</guid>
       <category>published</category>
-    </item>
-    <item>
-      <title>Sample changed: The official Foundry sample collection</title>
-      <link>https://github.com/microsoft-foundry/foundry-samples/commit/f960ccb05b003fa274e9b5903f9d39ac1228eb65</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Wed, 11 Nov 2026 22:46:14 GMT</pubDate>
-      <guid isPermaLink="false">036a5cdc347b795e0054</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Foundry hosted-agent examples</title>
-      <link>https://github.com/microsoft-foundry/foundry-samples/commit/a411aa5b6e908f4681a0be226b15bebab1f36386</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Wed, 11 Nov 2026 09:42:06 GMT</pubDate>
-      <guid isPermaLink="false">479e641b07100e60167b</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Foundry Local runtime and Session API</title>
-      <link>https://github.com/microsoft/foundry-local/commit/d2dfda6815bd18fd28ac1d0bc4be152f65ed956f</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Wed, 11 Nov 2026 23:29:10 GMT</pubDate>
-      <guid isPermaLink="false">1b906cb5139a84af4fb5</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework: source and release notes</title>
-      <link>https://github.com/microsoft/agent-framework/commit/caa428bef4d60cac49881c2a1769237a103240c9</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Wed, 11 Nov 2026 14:21:31 GMT</pubDate>
-      <guid isPermaLink="false">95330e5b33b343f7cc3f</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Sample changed: Agent Framework Python samples</title>
-      <link>https://github.com/microsoft/agent-framework/commit/1e50851cefdc644c5b7d0e2b2b6da645f8e7e557</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Wed, 11 Nov 2026 14:17:11 GMT</pubDate>
-      <guid isPermaLink="false">49e85cf406e6c8fa0889</guid>
-      <category>updated</category>
     </item>
   </channel>
 </rss>
