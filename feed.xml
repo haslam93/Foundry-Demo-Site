@@ -4,7 +4,7 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Sat, 21 Nov 2026 14:48:15 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 14:44:24 GMT</lastBuildDate>
     <item>
       <title>[Launched] Generally Available: Governance policy guidance in Foundry Canvas and VS Code</title>
       <link>https://azure.microsoft.com/updates?id=581463</link>
@@ -19,6 +19,14 @@
       <description>Agent Builder in Microsoft Foundry Toolkit for Visual Studio Code supports prompt agents that use the Microsoft Copilot harness in public preview. Developers can configure tools and skills, edit local YAML definitions, deploy changes to Foundry, and run d</description>
       <pubDate>Sat, 21 Nov 2026 00:43:13 GMT</pubDate>
       <guid isPermaLink="false">88bb0cbaf80c2ca37f05</guid>
+      <category>published</category>
+    </item>
+    <item>
+      <title>Hosted agents in your own virtual network: five checks when the Agents page times out</title>
+      <link>https://devblogs.microsoft.com/foundry/hosted-agents-private-network-setup</link>
+      <description>The five questions teams ask most when they run hosted agents in their own virtual network: which subnet is the agent subnet, why listing agents times out, why a TLS-inspecting firewall still breaks after you add your CA, how peered VNets and DNS fit, and why a subnet stays in use after you delete...</description>
+      <pubDate>Sat, 21 Nov 2026 18:12:21 GMT</pubDate>
+      <guid isPermaLink="false">db140c60f3775d960e51</guid>
       <category>published</category>
     </item>
     <item>
@@ -476,14 +484,6 @@
       <pubDate>Thu, 12 Nov 2026 13:35:49 GMT</pubDate>
       <guid isPermaLink="false">4e0e504659508caa236c</guid>
       <category>updated</category>
-    </item>
-    <item>
-      <title>Foundry Local CLI 0.14.0 (Preview)</title>
-      <link>https://github.com/microsoft/foundry-local/releases/tag/cli-preview-0.14.0</link>
-      <description>🚀 Foundry Local CLI 0.14.0 (Preview) Public preview update for the Foundry Local CLI, adding embeddings, local document indexing and semantic search, and ranking and typed-decision models. &gt; [!IMPORTANT] &gt; Preview. This is an early CLI build. Expect rough edges, missing polish, and changes between...</description>
-      <pubDate>Thu, 12 Nov 2026 00:51:59 GMT</pubDate>
-      <guid isPermaLink="false">51d155466386d223531c</guid>
-      <category>published</category>
     </item>
   </channel>
 </rss>
