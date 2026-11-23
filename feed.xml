@@ -4,7 +4,15 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Sun, 22 Nov 2026 14:44:24 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 18:30:09 GMT</lastBuildDate>
+    <item>
+      <title>Documentation changed: Agent networking architecture deep dive</title>
+      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agents-networking-deep-dive</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Mon, 23 Nov 2026 15:07:00 GMT</pubDate>
+      <guid isPermaLink="false">f4de942a97b604155c2b</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>[Launched] Generally Available: Governance policy guidance in Foundry Canvas and VS Code</title>
       <link>https://azure.microsoft.com/updates?id=581463</link>
@@ -83,14 +91,6 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Thu, 19 Nov 2026 10:03:00 GMT</pubDate>
       <guid isPermaLink="false">8f1c2719489d4e5920f1</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Agent networking architecture deep dive</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agents-networking-deep-dive</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Thu, 19 Nov 2026 23:13:00 GMT</pubDate>
-      <guid isPermaLink="false">572e8d57c7fdcf298edd</guid>
       <category>updated</category>
     </item>
     <item>
