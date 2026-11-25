@@ -4,7 +4,15 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Tue, 24 Nov 2026 17:58:09 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 17:27:01 GMT</lastBuildDate>
+    <item>
+      <title>Documentation changed: Agent networking architecture deep dive</title>
+      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agents-networking-deep-dive</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Wed, 25 Nov 2026 04:04:00 GMT</pubDate>
+      <guid isPermaLink="false">7ab01fa1c2e834e2ea5c</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>[Launched] Generally Available: Use Azure Storage permissions in Azure AI Search and Foundry IQ</title>
       <link>https://azure.microsoft.com/updates?id=581303</link>
@@ -62,6 +70,14 @@
       <category>published</category>
     </item>
     <item>
+      <title>What’s new in Microsoft Foundry | Ignite 2026</title>
+      <link>https://devblogs.microsoft.com/foundry/whats-new-in-microsoft-foundry-ignite-2026</link>
+      <description>Microsoft Foundry Ignite 2026 updates for agents, developer tools, models, training, enterprise context, and governance, with continuous improvement.</description>
+      <pubDate>Tue, 24 Nov 2026 16:00:51 GMT</pubDate>
+      <guid isPermaLink="false">13093ed3c26929bd6ea5</guid>
+      <category>published</category>
+    </item>
+    <item>
       <title>Microsoft Foundry docs: What's new for August 2026 - Microsoft Foundry</title>
       <link>https://learn.microsoft.com/azure/foundry/whats-new-foundry</link>
       <description>Discover documentation and product updates in Microsoft Foundry for August 2026.</description>
@@ -75,6 +91,14 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Tue, 24 Nov 2026 15:07:00 GMT</pubDate>
       <guid isPermaLink="false">3deec82419948ebb3c81</guid>
+      <category>updated</category>
+    </item>
+    <item>
+      <title>Documentation changed: Network isolation for toolboxes</title>
+      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/toolbox-network-isolation</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Tue, 24 Nov 2026 23:16:00 GMT</pubDate>
+      <guid isPermaLink="false">29070a387024d40c402b</guid>
       <category>updated</category>
     </item>
     <item>
@@ -153,7 +177,7 @@
       <title>Documentation changed: Configure and use agent toolboxes</title>
       <link>https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/toolbox</link>
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Tue, 24 Nov 2026 15:07:00 GMT</pubDate>
+      <pubDate>Tue, 24 Nov 2026 23:16:00 GMT</pubDate>
       <guid isPermaLink="false">2d171f19a39301008b21</guid>
       <category>updated</category>
     </item>
@@ -177,7 +201,7 @@
       <title>Documentation changed: Agent-to-agent integration with A2A</title>
       <link>https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/agent-to-agent</link>
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Tue, 24 Nov 2026 15:07:00 GMT</pubDate>
+      <pubDate>Tue, 24 Nov 2026 23:16:00 GMT</pubDate>
       <guid isPermaLink="false">7320c6979776e5c83640</guid>
       <category>updated</category>
     </item>
@@ -284,14 +308,6 @@
       <pubDate>Mon, 23 Nov 2026 20:32:57 GMT</pubDate>
       <guid isPermaLink="false">a417789decf8870d14fa</guid>
       <category>published</category>
-    </item>
-    <item>
-      <title>Documentation changed: Agent networking architecture deep dive</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agents-networking-deep-dive</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Mon, 23 Nov 2026 15:07:00 GMT</pubDate>
-      <guid isPermaLink="false">f4de942a97b604155c2b</guid>
-      <category>updated</category>
     </item>
     <item>
       <title>[Launched] Generally Available: Governance policy guidance in Foundry Canvas and VS Code</title>
@@ -467,22 +483,6 @@
       <description>Azure API Management Premium v2 is now available in 35 Azure regions, giving organizations greater flexibility to deploy and scale enterprise API workloads across more geographic locations. With this expanded regional availability, customers have more opt</description>
       <pubDate>Tue, 17 Nov 2026 20:00:32 GMT</pubDate>
       <guid isPermaLink="false">787d6ed375adaf7545d6</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>[Launched] Generally Available: Azure AI Gateway</title>
-      <link>https://azure.microsoft.com/updates?id=580080</link>
-      <description>Azure AI Gateway, previously available as the AI Gateway tier of API Management, is now generally available as a fully managed Azure service for connecting users, applications, and agents to AI models and MCP tools across providers.Platform teams can cent</description>
-      <pubDate>Tue, 17 Nov 2026 20:00:32 GMT</pubDate>
-      <guid isPermaLink="false">237f8859f4b1235ca6b9</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>[In preview] Public Preview: Azure API Management Application</title>
-      <link>https://azure.microsoft.com/updates?id=581277</link>
-      <description>The Applications feature in Azure API Management is now available in public preview to all customers, with no sign-up or registration required.Applications provide a streamlined way to organize APIs around consuming applications and manage application-lev</description>
-      <pubDate>Tue, 17 Nov 2026 20:15:03 GMT</pubDate>
-      <guid isPermaLink="false">9133699239810b7b6e93</guid>
       <category>published</category>
     </item>
   </channel>
