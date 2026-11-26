@@ -4,7 +4,15 @@
     <title>Hammad's Microsoft Foundry Field Guide</title>
     <link>https://haslam93.github.io/Foundry-Demo-Site/</link>
     <description>Official Foundry releases, SDK versions and source changes.</description>
-    <lastBuildDate>Wed, 25 Nov 2026 17:27:01 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 17:07:03 GMT</lastBuildDate>
+    <item>
+      <title>Documentation changed: Configure and use agent toolboxes</title>
+      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/toolbox</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Thu, 26 Nov 2026 15:04:00 GMT</pubDate>
+      <guid isPermaLink="false">706e46edea1c73c24dcb</guid>
+      <category>updated</category>
+    </item>
     <item>
       <title>Documentation changed: Agent networking architecture deep dive</title>
       <link>https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agents-networking-deep-dive</link>
@@ -171,14 +179,6 @@
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
       <pubDate>Tue, 24 Nov 2026 15:07:00 GMT</pubDate>
       <guid isPermaLink="false">33b91d82417daf923887</guid>
-      <category>updated</category>
-    </item>
-    <item>
-      <title>Documentation changed: Configure and use agent toolboxes</title>
-      <link>https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/toolbox</link>
-      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
-      <pubDate>Tue, 24 Nov 2026 23:16:00 GMT</pubDate>
-      <guid isPermaLink="false">2d171f19a39301008b21</guid>
       <category>updated</category>
     </item>
     <item>
@@ -398,6 +398,14 @@
       <category>published</category>
     </item>
     <item>
+      <title>Sample changed: The official Foundry sample collection</title>
+      <link>https://github.com/microsoft-foundry/foundry-samples/commit/17cd7b5b39412c4afb6f5805fd6ecd7f6ee12629</link>
+      <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
+      <pubDate>Wed, 18 Nov 2026 17:32:40 GMT</pubDate>
+      <guid isPermaLink="false">ea92bf02bd6ebd952b35</guid>
+      <category>updated</category>
+    </item>
+    <item>
       <title>Sample changed: Foundry hosted-agent examples</title>
       <link>https://github.com/microsoft-foundry/foundry-samples/commit/5602f8aed62300bc2c53b0e299f713c002c01b74</link>
       <description>The watched source changed since the previous check. Revisit its instructions before using the saved guide. This is a source change, not a product release.</description>
@@ -475,14 +483,6 @@
       <description>The Durable Task extension for Microsoft Agent Framework is now generally available for C and Python. Build agents, multi-agent orchestrations, and Microsoft Agent Framework workflows that can run reliably for minutes, days, or weeks. The extension persi</description>
       <pubDate>Tue, 17 Nov 2026 20:00:32 GMT</pubDate>
       <guid isPermaLink="false">65c167cdae9fdbc65e77</guid>
-      <category>published</category>
-    </item>
-    <item>
-      <title>[Launched] Generally Available: Azure API Management Premium v2</title>
-      <link>https://azure.microsoft.com/updates?id=580046</link>
-      <description>Azure API Management Premium v2 is now available in 35 Azure regions, giving organizations greater flexibility to deploy and scale enterprise API workloads across more geographic locations. With this expanded regional availability, customers have more opt</description>
-      <pubDate>Tue, 17 Nov 2026 20:00:32 GMT</pubDate>
-      <guid isPermaLink="false">787d6ed375adaf7545d6</guid>
       <category>published</category>
     </item>
   </channel>
